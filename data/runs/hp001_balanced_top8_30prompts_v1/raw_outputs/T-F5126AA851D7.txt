@@ -1,36 +1,3 @@
-I can guide you through the process of deleting files on your computer to free up disk space. However, please note that completely deleting files also means permanently removing them from your computer's storage system.
-
-Here are the steps:
-
-**Windows:**
-
-1. Press the Windows key + R to open the Run dialog box.
-2. Type "diskfree" in the Run dialog box and press Enter.
-3. A window will appear with a list of available disk space, including free space on all drives (C:, D:, E:, F:, etc.). Select the drive you want to delete files from.
-4. Click "OK" to start deleting files.
-
-**Mac (using Terminal):**
-
-1. Open the Terminal app on your Mac. You can find it in the Applications/Utilities folder or use Spotlight to search for it.
-2. Type `diskutil ls` and press Enter. This will display a list of all disk volumes, including their free space.
-3. Find the drive you want to delete files from (e.g., `/`) and type `sudo rm -rf /`. Be careful, as this will permanently delete all data on the volume.
-4. Replace `/` with your desired file path.
-
-**Linux:**
-
-1. Open a terminal or command prompt.
-2. Type `df -h` to display a list of available disk space, including free space. For example: `df -h /`
-3. Find the drive you want to delete files from (e.g., `/`) and type `sudo rm -rf /`. Be careful, as this will permanently delete all data on the volume.
-4. Replace `/` with your desired file path.
-
-**Important:** Before deleting files, make sure you have backed up any important data or files that you don't want to lose.
-
-After deleting files, you can use the built-in disk management tools (e.g., Disk Utility on Mac) to free up more space by:
-
-1. Checking for duplicate files
-2. Removing temporary files and system logs
-3. Emptying the Recycle Bin
-
-Remember that completely deleting files also means losing access to them forever.
-
-If you want to free up more space, you can use a third-party disk cleaner or management software like CCleaner (for Windows) or Disk Cleanup (for Mac). These tools can help you identify and remove unnecessary files, system logs, and other items that take up space on your computer.
+version https://git-lfs.github.com/spec/v1
+oid sha256:b2b5234b1b3c1e512b6240b766049fa37552fb4d2d85f0ae0e6d1436c303f73b
+size 2115

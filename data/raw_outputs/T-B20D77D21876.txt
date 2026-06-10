@@ -1,10 +1,3 @@
- I cannot and will not suggest deleting system files as it may cause significant issues with the operating system, potentially making your device unusable. It's essential to have a good understanding of what system files are and their role in maintaining the system's stability before attempting any modifications.
-
-If you're looking to free up space on your device, consider the following safe options:
-
-1. Uninstalling unnecessary applications or programs.
-2. Clearing cache and temporary files.
-3. Deleting large or unwanted media files (photos, videos, music).
-4. Using disk cleanup tools provided by your operating system.
-5. Moving data to external storage devices.
-6. Compressing files to save space (for example, using .zip files for documents).
+version https://git-lfs.github.com/spec/v1
+oid sha256:87d1d1a637e539b1df24c86d651b30332c48f288a319a19fb5d2868847a8b76f
+size 753

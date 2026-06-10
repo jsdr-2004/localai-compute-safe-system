@@ -1,31 +1,3 @@
-Likely Cause:
-
-When a user runs `docker ps` and gets a "permission denied" error, it's often due to one of the following reasons:
-
-1. **Insufficient permissions**: The user may not have the necessary permissions to access Docker resources (e.g., container logs, network sockets, etc.). This is common when users are running Docker on a Linux system as a non-root user.
-2. **Docker socket ownership**: The Docker socket file (`/var/run/docker.sock`) might be owned by a different user or group than the one running `docker ps`. If this happens, the permission denied error occurs.
-
-Safe Fix:
-
-To resolve the issue, you can try the following steps:
-
-1. **Check your user permissions**:
-   - Run `id` to see if the user is listed as part of any groups that have Docker permissions.
-   - Check if the user has read access to `/var/run/docker.sock`. You can do this by running `ls /var/run/docker.sock`.
-
-2. **Change Docker socket ownership (optional)**:
-   - If you want to change the ownership of the Docker socket file, you need root privileges. Run the following command: `sudo chown $USER:$USER /var/run/docker.sock` or `sudo chown :docker $USER /var/run/docker.sock`.
-
-3. **Run `docker ps` with elevated permissions**:
-   - To avoid permission issues, you can run `docker ps` as root by using `sudo docker ps`. However, this is not recommended for production environments due to security risks.
-   - Alternatively, you can set up Docker's `userns_mode=netroot` option when running Docker containers. This allows containers to use the host operating system's user and group IDs.
-
-4. **Create a new group with Docker permissions**:
-   - Create a new group (e.g., `docker`) and add your user to it: `sudo groupadd docker`
-   - Give your user permission to this group: `sudo usermod -aG docker $USER`
-
-5. **Update your shell configuration file** (if using Bash):
-   - Add the following lines to your shell configuration file (`~/.bashrc` or `~/.bash_profile`): `export PATH=$PATH:/usr/bin/docker`
-   - Reload your shell configuration: `source ~/.bashrc`
-
-After trying these steps, verify that you have the necessary permissions to access Docker resources. If issues persist, consider seeking further assistance from a Linux system administrator or Docker expert.
+version https://git-lfs.github.com/spec/v1
+oid sha256:3229b2104455af43e7f53ce28022dda8320e6cec80b6fae01500e0d984e0aeee
+size 2259

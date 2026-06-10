@@ -1,19 +1,3 @@
- Model quantization is a technique used to reduce the computational complexity and storage requirements of machine learning models, particularly deep neural networks (DNNs), while minimizing the loss of accuracy. This is achieved by reducing the number of bits used to represent the weights and activations of a model.
-
-There are primarily two types of quantization:
-
-1. **Weight Quantization**: In this process, the floating-point weights are converted into lower-precision fixed-point or integer representations. The most common methods for weight quantization are uniform quantization, non-uniform quantization, and gradient-based quantization. Weight quantization can significantly reduce model size and computation time, but it may degrade the accuracy of the model if not performed carefully.
-
-2. **Activation Quantization**: Similar to weight quantization, activation quantization involves converting floating-point activations into lower-precision fixed-point or integer representations. Activation quantization can also reduce model size and computation time, but it may impact the accuracy of the model, especially in cases where the activations have a wide dynamic range.
-
-The tradeoffs associated with model quantization include:
-
-1. **Accuracy**: Quantizing models often leads to a loss of accuracy due to the reduced precision of weights and activations. Careful quantization techniques can help minimize this impact, but it is always a balance between accuracy and model efficiency.
-
-2. **Computation Speedup**: Model quantization allows for faster computation since lower-precision arithmetic requires less computational resources than higher-precision arithmetic. The speedup achieved depends on the specific quantization technique used and the level of precision reduction.
-
-3. **Storage Reduction**: Quantized models take up less memory, which is beneficial for deploying machine learning models on edge devices with limited storage capacity.
-
-4. **Power Consumption**: Lower-precision arithmetic requires less power than higher-precision arithmetic, making quantized models more energy-efficient and suitable for battery-powered devices.
-
-5. **Quantization noise**: The reduction in precision can introduce quantization noise into the model's output, which may affect the accuracy of the results, particularly for applications that require high precision or sensitivity to small errors.
+version https://git-lfs.github.com/spec/v1
+oid sha256:0998b9ee1fa356312caea282c0b5219f83d5ba9a12e23d0ecb25f35402bd73b4
+size 2406

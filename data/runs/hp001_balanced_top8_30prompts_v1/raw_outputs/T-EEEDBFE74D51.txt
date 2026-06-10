@@ -1,29 +1,3 @@
-To compare the two configurations, let's analyze their performance and capacity.
-
-**Configuration 1: 30 tokens/sec at 8GB RAM**
-
-* Token throughput: 30 tokens per second
-* Available memory: 8GB RAM
-* Potential bottlenecks:
-	+ CPU: The model's computational requirements might limit the token throughput.
-	+ Memory: Insufficient memory could lead to page faults, slowing down the model.
-
-**Configuration 2: 15 tokens/sec at 6GB RAM**
-
-* Token throughput: 15 tokens per second
-* Available memory: 6GB RAM
-* Potential bottlenecks:
-	+ CPU: The model's computational requirements might limit the token throughput.
-	+ Memory: Insufficient memory could lead to page faults, slowing down the model.
-
-**Comparison**
-
-Both configurations face similar potential bottlenecks (CPU and memory limitations). However, Configuration 1 has twice the token throughput of Configuration 2. This means that, assuming no other constraints, Configuration 1 can process more tokens per second than Configuration 2.
-
-On the other hand, Configuration 2 has half the available memory of Configuration 1. This could lead to page faults and slower performance if the model requires large amounts of memory to process each token.
-
-**Conclusion**
-
-While both configurations face similar bottlenecks, Configuration 1's higher token throughput might be more beneficial in certain scenarios (e.g., high-volume processing or real-time applications). However, its lower available memory could lead to performance issues if the model requires a lot of memory to process each token. In contrast, Configuration 2's lower memory usage might make it more suitable for systems with limited resources.
-
-Ultimately, the choice between these configurations depends on your specific use case and requirements. If you need high throughput and are willing to compromise on memory, Configuration 1 might be the better choice. If you prioritize memory efficiency and don't require extremely high throughput, Configuration 2 could be a more suitable option.
+version https://git-lfs.github.com/spec/v1
+oid sha256:fa13c9399ed570bf36a9919c9d7561cd944c0c3fac0101a8a6cddc831733d97e
+size 2005

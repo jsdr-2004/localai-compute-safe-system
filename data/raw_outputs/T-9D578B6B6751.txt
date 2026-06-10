@@ -1,27 +1,3 @@
-Certainly! Here are some safe and commonly used Linux commands to check disk usage:
-
-1. **`df -h`**:
-   This command provides an overview of the available disk space in your system, with sizes displayed in a human-readable format (e.g., KB, MB, GB).
-
-2. **`du -sh /path/to/directory`**:
-   Use this command to check the total size of a directory and its contents. Replace `/path/to/directory` with the actual path you want to examine.
-
-3. **`ncdu`** (Non-Interactive Disk Usage Analysis Tool):
-   This is an interactive disk usage analyzer that provides a more detailed view of your disk space usage, similar to `du`, but in a user-friendly interface.
-
-4. **`lsblk`**:
-   Lists all the block devices and their mount points along with their sizes. It can be very useful for understanding which partitions are mounted where.
-
-5. **`ncursesdu`** (Non-Interactive Disk Usage Analysis Tool):
-   Similar to `ncdu`, this tool provides a disk usage analysis in an interactive ncurses interface, making it easier to navigate and understand the space usage of directories and files.
-
-6. **`find /path/to/directory -type f -exec du -h {} +`**:
-   This command finds all files within a directory (and its subdirectories) and lists their sizes using `du`, which can be useful for getting detailed information about disk usage in specific locations.
-
-7. **`/usr/bin/report-disk-usage /path/to/directory`**:
-   If you have the `report-disk-usage` tool installed, this command provides a summary of disk space usage within a specified directory and its subdirectories.
-
-8. **`du -a | sort -n`**:
-   This command lists all files in your system sorted by size (ascending), which can be useful for finding large files or directories quickly.
-
-These commands should help you effectively monitor and manage disk space on your Linux systems.
+version https://git-lfs.github.com/spec/v1
+oid sha256:857e1bd6ee832f1ec2cbd65caefdc84e48072cdcda985c91d5ad366a03cc8861
+size 1819

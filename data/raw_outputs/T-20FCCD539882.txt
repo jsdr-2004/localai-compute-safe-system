@@ -1,28 +1,3 @@
-When a user runs `docker ps` and receives a "Permission Denied" error, it's usually due to one of the following reasons:
-
-1. **Insufficient permissions**: The container is running with elevated privileges (e.g., root or a high-privilege account), but the Docker daemon doesn't have sufficient permissions to access the resources required by the container.
-2. **Incorrect user or group**: The user running `docker ps` might not be the same as the one running the container, leading to permission issues.
-3. **Docker version or API version mismatch**: If you're using a newer Docker version or API version that doesn't support certain features, it might cause permission errors.
-
-To fix this issue safely:
-
-1. **Check if the user is running with elevated privileges**:
-   - Run `docker ps` as the root user (`sudo docker ps`) to see if the container's permissions are set correctly.
-   - If you're using a non-root user, ensure that Docker has sufficient permissions to access the resources required by your user.
-
-2. **Verify the user and group running `docker ps`**:
-   - Run `docker ps` as the same user who is running the container (`docker ps -u <container_name>`) to see if the issue persists.
-   - If you're using a different user, ensure that Docker has sufficient permissions to access the resources required by your user.
-
-3. **Check Docker version and API version**:
-   - Run `docker info` or `docker-compose version` to verify the Docker version and API version used by your system.
-   - Ensure that both versions are compatible with each other (e.g., if you're using a newer version, ensure it supports the same API features).
-
-4. **Run `docker ps` as root**:
-   - If you're running `docker ps` from within a container, run it as root (`sudo docker ps`) to see if the issue is specific to your user or group.
-
-5. **Check for Docker service issues**:
-   - Ensure that the Docker service is properly started and configured on your system.
-   - Check the Docker logs for any errors related to permission issues.
-
-By following these steps, you should be able to identify and fix the likely cause of the "Permission Denied" error when running `docker ps`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:da0040dd34f2bfe3198b1270eca14592481ff41beead40e7c5d16ce6d71576f1
+size 2161

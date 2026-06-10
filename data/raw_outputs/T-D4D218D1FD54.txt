@@ -1,32 +1,3 @@
-Here are some safe Linux commands to check disk usage:
-
-1. **`df -h`**: Displays the disk usage information in a human-readable format.
-2. **`du -h`**: Similar to `df`, but displays only the used disk space, without showing total disk size.
-3. **`free -h`**: Displays the memory and disk usage information.
-4. **`lsblk`**: Lists all block devices (disks) connected to your system.
-5. **`cat /proc/meminfo`**: Displays detailed information about the current process's memory usage.
-
-To avoid potential issues, it's essential to:
-
-* Run these commands in a non-root user account, as they may require elevated privileges.
-* Be cautious when using `lsblk`, as it lists all block devices, including those that are not currently mounted or in use.
-* Avoid running `du` and `free` with the `-h` option on systems where disk space is measured in bytes (e.g., `/dev/sda1` instead of `/dev/sda`). In such cases, you can omit the `-h` option.
-
-Here's an example script that checks disk usage for all mounted filesystems:
-```bash
-#!/bin/bash
-
-# Check disk usage for each mounted filesystem
-for mountpoint in /mnt/*; do
-  if [ -L "$mountpoint" ]; then
-    # Get disk usage information for the mount point
-    disk_usage=$(df -h --output=percent "$mountpoint")
-    
-    # Display disk usage information (optional)
-    echo "Disk usage on $mountpoint: $(echo "$disk_usage" | sed 's/[^0-9.]*//g; s/=/ /g')%"
-  fi
-done
-```
-This script mounts all filesystems in `/mnt` and checks their disk usage. You can modify the script to suit your specific needs, such as checking a single file system or excluding certain types of devices.
-
-Remember to always run commands with caution and respect the security implications.
+version https://git-lfs.github.com/spec/v1
+oid sha256:cd46af0db3669e136e76332193eb7882db0de718c257872f802064b9dba76ef9
+size 1696

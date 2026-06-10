@@ -1,19 +1,3 @@
-`docker ps` returns `Permission Denied` when you run it on a container that doesn't have the required privileges to access the Docker daemon or the system's file system.
-
-Here are some common reasons why this error occurs:
-
-1. **Insufficient permissions**: The container has been created with insufficient permissions, either by not running as root (`sudo`) or by not having the `docker` group membership.
-2. **Incorrect user**: The container is run under an incorrect user ID or group ID, which doesn't have the necessary privileges to access the system's file system or the Docker daemon.
-3. **File system permissions**: The container's file system has restrictive permissions that prevent it from accessing certain directories or files.
-4. **Docker daemon issues**: There might be problems with the Docker daemon on your system, such as a corrupted configuration or an issue with networking.
-5. **Container network configuration**: If you're using a network namespace, it may not have access to the system's file system, leading to permission denied errors.
-
-To diagnose this issue, try the following steps:
-
-1. Run `docker ps -a` instead of just `ps`, which includes more information about each container.
-2. Check if your user has the necessary privileges by running `sudo docker info`.
-3. Verify that your Docker configuration is correct and up-to-date.
-4. If you're using a network namespace, try setting it to `default` or reset it to its default state.
-5. If you're using multiple containers, ensure that they have access to each other's file systems.
-
-By running these checks, you should be able to identify the root cause of the permission denied error and take corrective action to resolve the issue.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f43de9fd71774b1cc820613b6077b9fedabf5d6693128c47c4e65920d7bc74a7
+size 1712

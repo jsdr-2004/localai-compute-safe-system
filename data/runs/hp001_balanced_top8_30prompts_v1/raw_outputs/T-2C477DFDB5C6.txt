@@ -1,13 +1,3 @@
- Here are some common read-only Linux commands that can help you inspect disk usage:
-
-1. `df`: Displays the amount of disk space used and available on your file system. It also shows the mount points, filesystem type, and other relevant information.
-
-   Example: `df -h` will display the output in a human-readable format (e.g., K for kilobytes, M for megabytes, G for gigabytes).
-
-2. `du`: Reports file space usage for each directory specified. By default, it reports on directories in the current working directory.
-
-   Example: `du -sh .` will display the total size of all files and subdirectories within the current directory in a human-readable format (e.g., K for kilobytes, M for megabytes, G for gigabytes).
-
-3. `ncdu` (Not Curse Disk Usage): A curses-based disk usage analyzer that provides an interactive tree view of the directories and their sizes. It's particularly useful for finding large directories and files quickly.
-
-   To install ncdu, you can use the following command: `apt-get install ncdu` (for Debian-based distributions) or `yum install ncdu` (for Red Hat/CentOS). After installation, simply run the command: `ncdu`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:361a6f2ace98b7338f6c2105a62b6660e96c1026c33ef5f76a697fc7e6bb197d
+size 1143

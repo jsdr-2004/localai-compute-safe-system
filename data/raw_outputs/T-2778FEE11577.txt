@@ -1,13 +1,3 @@
-RAM (Random Access Memory) is a type of computer storage that helps your device access and process information quickly.
-
-Think of it like a workspace where you can temporarily hold and work with papers, files, or documents. Just as you need a desk to work on, your computer needs RAM to "work" on the data it's processing.
-
-Here's how it works:
-
-1. Your computer loads an application (like a word processor) into its memory.
-2. The operating system (like Windows or macOS) gives that application access to a certain amount of RAM.
-3. When you open a new document, the computer can quickly access the existing data in your RAM, rather than having to retrieve it from a slower storage device like a hard drive.
-
-The more RAM your computer has, the more documents and files it can have open at the same time without slowing down. However, too much RAM can also be wasteful, as it's just taking up space that could be used for other things.
-
-In simple terms, RAM is like a temporary workspace where your computer can quickly access and process information to help you work more efficiently!
+version https://git-lfs.github.com/spec/v1
+oid sha256:1682dca8a9b2434cfd317457c6a228e069a1b00ed953b6353de681e1ca7fc261
+size 1086

@@ -1,14 +1,3 @@
-Sudo apt install docker.io can pose some risks if not used carefully. Here are some potential issues to consider:
-
-1. **Root privilege escalation**: By installing Docker as a non-root user using `sudo`, you may inadvertently escalate your root privileges. This is because the installation process modifies system files and directories that are typically owned by root, potentially allowing you to perform actions you wouldn't normally be able to do.
-2. **Dependency hell**: Docker's dependencies can be complex, and installing it with a non-root user may lead to issues if certain dependencies are not met. This could result in the installation failing or requiring additional steps to resolve.
-3. **Conflicting package versions**: When installing Docker using `sudo`, you may also install conflicting packages that could interfere with your system's functionality. For example, some packages might be required by Docker, but they may conflict with other packages on your system.
-4. **Security vulnerabilities**: If the system is not properly patched or updated, installing Docker as a non-root user increases the risk of security vulnerabilities being exploited. This could allow attackers to gain unauthorized access to your system or install malicious software.
-5. **System instability**: Installing Docker without proper configuration can lead to issues with system stability, such as crashes or freezes. This may be due to the installation process modifying system files in a way that causes conflicts between package managers or other critical components.
-
-To minimize these risks, consider the following best practices:
-
-* Make sure you have administrative privileges before installing Docker.
-* Carefully review the package list and dependencies required by Docker to ensure they are compatible with your system configuration.
-* Use `sudo apt update` and `sudo apt upgrade` to ensure your system is up-to-date and free of known vulnerabilities.
-* Consider using a non-root user account or elevated privileges for Docker installation, but only if necessary.
+version https://git-lfs.github.com/spec/v1
+oid sha256:12b563070283d036f0c45c674fe3906eada1427134d8bc607864b66d48848f42
+size 2064

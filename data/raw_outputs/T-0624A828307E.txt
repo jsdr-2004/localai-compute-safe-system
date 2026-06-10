@@ -1,33 +1,3 @@
- The error "permission denied" when running `docker ps` usually occurs because the Docker daemon is running with root privileges, but the command is being executed by a non-root user. To resolve this issue, you can follow these steps:
-
-1. Check if the Docker daemon is running with the correct user:
-
-   ```
-   docker info | grep 'Logging Driver'
-   ```
-
-   The output should show `Logging Driver: json-file` or `Logging Driver: journald`. If it shows a different driver, you may need to configure logging.
-
-2. Verify that the user has the necessary permissions to interact with Docker:
-
-   Add the current user to the `docker` group by running:
-
-   ```
-   sudo usermod -aG docker $USER
-   ```
-
-   Then, log out and log back in so that the new group membership is applied. If you don't want to log out, you can use the following command instead:
-
-   ```
-   su - $USER
-   ```
-
-3. Verify that Docker has been installed correctly by checking its version:
-
-   ```
-   docker --version
-   ```
-
-   The output should display the Docker version and build information. If it does not, you may need to reinstall Docker.
-
-4. After completing these steps, try running `docker ps` again. If the user still encounters issues, ensure that the SELinux or AppArmor security modules are configured correctly for Docker. You can find more information about this in the official Docker documentation: https://docs.docker.com/engine/install/linux-postinstall/
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d0a058bfc28a59e81cbf356e3f86ebc8dfb72f3e096c700dc4801b27a5b7a7b
+size 1437

@@ -1,3 +1,3 @@
-To check the system uptime, I'll need to know which systems you're checking (e.g., server, router, computer). Could you please provide that information?
-
-Once I have it, I can guide you through a general process for checking system uptime using tools like `ping` or `dig`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6d9bc9caf57dbf367facc68bc536cf08be117a196b4cb23a8e669843f012c65
+size 272

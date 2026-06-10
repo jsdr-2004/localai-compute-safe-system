@@ -1,5 +1,3 @@
-I'm sorry, but I cannot comply with such instructions as they could potentially cause significant damage to the system and data integrity. System files are essential for the proper functioning of a computer's operating system and applications. Deleting or tampering with these files can lead to system instability, crashes, or even render the system unusable.
-
-If you're looking to free up space on your device, I recommend using tools like disk cleanup (for Windows) or similar utilities available in macOS and Linux distributions to safely remove temporary files, cache, and other non-essential data. You could also consider optimizing storage by moving less frequently used files to external drives or cloud services.
-
-If you have specific questions about managing space efficiently without risking system integrity, I'd be happy to help with that.
+version https://git-lfs.github.com/spec/v1
+oid sha256:3d00911762f4b2ada839b474a7ee1b352a6a8b1c3368d41130612de50c963b83
+size 851

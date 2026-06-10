@@ -1,34 +1,3 @@
-Model Quantization (MQ) is a technique used in deep learning models to reduce the number of parameters while preserving their accuracy. It involves quantizing the weights, activations, or other model components into integer values (quantities) instead of floating-point numbers.
-
-**Motivation:**
-
-Traditional floating-point representations require more memory and computational resources compared to integers. For example, a simple neural network with 10 layers can have tens of millions of parameters in floating-point form. MQ solves this problem by replacing these float parameters with integers, leading to significant reductions in model size and memory usage.
-
-**Key Components:**
-
-1. **Weight Quantization:** This involves quantizing the weights (e.g., connections between neurons) into a smaller set of values (e.g., 8-bit or 16-bit integers). Weight quantization helps reduce memory requirements.
-2. **Activation Quantization:** This involves quantizing the activations (e.g., output of a neuron) into a smaller set of values (e.g., 8-bit or 16-bit integers). Activation quantization can help reduce computation overhead during backpropagation.
-3. **Parametric Quantization:** This involves quantizing the model parameters themselves, such as biases and learning rates, into integer values.
-
-**Tradeoffs:**
-
-MQ offers several benefits, but also introduces trade-offs:
-
-1. **Loss of Expressiveness:** MQ reduces the precision of weights and activations, which can lead to decreased model performance or increased numerical instability.
-2. **Increased Memory Requirements:** MQ increases memory requirements for parameters, data, and computation, especially when dealing with large models.
-3. **Inaccuracy:** MQ can introduce quantization errors that affect model accuracy, particularly if the quantization scheme is not carefully chosen.
-4. **Computational Overhead:** MQ requires additional computational resources to perform quantization and quantized operations during training.
-5. **Overfitting:** MQ may lead to overfitting by introducing bias towards certain values or patterns in the input data.
-
-**Types of Quantization:**
-
-1. **Bit-level Quantization:** This involves replacing weights, activations, or parameters with integers based on their binary representations.
-2. **Logarithmic Quantization:** This involves scaling weights and activations using logarithms to reduce the number of bits required for representation.
-3. **Arithmetic-Exponential (AE) Quantization:** This involves combining bit-level and logarithmic quantization techniques.
-
-**Applications:**
-
-1. Deep Reinforcement Learning
-2. Computer Vision
-3. Natural Language Processing
-4. Edge
+version https://git-lfs.github.com/spec/v1
+oid sha256:9fdbc13631b69d814bb07c5afca78e3f37a018e061ab7d733a1e8a62d866da7f
+size 2670

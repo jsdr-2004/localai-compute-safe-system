@@ -1,30 +1,3 @@
-Certainly! A cautious disk cleanup investigation involves identifying and safely removing unnecessary files to free up space on your hard drive or SSD while ensuring that important personal data is not deleted by mistake. Here’s a step-by-step guide to help you conduct such an investigation:
-
-### Step 1: Backup Important Data
-Before starting any disk cleanup, ensure that all important personal files are backed up. This includes documents, photos, videos, and other essential files.
-
-### Step 2: Identify the Source of Disk Space Issues
-- **Check File Usage**: Use tools like Windows' built-in Disk Cleanup utility or third-party software to identify which types of files are taking up space.
-- **Monitor Recent Changes**: Check for any recent changes that might have created large files (e.g., temporary files, downloads).
-
-### Step 3: Create a Clean-Up Plan
-Based on the findings from step 2, create a list of files and folders you want to remove. Make sure this list includes only unnecessary items.
-
-### Step 4: Use Disk Cleanup Utility Safely
-- **Open Disk Cleanup**: You can find it in Control Panel (for older Windows versions) or through Settings > Update & Security > Storage > Manage storage.
-- **Select Drives and Types of Files to Remove**: Choose the drive you want to clean up and select types of files that are not critical for your system. For example, you might choose to remove Temporary Internet Files, Recycle Bin contents, System Restore points, or Windows temporary files.
-
-### Step 5: Customize Your Clean-Up Plan
-- **Exclude Personal Folders**: Make sure to exclude any folders containing personal files from being deleted.
-- **Run Disk Cleanup**: Once you have selected the appropriate options, run the Disk Cleanup utility. It will prompt you to confirm each action before proceeding.
-
-### Step 6: Monitor and Verify
-After running the Disk Cleanup, monitor your disk space usage to ensure that it has been reduced as expected. You can use tools like Windows' built-in File History or third-party backup software for further verification.
-
-### Step 7: Final Checks
-- **Check System Files**: Ensure that critical system files are not affected by the cleanup process.
-- **Test Your System**: After cleaning up, test your computer to ensure everything is functioning correctly and no important data has been accidentally deleted.
-
-### Additional Tips:
-- **Regular Maintenance**: Schedule regular disk cleanups as part of a routine maintenance schedule to keep your system running efficiently.
-- **Use Third-party Tools**: Consider using third-party tools like CC
+version https://git-lfs.github.com/spec/v1
+oid sha256:d0af149dd32a67d52c2d6cf73366b650c364fbb150e7ab0aea9b1ae170e989a1
+size 2589

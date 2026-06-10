@@ -1,5 +1,3 @@
- RAM, or Random Access Memory, is like your computer's short-term memory. When you turn on your computer, the operating system and the programs you're currently using are loaded into the RAM so they can be quickly accessed and used by the processor.
-
-Think of it this way: when you're reading a book, you don't have to go back to the library every time you want to read a specific page. Instead, you mark certain pages with a bookmark for quick reference. RAM works similarly, but instead of bookmarks, it stores data that the computer needs quickly and frequently.
-
-The more RAM your computer has, the more data it can store at once, which means it can run multiple programs smoothly without slowing down. When you close a program, the data it was using is removed from the RAM to make room for other programs.
+version https://git-lfs.github.com/spec/v1
+oid sha256:84f63d9bf3b27f364f0a9e051c890748afe2db612c17b8ac5d1b3c96b24c04fd
+size 811

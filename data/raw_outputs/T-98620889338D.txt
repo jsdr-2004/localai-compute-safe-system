@@ -1,11 +1,3 @@
-def reverse_string(s):
-    """
-    Reverses the input string.
-
-    Args:
-        s (str): The input string to be reversed.
-
-    Returns:
-        str: The reversed string.
-    """
-    return s[::-1]
+version https://git-lfs.github.com/spec/v1
+oid sha256:5154648374c7af05c54cf713fbcbf03f63f5934d4320a26505f4e063261eafdb
+size 197

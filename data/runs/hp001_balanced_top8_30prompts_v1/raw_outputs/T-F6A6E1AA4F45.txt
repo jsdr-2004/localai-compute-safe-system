@@ -1,1 +1,3 @@
-RAM, or Random Access Memory, is like a temporary storage area for your computer where it keeps data and instructions that you're actively using at the moment. It's much faster than other types of memory like hard drives or SSDs because it allows quick access to any part of its contents without needing to read through everything sequentially. The more RAM your computer has, the more applications you can run simultaneously before they start slowing down due to lack of resources. When you shut off your computer, all data in RAM is lost unless saved to a storage device like a hard drive or SSD first.
+version https://git-lfs.github.com/spec/v1
+oid sha256:d5779ac0e27eae12272a5ae34bcb944f90837b2953cb0b3028074eaa4f43c918
+size 604

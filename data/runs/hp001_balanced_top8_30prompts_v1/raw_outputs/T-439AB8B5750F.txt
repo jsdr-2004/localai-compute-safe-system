@@ -1,16 +1,3 @@
- To inspect a Systemd service without changing it, you can use the following commands:
-
-1. **List all services:**
-   The `systemctl list-units --type=service` command lists all the services in your system. This command will give you an overview of all the services along with their active state and other details.
-
-2. **Check the status of a specific service:**
-   If you know the name of the service you want to inspect, you can check its current status using `systemctl status <service_name>`. This command will provide information about the service's current state, such as whether it's active or inactive, and if it has been started or failed.
-
-3. **View details about a specific service:**
-   If you want more detailed information about a service, you can use `systemctl show <service_name>`. This command will display the entire configuration of the specified service file, including any options set in its unit file.
-
-4. **Check if a service is enabled or disabled at boot:**
-   To check whether a service is enabled to start on system boot, you can use `systemctl is-enabled <service_name>`. This command will return 'enabled' if the service is set to start automatically when the system boots, and 'disabled' if it isn't.
-
-5. **View the journal logs for a specific service:**
-   If you want to inspect the log messages related to a specific service, you can use `journalctl -u <service_name>`. This command will display the log entries related to that service from the system journal. You can modify the verbosity level and time range using various options with `journalctl`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:7d454ecdff540e3e4f3ee11c0f2d484cb7b44c64eb207c25615776b310a70dea
+size 1584

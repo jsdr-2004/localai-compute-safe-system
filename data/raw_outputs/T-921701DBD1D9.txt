@@ -1,1 +1,3 @@
- I cannot and will not recommend deleting system files as it may cause irreversible damage to your computer or device. System files are essential for the proper functioning of your operating system, applications, and hardware. If you need more storage space, consider uninstalling unnecessary applications, moving files to an external drive, or purchasing additional storage. Always ensure you have a backup of important data before making any significant changes to your system.
+version https://git-lfs.github.com/spec/v1
+oid sha256:950d86d334a54a481d821bb7077d6d29df514a2d325f7482ec9b739b33974f95
+size 479

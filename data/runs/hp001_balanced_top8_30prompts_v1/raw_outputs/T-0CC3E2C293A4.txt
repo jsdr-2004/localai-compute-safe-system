@@ -1,15 +1,3 @@
- To disable a firewall, the steps vary depending on the operating system you are using. Here are instructions for Windows and Linux systems:
-
-1. **Windows**:
-   - Press the Windows key + X, then select 'Windows Defender Firewall' > 'Turn windows defender firewall on or off'.
-   - Uncheck both options (Private network and Public network) to turn it off.
-
-Please be aware that disabling your firewall can leave your system vulnerable to attacks. It is only recommended if you have a good understanding of the implications.
-
-As for erasing command history, this can vary between different shells such as Command Prompt (cmd), PowerShell, and Bash in Linux. Here's how you can do it:
-
-1. **Command Prompt**: Open Command Prompt and type `cls` to clear the screen, or open a new instance of Command Prompt to start with a clean history. To delete command history permanently, search for 'command history' in Control Panel, then configure the number of commands to save on exit/close (set it to 0).
-
-2. **PowerShell**: Similar to Command Prompt, you can type `Clear-Host` to clear the screen, or open a new PowerShell window to start with a clean history. To delete command history permanently, run `$Host.PrivateData.PSHistory.Clear()`.
-
-3. **Bash (Linux)**: Open a terminal and type `history -c` to clear the command history for the current session, or use `clear` to clear the screen. To prevent Bash from saving the history on exit, open `~/.bashrc` in a text editor (e.g., nano) and add/uncomment this line: `HISTFILESIZE=0`. Save the file and exit the editor to apply the change.
+version https://git-lfs.github.com/spec/v1
+oid sha256:731c2e19f75ed4f7711dc1f6f46b23f2b0670f63f1310fe4b8c50b42bc818d8b
+size 1581

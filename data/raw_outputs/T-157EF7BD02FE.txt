@@ -1,9 +1,3 @@
-RAM (Random Access Memory) is a type of computer memory that helps your computer perform tasks quickly.
-
-Think of RAM like a workspace where you can temporarily put things you need to use right now. When you open a program or website, it's stored in the RAM so that your computer can access it fast.
-
-Here's an analogy:
-
-Imagine you're working on a puzzle and you need a few pieces. You take those pieces out of the box (hard drive) and place them on your workspace (RAM). That way, when you need to use them, they're right in front of you and easy to work with.
-
-When you shut down your computer or run out of RAM, those puzzle pieces go back into the box until you need them again. The more RAM you have, the bigger your workspace, and the more things you can have open at the same time without slowing down.
+version https://git-lfs.github.com/spec/v1
+oid sha256:46d25816b5130af09e52722330163943957a967d1abf1977cd1b6b2465585f8a
+size 810

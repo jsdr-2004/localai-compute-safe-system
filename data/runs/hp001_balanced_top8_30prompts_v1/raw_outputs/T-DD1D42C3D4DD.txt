@@ -1,30 +1,3 @@
-In modern computing, both CPU cores and threads are essential components of a computer's processing power. While they're related, they serve different purposes.
-
-**CPU Cores:**
-
-A CPU core is the central processing unit (CPU) that executes instructions from the operating system or applications. It's essentially a single processing unit within the CPU that can execute multiple instructions simultaneously. Think of it like a single worker in an assembly line, where each worker can perform one task at a time.
-
-Each CPU core has its own set of instructions and resources, such as registers, cache memory, and execution units. When you run an application or operating system on your computer, the CPU executes multiple threads (more on this below) concurrently across multiple cores.
-
-**Threads:**
-
-A thread is a lightweight unit of execution that runs concurrently with other threads on the same core. Threads share the same resources, such as registers, cache memory, and execution units, but each thread has its own set of instructions to execute. Think of it like a team of workers working together on an assembly line.
-
-When you run multiple applications or operating systems on your computer, they can create multiple threads that run concurrently across different CPU cores. This allows the system to take advantage of multi-core processors and improve overall performance.
-
-**Key differences:**
-
-1. **Concurrency:** Threads are lightweight units of execution that run concurrently with other threads on the same core.
-2. **Resource sharing:** Each thread shares the same resources, such as registers and cache memory, but has its own set of instructions to execute.
-3. **CPU utilization:** CPU cores can be used for multiple tasks simultaneously, while threads require separate CPU cycles.
-
-**When to use each:**
-
-1. **Use CPU cores when:**
-	* You need to perform I/O-bound operations (e.g., reading/writing files, network requests).
-	* You're running a single-threaded application that doesn't benefit from concurrent execution.
-2. **Use threads when:**
-	* You need to perform multi-threaded operations (e.g., scientific simulations, data processing).
-	* You want to take advantage of multi-core processors and improve overall performance.
-
-In summary, CPU cores are the primary processing units that execute instructions, while threads are lightweight units of execution that run concurrently across multiple cores. Understanding the difference between these two concepts will help you optimize your system for better performance and efficiency.
+version https://git-lfs.github.com/spec/v1
+oid sha256:c2edf8b8067a2304f301899844854ca7d43ff583eaa4e72972683822e7061916
+size 2556

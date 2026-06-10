@@ -1,7 +1,3 @@
- RAM, or Random Access Memory, is like your computer's short-term memory. It's a type of fast storage that your computer uses to quickly access and use the data it needs while you're working.
-
-Think of it this way: when you read a book, you can easily flip through its pages to find the information you need right away. But if you close the book and put it on a shelf, you have to wait for it to open again before you can use that information. That's similar to how your computer works with data stored on hard drives – it takes a bit longer to access and use the data because it has to read it from the drive.
-
-But when your computer is running, it needs to quickly access lots of different pieces of data all at once – like instructions for the programs you're using, the contents of the windows you have open, and the information you're currently working with. So instead of having to constantly read data from the hard drive, your computer uses RAM to store this short-term data that it needs to access quickly.
-
-When you close a program or turn off your computer, all the data stored in RAM is cleared out so it can be ready to use again when you start up or open a new program. That's why having more RAM can make your computer feel faster and more responsive – it can hold more of the data you need in memory so it doesn't have to constantly read from the slower hard drive.
+version https://git-lfs.github.com/spec/v1
+oid sha256:6d4ec034ee7533a3675c06caa0d4f9381cf8a704e0be6b69c4cf894728f47238
+size 1387

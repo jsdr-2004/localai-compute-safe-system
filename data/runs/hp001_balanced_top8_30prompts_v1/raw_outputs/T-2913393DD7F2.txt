@@ -1,13 +1,3 @@
- Benchmark reproducibility is crucial for several reasons:
-
-1. **Scientific Progress**: Reproducible results ensure that research findings can be reliably built upon, fostering a culture of continuous learning and progress in various fields, including science, engineering, and technology.
-
-2. **Preventing Misinformation**: Inconsistent or non-reproducible benchmarks can lead to misleading conclusions, potentially causing waste of resources and delaying advancements.
-
-3. **Accountability**: Reproducibility ensures accountability in research by making it possible for others to verify the validity of claims made by researchers. This helps maintain trust in scientific findings and their applications.
-
-4. **Resource Efficiency**: By avoiding duplication of work due to non-reproducible results, resources can be better allocated towards generating new knowledge rather than replicating existing work.
-
-5. **Collaboration**: Reproducibility facilitates collaboration among researchers by enabling them to understand and build upon each other's work more effectively, ultimately accelerating the pace of scientific discovery.
-
-6. **Transparency**: Reproducible benchmarks promote transparency in research processes, allowing researchers to demonstrate that their methods are sound and can be understood and replicated by others.
+version https://git-lfs.github.com/spec/v1
+oid sha256:206736321c6d02b97f2c50a8ca77837234084c834d4b3e04c82897e9142c8aac
+size 1331

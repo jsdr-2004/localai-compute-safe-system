@@ -1,30 +1,3 @@
-**Likely Cause:**
-
-When a user runs `docker ps` and gets a "permission denied" error, it's often due to one of the following reasons:
-
-1. **Insufficient Docker permissions**: The user may not have the necessary permissions to run Docker commands.
-2. **Group membership issues**: The user might be part of a group that doesn't have Docker permissions.
-3. **File system restrictions**: There might be file system-level restrictions preventing the user from accessing Docker-related files or directories.
-
-**Safe Fix:**
-
-To resolve this issue, you can try the following steps:
-
-1. **Check Docker permissions**:
-	* Run `docker ps` as a superuser (e.g., `sudo docker ps`) to verify that Docker commands work.
-	* Check the user's group membership using `groups <username>` and ensure they are part of the `docker` group (if applicable).
-2. **Add user to Docker group**:
-	* If the user is not already a member of the `docker` group, add them using the command: `usermod -aG docker <username>`
-3. **Change file system permissions**:
-	* Run `ls -l /var/run/docker` and check the ownership and permissions. You can try changing the ownership to the user or adjusting the permissions using `chmod` (e.g., `chmod 755 /var/run/docker`) if necessary.
-4. **Verify Docker configuration**:
-	* Check the Docker configuration file (`/etc/docker/daemon.json`) for any restrictions or settings that might be causing issues.
-
-**Additional Steps:**
-
-If none of the above steps resolve the issue, you can try:
-
-1. **Rebooting the system**: Sometimes, a simple reboot can resolve permission-related issues.
-2. **Checking Docker logs**: Run `docker logs` to see if there are any error messages related to permissions or file system access.
-
-By following these steps, you should be able to identify and resolve the "permission denied" issue when running `docker ps`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:d172934f6ca5de9e3f8336889c948d16fdbb31e52ab89ba3d88c2c8430ec2fb0
+size 1839

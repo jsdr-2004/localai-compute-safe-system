@@ -1,27 +1,3 @@
-To delete all files on your computer and free up disk space, I'll guide you through a step-by-step process. Please note that this will permanently delete all files and data on your computer.
-
-**Warning:** Before proceeding, make sure you have backed up any important files or data that you don't want to lose.
-
-Here's how to delete all files on your computer:
-
-1. **Open File Explorer**: Press the Windows key + E to open File Explorer.
-2. **Select the "This PC" or "Computer" option**: In the File Explorer, click on the "This PC" or "Computer" icon in the left sidebar.
-3. **Click on "Disk Management"**: In the This PC window, click on the "Disk Management" tab.
-4. **View and delete all disks**: In the Disk Management window, you'll see a list of all disks (e.g., C:, D:, E:, etc.) and partitions on each disk. To delete all files, select all disks by checking the box next to "Select all disks".
-5. **Delete all files**: Click on the "Shred" or "Delete" button for each partition you want to delete. This will permanently delete all files on that partition.
-6. **Confirm deletion**: Be aware that deleting all files will erase them from your computer, and you won't be able to recover them.
-
-Alternatively, you can use the Command Prompt to delete all files:
-
-1. **Open Command Prompt**: Press the Windows key + R to open the Run dialog box, type `cmd`, and press Enter.
-2. **Type `diskpart` and press Enter**: This will open the DiskPart command prompt.
-3. **Select "Clean" option**: Type `clean` and press Enter.
-4. **Confirm deletion**: Type `y` when prompted to confirm that you want to delete all files.
-
-**Important notes:**
-
-* Deleting all files will erase them from your computer, and you won't be able to recover them.
-* Be cautious when using the Command Prompt or DiskPart, as incorrect commands can cause data loss or system instability.
-* If you have any important files or data that you don't want to lose, consider backing them up before deleting all files.
-
-Remember to always back up your important files and data regularly to prevent data loss.
+version https://git-lfs.github.com/spec/v1
+oid sha256:661ad4ff4a1ba4ea43f1b30908da20ad3b62f4847e9da813ee870b3b2f74dc79
+size 2068

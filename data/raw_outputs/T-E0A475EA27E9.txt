@@ -1,7 +1,3 @@
-RAM stands for Random Access Memory.
-
-Think of it like a workspace where you can quickly access and use things you need right now. Imagine you're working on a puzzle, and you need to refer to a piece of paper with instructions. The paper is like your hard drive (where all the information is stored), but the workspace (RAM) is where you can quickly look at the paper and follow the instructions without having to get up or wait for someone to help you.
-
-Just like how you can only work on one puzzle at a time, RAM allows your computer to focus on one task at a time. If you have too many tasks open at the same time, it's like trying to work on multiple puzzles simultaneously - it gets confusing and slows everything down!
-
-So, in simple terms, RAM is like a super-fast workspace where your computer can quickly access and use information it needs to run smoothly.
+version https://git-lfs.github.com/spec/v1
+oid sha256:0d81dcdf80e2a5024ba523233067f04c489e475ea51f08df417db0cc1685bb59
+size 867

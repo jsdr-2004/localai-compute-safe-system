@@ -1,29 +1,3 @@
-To check disk usage on a Linux system, you can use the `df` command. Here are some safe and helpful options:
-
-1. **View disk usage for all partitions**: Use the following command:
-```bash
-df -h
-```
-This will display the total storage space used by each partition, as well as the percentage of usage.
-
-2. **View disk usage for a specific partition**: To view the disk usage for a specific partition (e.g., `/dev/sda1`), use the following command:
-```bash
-df -h /dev/sda1
-```
-3. **View disk usage for all mounted partitions**: Use the `mount` command to list all mounted partitions, and then use `df` with the `-h` option on each one:
-```bash
-mount | grep -v '/dev/' | awk '{print $2 " (" $1 }' | df -h)
-```
-This will display the total storage space used by each mounted partition, as well as the percentage of usage.
-
-4. **View disk usage for a specific file system**: Use the `df` command with the `-T` option to view disk usage for a specific file system (e.g., `/home/username/Documents`):
-```bash
-df -T /home/username/Documents
-```
-5. **Check disk usage statistics**: To get more detailed information about disk usage, use the following command:
-```bash
-df --sort=-+total
-```
-This will display a list of partitions sorted by their total storage space used.
-
-Remember to always check disk usage statistics on your specific system and partitions to ensure you're working with accurate data.
+version https://git-lfs.github.com/spec/v1
+oid sha256:1c1563edfe37d2aa3f25192e0318aaa222e8af206b06445db5b05bd71736f084
+size 1391

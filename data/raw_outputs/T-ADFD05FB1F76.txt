@@ -1,31 +1,3 @@
-When a user runs `docker ps` and receives a "Permission Denied" error, it's usually due to one of the following reasons:
-
-1. **Insufficient permissions**: The user running the command doesn't have the necessary privileges to access the Docker daemon or run the `docker ps` command.
-2. **Incorrect Docker credentials**: The user's Docker credentials (e.g., username and password) are not set up correctly, causing authentication issues.
-3. **Docker service not started**: The Docker service might not be running, preventing the container manager from accessing it.
-
-Here are some safe fixes to resolve these issues:
-
-**1. Insufficient permissions**
-
-* Check if the user has the `docker` group membership. If not, add them by running `sudo usermod -aG docker $USER`.
-* Ensure the user's Docker credentials are set up correctly:
-	+ On Linux or macOS: `docker login`
-	+ On Windows: `docker login -u [username] -p[password]`
-
-**2. Incorrect Docker credentials**
-
-* Check if the Docker credentials are correct by running `docker ps` with the `-a` option (all flags) and then checking the output for any error messages.
-* If you're using a password, ensure it's not too long or contains special characters that might cause issues.
-
-**3. Docker service not started**
-
-* Check if the Docker service is running by running `systemd --status` on Linux or macOS, or `services` on Windows.
-* If the service is not running, start it manually using `sudo systemctl start docker` (on Linux) or `docker start` (on Windows).
-
-**Additional steps**
-
-* Make sure you're running the command as a non-root user. You can do this by prefixing your command with `sudo`, like so: `sudo docker ps`.
-* If you're using Docker Compose, ensure it's properly configured and running.
-
-By following these steps, you should be able to resolve the "Permission Denied" error when running `docker ps`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:b96faa81e56b841f4997d69a104a1a38266dff309ab517ea4ebe81257a1ad35d
+size 1861

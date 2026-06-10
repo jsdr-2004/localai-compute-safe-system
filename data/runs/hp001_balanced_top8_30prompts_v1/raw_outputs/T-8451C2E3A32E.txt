@@ -1,5 +1,3 @@
- The command `rm -rf /` is extremely dangerous because it recursively removes (`-r`) all files and directories (`-f`) in the root directory (`/`) of a Unix-like operating system, without asking for confirmation for each file. This means that if you run this command by mistake, it can irreversibly delete all your system files and render the system unusable.
-
-To prevent accidental execution of this command, most systems require superuser (root) privileges to execute it, but even with proper permissions, it is still a risky operation. To avoid unintentional usage, some Linux distributions like Debian have `rm -rf /` disabled by default in the sudoers file.
-
-Additionally, modern version control systems and cloud services often have backup mechanisms that can help recover data if an accidental deletion occurs. However, it is always best to exercise caution and ensure you fully understand the consequences of your actions before executing potentially destructive commands like `rm -rf /`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:ffae3396768d980b11bde305df4bf709f0811f9fbde3078a0a37eb6941c5fc96
+size 995

@@ -1,1 +1,3 @@
-RAM, or Random Access Memory, is like a temporary storage area for your computer where it keeps information that you're actively using at the moment. Think of it as a workspace where programs can quickly store and retrieve data very fast. Unlike hard drives or solid-state drives (HDDs/SSDs), which are slower because they have to physically move parts to access files, RAM allows for instant read/write operations. This makes your computer feel snappy when you're running multiple applications at once. The more RAM a device has, the better it can handle several tasks simultaneously without slowing down.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f5d9bc0e3562496b6442d6a687dac5ed62c353ad146084e7ae409c1362e62828
+size 606

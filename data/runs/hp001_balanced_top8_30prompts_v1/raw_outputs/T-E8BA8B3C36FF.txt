@@ -1,33 +1,3 @@
-When choosing between a 3 billion parameter (3B) model or a 13 billion parameter (13B) model, it's important to consider several factors including computational requirements, available resources, and expected use cases.
-
-### Computational Requirements
-
-#### 3B Model:
-- **Training Time**: A 3B model would require significantly more training time compared to a smaller model. The larger the number of parameters, the more data is needed for effective training.
-- **Inference Speed**: Smaller models generally run faster during inference due to less computation and memory usage.
-
-#### 13B Model:
-- **Training Time**: Training a 13B model would also take longer than a smaller model but not as much as a 3B model. It still requires substantial computational resources.
-- **Inference Speed**: The 13B model will be slower during inference compared to the 3B model, but it might still offer better performance for certain tasks.
-
-### Available Resources
-
-#### 16GB CPU-only Laptop:
-- **Memory Usage**: Both models would require significant memory. A 13B model is likely to consume more memory than a 3B model.
-- **CPU Performance**: The CPU alone will be the bottleneck, and both models will struggle with such limited resources.
-
-### Justification for Choice
-
-Given that you have a 16GB CPU-only laptop, it’s clear that neither of these models would run efficiently. However, if we were to choose between them based on available resources:
-
-- **3B Model**: This model is likely to be more feasible in terms of memory usage and training time compared to the 13B model. It might still require a substantial amount of RAM for inference but could potentially fit within the constraints.
-  
-- **13B Model**: Given the limited CPU power, this model would be even less viable due to its higher computational demands.
-
-### Conclusion
-
-Given the constraints of your laptop (CPU-only with 16GB), it is not advisable to choose either a 3B or 13B model. Both models are likely to exceed the available resources and will struggle significantly in terms of both training time and inference speed. 
-
-Instead, consider looking into smaller models that can run efficiently on CPU-only setups, such as those with fewer parameters (e.g., GPT-2, which is much smaller than 3B or 13B). These models are more likely to be feasible given your hardware constraints.
-
-If you have access to additional resources
+version https://git-lfs.github.com/spec/v1
+oid sha256:47511a9df00ddcf7409c30d70281c533db553719863f15ecf60c240ae641b96b
+size 2385

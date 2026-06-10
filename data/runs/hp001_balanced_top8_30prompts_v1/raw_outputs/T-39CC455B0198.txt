@@ -1,17 +1,3 @@
- To check the system uptime on a Unix-like operating system, you can use the `uptime` command in the terminal.
-
-When you run the `uptime` command, it displays various information about the current system status:
-
-1. The time the system has been running since the last reboot (system uptime) in the format of days, hours, minutes, and seconds. For example, "2 days, 4:30" means the system has been running for two days, four hours, thirty minutes.
-
-2. The current time.
-
-3. Load average values (1-minute, 5-minutes, and 15-minutes) which indicate the average number of processes in the system run queue over the specified intervals. A load average closer to 1 indicates a less loaded system, while a higher value suggests that the system is more heavily loaded.
-
-Here's an example output:
-
-```
-  2:30pm  up 7 days,  4:30,  2 users,  load average: 0.56, 0.61, 0.58
-```
-
-In the above example, the system has been running for 7 days, 4 hours, and 30 minutes since its last reboot. There are currently two users logged in, and the load averages over the past one minute, five minutes, and fifteen minutes are 0.56, 0.61, and 0.58 respectively, which suggests a moderately loaded system.
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e17a5033945ba66637db977c1dcf2dcf1988c027ae3987e3344929011a57967
+size 1181

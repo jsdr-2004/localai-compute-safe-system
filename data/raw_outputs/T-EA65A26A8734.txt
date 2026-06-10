@@ -1,32 +1,3 @@
-**Likely Cause:**
-
-When a user runs `docker ps` and gets a "permission denied" error, it's often due to one of the following reasons:
-
-1. **Insufficient Docker permissions**: The user may not have the necessary permissions to run Docker commands.
-2. **Incorrect group membership**: The user might be part of a group that doesn't have Docker permissions.
-3. **Docker socket access denied**: The user may not have access to the Docker socket, which is required for running Docker commands.
-
-**Safe Fix:**
-
-To resolve this issue, you can try the following steps:
-
-1. **Check Docker permissions**:
-	* Run `docker ps -u $(id -u)` to check if the user has the necessary permissions.
-	* If not, run `sudo docker ps` to see if the command works with elevated privileges.
-2. **Add user to Docker group**:
-	* On Ubuntu/Debian-based systems: `sudo usermod -aG docker $USER`
-	* On Red Hat/CentOS-based systems: `sudo usermod -aG dockeruser $USER`
-3. **Run Docker commands as root**:
-	* Use `sudo` to run Docker commands, like `sudo docker ps`.
-4. **Check Docker socket access**:
-	* Run `docker info` to check if the Docker socket is accessible.
-5. **Verify Docker configuration**:
-	* Check the Docker configuration file (`/etc/docker/daemon.json`) for any restrictions on user permissions.
-
-After trying these steps, try running `docker ps` again to see if the permission issue is resolved.
-
-**Additional Tips:**
-
-* Make sure the user has a valid Linux user account and group membership.
-* If you're using a Docker container manager like Docker Swarm or Kubernetes, ensure that the user has the necessary permissions for those services as well.
-* Consider adding the user to the `docker` group on systems where it's available (e.g., Ubuntu/Debian) to simplify permission management.
+version https://git-lfs.github.com/spec/v1
+oid sha256:44eddbeb0f2ccdc2a9c3007968980609abb8548c6529bba9b2eec66654bc79da
+size 1770

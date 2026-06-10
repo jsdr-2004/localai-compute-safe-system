@@ -1,24 +1,3 @@
-Certainly! Here are some useful and safe Linux commands for checking disk usage:
-
-1. **`df -h`**:
-   This command is used to display filesystem space statistics in human-readable format (e.g., kilobytes, megabytes, gigabytes). The `-h` flag makes it easier to read by showing file system sizes in a more readable format.
-
-2. **`du -sh /path/to/directory`**:
-   Use this command to check the total disk usage of a directory or files within it. Replace `/path/to/directory` with your specific path. The `-s` flag tells `du` to only show one summary for each specified file, and the `-h` flag makes the output more readable.
-
-3. **`ncdu /path/to/directory`**:
-   NCdu (NCurses Disk Usage) is a disk usage analyzer that provides an interactive curses interface with improved statistics over df/du commands. It also has filtering capabilities for larger directories.
-
-4. **`find /path/to/directory -type f -exec du -ch {} \; | sort -h`**:
-   This command searches recursively through the specified directory, identifies files (`-type f`), and then uses `du` to calculate their size in human-readable format (`-c` for total usage of all found files). The output is sorted by file sizes using `-h`.
-
-5. **`lsblk -o SIZE`**:
-   This command lists block device information with the specified columns, including sizes. It can be very useful when you need to check disk partitions or devices.
-
-6. **`parted /dev/sdX print free`** (for SSDs):
-   If you have an SSD and want to know how much space is used and available on it specifically, `parted` commands like this one with `/dev/sdX` being replaced by your actual drive letter or identifier can provide detailed information.
-
-7. **`nfsstat -v`**:
-   This command provides NFS (Network File System) statistics which might be useful if you're dealing with network file systems, though it's more general and not specific to disk usage alone.
-
-Using these commands should help you effectively monitor and manage your disk space on Linux systems.
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bc97dd4bfe440489fb39180995724daaa9dae1b378a5f1237ce5998a6ea65de
+size 1982

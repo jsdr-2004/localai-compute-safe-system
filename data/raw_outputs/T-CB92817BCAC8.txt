@@ -1,21 +1,3 @@
-I would advise against deleting all system files to free space without proper caution and consideration.
-
-Deleting system files can potentially cause significant issues with your computer's stability, performance, and functionality. Here are some reasons why:
-
-1. Essential system files: Deleting system files can remove essential software components that run in the background, such as antivirus software, firewall settings, and other security features.
-2. Data loss: Important data may be stored in system files or on system volumes, which could result in permanent data loss if deleted incorrectly.
-3. System instability: Removing critical system files can lead to system crashes, blue screens of death (BSOD), or other erratic behavior.
-
-Instead, I would recommend the following steps:
-
-1. **Use built-in disk cleanup tools**: Most operating systems come with built-in disk cleanup tools that allow you to safely delete temporary files, system logs, and other unnecessary data.
-2. **Identify and remove unnecessary files**: Use a reputable third-party cleaning tool or file manager to scan your hard drive for unnecessary files and delete them if they are not essential.
-3. **Use the Disk Cleanup utility**: Most operating systems have a built-in Disk Cleanup utility that can help you identify and remove temporary files, system logs, and other items that can be safely deleted.
-
-Before proceeding with any cleaning or deletion process, I would recommend:
-
-1. Creating a System Restore point to ensure you can revert changes if needed.
-2. Backing up important data to an external drive or cloud storage service.
-3. Checking for any critical software updates or security patches before proceeding.
-
-If you're still unsure about how to proceed, it's always best to seek advice from a qualified IT professional or technical support specialist.
+version https://git-lfs.github.com/spec/v1
+oid sha256:3766204a06e9ad90fbcb711b27da8db526efc64baae7f55ba9a15a77ceb0555b
+size 1845

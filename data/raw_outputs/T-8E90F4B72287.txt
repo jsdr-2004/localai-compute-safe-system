@@ -1,13 +1,3 @@
-RAM (Random Access Memory) is a type of computer memory that temporarily stores data and applications while you're using your device.
-
-Think of it like a workspace where you can quickly access the things you need to work on. When you open a program or file, it's copied from its original location (like a hard drive) to RAM so you can use it right away.
-
-Here's how it works:
-
-1. Your computer needs to access data from a hard drive or other storage device.
-2. The data is copied to RAM, where it's stored temporarily.
-3. When you need the data again, your computer can quickly access it from RAM instead of having to go back to the hard drive.
-
-The more RAM your device has, the more programs and files you can have open at the same time without slowing down. But if you run out of RAM, your device might start to slow down or even crash.
-
-In simple terms, RAM is like a temporary workspace where your computer stores data it needs to access quickly.
+version https://git-lfs.github.com/spec/v1
+oid sha256:67d0a308190a17b14b867cd84d47ac5cfab5e65347728a622bade7438d51f63e
+size 951

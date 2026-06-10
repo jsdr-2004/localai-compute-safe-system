@@ -1,11 +1,3 @@
-Benchmark reproducibility matters for several reasons:
-
-1. **Scientific Integrity**: Reproducible benchmarks ensure that results are reliable and trustworthy, which is essential for scientific progress and decision-making.
-2. **Consistency and Comparability**: Reproducible benchmarks enable researchers to compare their results with others, facilitating collaboration, knowledge sharing, and advancing the field as a whole.
-3. **Efficient Resource Allocation**: By verifying the accuracy of benchmark results, researchers can allocate resources more effectively, avoiding unnecessary duplication of effort and minimizing waste.
-4. **Improved Model Development**: Reproducible benchmarks help identify areas for improvement in model development, allowing researchers to refine their methods and produce better results.
-5. **Increased Confidence in Results**: When benchmarks are reproducible, researchers can have confidence in the accuracy of their results, which is essential for making informed decisions and driving progress in various fields.
-6. **Reducing Bias and Error**: Reproducible benchmarks help identify biases and errors in research, allowing for more accurate conclusions and a better understanding of the underlying phenomena.
-7. **Facilitating Policy and Practice**: Reproducible benchmarks provide a foundation for evidence-based policy and practice, enabling informed decision-making and more effective resource allocation.
-
-In summary, benchmark reproducibility is crucial for maintaining scientific integrity, advancing knowledge, and driving progress in various fields by ensuring that results are reliable, trustworthy, and verifiable.
+version https://git-lfs.github.com/spec/v1
+oid sha256:66199d4697e1a3a12bd5a6971b660e8fe0369626037208b85bd99dc59e095305
+size 1659

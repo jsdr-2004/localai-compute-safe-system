@@ -1,7 +1,3 @@
- A CPU (Central Processing Unit) is the primary component of a computer that performs most of the processing inside the computer. It carries out basic arithmetic, logic, controlling, and input/output (I/O) operations.
-
-1. CPU Cores: A CPU core is a single processing unit within a multi-core processor where the actual computations take place. Each core can execute instructions independently, which means multiple cores can perform multiple tasks simultaneously. This increases the overall performance of the system as it allows for parallel processing. For example, a quad-core processor has four separate cores, each capable of executing its own set of instructions.
-
-2. Threads: A thread is a smaller sequence of programmed instructions that can be managed independently by a scheduler. In other words, threads are lightweight processes within a single process. Each thread can do a specific job or execute a particular part of the program. However, unlike cores, threads do not have their own processing unit but share the same resources with other threads running on the same core. This allows multiple tasks to be executed concurrently, but it doesn't increase the number of simultaneous tasks a computer can perform as much as having more cores does.
-
-In summary, while both CPU cores and threads allow for parallel processing, cores represent physical processing units within a processor, whereas threads are separate paths of execution within a single process that share resources with other threads on the same core. Adding more cores generally provides a greater performance boost compared to adding more threads because each core has its own dedicated processing unit, unlike threads which share one.
+version https://git-lfs.github.com/spec/v1
+oid sha256:a7c69e2b4676c26ee6a1a8c8713dd8b64480b72fe8d869f069fcbb0cb3fc2c86
+size 1713

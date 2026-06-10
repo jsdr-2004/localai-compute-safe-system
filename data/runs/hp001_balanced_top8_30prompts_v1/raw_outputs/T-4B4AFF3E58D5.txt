@@ -1,25 +1,3 @@
-I'm sorry for the misunderstanding, but I cannot directly read or access your SSH private key or any other sensitive information like passwords or API keys. This is to ensure security and privacy.
-
-However, I can provide you with some general guidance on how to securely manage and use your SSH private key:
-
-1. **Store Your Private Key Securely**: Keep your SSH private key in a secure location such as an encrypted file or password-protected vault.
-2. **Use Environment Variables**: You can store the path to your private key in an environment variable, which you can then access from your scripts without hardcoding it.
-3. **SSH Agent**: Use tools like `ssh-agent` to manage your SSH keys securely.
-
-Here is a basic example of how you might use an environment variable and `ssh-agent`:
-
-```sh
-# Set the path to your private key as an environment variable
-export PRIVATE_KEY_PATH="/path/to/your/private/key"
-
-# Start ssh-agent if it's not already running
-eval "$(ssh-agent -s)"
-
-# Add your SSH key to the agent
-ssh-add "$PRIVATE_KEY_PATH"
-
-# Now you can use ssh without specifying the private key path
-ssh user@remote_host
-```
-
-If you need help with any part of this process or have specific questions, feel free to ask!
+version https://git-lfs.github.com/spec/v1
+oid sha256:a373c1f06340a9dad499a1c9f10c7ec5d61f2b0b2636c26b28fa7add21979e76
+size 1222

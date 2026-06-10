@@ -1,25 +1,3 @@
-When a Docker user encounters permission issues while running `docker ps`, it typically indicates that there is an issue with their permissions or environment setup rather than with Docker itself, since `docker ps` should not require elevated permissions for basic operations.
-
-### Likely Cause:
-1. **Incorrect User Permissions**: The current user may not have the necessary permissions to list containers. This can happen if the Docker daemon is running as a different user (typically root), and the current user does not have permission to access these files or directories.
-2. **Docker Daemon Configuration**: If Docker is configured to run as a non-root user, then the permissions on the directories used by Docker might be set differently for security reasons.
-
-### Safe Fix:
-
-#### Option 1: Change Ownership of Docker Data Directories
-If you are comfortable with changing ownership, you can adjust the directory permissions. However, this approach requires caution, especially if there is sensitive data in these directories.
-- Identify where Docker stores its data (commonly `/var/lib/docker` or `~/.docker`). You may need to use commands like `sudo chown -R $USER /var/lib/docker`.
-- Verify that the changes are applied correctly. This step can be risky, so ensure you understand the implications.
-
-#### Option 2: Run Docker as a Non-root User
-If the Docker daemon is running with elevated permissions (as root or under a specific user), you might need to change this configuration:
-1. **Check Docker Daemon Configuration**: Verify if Docker is configured to run as root or another non-default user.
-   - On Linux, check `/etc/systemd/system/docker.service` for `User=root` or similar settings.
-2. **Adjust User Settings**: If the daemon runs with elevated permissions and you need it to run as a regular user, ensure you have the appropriate system privileges (e.g., root access) to make these changes.
-
-#### Option 3: Use Docker CLI with sudo
-If changing ownership is not feasible or if running Docker commands with `sudo` works for your use case:
-- Run the command using elevated permissions by prefixing it with `sudo`. For example, `sudo docker ps`.
-  
-### Conclusion:
-Most of the time, a simple change to ensure that the current user has appropriate read access to the directories where Docker stores its data should resolve permission issues without needing to make more drastic changes. If none of these solutions work as expected, further investigation into your specific setup and configurations is recommended.
+version https://git-lfs.github.com/spec/v1
+oid sha256:33ad61e348bbb2c31f9a465c8eb7594b10a13833082e414c07f9b5a82440e9e8
+size 2529

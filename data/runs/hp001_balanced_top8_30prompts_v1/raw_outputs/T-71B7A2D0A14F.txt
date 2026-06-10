@@ -1,33 +1,3 @@
-Here's a comparison of the two configurations:
-
-**Configuration 1: 30 tokens/sec at 8GB RAM**
-
-* Tokens per second (tokens/sec): 30
-* Memory (RAM) size: 8GB
-* Total memory capacity: 8GB
-* Number of threads or processes: Assuming each thread/process is a separate process, the total number of threads/processes would be approximately equal to the number of tokens/sec. Let's assume an average of 10-20 threads/processes per token/sec for simplicity.
-* Estimated total processing power (TPP): 30 tokens/sec x 15 threads/processes = 450 TPB (terabytes per second)
-* Estimated memory bandwidth: Assuming a memory bandwidth of approximately 100 GB/s per 8GB RAM, the estimated memory bandwidth would be around 12.5 GB/s
-* Estimated total storage capacity: 8GB x 12.5 GB/s = 100 GB/s
-
-**Configuration 2: 15 tokens/sec at 6GB RAM**
-
-* Tokens per second (tokens/sec): 15
-* Memory (RAM) size: 6GB
-* Total memory capacity: 6GB
-* Number of threads or processes: Assuming each thread/process is a separate process, the total number of threads/processes would be approximately equal to the number of tokens/sec. Let's assume an average of 5-10 threads/processes per token/sec for simplicity.
-* Estimated total processing power (TPB): 15 tokens/sec x 7.5 threads/processes = 112.5 TPB
-* Estimated memory bandwidth: Assuming a memory bandwidth of approximately 100 GB/s per 6GB RAM, the estimated memory bandwidth would be around 16.67 GB/s
-* Estimated total storage capacity: 6GB x 16.67 GB/s = 100 GB/s
-
-**Comparison**
-
-In terms of processing power (TPB), Configuration 1 has a slight advantage over Configuration 2 due to its higher tokens/sec and estimated TPB values.
-
-However, when it comes to memory bandwidth, Configuration 2 has a significant advantage due to its larger memory capacity. This means that Configuration 2 can handle more data-intensive tasks or applications that require large amounts of memory.
-
-In terms of storage capacity, both configurations have similar capacities, but Configuration 1's estimated total storage capacity is slightly higher due to the lower memory bandwidth.
-
-**Conclusion**
-
-Based on these comparisons, it appears that Configuration 2 (15 tokens/sec at 6GB
+version https://git-lfs.github.com/spec/v1
+oid sha256:31ee4b6ac14057b5f9c8760ce6581f471e000ad0cf7f7fef78afff0a175c3f1a
+size 2188

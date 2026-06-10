@@ -1,15 +1,3 @@
- The error "permission denied" when running `docker ps` can occur due to several reasons:
-
-1. **Incorrect User**: Docker by default runs with root privileges, and if you're not running as root, you might encounter a permission denied error. You can either switch to the root user or use `sudo` to run the command.
-
-2. **Uninitialized Docker**: If Docker is not properly installed or initialized on your system, you might encounter this error. Make sure Docker is correctly installed and running.
-
-3. **Incorrect Group or Permissions**: Sometimes, the docker group and its permissions might not be set up correctly. You can check by running `id -nG $USER` to see which groups you belong to, and then verify if you're a member of the docker group with `usermod -aG docker $USER`.
-
-4. **Incorrect Docker Daemon Configuration**: If your Docker daemon is not configured to listen on a Unix socket instead of a TCP socket, you might face this issue. To check if it's using the Unix socket, run `cat /etc/docker/daemon.json` and ensure it's set up correctly.
-
-5. **Docker Compose**: If you're using Docker Compose and encountering a permission denied error, it might be due to incorrect file permissions or not running the command with the correct user. Make sure your docker-compose.yml file has the correct permissions and run `docker-compose` with `sudo` if necessary.
-
-6. **Non-root Docker Run**: If you're trying to run a container without elevated privileges (i.e., not using `--privileged`) and your user does not have the CAP_NET_ADMIN capability, you might see this error. You can either use `--privileged` or add the CAP_NET_ADMIN capability to your user in the container.
-
-After identifying the issue, apply the appropriate solution to resolve the "permission denied" error when running `docker ps`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f68ee3a0221d14c48407f6ddac2cb1414d75885c06a0ea95d61c8b203f33db78
+size 1803

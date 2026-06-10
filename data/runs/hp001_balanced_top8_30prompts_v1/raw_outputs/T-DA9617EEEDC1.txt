@@ -1,36 +1,3 @@
-Running `sudo apt-get install docker.io` can pose several risks:
-
-1.  **Privilege Escalation**: By running `sudo`, you're elevating your privileges to those of the root user, which has elevated access rights. This increases the attack surface, as a malicious script or package could potentially use this elevated privilege to compromise your system.
-
-2.  **Insecure Package Installation**: The `apt-get install` command doesn't verify the integrity of the package before installation, making it vulnerable to tampering during the download process. A malicious package could be downloaded and installed without being detected, potentially compromising your system's security.
-
-3.  **Unstable or Malicious Docker Version**: If you're not checking for the version number, you might end up installing an unstable or even a malicious version of Docker. Make sure to check the version number before installing.
-
-4.  **Inadequate Configuration**: The default configuration of Docker might not be suitable for your system or environment. This could lead to issues with performance, security, or other aspects of your Docker setup.
-
-5.  **Unnecessary Root Privileges**: Installing Docker as root user is generally discouraged. A more secure approach would be to install it under a non-root user and then configure it to run with elevated privileges when necessary.
-
-6.  **Dependency Conflicts**: When installing packages like `docker.io`, there's always the risk of dependency conflicts. This can lead to issues with other packages that depend on Docker, potentially causing instability or crashes in your system.
-
-To mitigate these risks, consider the following best practices:
-
-1.  Use a non-root user for installation and configuration.
-2.  Verify package integrity using `apt-key` and `apt-cache policy`.
-3.  Check the version number of the package before installation.
-4.  Install Docker under a non-root user (e.g., `docker`) and then configure it to run with elevated privileges when necessary.
-
-Here's an example of how you can install Docker as a non-root user:
-
-```bash
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
-sudo apt-get update && sudo apt-get install -y docker-ce
-```
-
-After installation, create a new user for Docker and switch to that user before running the Docker commands:
-
-```bash
-sudo useradd -m -s /usr/bin/dockerdockeruser
-su - dockeruser
-```
-
-Now you can run Docker with elevated privileges without using `
+version https://git-lfs.github.com/spec/v1
+oid sha256:e2820a20d42df559801dac9969535be5cec49d526fc07419bcf2873f35f097a9
+size 2490

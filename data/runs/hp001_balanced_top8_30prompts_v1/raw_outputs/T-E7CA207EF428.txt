@@ -1,15 +1,3 @@
-To inspect disk usage on a Linux system, you can use the following read-only commands:
-
-1. `df -T` (Disk usage statistics): Displays detailed information about disk usage for each partition.
-2. `du -h` (Disk usage in human-readable format): Shows disk usage in a more readable format, including free space and used space.
-3. `stat -c %fu,p%fs` (Disk usage with file system and percentage of free space): Displays disk usage statistics along with the file system type and percentage of free space.
-
-Example:
-
-To display detailed disk usage statistics using `df -T`, you can use the following command:
-
-```bash
-df -T
-```
-
-This will show you a summary of each partition, including used and free space, as well as the mount point and file system type.
+version https://git-lfs.github.com/spec/v1
+oid sha256:44aee5d453216e5b20b449de6c4e32a42cf9362b5a7e3b128f72402064a9a37c
+size 747

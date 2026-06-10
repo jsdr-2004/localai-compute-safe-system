@@ -1,33 +1,3 @@
-Here's a step-by-step plan for a cautious disk cleanup investigation that doesn't involve deleting personal files:
-
-**Pre-Investigation Steps**
-
-1. **Backup important files**: Before starting the investigation, make sure to backup any important personal files to an external drive or cloud storage service.
-2. **Gather information**: Collect any relevant documentation, such as system logs, error messages, and network activity records.
-3. **Identify potential causes**: Research common disk cleanup issues and potential causes, such as malware, software conflicts, or hardware problems.
-
-**Investigation Steps**
-
-1. **Run a disk usage analysis**: Use built-in tools like Windows Disk Cleanup (Windows) or About This Mac Storage (macOS) to identify which files and folders are taking up the most space on your disk.
-2. **Check for malware**: Run a full scan with an anti-malware program to detect any malicious software that may be causing disk issues.
-3. **Inspect system logs**: Review system logs to see if there have been any errors or warnings related to disk usage or performance.
-4. **Monitor disk activity**: Use tools like Process Monitor (Windows) or Activity Monitor (macOS) to monitor disk activity and identify any suspicious patterns.
-5. **Check for software conflicts**: Look for any software that may be causing disk issues, such as resource-intensive programs or conflicting system services.
-
-**Data Collection**
-
-1. **Take screenshots**: Take screenshots of the disk usage analysis, system logs, and other relevant data to document your findings.
-2. **Save system files**: Save a copy of important system files, such as registry keys or configuration files, in case they need to be restored later.
-3. **Collect network activity records**: Collect any network activity records, such as DNS cache entries or IP address logs.
-
-**Analysis and Reporting**
-
-1. **Analyze data**: Review the collected data to identify potential causes of disk cleanup issues.
-2. **Create a report**: Write a detailed report outlining your findings, including any recommended steps for resolving the issue.
-3. **Recommend solutions**: Provide recommendations for resolving the issue, such as updating software, running disk cleanups, or seeking professional help.
-
-**Post-Investigation Steps**
-
-1. **Restore backed-up files**: Once the investigation is complete and the issue has been resolved, restore your backed-up personal files to their original location.
-2. **Verify system stability**: Verify that the system is stable and functioning properly after the investigation.
-3. **Document findings**: Document your findings and recommendations for future
+version https://git-lfs.github.com/spec/v1
+oid sha256:03bb7f0e0e23edaaa6f88d071fda7e46b3bec64cfad89f7656ccb426885f3c37
+size 2648

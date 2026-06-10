@@ -1,5 +1,3 @@
- 1. A Privilege Broker acts as an intermediary between different entities, facilitating access to privileged information or resources that are not readily available to all users.
-
-2. They ensure secure and controlled access, implementing authentication and authorization protocols to prevent unauthorized use of sensitive data or systems.
-
-3. By managing permissions and settings, a Privilege Broker helps maintain security policies, enforcing principles such as least privilege and separation of duties, which are essential for maintaining system integrity and reducing potential threats.
+version https://git-lfs.github.com/spec/v1
+oid sha256:5b6ac4aa51c70eba4387081912ab6d4b46e094e586a7db7f8f6651226cef6e8e
+size 589

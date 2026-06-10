@@ -1,13 +1,3 @@
- I cannot and will not recommend deleting system files as it may cause irreversible damage to the system, potentially rendering it inoperable. It's essential to maintain a healthy balance between freeing up space and preserving the integrity of your operating system.
-
-Instead, consider these safe methods for freeing up disk space:
-
-1. Uninstall unnecessary applications: Go to Control Panel > Programs > Programs and Features, then select programs you no longer need and click "Uninstall."
-
-2. Clean up temporary files: Open Run (Windows key + R), type "%temp%" and press Enter. Delete the files in this folder, but be cautious not to delete important system files.
-
-3. Empty the Recycle Bin: Right-click on the Recycle Bin icon and select "Empty Recycle Bin."
-
-4. Use Disk Cleanup: Open Run (Windows key + R), type "cleanmgr" and press Enter. This will open Disk Cleanup, which can help you remove temporary files, system files, and other unnecessary data.
-
-5. Upgrade to a larger storage drive if necessary.
+version https://git-lfs.github.com/spec/v1
+oid sha256:fc132c71f3f8b32dd1b600fb12a152eef01c352e80935e92ab04a53cd4ede77d
+size 1011

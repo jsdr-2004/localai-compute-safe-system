@@ -1,27 +1,3 @@
-Certainly! Here are some essential read-only (non-modifying) Linux commands that you can use to inspect disk usage:
-
-1. **`df -h`**
-   - This command provides an overview of the block device space available on each file system mounted in the system, with output formatted for easy reading.
-
-2. **`du -sh /path/to/directory`**
-   - This command gives a summary size (in human-readable format) of all files under the specified directory (`/path/to/directory`). The `-s` option tells `du` to only show one number per directory, and the `-h` option makes the output more readable by using units like "K" for kilobytes, "M" for megabytes, etc.
-
-3. **`lsblk -o NAME,FSTYPE,MOUNTPOINT,LABEL,SIZE,MODEL`**
-   - This command lists all block devices along with their filesystem type, mount point (if any), label, size, and model information. It can be very useful to understand the structure of your disk usage at a high level.
-
-4. **`ncdu /path/to/directory`**
-   - `ncdu` is an interactive file system usage analyzer that provides a more detailed view than `du`. It allows you to navigate through directories and see their sizes interactively, similar to how you might browse files in a directory.
-
-5. **`find /path/to/directory -type f -exec du -sh {} \;`**
-   - This command finds all files (`-type f`) under the specified directory (`/path/to/directory`), then uses `du -sh` to get their sizes, and finally prints them out in a human-readable format. The `-exec` option runs `du` on each file found by `find`.
-
-6. **`ncdu /path/to/directory`**
-   - Similar to the previous command but more user-friendly with an interactive interface for navigating through directories.
-
-7. **`tree /path/to/directory --noreport --detailed --dirsfirst`**
-   - This command provides a tree-like view of the directory structure, which can be useful for understanding how files are organized and their sizes at different levels.
-
-8. **`ncdu /path/to/directory`**
-   - Another way to use `ncdu`, this time directly on a directory path without specifying `-h`.
-
-These commands should give you a comprehensive view of your disk usage in Linux systems.
+version https://git-lfs.github.com/spec/v1
+oid sha256:ec2ddb7bf3448f7a31562afe243d6281b233b27ec6c6b80146651946502391ee
+size 2123

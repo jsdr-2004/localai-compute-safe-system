@@ -1,27 +1,3 @@
-Certainly! Here are some safe and commonly used Linux commands to check disk usage:
-
-1. **`df -h`**:
-   This command provides an overview of the available disk space in your system, showing file systems with their total size, used space, free space, and percentage of used space.
-
-2. **`du -sh /path/to/directory`**:
-   Use this command to check the disk usage for a specific directory or file. The `-s` option tells `du` to summarize by only displaying one number per directory/file, and the `-h` option makes the output more human-readable (using units like KB, MB, GB).
-
-3. **`ncdu /path/to/directory`**:
-   NCdu is a disk usage analyzer that provides an interactive interface for navigating through directories and files in a tree structure. It also shows you how much space each file or directory uses.
-
-4. **`lsblk`**:
-   This command lists all the block devices (disks, partitions, etc.) available on your system. You can use it to see which disks are mounted and their sizes.
-
-5. **`parted -l`**:
-   The `parted` tool provides detailed information about disk geometry and partition tables. It's useful for understanding how your disk is divided into partitions.
-
-6. **`fdisk -l`**:
-   This command lists all the disks and partitions on a system, providing details such as size, type (e.g., primary, extended), and label.
-
-7. **`du --max-depth=1 /path/to/directory | sort -hr`**:
-   Use this to get an overview of the largest files or directories in a given directory. The `--max-depth=1` option limits the output to one level deep (i.e., only top-level directories and files), and sorting (`-hr`) by size in reverse order helps you see which are the biggest.
-
-8. **`du --exclude=/path/to/exclude/directory /path/to/directory | sort -hr`**:
-   This command is useful if you want to exclude a specific directory from your disk usage analysis, helping you focus on other directories or files.
-
-These commands should help you manage and understand the disk space usage effectively.
+version https://git-lfs.github.com/spec/v1
+oid sha256:2f7a89af48417c7c31b24353c9da4a1a9f715a676948a958f2ebfd412ce0f6f0
+size 1985

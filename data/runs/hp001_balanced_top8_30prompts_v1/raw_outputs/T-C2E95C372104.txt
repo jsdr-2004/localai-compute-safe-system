@@ -1,20 +1,3 @@
-You can use the following commands to verify if Docker is installed on your system:
-
-**For Linux systems:**
-
-1. Run the command `docker --version` in your terminal. If Docker is installed, you should see a version number.
-2. Run the command `docker run -it ubuntu /bin/bash`. This will start an Ubuntu container and open a bash shell inside it.
-
-**For Windows systems:**
-
-1. Open the Command Prompt or PowerShell as administrator.
-2. Run the command `docker --version` in the Command Prompt or PowerShell. If Docker is installed, you should see a version number.
-3. Run the command `docker run -it mcr.microsoft.com/windows/servercore:ltsc2019`. This will start a Windows Server Core container and open a command prompt inside it.
-
-**For macOS systems (with Docker Desktop):**
-
-1. Open the Terminal app.
-2. Run the command `docker --version` in the Terminal. If Docker is installed, you should see a version number.
-3. Run the command `docker run -it alpine /bin/sh`. This will start an Alpine Linux container and open a shell inside it.
-
-If none of these commands work, it's likely that Docker is not installed on your system. You can download and install Docker from the official Docker website: https://www.docker.com/get-started
+version https://git-lfs.github.com/spec/v1
+oid sha256:826386f4f8a4c6d157e876a3f4a44ddd9808c9a706d57badd7654681e730d6e0
+size 1232

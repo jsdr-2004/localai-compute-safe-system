@@ -1,22 +1,3 @@
-To check disk usage on a Linux system, you can use the following safe and effective commands:
-
-1. **`df -h`**: This command displays the disk usage information for all partitions on your system.
-2. **`du -h`**: This command calculates the disk usage in human-readable format (e.g., KB, MB, GB).
-3. **`free -k`**: This command displays the current memory and disk usage in kilobytes and bytes, respectively.
-
-Here are some example use cases:
-
-* To check the overall disk usage, run `df -h`. You'll see a summary of all partitions on your system.
-* To get a detailed breakdown of disk usage for individual partitions, run `du -h /path/to/your/partition`.
-* To free up space quickly by deleting unnecessary files and directories, use `rm -rf` or `sudo rm -rf` (be cautious when using the latter).
-
-Additionally, you can use the following commands to check specific types of disk usage:
-
-* **`sync`**: This command synchronizes data on disk devices. It's useful before making significant changes to your system.
-* **`fsck`**: This command checks and repairs file systems on mounted filesystems. Be cautious when using this command, as it may reveal corrupted files.
-
-Here are some example use cases:
-
-* To check if a specific device is mounted, run `mount | grep <device_name>` (e.g., `/dev/sdb1`).
-* To verify if a file system is properly mounted and accessible, run `df -h /mnt/your_mount_point`.
-* To free up space on an external drive or partition, use `dd if=/dev/sda1 of=/path/to/free_space bs=4M` (e.g., to free up 1 GB of space).
+version https://git-lfs.github.com/spec/v1
+oid sha256:0fa91fa2826faf56812d39d06587d171cb19f86c125d614d8de03a6456b24d78
+size 1533

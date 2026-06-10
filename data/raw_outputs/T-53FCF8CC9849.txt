@@ -1,5 +1,3 @@
-RAM, which stands for Random Access Memory, is a type of computer memory that can be read and written to at any time. Think of it as the temporary workspace where your computer stores information while running programs or applications.
-
-When you start using a program on your computer (like opening a word document), the data from that program needs to be temporarily stored in RAM so your processor can work with it quickly. Once you close that program, the data is removed from RAM and either saved back to your hard drive (or other storage) or deleted.
-
-Because of this, RAM plays an important role in how fast a computer runs certain tasks and processes information. The more RAM your computer has, generally speaking, the smoother and faster it can perform multiple tasks at once without slowing down due to lack of temporary storage space for data.
+version https://git-lfs.github.com/spec/v1
+oid sha256:77827f8a93c27a2f938f806edd0904aa94bab288b8d1d1db3092c9b8f0248fc6
+size 854

@@ -2,6 +2,16 @@
 
 Python 3.11+ research tooling for compute-aware local LLM benchmarking and a safety-gated Linux assistant. The model can propose commands, but only the deterministic privilege broker can approve, block, back up, log, or execute them.
 
+## Current Status
+
+Version v0.3 contains two completed HP-001 MacBook Air M4 16GB experiments:
+
+- Full configuration sweep: 480 successes, 0 failures.
+- Balanced top-eight 30-prompt run: 720 successes, 0 failures.
+- Total HP-001 measurements: 1,200 successes, 0 failures.
+
+The balanced phase preserves two configurations from each of four model families for research-valid comparison while human quality scoring remains pending. HP-002 and HP-003 cross-hardware validation are the next phases.
+
 ## Setup
 
 ```bash
@@ -40,6 +50,13 @@ python -m localai_system report markdown --results data/results/benchmark_result
 
 Future benchmark runs create self-contained `data/runs/<run_id>/` directories containing results, hardware/config/prompt snapshots, environment metadata, and optional raw outputs. Legacy output paths remain supported.
 
+The completed v0.3 balanced phase can be inspected without rerunning it:
+
+```bash
+python -m localai_system report graphs --results data/runs/hp001_balanced_top8_30prompts_v1/benchmark_results.csv --output-dir reports/graphs/hp001_balanced_top8_30prompts
+python -m localai_system recommend --results data/runs/hp001_balanced_top8_30prompts_v1/benchmark_results.csv --hardware data/hardware_profiles/HP-001.json --output reports/hp001_balanced_top8_30prompt_recommendations.md
+```
+
 ## Safe Broker And Assistant
 
 ```bash
@@ -69,3 +86,7 @@ The assistant defaults to no-execute mode. `--execute` is explicit and does not 
 - [Next-phase plan](docs/09_usage/next_phase_top8_30prompt_plan.md)
 - [v0.2 audit](docs/09_usage/v0_2_audit_report.md)
 - [Release notes](RELEASE_NOTES_v0.2.md)
+
+## Citation And License
+
+Citation metadata is provided in [CITATION.cff](CITATION.cff). A project license has not yet been selected; do not assume permission beyond applicable law until a license is added.

@@ -1,21 +1,3 @@
- The error "permission denied" when running `docker ps` usually indicates that the Docker daemon is running but the user does not have sufficient permissions to interact with it. Here are a few steps to troubleshoot and resolve this issue:
-
-1. Check if Docker is installed correctly by verifying its version using the command `docker --version`. If it's not installed, you can install Docker on your system following the official documentation for your specific operating system.
-
-2. Ensure that the Docker daemon is running. You can check this by executing the command `systemctl status docker` (for Linux systems) or `docker info` (for macOS and Windows). If the daemon is not running, you can start it using the command `sudo systemctl start docker` (Linux) or `docker-machine start default` (macOS/Windows).
-
-3. By default, Docker runs as a root user, but regular users interact with it through the Unix group `docker`. If you are not part of this group, you will encounter permission issues. To solve this problem, add your current user to the `docker` group by executing the following command:
-
-   ```
-   sudo usermod -aG docker $USER
-   ```
-
-   After running this command, log out and log back in so that the changes take effect. Alternatively, you can run the command with a `sudo` prefix to execute it without logging out:
-
-   ```
-   sudo usermod -aG docker $USER && sudo groupadd --force docker && newgrp docker
-   ```
-
-4. After adding your user to the `docker` group, you should be able to run Docker commands without using `sudo`. Try running `docker ps` again to see if the issue is resolved.
-
-5. If you still encounter permission issues, it's possible that your system has additional security measures in place (such as AppArmor or SELinux) that are preventing Docker from functioning properly. In such cases, you may need to configure these security tools to allow Docker access. Consult the documentation for your specific operating system for more information on how to do this.
+version https://git-lfs.github.com/spec/v1
+oid sha256:930cbe7a16904ba2d751f1a13052b8e66d8f82b175f0b491902695f591025d0b
+size 1995

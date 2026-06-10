@@ -1,33 +1,3 @@
-To verify if Docker is installed on your system, you can follow these steps:
-
-**Method 1: Check the Command Line**
-
-1. Open a terminal or command prompt.
-2. Type `docker --version` and press Enter.
-
-If Docker is installed on your system, you should see a version number displayed in the terminal. For example:
-```
-Docker Client version: 22.05.0
-```
-
-**Method 2: Check the System Configuration**
-
-1. Open your system's settings or control panel.
-2. Look for the "System" or "System Preferences" section.
-3. Check if Docker is listed as a installed service. If it's not, you might need to enable it.
-
-For Windows:
-
-* Right-click on "Computer" (or "This PC") and select "Properties".
-* Click on "Advanced system settings" on the left side.
-* Click on "System" in the right panel.
-* Look for the "Service status" section. If Docker is not listed, you might need to enable it.
-
-For macOS or Linux:
-
-* Open your System Preferences app (Applications/Utilities/Synergy).
-* Select "Dock" from the sidebar.
-* Click on the Dock icon to view a list of installed applications.
-* Look for Docker in this list. If it's not there, you might need to install it using your package manager.
-
-If none of these methods confirm that Docker is installed, you can try reinstalling it or seeking further assistance from Docker's official documentation or support resources.
+version https://git-lfs.github.com/spec/v1
+oid sha256:16195819e6ee0b6cf9acdc84510cdda41d292bb3371eff935518de31cf6ec672
+size 1348

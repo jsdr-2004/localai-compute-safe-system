@@ -1,1 +1,3 @@
-RAM, or Random Access Memory, is like the temporary workspace for your computer's processor. When you run programs or open applications, data and instructions are stored in RAM so that the CPU can quickly access them. The more RAM your computer has, the more tasks it can handle simultaneously without slowing down. Unlike hard drives or solid-state drives (HDD/SSD), which have slower read/write speeds, RAM operates much faster, allowing for smoother performance during multitasking and gaming.
+version https://git-lfs.github.com/spec/v1
+oid sha256:8ce182855253f2e1aa80060a199137ce5a2999caf3f24adcd37d4efc538ceb29
+size 496

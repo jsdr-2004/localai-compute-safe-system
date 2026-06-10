@@ -1,21 +1,3 @@
- Model quantization is a technique used to reduce the computational complexity and storage requirements of deep learning models, particularly convolutional neural networks (CNNs), by reducing the precision of the numbers used in the computation from floating-point values to lower-precision integer or fixed-point formats.
-
-There are several types of quantization methods:
-
-1. Post-training quantization: This method performs quantization after the model has been trained on a high-precision dataset, allowing for optimal performance on specific hardware while retaining the accuracy achieved during training. However, post-training quantization may result in some loss of accuracy compared to high-precision models.
-
-2. Quantization aware training (QAT): This method involves modifying the training process itself to be aware of the eventual quantization of weights and activations. QAT aims to minimize the accuracy loss during quantization, resulting in better performance than post-training quantization while still reducing computational complexity and storage requirements.
-
-3. Hybrid quantization: This method combines both post-training quantization and quantization aware training to achieve a balance between computational efficiency, accuracy, and training time.
-
-The main tradeoffs associated with model quantization are as follows:
-
-1. Accuracy vs. computation efficiency: Lower precision quantization may lead to some loss of accuracy compared to high-precision models. However, the tradeoff is a significant reduction in computational complexity and storage requirements, making it possible to deploy deep learning models on resource-constrained devices like mobile phones and edge devices.
-
-2. Training time vs. inference speed: Quantization aware training may require additional training time compared to high-precision training, but it can result in faster inference speeds during deployment due to the reduced computational complexity.
-
-3. Model size vs. memory usage: Quantized models take up less storage space than their high-precision counterparts, but this reduction comes at the cost of increased memory usage during both training and inference since lower precision numbers require more memory to represent.
-
-4. Customization vs. generalization: Quantization can be optimized for specific hardware architectures, leading to improved performance on those devices. However, such optimization may result in reduced generalizability across different hardware platforms.
-
-Overall, model quantization is an essential technique for deploying deep learning models on resource-constrained devices while achieving a balance between accuracy,
+version https://git-lfs.github.com/spec/v1
+oid sha256:004c9ae09acd74593887373d2a9253c5d65e0fa14a27ebcab40883cb1782d4b7
+size 2657

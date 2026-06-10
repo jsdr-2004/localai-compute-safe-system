@@ -1,29 +1,3 @@
-When running `docker ps`, if you encounter a "permission denied" error, it typically indicates that Docker is not able to access or interact with your container's process due to insufficient permissions. This can happen for several reasons, such as incorrect configuration of Docker settings, issues with the user who is executing the command, or problems related to SELinux/AppArmor (on Linux systems) if these security modules are enabled.
-
-Here’s a likely cause and a safe fix:
-
-### Likely Cause:
-The most common reason for encountering a "permission denied" error when trying to list running containers (`docker ps`) is that your user account does not have the necessary permissions or the Docker daemon might be misconfigured. For example, if you've run `sudo service docker restart` or set up Docker as a non-root user without proper configuration, this can lead to permission issues.
-
-### Safe Fix:
-The following steps should help resolve the issue:
-
-1. **Ensure Docker is Running**:
-   - Make sure that the Docker daemon is running. You can start it with `sudo systemctl start docker` (for systemd-based systems) or `sudo service docker start` (for others).
-   
-2. **Run as a Non-Superuser (Optional)**:
-   - If you're not using root privileges to run your commands, ensure that Docker's configuration allows non-root users to interact with the daemon. This can usually be done by setting appropriate permissions in the `/etc/docker/daemon.json` file or ensuring that your user is part of the `docker` group.
-   
-3. **Verify SELinux/AppArmor (if applicable)**:
-   - If you are using a Linux system and SELinux or AppArmor, ensure they are not blocking Docker's access. You might need to adjust their policies. For example, if SELinux is enabled, you can temporarily disable it with `sudo setenforce 0` to see if the issue persists.
-   
-4. **Check Permissions**:
-   - Verify that your user account has permission to interact with Docker containers by checking the group memberships and permissions in `/etc/passwd` and `/etc/group`.
-
-5. **Restart Docker Service**:
-   - Sometimes, simply restarting the Docker service can resolve any configuration issues: `sudo systemctl restart docker` or `sudo service docker restart`.
-   
-6. **Check Logs**:
-   - If none of the above steps work, check Docker logs for more detailed error messages that might provide additional clues about what's going wrong.
-
-By following these steps, you should be able to diagnose and resolve the "permission denied" issue when trying to list running containers with `docker ps`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:bca96697c58f9b0fbc6053f942dd7c8676b3732138bc02c523bc559f089b4826
+size 2561

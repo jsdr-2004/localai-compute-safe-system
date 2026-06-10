@@ -1,16 +1,3 @@
- To verify if Docker is installed on your system, you can use one of the following methods:
-
-1. Using the command line (on Unix-based systems like Linux or macOS):
-   Open a terminal and type:
-   ```
-   docker --version
-   ```
-   If Docker is installed correctly, it should return its version number.
-
-2. On Windows, open PowerShell as Administrator and run:
-   ```
-   docker --version
-   ```
-   Again, if everything's in order, you should see the Docker version output.
-
-3. If Docker Desktop is installed on a macOS or Windows system, you can also check its status by looking at the Docker icon in your system tray or taskbar. A green icon means it's running, while a white one means it's not currently active.
+version https://git-lfs.github.com/spec/v1
+oid sha256:a57fbb62d86e4ff09a3ba5dd08949f1d179ead40cee15812cea3d2b23cc02171
+size 711

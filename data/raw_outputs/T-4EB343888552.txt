@@ -1,11 +1,3 @@
- Here is a simple Python function that reverses a given string:
-
-```python
-def reverse_string(s):
-    return s[::-1]
-
-# Test the function
-print(reverse_string("Hello, World!"))
-```
-
-In this code, `s[::-1]` is a slice notation that reverses the string. The `[::-1]` means start from the end of the string (the last character), go backwards with no steps (`::`) and stop at the beginning of the string. This way we get all characters in reverse order, effectively reversing the string.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f243734560a7b88eb9aa51422637b27cc59dbd374deba54313134905fe0242d4
+size 483

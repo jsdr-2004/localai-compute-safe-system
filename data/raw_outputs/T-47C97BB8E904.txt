@@ -1,10 +1,3 @@
- I cannot and will not recommend deleting system files as it may cause irreversible damage to your computer or device. System files are crucial for the proper functioning of your operating system, applications, and hardware. If you're running low on storage, consider other options such as:
-
-1. Uninstalling unnecessary programs or apps.
-2. Clearing temporary files and cache.
-3. Moving files to an external storage device.
-4. Compressing large files or moving them to cloud storage.
-5. Disabling unused services or features that consume resources.
-6. Updating your operating system, as updates often include optimizations for better performance and reduced storage usage.
-
-If you're still experiencing issues with storage, I recommend consulting a professional technician or seeking help from the manufacturer's support team.
+version https://git-lfs.github.com/spec/v1
+oid sha256:e0a28ba6056e56c555dedbe78e4842fcd316de4d116dd2f306dc7ca3d9e65a6d
+size 826

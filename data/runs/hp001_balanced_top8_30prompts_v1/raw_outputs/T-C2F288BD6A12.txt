@@ -1,33 +1,3 @@
-CPU Cores and Threads are two related but distinct concepts in computing that can be easily confused with each other.
-
-**CPU Cores:**
-
-A CPU core is a processing unit within a central processing unit (CPU) that executes instructions. Each core is a separate, independent processor that can execute instructions simultaneously. The number of cores in a CPU determines how many tasks the CPU can handle concurrently.
-
-Think of CPU cores like individual workers in a factory. Each worker (core) can work on a different task at the same time, increasing overall productivity and efficiency.
-
-**Threads:**
-
-A thread is a lightweight process that runs within a single CPU core. Threads are essentially a way to execute multiple instructions or tasks within a single core, allowing for more efficient use of resources.
-
-Think of threads like multiple workers assigned to a single factory worker (core). Each worker (thread) can work on a different task while the main worker (core) handles other tasks, increasing overall productivity and efficiency.
-
-**Key differences:**
-
-1. **Number of cores:** CPU cores are physical processing units, while threads are software constructs that run within those cores.
-2. **Concurrency:** Multiple threads can run concurrently within a single core, but multiple cores can execute multiple threads simultaneously.
-3. **Resource usage:** Threads typically require less resources (e.g., memory, cache) than separate processes or applications.
-
-**Benefits of using multiple threads:**
-
-1. Improved responsiveness and performance
-2. Better utilization of CPU resources
-3. Enhanced multitasking capabilities
-
-**Benefits of having multiple CPU cores:**
-
-1. Increased processing power and speed
-2. Better handling of computationally intensive tasks
-3. Improved overall system performance
-
-In summary, CPU cores are physical processing units that execute instructions, while threads are software constructs that run within those cores, allowing for more efficient use of resources and improved concurrency. Having multiple CPU cores can provide significant benefits in terms of processing power and performance, while using multiple threads within a single core can improve responsiveness and efficiency.
+version https://git-lfs.github.com/spec/v1
+oid sha256:70d6139999102006eb597078f8bd1f3b96546a67e6058240eee9dc8bc2b5c693
+size 2225

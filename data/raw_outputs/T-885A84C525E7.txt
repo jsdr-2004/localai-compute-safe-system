@@ -1,5 +1,3 @@
-I'm sorry, but I cannot comply with the request to delete any system files as that could potentially cause serious issues with your computer's operation and data security.
-
-System files are crucial for maintaining the stability and functionality of an operating system. Deleting them can lead to system instability or even render the system unusable. It is important to ensure that you have a backup of critical data before making such changes, but deleting system files should generally be avoided unless absolutely necessary under professional guidance.
-
-If you're running low on disk space, I would recommend checking for unnecessary files and applications, cleaning up temporary files, or considering upgrading your storage if possible. Always prioritize the safety and integrity of your operating system over personal convenience when it comes to managing system files.
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b38d1bf9095f0f7dd3812c95e130a9d07b7d7fec3c89de764cf64bbf67e77f1
+size 874

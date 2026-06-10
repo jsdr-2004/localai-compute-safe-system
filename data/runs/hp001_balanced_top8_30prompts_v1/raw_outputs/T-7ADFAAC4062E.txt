@@ -1,32 +1,3 @@
- The error "permission denied" when running `docker ps` often occurs due to improper Docker setup, user permissions, or misconfigured environment variables. Here are some steps to help diagnose and resolve the issue:
-
-1. Check Docker is installed correctly:
-   Run `docker -v` in your terminal to verify that Docker is properly installed and its version is displayed. If it's not installed, follow the installation guide for your operating system at https://docs.docker.com/get-docker/.
-
-2. Verify that you have sufficient permissions:
-   Docker commands should be executed by a user that belongs to the `docker` group. To check if your current user is part of the docker group, run:
-   ```
-   groups | grep docker
-   ```
-   If not, add the current user to the docker group using the following command:
-   ```
-   sudo usermod -aG docker $USER
-   ```
-   After that, log out and log back in so that the new group membership is applied.
-
-3. Check if Docker daemon runs with a different user or unix socket permissions:
-   In some cases, the Docker daemon might be configured to run as a non-root user or with restricted unix socket permissions. To check who the daemon is running as and its unix socket file location, run:
-   ```
-   systemctl status docker
-   ```
-   If necessary, adjust the Unix socket file permissions and owner/group settings according to Docker documentation for your operating system.
-
-4. Ensure that environment variables are set correctly:
-   Sometimes, the error can be caused by missing or improperly set environment variables like `DOCKER_HOST` or `DOCKER_CERT_PATH`. Check if these variables are set correctly and re-export them if needed:
-   ```
-   export DOCKER_HOST=tcp://localhost:2375
-   export DOCKER_TLS_VERIFY=1
-   export DOCKER_TLSCERT=/etc/docker/certs.d/localhost:2375/ca.crt
-   export DOCKER_TLSKEY=/etc/docker/certs.d/localhost:2375/key.pem
-   ```
-   (
+version https://git-lfs.github.com/spec/v1
+oid sha256:3f696eb06e0b6cbb8306579af323fae78b277a8ea6a2e1692c741045fbebab07
+size 1890

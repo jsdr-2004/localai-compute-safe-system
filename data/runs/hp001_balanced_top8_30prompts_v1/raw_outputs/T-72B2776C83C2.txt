@@ -1,7 +1,3 @@
- 1. Random Access Memory (RAM) is a type of computer memory that temporarily stores data and instructions which the CPU (Central Processing Unit) can quickly access while the computer is running.
-
-2. When you turn on your computer, the operating system loads into RAM for faster processing, making your computer respond quickly to your actions like opening applications or browsing the web.
-
-3. Unlike permanent storage devices like hard drives or SSDs (Solid State Drives), information in RAM is volatile, meaning it gets erased once you turn off your computer or restart it.
-
-4. The size of a computer's RAM affects its performance; larger amounts of RAM allow for more data to be processed simultaneously, making multitasking and running resource-intensive applications smoother.
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f174804aa7f0c9897478389ed8b88cfdb295613c48bf29da4b95379510e204a
+size 782

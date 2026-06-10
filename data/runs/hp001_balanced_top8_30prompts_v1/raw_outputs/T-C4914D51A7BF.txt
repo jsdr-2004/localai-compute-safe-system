@@ -1,33 +1,3 @@
-To check system uptime, you can use various commands depending on your operating system. Here are some common methods:
-
-**For Linux and macOS:**
-
-1. Open a terminal.
-2. Type `uptime` and press Enter.
-
-This command will display the system's uptime in hours, minutes, and seconds, as well as the load average of the current time.
-
-Example output:
-```
- 11:34:12 up 4 days, 22:51,  0.00 users,  load average: 0.02, 1 min, 15 s
-```
-
-This means that the system has been running for approximately 4 days and 22 hours.
-
-**For Windows:**
-
-1. Press the Windows key + R to open the Run dialog box.
-2. Type `tasklist` and press Enter.
-
-In the Task Manager, click on the "Performance" tab, then click on the "Resource Usage" button in the bottom right corner of the window. This will display the system's uptime in hours, minutes, and seconds.
-
-Example output:
-```
-System Up Time        : 4 days, 22 hours
-```
-
-**For Other Operating Systems:**
-
-If you're using a different operating system, such as BSD or Solaris, the command to check system uptime may be slightly different. You can try searching online for specific commands or using the built-in `lastboot` command.
-
-In general, system uptime refers to the amount of time since the last system reboot. It's an important metric for monitoring system health and performance over time.
+version https://git-lfs.github.com/spec/v1
+oid sha256:8e69ba0bc41f9bb06a5f1efebd45a3f365c0f4568b95ca227ac621d41376b4e8
+size 1323

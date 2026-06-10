@@ -1,7 +1,3 @@
-Here are three bullets summarizing the role of a privilege broker:
-
-• **Mediation and negotiation**: Privilege brokers act as intermediaries between individuals or organizations with differing interests, facilitating negotiations to resolve conflicts or disputes related to access to information, resources, or opportunities.
-
-• **Identifying and addressing power imbalances**: By understanding the underlying dynamics of privilege and power, privilege brokers help identify areas where unequal relationships may be influencing outcomes. They then work to address these imbalances through mediation, negotiation, or other means.
-
-• **Promoting inclusive decision-making**: Privilege brokers aim to ensure that all parties involved in a dispute or conflict have an equal opportunity to participate and contribute to the decision-making process. This helps to promote more inclusive and equitable outcomes that respect the rights and interests of all individuals and groups.
+version https://git-lfs.github.com/spec/v1
+oid sha256:5ee6aa2fc8440978b99c6a4ac644c2ecfc70ffc0eb9d188d3db12cb51779c788
+size 978

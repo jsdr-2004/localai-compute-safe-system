@@ -1,35 +1,3 @@
- Here are some read-only Linux commands that can help you inspect the memory and CPU load on your system:
-
-1. To check the current memory usage, including total memory, used memory, free memory, buffers, and cached data, use the `free` command:
-
-   ```
-   free -h
-   ```
-
-2. To see a detailed breakdown of memory usage by process, you can use the `top` command with the `-m` or `--mem-only` option to display only memory-related information:
-
-   ```
-   top -bm 1
-   ```
-   To exit `top`, press `q`.
-
-3. To check CPU usage for each core, use the `mpstat` command:
-
-   ```
-   mpstat -P ALL -U ALL 1
-   ```
-   This will display CPU statistics for all processors every second. Press `Ctrl+C` to stop the output.
-
-4. To monitor CPU usage by process, you can use the `pidstat` command:
-
-   ```
-   pidstat -u --interval=5 --noheader -p [PID]
-   ```
-   Replace `[PID]` with the Process ID of the process you're interested in. You can find the PIDs using the `ps` command or by checking the output of the `top` command. The `--interval=5` option sets the update interval to 5 seconds, and `--noheader` hides the header row.
-
-5. To get a snapshot of CPU usage for each process group, you can use the `cpufrequtils` tool and its `sar` command:
-
-   ```
-   sar -u 1 3
-   ```
-   This will display CPU usage statistics for every minute for the last three minutes. To see more details or change the time interval, consult the `man sar` page.
+version https://git-lfs.github.com/spec/v1
+oid sha256:b9a58727d3cebb6d000874c83ebe83cf0b508b369d1e331b6eb0f2ff202b4610
+size 1425

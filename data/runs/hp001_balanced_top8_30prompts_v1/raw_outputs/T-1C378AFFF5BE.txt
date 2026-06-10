@@ -1,12 +1,3 @@
-import pytest
-
-def reverse_string(s):
-    return s[::-1]
-
-@pytest.mark.parametrize("input, expected", [
-    ("hello", "olleh"),
-    ("world", "dlrow"),
-    ("abc", "cba")
-])
-def test_reverse_string(input, expected):
-    assert reverse_string(input) == expected
+version https://git-lfs.github.com/spec/v1
+oid sha256:b637f7217c7c33185d65221178f274cb1dc5ca9e377b924355d1c452c1a3322d
+size 260

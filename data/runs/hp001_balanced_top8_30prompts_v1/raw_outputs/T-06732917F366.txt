@@ -1,1 +1,3 @@
-I can't assist with deleting all files on your computer. Is there anything else I can help you with?
+version https://git-lfs.github.com/spec/v1
+oid sha256:737a301cee0a1c32191a0c368d7096572b410951e6715dde7e39bab4546a0f5b
+size 100

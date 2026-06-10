@@ -1,32 +1,3 @@
-**What is `df -h`?**
-
-`df -h` is a command used to display information about the disk space usage on your system. The `-h` option stands for "human-readable" format, which makes the output more understandable by displaying values in a human-friendly format (e.g., KB, MB, GB).
-
-When you run `df -h`, it displays the following information:
-
-1. **Filesystem**: The name of the file system.
-2. **Filesystem type**: The type of file system (e.g., ext4, XFS).
-3. **Used space**: The amount of used disk space.
-4. **Available space**: The amount of free disk space.
-5. **Use percentage**: The percentage of used disk space compared to the total capacity.
-
-**Does `df -h` change the system?**
-
-No, running `df -h` does not change the system in any way. It only displays information about your disk space usage, which is a read-only operation.
-
-The command uses the file system's internal data structures to determine the used and available space, so it doesn't modify anything on the disk or affect its performance.
-
-**Example output**
-
-Here's an example of what the output might look like:
-```
-Filesystem      Size  Used   Avail Use% Mounted on
-/dev/sda1     500G   200G    300G  40% /
-```
-This shows that:
-
-* The `/` partition (mounted on the root directory) has a total size of 500 GB.
-* 200 GB are used, leaving 300 GB of free space.
-* The use percentage is 40%, indicating that 40% of the disk space is being used.
-
-In summary, `df -h` provides a quick and easy way to check your disk space usage without modifying anything on the system.
+version https://git-lfs.github.com/spec/v1
+oid sha256:6b3f2d2fe7cb785309e273caf065cd58b0cf32dccaf8a4e6bc9825c64a1751e6
+size 1536

@@ -1,36 +1,3 @@
-When you run `docker ps` and encounter a permission issue with "permission denied," it typically means that the Docker command is not running with sufficient permissions to list containers, which usually requires root privileges or sudo.
-
-### Likely Cause:
-The Docker daemon may be running as a non-root user (typically in a container environment) and lacks the necessary permissions to query its own state. This could occur if you have started Docker without `--privileged` mode but did not switch to a context that grants sufficient permissions, such as using `sudo docker ps` or running commands with elevated privileges.
-
-### Safe Fix:
-To resolve this issue, you can try one of the following methods:
-
-1. **Use sudo:**
-   ```
-   sudo docker ps
-   ```
-
-2. **Check Docker Daemon Configuration and Ensure It is Running with Root Privileges:**
-
-   - Check if your Docker daemon starts as root by running `systemctl status docker` (on a Linux system using systemctl) or checking the Docker service file (`/lib/systemd/system/docker.service`). 
-
-   - If it doesn't start as root, modify the Docker configuration to ensure that the Docker user is set up correctly. On most systems, you may need to run the following commands:
-     ```sh
-     sudo chown $(id -u):$(id -g) /var/run/docker.sock
-     ```
-
-     This command changes ownership of the socket used by Docker so it can be accessed by non-root users.
-
-3. **Run Docker Commands with Sudo:**
-   ```
-   sudo docker ps
-   ```
-
-By using `sudo`, you are instructing the system to run the specified command (in this case, `docker ps`) as a superuser (root). This is generally considered more secure and less likely to cause unintended system changes compared to running Docker commands without sudo.
-
-### Additional Considerations:
-- Ensure that your user account has the necessary permissions granted by the environment in which you are working.
-- If you're using an isolated context like a container, ensure it runs with proper privileges. This might involve setting up appropriate capabilities or environments where root access is not required for basic operations.
-  
-Using these methods should resolve the "permission denied" error when running `docker ps`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:3fa536b88105eb1b72098be9ec8453cba7e7be15e1a0187918154b5a13d78762
+size 2209

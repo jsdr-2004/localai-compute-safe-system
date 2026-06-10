@@ -1,7 +1,3 @@
-RAM stands for Random Access Memory. In simple terms, it's a type of computer memory that temporarily stores data and applications while your computer is running.
-
-Think of it like a desk where you can quickly grab a pen and paper to jot down a note or work on a project. RAM is like the desk where your computer uses to store information and perform tasks quickly.
-
-When you turn off your computer, all the data stored in RAM is erased, but it's also volatile, meaning it loses its contents when power is turned back on. This means that if you close a program or shut down your computer, any unsaved work will be lost.
-
-RAM is usually divided into two parts: System RAM (also known as Physical RAM) and Virtual RAM (also known as Page File). System RAM is the amount of RAM installed in your computer's motherboard, while Virtual RAM is an additional amount of RAM that you can add to your computer using software or hardware upgrades.
+version https://git-lfs.github.com/spec/v1
+oid sha256:a53752f436cf7b39b2afb0dbb89a2493640d45ed43bc639a426529dc81515131
+size 936

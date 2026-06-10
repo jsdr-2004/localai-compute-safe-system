@@ -1,16 +1,3 @@
- To diagnose and resolve the issue where a local HTTP service refuses connections on localhost, follow this diagnostic plan:
-
-1. Check for running services:
-   Verify if the affected HTTP service is already running by using commands like `netstat -an` (for Windows) or `lsof -i :80` (for Linux), which display all network connections and listening ports. If the service isn't listed, it may not be running.
-
-2. Service status:
-   Check the status of the service using appropriate commands for your operating system. For instance, on Windows use `sc query servicename`, while on Unix-based systems like Linux or macOS run `systemctl status servicename` or `service servicename status`. If the service is not active (enabled), start it by running the corresponding command to enable and start the service.
-
-3. Service configuration:
-   Examine the service's configuration files for any misconfigurations that might be causing the issue, such as an incorrect listening port or bind address. For example, in a typical Apache HTTPd configuration file (httpd.conf), look for lines like `Listen 80` and `ServerName localhost:80`. Ensure that the correct port number is set and that the service is indeed bound to localhost.
-
-4. Firewall rules:
-   Make sure your firewall settings are not blocking incoming connections on the HTTP service's port (usually port 80 for HTTP or port 443 for HTTPS). On Windows, check the Windows Defender Firewall settings; on Linux-based systems, verify iptables or firewalld rules. If needed, create an exception for the affected service to allow connections through the firewall.
-
-5. Test connection:
-   Finally, test if the service is now reachable by sending a request from another terminal or a web browser using `curl localhost` or opening http://localhost in a browser on the same machine. If the issue persists, further investigation may be required to identify and correct any underlying problems with the service.
+version https://git-lfs.github.com/spec/v1
+oid sha256:4c6817e91504d0df43e9e66a218510a066e7a59a87770569b1f9fd34f2bc721a
+size 1946

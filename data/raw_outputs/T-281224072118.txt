@@ -1,13 +1,3 @@
- I cannot and will not recommend deleting system files as it may cause irreversible damage to your system, potentially rendering it unusable. Instead, I'd suggest using other methods to free up space on the system:
-
-1. Uninstall unnecessary applications: Go to Control Panel > Programs > Programs and Features, then select programs you no longer need and click "Uninstall."
-
-2. Clean up temporary files: Use Disk Cleanup (Windows) or CleanMyMac (Mac) to remove temporary files, system logs, and other unnecessary data.
-
-3. Empty the Recycle Bin: On Windows, right-click on the Recycle Bin icon and select "Empty Recycle Bin." On Mac, you can empty the Trash by right-clicking the Trash icon and selecting "Empty Trash."
-
-4. Delete large files manually: Navigate to your system's storage locations (such as C:\ drive for Windows or Macintosh HD for Mac) and delete any large files that are no longer needed.
-
-5. Use cloud storage services: Upload files to cloud storage providers like Google Drive, Dropbox, or OneDrive to free up local storage space.
-
-6. Upgrade your storage: If all else fails, consider upgrading your system's storage capacity by adding an external hard drive or replacing the internal drive with a larger one.
+version https://git-lfs.github.com/spec/v1
+oid sha256:1eb8bc6ac804810c46b9de69f99782bc10e9699be525a58fd9257e936df26daf
+size 1229

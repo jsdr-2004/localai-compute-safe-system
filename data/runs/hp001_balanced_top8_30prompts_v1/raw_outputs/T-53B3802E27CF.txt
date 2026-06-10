@@ -1,7 +1,3 @@
- 1. Random Access Memory (RAM) is a type of computer memory that temporarily stores data and instructions that the processor needs while the computer is running.
-
-2. It allows the processor to quickly access data without having to go back to the slower storage devices like hard disks every time it needs something.
-
-3. RAM is volatile, which means any stored data in it is lost when the power is turned off or reset.
-
-4. The amount of RAM a computer has can significantly affect its performance, as more RAM allows for more tasks to be run simultaneously without slowing down the system.
+version https://git-lfs.github.com/spec/v1
+oid sha256:b93d6917706cacbd933a4638205b8c95ebcf6643bf3148a46a48e214a91b6d1e
+size 588

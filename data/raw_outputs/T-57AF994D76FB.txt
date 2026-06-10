@@ -1,13 +1,3 @@
-RAM stands for Random Access Memory. In simple terms, it's a type of computer memory that temporarily stores data and applications while your computer is running.
-
-Think of it like a desk where you can put papers, notes, and other items that you need to refer to quickly. RAM is similar, but instead of physical papers, it holds data and programs that the computer needs to access fast.
-
-When you turn on your computer, the operating system (like Windows or macOS) loads all the programs and data into RAM so they can be used by the computer right away. This means that if you close a program or shut down your computer, the data in RAM is lost until you reopen it or restart your computer.
-
-RAM is usually divided into different levels, like 4GB, 8GB, 16GB, etc., and each level has its own specific purpose. For example:
-
-* Level 1 (also known as Physical RAM): holds data that's already loaded into the computer's main memory.
-* Level 2 (also known as Cache RAM): a smaller version of RAM that stores frequently used data to speed up access times.
-* Level 3 (also known as DRAM): the most common type of RAM, which is volatile and loses its contents when power is turned off.
-
-In summary, RAM is like a temporary workspace where your computer can store data and programs while it's running.
+version https://git-lfs.github.com/spec/v1
+oid sha256:033fe7d6eb50ea85a19e76fc12540404d3346e27e61199e5044460b11695a9fe
+size 1293

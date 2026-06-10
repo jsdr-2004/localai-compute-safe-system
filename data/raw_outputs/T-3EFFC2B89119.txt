@@ -1,35 +1,3 @@
-Here are some safe Linux commands to check disk usage:
-
-1. **df -h**: This command displays the current disk space usage for each mounted file system, in a human-readable format (e.g., KB, MB, GB).
-
-   ```bash
-   df -h
-   ```
-
-2. **du -sh /path/to/directory**: This command estimates the size of a specific directory and its contents.
-
-   Replace `/path/to/directory` with the desired path.
-
-   ```bash
-   du -sh /
-   ```
-
-3. **lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,USE**: This command displays detailed information about disk usage, including file system type, size, mount point, and usage percentage.
-
-   ```bash
-   lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,USE
-   ```
-
-4. **fdu -d /path/to/directory**: This command estimates the total disk space used by a specific directory and its contents.
-
-   Replace `/path/to/directory` with the desired path.
-
-   ```bash
-   fdu -d /
-   ```
-
-5. **sudo du -h --max-depth=1 /**: This command displays the top-level directories with the most usage, sorted in descending order.
-
-   Note: The `--max-depth=1` option ensures that only the first level of subdirectories is considered.
-
-Remember to run these commands as a user who has permission to view disk information.
+version https://git-lfs.github.com/spec/v1
+oid sha256:055ab2ea0f0dde93ab8004f39c8c990d849940b3556ad8476b4dda1aafc338dc
+size 1201

@@ -1,33 +1,3 @@
-Model quantization is an optimization technique used in deep learning to reduce the precision of the weights and activations within neural networks from full-precision (e.g., 32-bit floating point) to lower precision formats, such as half-precision (16-bit), or even lower. This process aims to significantly reduce the model's memory footprint and computational requirements without substantially compromising its accuracy.
-
-### Why Quantization?
-
-The primary reasons for quantizing a deep learning model include:
-
-1. **Reduced Memory Usage**: Lowering the precision of weights and activations reduces the amount of memory required to store the model, which is crucial for applications with limited storage resources.
-2. **Faster Inference Speed**: Reduced precision can lead to faster inference times because fewer operations are needed during forward propagation through the network.
-3. **Lower Computational Cost**: Quantization often results in lower computational costs due to reduced floating-point arithmetic and smaller memory transfers.
-
-### Types of Quantization
-
-There are two main types of quantization:
-
-1. **Weight Quantization**: This involves reducing the precision of the weights while keeping activations at full precision (e.g., 32-bit). It is typically applied during training.
-2. **Activation Quantization**: In this approach, both weights and activations are reduced to lower precision. Activation quantization can be further divided into:
-   - **Per-Tensor Quantization**: Each layer's activation has a single quantized value that applies across all neurons in the layer.
-   - **Per-Channel Quantization**: This method assigns a separate quantized value for each channel of activations, allowing different channels to have different precision levels.
-
-### Tradeoffs
-
-While model quantization offers significant benefits, it also comes with several trade-offs:
-
-1. **Accuracy Loss**:
-   - **Quantization Error**: The primary concern is the potential loss in accuracy due to reduced precision. This error can be minimized through techniques like post-training quantization (PTQ) and weight decay during training.
-   - **Model Complexity**: Increasing model complexity, such as adding more layers or neurons, might exacerbate the impact of quantization errors.
-
-2. **Training Time**:
-   - **Increased Training Complexity**: Quantized models often require more complex training procedures to achieve acceptable accuracy levels. This can lead to longer training times and increased computational resources.
-   - **Need for Specialized Hardware**: Some quantization techniques, especially those involving per-channel or post-training methods, may necessitate specialized hardware support.
-
-3. **Model Size**:
-   - **Increased Storage Requirements**:
+version https://git-lfs.github.com/spec/v1
+oid sha256:9eb74eb0898dbf40623faae4a35a650bd296d02d77de8595e802c6e72a102c86
+size 2767

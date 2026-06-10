@@ -1,3 +1,3 @@
- `df -h` is a command used in Unix-like operating systems to report file system disk usage for a set of file systems, such as partitions or directories. The option `-h` stands for "human-readable", meaning that the output will show the size and usage of each file system in a format that's easier to understand (e.g., GB, MB instead of bytes).
-
-This command does not change the system itself; it only displays information about the current state of your file systems. It's an essential tool for monitoring disk usage and managing files effectively within Unix-based operating systems.
+version https://git-lfs.github.com/spec/v1
+oid sha256:28988dd891a8ac7c5936ad5264c9b298589f133ba54dd1386ba7dc13cf7df8d4
+size 584

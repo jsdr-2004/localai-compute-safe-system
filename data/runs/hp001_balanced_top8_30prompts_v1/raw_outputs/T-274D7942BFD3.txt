@@ -1,30 +1,3 @@
-To find out which folders are using the most disk space without deleting anything, you can follow these steps:
-
-**For Windows:**
-
-1. Open File Explorer (Windows key + E).
-2. Click on "View" in the top menu bar.
-3. Select "Show" and then check the box next to "Hidden items".
-4. Right-click on "This PC" or "Computer" and select "Properties".
-5. In the Properties window, click on "Disk space" under the "General" tab.
-6. Click on the "View" button at the bottom of the window.
-7. Select "Size" from the dropdown menu.
-8. The folders with the largest size will be displayed at the top of the list.
-
-**For macOS:**
-
-1. Open Finder (press Command + Space to open Spotlight).
-2. Press Command + Shift + 3 to take a screenshot of the disk usage.
-3. Preview the screenshot and click on "Edit" > "Adjust" > "Crop".
-4. Select the "Disk Usage" tab from the top menu bar.
-5. Click on the "View" button at the bottom of the window.
-6. Select "Size" from the dropdown menu.
-7. The folders with the largest size will be displayed at the top of the list.
-
-**For Linux:**
-
-1. Open a terminal (e.g., Konsole, Terminal, or xterm).
-2. Type `df -h` to display disk usage information.
-3. Look for the folder with the highest percentage of used space.
-
-These methods will give you an idea of which folders are using up the most disk space without deleting anything.
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e01702132de6383cb1d3b635329ac159f4ae45c9bde06c509c7d4ec7501fc45
+size 1344

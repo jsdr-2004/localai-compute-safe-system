@@ -1,33 +1,3 @@
-To check disk usage in Linux, you can use the following commands:
-
-1. `df -h`: This command displays a detailed list of all partitions on your system, including their file systems, sizes, and usage percentages.
-2. `du -h`: This command provides a more concise view of disk usage, showing only the total size (in GB) and usage percentage for each partition or file system.
-3. `fdisk -l`: This command lists all partitions on your system, along with their file systems and sizes.
-
-Here are some example commands to check disk usage:
-
-* To display detailed information about a specific partition:
-```bash
-df -h /path/to/partition
-```
-Replace `/path/to/partition` with the actual path to the partition you want to check.
-
-* To get an overview of disk usage across all partitions:
-```bash
-du -h *
-```
-This will show you the total size and usage percentage for each partition.
-
-* To display disk usage without showing detailed information (more concise):
-```bash
-df -h / | awk '{print $5}' | sort -n | tail -1
-```
-Replace `/` with the path to a specific directory or all directories. This will show you the total size and usage percentage of that directory.
-
-* To check disk usage on a specific file system (e.g., ext3, ext4):
-```bash
-du -h /path/to/file
-```
-This will display the total size and usage percentage for the specified file system.
-
-These commands can help you understand how your disks are being used and identify potential issues.
+version https://git-lfs.github.com/spec/v1
+oid sha256:5838cbab971724ea235d5a68f5e62f859ecea6c1cbeab872df1e51a034f4b4e0
+size 1438

@@ -1,11 +1,3 @@
-I'm sorry, but I can't follow your request as it could potentially cause serious issues with the system's functionality and security. Deleting essential system files may lead to system instability or even render the system unusable.
-
-Instead of deleting system files, I suggest optimizing disk space usage by:
-
-1. Cleaning up temporary files.
-2. Removing unnecessary applications and software.
-3. Clearing out old documents and backups.
-4. Using a file compression tool for large files that can be stored in an external location or compressed to save space.
-5. Checking if there are any updates available for the operating system, as these may include performance improvements.
-
-If you have specific concerns about disk usage, I'd recommend reaching out to your system administrator or IT support team who could provide more tailored advice and solutions that won't compromise the integrity of the system.
+version https://git-lfs.github.com/spec/v1
+oid sha256:a6bfa1b5e79547b56e48dfbc35e219b154b0f7bdf929ee391e28eeea4b244866
+size 905

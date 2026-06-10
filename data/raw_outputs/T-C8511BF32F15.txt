@@ -1,9 +1,3 @@
-RAM stands for Random Access Memory. It's a type of computer storage that temporarily holds data and programs while your computer is running.
-
-Think of it like a workspace where you can quickly grab something you need and put it back down when you're done. In computing, this workspace is called RAM.
-
-When you turn on your computer, the operating system loads all the information into RAM so it can be used by the processor (the brain of the computer) quickly. This allows your computer to perform tasks like browsing the internet, playing games, and running applications smoothly.
-
-If you close a program or shut down your computer, the data in RAM is automatically cleared. That's why you might see a "memory leak" if you leave a program open for too long – it can consume all the available memory and slow down your computer.
-
-RAM is usually divided into two parts: System RAM (also known as Boot RAM) and User RAM. System RAM is used by the operating system, while User RAM is where you store programs and data that you use regularly.
+version https://git-lfs.github.com/spec/v1
+oid sha256:c18c66fd6ae0b626252df821e9e1c3df9c659e3f3c91217855886c7af561624f
+size 1041

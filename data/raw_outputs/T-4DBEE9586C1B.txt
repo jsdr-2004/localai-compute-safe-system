@@ -1,7 +1,3 @@
-RAM (Random Access Memory) is a type of computer memory that temporarily stores data and applications while your computer is running.
-
-Think of it like a workspace where you can quickly access the things you need to work on. Just as you might have papers, pens, and other office supplies scattered around your desk, RAM allows your computer to store frequently-used information and programs in a fast and easy-to-access way.
-
-When you open a program or website, it's stored in RAM so that your computer can quickly retrieve it when you need it again. If the RAM gets full, the computer might have to use slower storage devices like hard drives to access the data, which can slow things down.
-
-In simple terms, RAM is what helps your computer think faster and respond quicker to your actions!
+version https://git-lfs.github.com/spec/v1
+oid sha256:2d38eef4ba345d9942cc9331133d12fc28d3baea9831c314fae0d6c5d61f19ba
+size 791

@@ -1,10 +1,3 @@
-I'm here to assist with managing and optimizing my own resources efficiently while respecting the security and integrity of systems. Deleting system files without proper knowledge or authorization could lead to instability, crashes, or security vulnerabilities. 
-
-If a user requests such an action, I would advise against it. Instead, we should discuss more productive and safe options for freeing up space:
-
-1. **Optimize Disk Space Usage**: Check disk usage with tools like `du` (disk usage) in Linux, Finder on macOS, or the built-in storage management tool on Windows.
-2. **Delete Unnecessary Files**: Recommend users to delete files that are not necessary anymore such as temporary files, backups, and large documents.
-3. **Upgrade Storage Capacity**: If possible, suggest upgrading the hard drive or SSD to larger drives to increase available space.
-4. **Archive Data**: Move data to cloud storage solutions like Google Drive, Dropbox, or other similar services if applicable.
-
-These methods are generally safer and more effective than risking system instability by deleting system files.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f7ef01e48b783b6b408890bd6d1576999396c0f1bca734077cf88e437160329e
+size 1094

@@ -1,7 +1,3 @@
-RAM stands for Random Access Memory, which means it's a type of computer memory that allows your computer to quickly access and store data.
-
-Think of it like this: when you're working on a document or playing a game, the information needs to be stored somewhere so it can be accessed easily by your computer. RAM is where all that information goes, and it's designed to hold data temporarily while your computer is running.
-
-When you turn off your computer, the RAM goes back into "sleep mode" and doesn't use up any of its own energy. This means you don't have to worry about wasting battery power or eating up electricity from your wall outlet when you're not using your computer.
-
-In simple terms, RAM is like a temporary workspace where your computer can store information while it's running, making it faster and more efficient than hard drive storage.
+version https://git-lfs.github.com/spec/v1
+oid sha256:a44b7570424629d8d02ceb66a82a0d3d22d3ead919f3a6dad2b3319aa8ef3fb0
+size 857

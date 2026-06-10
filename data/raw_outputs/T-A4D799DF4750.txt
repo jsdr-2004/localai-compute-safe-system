@@ -1,17 +1,3 @@
- Here are some common Linux commands for checking disk usage:
-
-1. `df`: This command displays the amount of disk space used and available on your file system. It also shows the mount points, file system type, and other relevant information.
-
-   Example: `df -h` to display in a human-readable format (e.g., GB, MB).
-
-2. `du`: This command shows the space usage of directories and files in a hierarchical manner, starting from the current directory by default.
-
-   Example: `du -sh /` to display total disk usage for the root file system.
-
-3. `ncdu` (Not Curse Disk Usage): This is a curses-based disk usage analyzer that allows you to explore the directories of your file system visually and find large files or directories quickly. It's more user-friendly than the standard `du` command.
-
-   To install ncdu on Ubuntu, use the following command: `sudo apt-get install ncdu`. After installation, run `ncdu` to start the tool.
-
-4. `top` or `htop`: These commands show real-time information about processes running in your system and their resource usage, including disk I/O (input/output). While they do not directly show disk usage, they can help you identify any processes that might be consuming excessive amounts of disk resources.
-
-   To install htop on Ubuntu, use the following command: `sudo apt-get install htop`. After installation, run `htop` to start the tool.
+version https://git-lfs.github.com/spec/v1
+oid sha256:ac8a48553877501ea5ac63f336751a9f02a67acc646cfd9f89fad6c6ff5c9883
+size 1371

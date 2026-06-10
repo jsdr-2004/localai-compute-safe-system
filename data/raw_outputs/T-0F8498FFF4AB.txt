@@ -1,5 +1,3 @@
-RAM stands for Random Access Memory. In simple terms, it's a type of computer memory that temporarily stores data and applications while your computer is running.
-
-Think of it like a desk where you can put papers, pens, and other items. When you write something down on the desk (i.e., open an app or website), it gets stored there until you need to use it again. RAM is similar - it's a temporary storage space that holds data and applications while your computer is running.
-
-When you close an app or shut down your computer, the data in RAM is "wiped" out, so it doesn't take up space on your hard drive (which is like the permanent desk). This helps keep your computer fast and responsive by freeing up space for new tasks.
+version https://git-lfs.github.com/spec/v1
+oid sha256:af0ebbd3c5aa064c2613c3f0ad434266004c9b14e51af583d194121dc2b083b0
+size 727

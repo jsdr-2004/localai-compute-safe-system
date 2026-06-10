@@ -1,33 +1,3 @@
-Here are some safe Linux commands to check disk usage:
-
-1. **df** (Disk Free) command:
-   ```bash
-df -h
-```
-   This command displays the current disk usage, available space, and percentage used for each mounted file system.
-
-2. **du** (Disk Usage) command:
-   ```bash
-du -sh /
-```
-   This command estimates the total size of files in a given directory tree.
-
-3. **fsck** (File System Check) command:
-   ```bash
-fsck -n /dev/sda1
-```
-   This command checks the file system for errors and reports any issues found.
-
-4. **df -i** command:
-   ```bash
-df -i /
-```
-   This command displays information about disk usage, including the number of inodes used.
-
-5. **du -h --max-depth=1 /** command:
-   ```bash
-du -h --max-depth=1 /
-```
-   This command estimates the total size of files and directories within a given directory tree.
-
-Remember to always use caution when running disk usage commands, as excessive usage can lead to performance issues or even data loss.
+version https://git-lfs.github.com/spec/v1
+oid sha256:ad4201a418dc0d752d65600b4099c114db9dede272472d57a865e8ee9c4986f1
+size 958

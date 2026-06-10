@@ -1,33 +1,3 @@
-If a user runs `docker ps` and gets a "permission denied" error, it's likely due to one of the following causes:
-
-1. **Insufficient permissions**: The user may not have sufficient privileges to run Docker commands. This can happen if the user is not a member of the `docker` group or does not have the necessary permissions set on their system.
-2. **Incorrect Docker configuration**: The Docker configuration may be set up in a way that restricts access to certain users or groups.
-
-Safe fixes:
-
-1. **Add the user to the docker group**:
-If you're running Docker on a Linux system, you can add the user to the `docker` group by running the following command:
-```
-sudo usermod -aG docker <username>
-```
-Replace `<username>` with the actual username of the user experiencing permission issues.
-
-2. **Grant explicit permissions**: If adding the user to the `docker` group is not possible or desirable, you can grant explicit permissions using the `chmod` and `chown` commands:
-```bash
-sudo chmod u+x /var/lib/docker/...
-sudo chown -R <username>:<username> /var/lib/docker/
-```
-This will change the ownership of the Docker directories to the user's ID.
-
-3. **Check Docker configuration files**: Review the Docker configuration files (`docker daemon.json` and `docker.conf`) for any restrictions on user permissions.
-4. **Run Docker as root**: If none of the above solutions work, you can try running Docker as the root user by adding a new entry to the system's `sudoers` file:
-```
-sudo visudo
-```
-Add the following line:
-```
-username ALL=(ALL) NOPASSWD: /usr/bin/docker*
-```
-Replace `<username>` with the actual username of the user experiencing permission issues.
-
-Note: Be cautious when granting explicit permissions or running Docker as root, as these can introduce security risks if not managed properly.
+version https://git-lfs.github.com/spec/v1
+oid sha256:99761601acefa4c3b102d0f731b313ad029f23aaef7b817fd81082469562c8a3
+size 1804

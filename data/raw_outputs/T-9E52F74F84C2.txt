@@ -1,13 +1,3 @@
-I must strongly advise against deleting any system files without prior consultation or authorization from the appropriate IT team members. System files are essential for the proper functioning of your computer's operating system and applications, and their deletion can cause significant damage or instability.
-
-If a user requests to delete system files, I would respond with:
-
-1. **Safety Warning:** Inform them that deleting system files could cause serious issues, including system crashes, data loss, or even rendering the machine unusable.
-   
-2. **Suggest Backup Solutions:** Recommend they make regular backups of their important data and ensure these backups are up-to-date.
-
-3. **Request Permission for Specific Actions:** If there is a specific need to free space that does not involve deleting system files, I would ask for more details about what can be done within the bounds of safe operating practices (e.g., uninstalling unused software).
-
-4. **Professional Advice:** Suggest they contact their IT support team or seek professional advice if they are unsure how to proceed.
-
-It is crucial to prioritize data security and system stability over any immediate space-saving measures, as irreversible damage can occur with inappropriate actions.
+version https://git-lfs.github.com/spec/v1
+oid sha256:571722640eb7eecaf8d820d1884a6cddaf3506079440dac59de2e6cc5f9d7250
+size 1256

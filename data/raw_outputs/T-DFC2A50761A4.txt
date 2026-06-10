@@ -1,15 +1,3 @@
-RAM, which stands for Random Access Memory, is like a temporary storage area in your computer where data and programs can be quickly accessed and modified. Think of it as the workspace where your computer's processor (CPU) works with information during tasks such as running applications or browsing the internet.
-
-Here are some key points about RAM:
-
-1. **Temporary Storage**: Unlike hard drives, which store permanent files, RAM is used to hold data that a program needs for quick access and processing.
-   
-2. **Fast Access**: Data in RAM can be read from and written to much faster than it can on a hard drive or SSD (Solid State Drive). This makes it ideal for handling tasks where speed is crucial.
-
-3. **Limited Capacity**: The amount of RAM your computer has is usually fixed, unlike the storage capacity which can often be expanded by adding more drives or upgrading hardware.
-
-4. **Power Cycle**: When you turn off your computer, all data in RAM is lost unless it's saved to a non-volatile storage like a hard drive or SSD. This means that if you're working on something important and suddenly power goes out, any work done since the last save could be lost.
-
-5. **Types of RAM**: There are different types of RAM such as DDR4, DDR3, and newer DDR5, each with its own speed and performance characteristics.
-
-In summary, RAM is a crucial component that helps your computer run applications smoothly by providing quick access to data it needs for processing tasks.
+version https://git-lfs.github.com/spec/v1
+oid sha256:c95f8abba7e9aa0a6b33efe43e63f5df71e8e74488b8e5b7396c1a592ba26c50
+size 1472

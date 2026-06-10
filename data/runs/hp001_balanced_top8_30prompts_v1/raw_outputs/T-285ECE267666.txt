@@ -1,12 +1,3 @@
- Here are some read-only Linux commands that can help you inspect disk usage:
-
-1. **df**: This command displays the total amount of disk space available, the amount used, and the percentage of disk space used in the file system. It also shows the mount point for each file system. To use it, simply type `df` in your terminal.
-
-2. **du**: The `du` command provides information about the space usage of directories. You can use it to get a detailed breakdown of space usage within a directory or across multiple directories. For example, to display the size of all files and subdirectories under the current directory, you can type `du -sh .`.
-
-3. **ncdu**: This is a curses-based disk usage analyzer similar to the popular macOS tool 'DaisyDisk'. It's more user-friendly than `df` and `du`, as it presents the information in a tree format. To install `ncdu`, you can use the following command:
-
-   ```
-   sudo apt-get install ncdu
-   ```
-   After installation, simply type `ncdu` in your terminal to start using it.
+version https://git-lfs.github.com/spec/v1
+oid sha256:9e6a4117b5b323416683971eb113c7ac6a0db8070947e51264e431f27ca199c9
+size 1015

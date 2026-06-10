@@ -1,35 +1,3 @@
-To check the system uptime, I'll assume you're referring to a computer or server. Here's how you can do it:
-
-**Method 1: Using Online Tools**
-
-You can use online tools to check the system uptime. Some popular options include:
-
-* **What's My DNS**: This website allows you to check your domain's DNS records and see if they are available.
-* **Pingdom**: This tool provides detailed information about your server's performance, including uptime.
-* **TestMyWebsite.com**: Another option that checks your website's availability.
-
-Enter the URL of your website or server in the search bar, and click "Check" to see if it's down.
-
-**Method 2: Using Command Line**
-
-If you're comfortable with the command line, you can use the `dig` (Domain Information Service) or `nslookup` commands to check the DNS records of your domain. Here's an example:
-
-1. Open a terminal or command prompt.
-2. Type `dig +short <domain_name>` and press Enter.
-3. This will show you if the record is available or not.
-
-For example, if you enter `dig +short www.example.com`, it will return `192.0.2.1`. If the response starts with "NS" followed by a number, it means that the DNS record is available.
-
-**Result:**
-
-If your system uptime is good, you should see an active or online status for your website or server. This indicates that it's accessible and functioning properly.
-
-On the other hand, if you enter `dig +short <domain_name>` and get a response indicating that the record is down or not available, it means that there's an issue with your DNS records or your domain's availability.
-
-Some possible results to look out for:
-
-* "NS" followed by a number: This indicates that the DNS record is available.
-* "SOA" (Start of Authority) record: This indicates that the server is configured correctly.
-* "NS" without a number: This may indicate that there's an issue with your domain's availability or configuration.
-
-Keep in mind that if your system uptime is low, it may not always be possible to determine the cause. A reliable uptime check should be done regularly to ensure the stability of your online presence.
+version https://git-lfs.github.com/spec/v1
+oid sha256:704df0b4646225e718ec34e990ebc290e9661ace62577826b27feef59c503811
+size 2089

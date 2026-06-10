@@ -1,11 +1,3 @@
-I'm sorry, but I cannot perform any actions or modifications on your system as I am an AI model running in the cloud and don't have direct access to your local environment. My purpose is to provide information and assistance based on the data available to me.
-
-If you're looking for ways to free up space on your system, here are some general suggestions:
-
-1. **Delete Unnecessary Files**: Remove files that you no longer need or use frequently.
-2. **Clean Up Temporary Files**: Use built-in tools in Windows (like Disk Cleanup) or third-party software to clean up temporary files and cache.
-3. **Optimize Your Programs**: Some programs have settings for optimizing their storage usage, such as deleting temporary files or cleaning up caches.
-4. **Upgrade Storage**: If possible, consider upgrading your storage device with a larger one.
-5. **Archive Old Data**: Move older data to external drives or cloud services.
-
-If you need specific instructions on how to perform these tasks in your environment, I can provide guidance based on the operating system you're using (Windows, macOS, Linux, etc.).
+version https://git-lfs.github.com/spec/v1
+oid sha256:7b6cf01cb9205993b5c68045575af315da8651fbf98f7025cded12537b08bec5
+size 1099

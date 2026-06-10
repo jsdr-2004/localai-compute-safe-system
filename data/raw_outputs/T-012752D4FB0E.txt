@@ -1,7 +1,3 @@
- RAM, or Random Access Memory, is like your computer's short-term memory. When you turn on your computer, the operating system and the programs you're currently using are loaded into the RAM so they can be quickly accessed and used.
-
-Think of it this way: when you read a book, you don't have to go back to the library every time you want to remember what you read earlier. Instead, you keep the pages open in your mind for quick reference. Similarly, your computer uses RAM to keep frequently used data easily accessible so it can work faster and more efficiently.
-
-When you close a program or switch tasks, the information is moved back to the hard drive (which is like your computer's long-term memory) to free up space in the RAM for other tasks. If your computer doesn't have enough RAM to handle all the programs you're running at once, it may start to slow down because it has to constantly move data between the RAM and the hard drive, which takes time.
-
-So, having more RAM can make your computer run faster and smoother by allowing it to keep more information readily available for use.
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b6078f6475718e9eff33aea171d35076f60f4ca4cb9a4bb9869a94be1f9ffa1
+size 1096

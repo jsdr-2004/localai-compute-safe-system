@@ -1,35 +1,3 @@
-### Reversing a String in Python
-#### Function Definition
-
-```python
-def reverse_string(input_str):
-    """
-    Returns the input string reversed.
-
-    Args:
-        input_str (str): The string to be reversed.
-
-    Returns:
-        str: The reversed string.
-    """
-    return input_str[::-1]
-```
-
-#### Explanation
-
-This function uses Python's slice notation `input_str[start:stop:step]` to reverse the string. Here, we're using:
-
-- `start`: The starting index of the slice (default is 0).
-- `stop`: The ending index of the slice (exclusive).
-- `step`: The increment between indices (default is 1).
-
-By setting `step=-1`, we effectively start from the end of the string and move backwards to the beginning, which reverses the order.
-
-#### Example Use Cases
-
-```python
-print(reverse_string("Hello World"))  # Output: "dlroW olleH"
-print(reverse_string(""))  # Output: ""
-```
-
-This function is concise, readable, and efficient. It handles both single-character strings and longer strings with ease.
+version https://git-lfs.github.com/spec/v1
+oid sha256:90e57d0d99195a782694e8b4460f7f35a5e822c28403390503b9ff00be15352e
+size 996

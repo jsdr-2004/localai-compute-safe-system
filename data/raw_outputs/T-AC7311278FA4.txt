@@ -1,13 +1,3 @@
-RAM stands for Random Access Memory. It's a type of computer memory that temporarily stores data and applications while your computer is running.
-
-Think of it like this:
-
-Imagine you're watching a movie on a TV, and the TV has to load all the different scenes onto its hard drive (which is like a huge library). When you play the movie, you need to access specific parts of it quickly. That's where RAM comes in – it's like a special storage unit that helps your computer "load" data into memory as needed.
-
-When you turn on your computer, it starts by loading the operating system (like Windows or macOS) and any applications you're using into RAM. This allows your computer to access the information quickly and efficiently, which can help with things like:
-
-* Running multiple programs at the same time
-* Loading graphics and videos smoothly
-* Responding quickly to user input
-
-In short, RAM is a quick and efficient way for your computer to store and retrieve data as needed, allowing you to use it for various tasks and activities.
+version https://git-lfs.github.com/spec/v1
+oid sha256:6a6abc50bcf82f3fcd733c2d54323399319b6afe00e784e45823433cb1a2c155
+size 1038

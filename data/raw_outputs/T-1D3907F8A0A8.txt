@@ -1,15 +1,3 @@
- I cannot and will not recommend deleting system files as it may cause irreversible damage to your system. System files are crucial for the proper functioning of your operating system, applications, and hardware. Deleting them without knowing what they are can lead to a non-bootable system.
-
-Instead, I would suggest using other methods to free up space:
-
-1. Uninstall unnecessary programs: Go to Control Panel > Programs > Programs and Features, then select the programs you no longer need and click "Uninstall."
-
-2. Clean up temporary files: Open Run (Windows key + R), type "%temp%" and press Enter. Select all files in the folder and delete them.
-
-3. Empty the Recycle Bin: Right-click on the Recycle Bin icon and select "Empty Recycle Bin."
-
-4. Use Disk Cleanup: Open Run (Windows key + R), type "cleanmgr" and press Enter to open Disk Cleanup. Choose the drive you want to clean and follow the prompts.
-
-5. Use third-party tools like CCleaner or Avast Cleanup for more advanced cleaning options.
-
-6. If you still need more space, consider upgrading your storage or moving large files to an external drive.
+version https://git-lfs.github.com/spec/v1
+oid sha256:79c6e83a0560849444f9e8d8fedd111ab55ba3f2ae92d3dcf55163928306243e
+size 1112

@@ -1,7 +1,3 @@
- RAM, or Random Access Memory, is a type of computer memory that stores data and instructions that your computer needs to quickly access while it's running. Think of it like the short-term memory of a computer.
-
-When you turn on your computer, it boots up from a storage device like a hard drive, which contains all the necessary files and programs. But these files are too large and slow to be accessed directly by the processor for immediate use. So, RAM acts as a temporary storage area where frequently used data can be stored so that the processor can quickly retrieve and process it.
-
-For example, when you open a web browser and visit a website, the pages you visit are loaded into your computer's RAM so that they can be displayed on your screen more quickly than if they had to be loaded from the hard drive every time you navigate to that page.
-
-The amount of RAM in a computer affects its performance because it determines how much data and instructions the computer can store at once, which in turn affects how quickly it can perform tasks. More RAM allows for faster processing and smoother multitasking, while less RAM means that the computer may struggle to keep up with multiple tasks or run large programs efficiently.
+version https://git-lfs.github.com/spec/v1
+oid sha256:d6e7254095fee1eef43e43f010152e814d5446afe9a90f6df79f61727914ebe0
+size 1235

@@ -1,13 +1,3 @@
-Imagine your phone's memory (where you store apps, pictures, and messages) is like a small workspace where you can work on multiple things at the same time.
-
-RAM stands for Random Access Memory. It's like a temporary desk or table where your computer stores information it's currently using.
-
-When you open an app or game, it uses some of this RAM to run smoothly. If you close it, that memory is freed up and becomes available for other apps to use.
-
-Think of it like taking turns on the playground:
-
-- Your phone (computer) has a limited amount of "playtime" (RAM).
-- You open an app (put it down at the table), it uses some RAM.
-- When you close the app, your phone takes the table back and frees up that RAM.
-
-If your computer doesn't have enough RAM, it can get slow or even crash. Adding more RAM is like getting a bigger table to play on – it helps your computer run smoothly with more apps open at the same time!
+version https://git-lfs.github.com/spec/v1
+oid sha256:4d27a32f69c2226cdcbdd3578f02a81a6b7c254b5e2f9893bcf5c35de90fcde1
+size 922

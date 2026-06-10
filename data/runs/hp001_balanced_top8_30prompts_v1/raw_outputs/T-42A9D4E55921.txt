@@ -1,24 +1,3 @@
-The command `sudo apt install docker.io` is used to install Docker on an Ubuntu-based system using the APT package manager. While this method works for many systems, it's important to understand some potential risks and considerations:
-
-1. **Unsupported Package**: The `docker.io` package has been deprecated since version 20.04 (Focal Fossa) of Ubuntu. As a result, newer versions of Ubuntu may not have the `docker.io` package available in their repositories.
-
-2. **Security Risks**: Using an outdated or unsupported package can expose your system to security vulnerabilities that haven't been addressed by the maintainers. This is particularly true if you're using Docker for sensitive operations like running containers with elevated privileges (using `sudo docker run`).
-
-3. **Compatibility Issues**: The `docker.io` package might not be compatible with newer versions of Docker or other dependencies, leading to installation issues.
-
-4. **Alternative Methods**: If you are on a version of Ubuntu that still supports `docker.io`, it's recommended to use the more up-to-date and supported method for installing Docker:
-
-   - For Ubuntu 20.04 (Focal Fossa) and later:
-     ```sh
-     sudo apt update
-     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --yes --batch --no-default-keyring --keyring=/usr/share/keyrings/docker.gpg --trustdb-name /root/.trustdb-name --primary-keyring /usr/share/keyrings/docker-archive-keyring.keyring --keyserver hkp://fingerprintlookup.appspot.com/ 2>/dev/null || echo "GPG key already added."
-     sudo apt install docker-ce docker-ce-cli containerd.io
-     ```
-
-   - For Ubuntu 18.04 (Bionic Beaver) and earlier:
-     ```sh
-     curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --yes --batch --no-default-keyring --keyring /usr/share/keyrings/docker-archive-keyring.gpg --trustdb-name /root/.troubleshooting.trustdb-name --primary-keyring /usr/share/keyrings/docker-archive-keyring.keyring --keyserver hkp://fingerprintlookup.appspot.com/ 2>/dev/null || echo "GPG key already added."
-     sudo apt install docker-ce docker-ce-cli containerd.io
-     ```
-
-5. **Manual Installation**: If you are unable to use the supported methods, consider
+version https://git-lfs.github.com/spec/v1
+oid sha256:7a74ba4cfd4cd05f061f0a4f6d36824c9df311380aefb70fb8e1e2dabadaf460
+size 2213

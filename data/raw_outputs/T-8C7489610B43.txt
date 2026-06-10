@@ -1,28 +1,3 @@
-When a user runs `docker ps` and gets a "permission denied" error, it's often due to issues with access control or permissions on their system.
-
-Likely Cause:
-
-1. **Lack of Docker Group Membership**: The user may not be part of the Docker group, which is required for running Docker commands.
-2. **Insufficient Permissions**: The user may have insufficient privileges to run Docker containers, either as a result of a specific configuration or an inherited permission issue from their parent directory.
-
-Safe Fix:
-
-1.  **Join the Docker Group**:
-
-    *   To join the Docker group, use the following command: `sudo usermod -aG docker $USER`
-    *   This will add the current user to the Docker group.
-2.  **Run Docker Commands with Sudo (if necessary)**:
-
-    *   If the issue persists and you're not part of the Docker group, you can try running Docker commands using `sudo`.
-        *   Run `docker ps` with `sudo`: `sudo docker ps`
-    *   However, note that this is generally discouraged as it compromises security.
-3.  **Set Docker Permissions**:
-
-    *   Ensure that the user's home directory has execute permissions for the current user: `chmod +x ~/`
-
-### Additional Advice
-
-*   Avoid running Docker commands with elevated privileges (using `sudo`) unless absolutely necessary, as this can expose your system to security risks.
-*   Consider adding the user to other relevant groups, such as `docker` or `sysadmin`, if you need access to additional features.
-
-By following these steps, you should be able to resolve permission issues when running Docker commands.
+version https://git-lfs.github.com/spec/v1
+oid sha256:72c13ac898ee3e7d49ad71d6da939847a29f2821b17f5255695f32cb12d01c60
+size 1569

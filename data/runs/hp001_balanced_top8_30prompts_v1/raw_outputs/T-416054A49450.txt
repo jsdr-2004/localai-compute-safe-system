@@ -1,21 +1,3 @@
-Here are some read-only Linux commands to inspect memory and CPU load:
-
-**Memory Information**
-
-1. `free -m` : Displays the amount of free and used memory in megabytes.
-2. `top -b -n 1` : Shows a snapshot of the current system resource usage, including memory.
-3. `htop` : An interactive tool to view system resource usage, including memory.
-
-**CPU Load Information**
-
-1. `mpstat -1` : Displays CPU utilization statistics for the last second.
-2. `top -b -n 1` : Shows a snapshot of the current system resource usage, including CPU load.
-3. `sar -u` : Displays CPU utilization statistics over time.
-
-**Other Useful Commands**
-
-1. `cat /proc/meminfo` : Displays detailed information about memory usage on the system.
-2. `cat /proc/stat` : Displays detailed information about CPU usage on the system.
-3. `cat /sys/devices/system/cpu/online` : Displays the number of online CPUs.
-
-Note: These commands are read-only, meaning they do not modify any system settings or data.
+version https://git-lfs.github.com/spec/v1
+oid sha256:13e4e7bf9ae8208a383785901b9602d91e9141565c6e6286ab6b6824afcac798
+size 968

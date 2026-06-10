@@ -1,17 +1,3 @@
- While I can certainly help you with organizing and optimizing your computer's storage, it is important to note that deleting all files indiscriminately could lead to data loss or damage, potentially jeopardizing the functionality of your system.
-
-Instead, I recommend following these steps to safely free up disk space on your computer:
-
-1. Empty the Recycle Bin (on Windows) or Trash (on macOS): This will permanently delete files that have been marked for deletion but are still accessible in case you need them later.
-
-2. Uninstall unnecessary applications: If there are programs installed that you no longer use, consider uninstalling them to recover storage space used by the application and any associated data.
-
-3. Delete temporary files: These files are often generated during the normal operation of your computer and can accumulate over time. On Windows, you can do this using Disk Cleanup or CCleaner; on macOS, you can use applications like CleanMyMac or MacCleanse.
-
-4. Remove large or old files: To find large files taking up a lot of space, you can use the built-in search tools for both Windows and macOS. On Windows, press Win+E to open File Explorer, then type `Size:[greater than] 100MB` in the search bar to find large files. On macOS, use Spotlight (Cmd + Space) and search for "large" or "big" followed by a file type like "pdf" or "mov".
-
-5. Clean up your downloads folder: If you have a habit of keeping old downloads, consider organizing them or deleting unnecessary files to free up space.
-
-6. Use cloud storage services: Store less frequently-used files and documents in the cloud to save local storage. Services like Google Drive, Dropbox, and OneDrive offer free storage options.
-
-7. Upgrade your storage: If you've exhausted all other options and still need more space, consider upgrading your computer's hard drive or investing in an external hard drive for additional storage.
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce286807e81e61995f0785371a4bd2ba4c552bfeee5ec69b97fae18b8def3256
+size 1909

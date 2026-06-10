@@ -1,29 +1,3 @@
-When choosing between a 3 billion parameter (3B) and a 13 billion parameter (13B) language model for a CPU-only laptop with 16GB of RAM, we need to consider both the computational requirements and the available resources.
-
-### Computational Requirements
-
-#### 3B Model:
-- **Training Time**: The training time can be significantly reduced due to its smaller size. A 3B model might take hours or even days to train on a CPU-only setup.
-- **Inference Speed**: Faster inference times as it requires less computational power and memory.
-
-#### 13B Model:
-- **Training Time**: Training a larger model like the 13B model would likely require more time, possibly weeks or months, depending on the hardware capabilities. This is because larger models have more parameters to train.
-- **Inference Speed**: Slower inference times as it requires more computational resources.
-
-### Available Resources
-
-#### CPU-Only Laptop with 16GB of RAM:
-- **Memory Usage**: Both models will require significant memory. The 3B model might fit comfortably within the 16GB limit, while the 13B model would likely exceed this limit.
-- **Processing Power**: Limited to CPU-only operations, which means a slower training and inference process.
-
-### Recommendation
-
-Given that you have a CPU-only laptop with only 16GB of RAM, it is more practical to choose the **3B Model**. Here’s why:
-
-1. **Memory Management**: The 3B model will likely fit within your available memory, allowing for efficient use without needing additional hardware.
-2. **Training Time**: With a CPU-only setup, training time would be significantly reduced compared to the 13B model, making it more feasible in a reasonable timeframe.
-3. **Inference Speed**: The smaller model will also benefit from faster inference times on your laptop.
-
-### Conclusion
-
-Given these considerations, the **3B Model** is the better choice for your CPU-only laptop with 16GB of RAM. It aligns well within your available resources and provides a more practical solution in terms of both training time and memory usage.
+version https://git-lfs.github.com/spec/v1
+oid sha256:735c0c75350573d5f841a4ff971f2da0c374e3c5b94f3ab19191be2d28f1583c
+size 2039

@@ -1,5 +1,3 @@
-RAM, which stands for Random Access Memory, is a type of computer memory that can be accessed randomly. This means data can be stored or retrieved from any location within the memory, unlike with ROM (Read-Only Memory), where you have to read through all the locations before finding what you need.
-
-Think of RAM as temporary storage space in your computer's memory. When you run a program, like a word processor, it loads parts of its code and data into RAM so that your computer can access them quickly. The more RAM your computer has, the more programs you can have open at once without slowing down significantly.
-
-Once you turn off your computer (shut it down or put it to sleep), all information in RAM is lost because there's no permanent storage for it. That's why we often need to save work before turning off our computers.
+version https://git-lfs.github.com/spec/v1
+oid sha256:207e48eb1a4eb112d119392c472d9f4ced215cf1b916eb64ef0133d824cf9406
+size 833

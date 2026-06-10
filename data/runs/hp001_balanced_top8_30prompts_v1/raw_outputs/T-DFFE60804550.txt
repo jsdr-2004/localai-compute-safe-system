@@ -1,5 +1,3 @@
- `df -h` is a command used in Unix-like operating systems, including Linux, to display the amount of disk space used and available on the file system partitions.
-
-The `-h` option stands for "human-readable," which means that the size of the filesystems and their usage are displayed in a format that is easier for humans to understand. Specifically, sizes are shown in powers of 1024 (i.e., kilobytes, megabytes, gigabytes, terabytes, etc.).
-
-It's important to note that running the `df -h` command does not change the system in any way. It only displays information about the file systems and their usage without making any modifications. This makes it a useful tool for monitoring disk usage and identifying potential issues with disk space.
+version https://git-lfs.github.com/spec/v1
+oid sha256:aec15e77d35896a51d5a612e4cc8330246502849ba9e2030722edbdc70dfd650
+size 743

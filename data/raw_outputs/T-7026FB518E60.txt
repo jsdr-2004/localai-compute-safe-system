@@ -1,33 +1,3 @@
-When a user runs `docker ps` and gets a "Permission Denied" error, it's usually due to one of the following reasons:
-
-1. **Insufficient permissions**: The user running the command doesn't have the necessary privileges to access the Docker daemon or view the container list.
-2. **Docker service not started**: If the Docker service is not running, `docker ps` won't be able to connect to it and display the container list.
-
-Here are some safe fixes:
-
-**1. Ensure the Docker service is running**
-
-* Check if the Docker service is running by running `systemd --status-all` or `service docker status`. If it's not running, start it with `sudo systemctl start docker` (on Linux) or `sudo systemctl enable docker` (on macOS).
-* If you're using a containerized application, ensure that the service is started before running `docker ps`.
-
-**2. Check Docker credentials**
-
-* Make sure the user running the command has the correct Docker credentials, including an API token.
-* Ensure that the API token is valid and not expired.
-
-**3. Use the `-a` flag with `docker ps`**
-
-* The `-a` flag displays all containers, not just running ones.
-* This can help identify if there are any issues with the container list or if a specific container is causing the problem.
-
-**4. Check Docker version and API client**
-
-* Ensure that your Docker client (e.g., `docker` command-line tool) is up-to-date and compatible with your system's Docker version.
-* If you're using an older Docker client, consider updating to a newer one.
-
-**5. Verify network connectivity**
-
-* Make sure the user running the command has access to the Docker network.
-* You can check network connectivity by running `docker ps -a --no-raw` and verifying that the container list is displayed.
-
-By trying these safe fixes, you should be able to resolve the "Permission Denied" error when running `docker ps`.
+version https://git-lfs.github.com/spec/v1
+oid sha256:3e3bd37cfbb337e8950ff136780c31a1009ae89cc5d6e3c1852774be34dd9c53
+size 1854

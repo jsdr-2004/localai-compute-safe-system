@@ -1,21 +1,3 @@
- To check the system uptime in Linux, you can use the `uptime` command. Here's how to do it:
-
-1. Open a terminal window. If you're using a graphical desktop environment like GNOME or KDE, you can usually find this by searching for "terminal" in your application launcher or by pressing `Ctrl+Alt+T`.
-
-2. Type `uptime` and press `Enter`. The output will look something like this:
-
-```
-18:25:36 up 7 days,  9:40,  1 user,  load average: 0.02, 0.05, 0.04
-```
-
-Let me break down the output for you:
-
-- `18:25:36` is the current time.
-- `up 7 days, 9:40` means that the system has been running for 7 days and 9 hours, 40 minutes.
-- `1 user` indicates there's one user currently logged in.
-- `load average:` shows the system load averages for the past 1, 5, and 15 minutes. In this example:
-  - `0.02` means the system was loaded by an average of 0.02 tasks per core for the last minute.
-  - `0.05` means the system was loaded by an average of 0.05 tasks per core for the past 5 minutes.
-  - `0.04` means the system was loaded by an average of 0.04 tasks per core for the past 15 minutes.
-
-System load averages help you understand the CPU demand on your system at different time intervals. A lower value is generally better, as it indicates fewer processes are competing for CPU resources at a given moment. However, a consistently high load average could indicate that your system is under heavy strain and might benefit from additional resources or optimization.
+version https://git-lfs.github.com/spec/v1
+oid sha256:b466323e64fb9bf9f43e7166628488ff77fe6a22b71230eee97cff56ee249b72
+size 1458

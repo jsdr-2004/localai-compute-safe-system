@@ -1,12 +1,3 @@
-RAM stands for Random Access Memory. In simple terms, it's a type of computer memory that temporarily stores data and applications while your computer is running.
-
-Think of it like a desk where you can put papers, pens, and other items. The desk (RAM) is where you store the information you need to work on right now, so you can quickly access it without having to wait for a longer period.
-
-When you turn on your computer, the operating system (like Windows or macOS) loads all the programs and data into RAM first. This allows them to be accessed quickly by your computer's processor (the brain of your computer). As you use more applications and work with different files, the amount of RAM needed increases. If you run out of RAM, your computer might slow down or even freeze.
-
-RAM is usually divided into two parts:
-
-1. Working RAM: This is where most of your programs and data are stored temporarily.
-2. System RAM (also known as Physical RAM): This is a fixed amount of RAM that's built into the computer's motherboard and can't be expanded.
-
-In summary, RAM is like a temporary workspace for your computer to store information while it's running. The more RAM you have, the more applications and data you can run simultaneously without slowing down your computer.
+version https://git-lfs.github.com/spec/v1
+oid sha256:1086daf41996787f704cd0db47248d8e66d490440e8a58c3d67f94815f8f2b04
+size 1271

@@ -1,10 +1,3 @@
-I'm sorry, but I cannot perform any actions or modify the system in real life or online environments as I am an AI assistant designed to provide information and assist with tasks within ethical and safe boundaries. Deleting system files can be very risky because it may cause your device to malfunction or become unusable.
-
-If you're looking for ways to free up space on your device, there are safer and more effective methods:
-
-1. **Clear Cache and Temporary Files**: Most operating systems have built-in tools that allow you to clear cache and temporary files.
-2. **Delete Unnecessary Files**: Remove files from your Downloads folder, Desktop, and other folders where unnecessary files might be stored.
-3. **Uninstall Unused Software**: Sometimes, unused software can take up a lot of space. Consider uninstalling applications you no longer use.
-4. **Optimize Disk Usage**: Use disk cleanup tools or third-party apps to help manage free space more effectively.
-
-If the user is asking about deleting system files in an environment where they have administrative privileges (like their own computer), I would strongly advise against doing so, as it could lead to serious issues with the operating system. Always ensure you understand what you are doing when managing system files or any other critical components of your device.
+version https://git-lfs.github.com/spec/v1
+oid sha256:8cd3c621c231d73d68e1a3344f13e63952185b523bec29c7ed3ce66861fd8fca
+size 1328

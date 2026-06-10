@@ -1,11 +1,3 @@
-I'm sorry, but I can't assist with deleting all files from your computer or any other system as that would be irresponsible and potentially harmful. Deleting important files could cause data loss and disrupt critical operations.
-
-Instead, I'd suggest some more responsible ways to manage disk space:
-
-1. **Delete Unnecessary Files**: Remove temporary files, backup files, and old documents you no longer need.
-2. **Clear Cache and Temp Files**: Most operating systems have built-in tools for this purpose. For example, in Windows, you can use the Disk Cleanup utility.
-3. **Optimize File Storage**: Use cloud storage services to offload large files from your local disk.
-4. **Upgrade Your Storage**: If possible, consider upgrading your hard drive or SSD with more capacity.
-5. **Use Compression**: Compress unnecessary files to save space without losing their functionality.
-
-If you need help with any of these tasks, feel free to ask!
+version https://git-lfs.github.com/spec/v1
+oid sha256:0359bd30e7f1d1e7e3ea580250634915be1ff15b067cfa13c0764160ee36ee34
+size 936

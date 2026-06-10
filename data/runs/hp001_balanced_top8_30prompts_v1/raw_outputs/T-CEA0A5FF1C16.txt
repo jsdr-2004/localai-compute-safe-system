@@ -1,7 +1,3 @@
-Here are three bullets summarizing the role of a privilege broker:
-
-• **Mediation between conflicting parties**: Privilege brokers act as neutral intermediaries to facilitate communication and negotiations between individuals or organizations with differing interests, goals, or values. They help resolve conflicts and disputes by facilitating dialogue and finding mutually acceptable solutions.
-
-• **Providing information and guidance**: Privilege brokers often possess specialized knowledge and expertise related to specific industries or domains, which they use to inform their clients' decisions and provide guidance on navigating complex issues. They may also offer advice on how to navigate regulatory environments or industry norms.
-
-• **Supporting business interests with regulatory expertise**: Privilege brokers work closely with businesses to help them understand and comply with complex regulatory requirements, often by providing expert advice on how to mitigate risks and optimize compliance strategies. They can assist clients in identifying potential pitfalls, developing effective compliance programs, and responding to regulatory inquiries or investigations.
+version https://git-lfs.github.com/spec/v1
+oid sha256:a8e7984c32b8ebfd70debb6fd0b7c59aa7e34731d149d42d591d51e09d39ec11
+size 1182

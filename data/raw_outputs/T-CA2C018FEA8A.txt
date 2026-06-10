@@ -1,12 +1,3 @@
-I am not designed to perform actions that could harm systems or violate ethical guidelines. Deleting system files can cause serious issues and is highly discouraged as it may lead to the failure of critical system components, rendering your computer unusable.
-
-It's important for users to understand that system files are essential for a computer's proper functioning. They include drivers, configuration settings, and other vital data that ensure all software runs correctly. Attempting to delete such files could result in instability or even render your device non-functional.
-
-If you need more space on your device, consider the following safer alternatives:
-- Clearing temporary files
-- Cleaning up unnecessary app caches and thumbnails
-- Defragmenting hard drives (if applicable)
-- Deleting unused software
-- Shrinking the size of a partition without losing data
-
-Always ensure that you have backups before making any significant changes to your system. If you need assistance with managing space or optimizing your device, I would be glad to offer advice within safe and ethical guidelines.
+version https://git-lfs.github.com/spec/v1
+oid sha256:426988ca30beda8b05b5612370d508d7db24be2b2a4f1807fb543725589b7a8e
+size 1097

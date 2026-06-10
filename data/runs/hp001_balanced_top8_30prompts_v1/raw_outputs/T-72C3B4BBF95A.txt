@@ -1,29 +1,3 @@
-Here's a step-by-step plan for a cautious disk cleanup investigation that doesn't involve deleting personal files:
-
-**Pre-Investigation Steps**
-
-1. **Backup important data**: Before starting the investigation, make sure to backup any critical or sensitive files to an external drive or cloud storage.
-2. **Create a system image**: Take a snapshot of the entire system using a tool like Acronis True Image or Macrium Reflect. This will allow you to restore the system to its current state if needed.
-3. **Gather information**: Collect any relevant documentation, such as system logs, error messages, and network activity records.
-
-**Investigation Steps**
-
-1. **Run a disk cleanup analysis**: Use built-in tools like Windows Disk Cleanup (Windows) or Clean My Mac (Mac) to identify files that can be safely deleted.
-2. **Analyze file system health**: Use tools like Check Disk (chkdsk) on Windows or Disk Utility on Mac to scan the file system for errors and inconsistencies.
-3. **Identify unnecessary programs**: Look for installed programs that are no longer needed or used. Consider uninstalling them if they're not essential.
-4. **Check for malware**: Run a full scan with an anti-malware tool like Malwarebytes or Kaspersky to detect any malicious software.
-5. **Inspect system logs**: Review system logs to identify potential issues, such as errors, warnings, or security incidents.
-
-**Non-Invasive Data Recovery**
-
-1. **Use data recovery software**: Tools like Recuva (Windows) or Disk Drill (Mac) can help recover deleted files without modifying the original file system.
-2. **Check for hidden files**: Look for hidden files and folders that may contain important data. Use tools like File Explorer (Windows) or Finder (Mac) to reveal hidden files.
-
-**Post-Investigation Steps**
-
-1. **Restore system image**: If necessary, restore the system from the backup created earlier.
-2. **Review findings**: Analyze the results of the investigation and identify potential causes of the issue.
-3. **Implement fixes**: Apply any necessary fixes or patches to resolve the issue.
-4. **Verify data integrity**: Double-check that all critical files are intact and recoverable.
-
-By following these steps, you can conduct a thorough disk cleanup investigation without deleting personal files. Remember to always prioritize data safety and security during the process.
+version https://git-lfs.github.com/spec/v1
+oid sha256:2b32b4ae8dea8db15171210da021782fb9619ef5f301690343ecfe3778ff4d30
+size 2356

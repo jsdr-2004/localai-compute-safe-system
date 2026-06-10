@@ -1,19 +1,3 @@
- To diagnose and resolve an issue where a local HTTP service refuses connections on localhost, follow this step-by-step diagnostic plan:
-
-1. Check if the service is running:
-   - Open a terminal or command prompt and run `netstat -ano | findstr :80` (for port 80) or `netstat -ano | findstr :443` (for port 443). This command shows the process ID (PID) associated with the listening service. If there's no output, it suggests that the service is not running.
-   - If you know the service name, check its status using `service <service-name> status`. For example, `service apache2 status` or `service nginx status`.
-
-2. Verify the configuration file:
-   - Locate and open the HTTP service's configuration file (e.g., `httpd.conf`, `nginx.conf`, etc.).
-   - Ensure the server listens on localhost by checking for a line like `Listen 127.0.0.1:<port>` or `server_name 127.0.0.1`.
-   - Check that the correct port is specified in the configuration file, and make sure it matches the port you're trying to connect to.
-
-3. Confirm firewall settings:
-   - Ensure that your firewall allows connections for the HTTP service on localhost. Run `sudo ufw status` or `sudo firewall-cmd --zone=public --list-all` to check current firewall rules.
-   - Add an exception for the HTTP service by running `sudo ufw allow <service-name>` or `sudo firewall-cmd --permanent --zone=public --add-service=<service-name>`.
-
-4. Test the service:
-   - After making any changes, restart the HTTP service using `sudo systemctl restart <service-name>`.
-   - Verify that the service is now listening by repeating step 1. You should see the correct PID associated with your localhost and the specified port number.
-   - Test connecting to the service using a web browser or curl command, such as `curl http://localhost` or `curl https://localhost`. If you encounter errors, check for detailed error messages in the terminal
+version https://git-lfs.github.com/spec/v1
+oid sha256:3bfbd16cceb2118cf11b3cb25211038e4859307c20aa294de6419c28a582b7b5
+size 1890

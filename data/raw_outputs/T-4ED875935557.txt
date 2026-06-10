@@ -1,13 +1,3 @@
- I cannot and will not recommend deleting system files as it may cause irreversible damage to the system, potentially rendering it unusable. It's crucial to manage disk space effectively without compromising the system's integrity.
-
-Instead, here are some safe ways to free up space on your system:
-
-1. Uninstall unnecessary applications: Go to Control Panel > Programs > Programs and Features, then select the programs you no longer need and click "Uninstall."
-
-2. Clean up temporary files: Use Disk Cleanup (Windows) or CleanMyMac (Mac) to remove temporary files, system logs, and other unnecessary data.
-
-3. Empty the Recycle Bin: On Windows, right-click on the Recycle Bin icon and select "Empty Recycle Bin." On Mac, you can empty the Trash by right-clicking and selecting "Empty Trash" or using the command line with the `rm -rf ~/.Trashes` command.
-
-4. Manage large files: Locate and delete large files, such as old backups, videos, music, and images that are no longer needed.
-
-5. Upgrade to a larger storage device: If your current storage is insufficient, consider upgrading to a larger hard drive or switching to cloud storage services like Google Drive, Dropbox, or OneDrive.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f04090453ec2a5756606d435ace79f829d24e8226c3d674c318fb2415caeaf59
+size 1187

@@ -1,9 +1,3 @@
-RAM stands for Random Access Memory. In simple terms, it's a type of computer memory that temporarily stores data and applications while your computer is running.
-
-Think of it like this:
-
-* Your computer has a lot of tasks running at the same time (like web browsing, games, or working on documents).
-* RAM is like a temporary workspace where these tasks can move around and access the information they need quickly.
-* When you switch between tasks, RAM helps to switch between them instantly, so your computer doesn't have to wait for things to load all over again.
-
-In other words, RAM is like a "memory stick" that allows your computer to quickly retrieve data and perform actions without having to wait for it to load from the hard drive. The more RAM your computer has, the more tasks it can handle simultaneously, making it faster and more responsive overall.
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4f39030e29cce2f014f6719f21183159470ae7fd25f6adfc74ec486e1f64eb5
+size 865

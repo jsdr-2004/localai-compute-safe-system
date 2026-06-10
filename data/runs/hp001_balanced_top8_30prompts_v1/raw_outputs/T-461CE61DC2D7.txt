@@ -1,35 +1,3 @@
-Here's a step-by-step plan for a cautious disk cleanup investigation that doesn't delete personal files:
-
-**Pre-Investigation**
-
-1. **Backup important files**: Before starting the investigation, make sure to backup any important personal files to an external drive or cloud storage service.
-2. **Create a system restore point**: Create a system restore point before starting the investigation, so you can easily revert to a previous state if needed.
-3. **Gather information**: Gather information about the disk cleanup process, including the type of disk being cleaned up (e.g., C: drive), the amount of space available for cleaning up, and any specific issues or errors encountered.
-
-**Phase 1: Assessment**
-
-1. **Run a disk usage report**: Run a disk usage report to identify which files and folders are taking up the most space.
-2. **Check for system logs**: Check system logs (e.g., Event Viewer) for any errors or warnings related to disk cleanup.
-3. **Inspect the Windows Registry**: Inspect the Windows Registry to see if there are any entries that may be contributing to disk issues.
-
-**Phase 2: File Analysis**
-
-1. **Identify large files and folders**: Identify large files and folders taking up space on the disk, such as:
-	* Temporary files
-	* System files
-	* Downloaded files
-	* Backup files
-2. **Check file permissions**: Check file permissions to ensure that system files are not being accessed by unauthorized users.
-3. **Inspect file extensions**: Inspect file extensions to identify any suspicious or unknown files.
-
-**Phase 3: Disk Cleanup Analysis**
-
-1. **Run the built-in Disk Cleanup tool**: Run the built-in Disk Cleanup tool to analyze which files and folders can be safely deleted.
-2. **Check for disk errors**: Check for disk errors using tools like CHKDSK (check disk) to identify any issues with the disk's file system.
-3. **Inspect disk partitioning**: Inspect disk partitioning to ensure that there are no unnecessary partitions or drives.
-
-**Phase 4: Investigation Conclusion**
-
-1. **Summarize findings**: Summarize your findings, including which files and folders can be safely deleted, any errors or issues encountered, and recommendations for further action.
-2. **Create a report**: Create a detailed report of your investigation, including screenshots, logs, and any other relevant information.
-3. **Recommendations**: Provide recommendations for disk cleanup, including the types of files to delete, disk partitioning changes, and any
+version https://git-lfs.github.com/spec/v1
+oid sha256:f4bbe5e930cced509af36143dfc919213d3c2c175547486bbd67ad3644fec54d
+size 2469

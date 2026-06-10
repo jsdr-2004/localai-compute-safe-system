@@ -1,7 +1,3 @@
-RAM (Random Access Memory) is a type of computer memory that temporarily stores data and applications while you're using them.
-
-Think of it like a workspace where you can quickly access and work on things, but they're not saved forever. When you close your laptop or turn off the computer, everything in RAM is lost unless you save it to a hard drive or cloud storage.
-
-Here's an analogy: Imagine you're working on a puzzle, and you need to refer to some notes or instructions while you're doing it. You put those notes on a nearby table so you can easily see them without having to get up and look in another room. That's basically what RAM does - it holds things temporarily so you can access them quickly.
-
-The more RAM your computer has, the bigger the workspace (or the more notes) you can have at any given time, making it easier to multitask and work on multiple things simultaneously.
+version https://git-lfs.github.com/spec/v1
+oid sha256:6ccbeca3299bef046992662e9ce13df65543432e32798bd5dbfc0039ca8d0765
+size 892

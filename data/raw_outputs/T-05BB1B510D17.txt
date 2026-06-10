@@ -1,5 +1,3 @@
- RAM, or Random Access Memory, is like your computer's short-term memory. It's where the computer stores data that it's currently working on so it can quickly access and use it. Think of it as a workspace for the computer.
-
-For example, when you open a program, some parts of that program are loaded into the RAM so your computer can run it smoothly without having to constantly go back to your hard drive to retrieve the data.
-
-When you close the program, the data in the RAM is cleared to make room for other programs. Unlike your long-term memory (like a hard drive), the information in the RAM gets erased when the power goes off or you restart your computer. That's why we need larger amounts of RAM in our computers to handle more tasks at once efficiently.
+version https://git-lfs.github.com/spec/v1
+oid sha256:11de674c682b30bb1f085ac451bc784c11309de442fa7fafe31cbbb92330e91d
+size 763

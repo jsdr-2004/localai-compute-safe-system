@@ -1,7 +1,3 @@
-RAM, which stands for Random Access Memory, is a type of computer memory that can be accessed randomly. This means data can be stored or retrieved from any location within the memory, unlike with other types of storage like hard drives.
-
-Think of RAM as temporary scratch paper where your computer temporarily stores information it needs to process tasks quickly. When you open an application or start a game, parts of its code and data are loaded into RAM so that your computer can access them very fast. This makes the program run more smoothly and faster.
-
-Once you close the application or turn off your computer, all the data in RAM is lost unless it has been saved to permanent storage like a hard drive or SSD (solid-state drive).
-
-In summary, RAM acts as a buffer between your CPU and permanent storage, allowing for quick access to frequently used information.
+version https://git-lfs.github.com/spec/v1
+oid sha256:51a9bc1693898b0c31b6c869af3448b97e88e6f68a61f71edbc6bc434f557e9d
+size 869
