@@ -1,0 +1,35 @@
+When running `docker ps`, if you encounter a "permission denied" error, it typically indicates that Docker is unable to access or communicate with your container due to insufficient permissions on your system.
+
+### Likely Cause:
+The most common reason for this issue is that the user account under which Docker is running does not have sufficient privileges. This can happen in several scenarios:
+
+1. **Docker Daemon Running as Root**: If the Docker daemon (the service responsible for managing containers) is running with root permissions, it might be unable to communicate properly with non-root users or groups.
+
+2. **User Not Added to Docker Group**: In some systems, Docker requires that a user be added to the `docker` group in order to run commands without needing elevated privileges. If your current user account is not part of this group, you will need to add it and then log out and log back in for changes to take effect.
+
+3. **SELinux or AppArmor Policies**: In some environments with strict security policies (like SELinux or AppArmor), Docker might be restricted from accessing certain directories or files, leading to permission issues.
+
+### Safe Fix:
+To resolve this issue safely, you can follow these steps:
+
+1. **Check if the Docker Daemon is Running as Root**:
+   - You can check which user the Docker daemon is running under by looking at its configuration file (`/etc/systemd/user/docker.service` or `/etc/systemd/system/docker.service`). If it's set to run with root privileges, you should change this.
+
+2. **Add Your User to the `docker` Group**:
+   - Open a terminal and add your user account to the `docker` group using the following command:
+     ```sh
+     sudo usermod -aG docker $USER
+     ```
+   - Log out of your current session and log back in so that the changes take effect.
+
+3. **Verify Docker Configuration**:
+   - Ensure that Docker is configured correctly by checking its configuration files for any misconfigurations.
+   - You can also check if SELinux or AppArmor policies are causing issues, but this might require more advanced troubleshooting steps depending on your system setup.
+
+4. **Restart the Docker Service**:
+   - After making changes to user permissions and configurations, restart the Docker service to apply them:
+     ```sh
+     sudo systemctl restart docker
+     ```
+
+By following these steps, you should be able to resolve the "permission denied" error when running `docker ps`. If the issue persists after ensuring your user account is part of the `docker` group, it might be worth checking for any SELinux or AppArmor policies that could be restricting Docker's access.

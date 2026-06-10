@@ -1,0 +1,11 @@
+ Here is a simple Python function that reverses a given string:
+
+```python
+def reverse_string(input_str):
+    return input_str[::-1]
+
+# Test the function
+print(reverse_string("Hello World"))  # Output: dlroW olleH
+```
+
+In this example, the `[::-1]` slice notation is used to reverse the string. It means starting from the end of the string and moving backwards until reaching the beginning.

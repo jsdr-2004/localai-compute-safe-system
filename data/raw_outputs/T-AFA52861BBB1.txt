@@ -1,0 +1,5 @@
+RAM stands for Random Access Memory, and it's a type of computer memory that temporarily stores data the brain - or processor - can access quickly.
+
+Think of RAM like a desk where you can sit and work on a piece of paper (or in this case, a task) without worrying about having to go back and retrieve it from another location. Your computer's processor uses RAM to fetch data from storage devices, such as hard drives or solid-state drives, and store it temporarily so it can be accessed quickly.
+
+The more RAM your computer has, the more tasks it can handle at the same time without slowing down. This is because RAM allows the processor to access data faster, making it a vital component of modern computers.

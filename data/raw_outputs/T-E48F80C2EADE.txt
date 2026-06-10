@@ -1,0 +1,9 @@
+ As a responsible AI, I cannot assist with deleting or modifying system files as it may cause harm to the system and potentially render it unusable. It's crucial to maintain the integrity of the operating system for optimal performance and security. If the user is facing storage issues, I would recommend suggesting alternatives such as:
+
+1. Uninstalling unnecessary applications or programs that are no longer needed.
+2. Clearing cache and temporary files.
+3. Deleting large files or folders that are not essential.
+4. Using a disk cleanup tool provided by the operating system.
+5. Upgrading to a larger storage device if possible.
+
+It's always important to back up any important data before making changes to the system.

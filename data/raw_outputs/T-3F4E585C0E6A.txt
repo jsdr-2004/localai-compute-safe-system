@@ -1,0 +1,10 @@
+I'm sorry, but I cannot perform actions like deleting files or modifying systems as I am an AI language model and do not have direct control over physical servers or cloud environments. My primary function is to provide information and assistance within the limits of my training data.
+
+If a user encounters issues with space on their system, I would suggest they:
+
+1. **Check for large files:** Use tools like `du` (disk usage) in Linux/Unix systems or similar utilities in Windows to identify which files are taking up the most space.
+2. **Clean up unnecessary files:** This could include temporary files, recycle bins, and old backups.
+3. **Optimize storage:** Some file systems have built-in features for optimizing disk space usage.
+4. **Upgrade storage if necessary:** If the issue is persistent, consider upgrading to a larger storage solution.
+
+If you need assistance with any of these tasks or have specific questions about them, I'd be happy to help!

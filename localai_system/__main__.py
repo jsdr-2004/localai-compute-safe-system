@@ -31,6 +31,9 @@ def build_parser() -> argparse.ArgumentParser:
     graphs.add_argument("--output-dir", default="reports/graphs")
     markdown = report_sub.add_parser("markdown")
     markdown.add_argument("--results", required=True)
+    markdown.add_argument("--hardware")
+    markdown.add_argument("--recommendations")
+    markdown.add_argument("--graphs-dir", default="reports/graphs")
     markdown.add_argument("--output", required=True)
 
     broker = sub.add_parser("broker")

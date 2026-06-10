@@ -1,0 +1,33 @@
+Here are some safe Linux commands to check disk usage:
+
+1. **df** (Disk Free):
+   ```bash
+df -h
+```
+   This command displays the amount of free space on each disk.
+
+2. **du** (Directory Usage):
+   ```bash
+du -sh /
+```
+   This command displays the size and percentage usage for the current directory.
+
+3. **df --output=pcent /dev/sda1**
+   ```bash
+df --output=pcent /dev/sda1
+```
+   This command shows the disk with name `/dev/sda1` along with its usage percentage.
+
+4. **df -n 2** (Showing top two entries)
+   ```bash
+df -n 2
+```
+   This command displays only the first two disks, which are usually the system partition and swap partition.
+
+5. **du -h /* | sort -r**
+   ```bash
+du -h /* | sort -r
+```
+   This command shows a list of all directories on your Linux system, sorted by size in descending order.
+
+Remember to replace `/dev/sda1` with the name of the disk you want to check.

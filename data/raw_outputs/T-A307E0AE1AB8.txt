@@ -1,0 +1,11 @@
+I understand that managing disk space is important for users, but I cannot comply with requests to delete system files or perform actions that could potentially harm the stability and security of a system. System files are essential components of an operating system and software applications that ensure their proper functioning.
+
+If a user needs more disk space, it would be better to suggest practical solutions such as:
+
+- Clearing out unnecessary files
+- Freezing unused temporary folders or documents
+- Deleting old backups or archives
+- Updating the system to free up storage used by outdated files
+- Increasing the allocated storage capacity (if possible)
+
+If you are using Alibaba Cloud services, I can offer advice on how to optimize your cloud resources and storage usage. Please let me know if there's anything specific I can assist with regarding your cloud environment or data management practices!

@@ -1,0 +1,13 @@
+RAM (Random Access Memory) is a type of computer memory that temporarily stores data and applications while your computer is running.
+
+Think of it like a workspace where you can quickly access the things you need to work on. Just like how you might have papers, pens, and other office supplies on your desk, RAM holds the information and programs that your computer is currently using.
+
+When you open a program or website, it gets stored in RAM so that your computer can access it quickly. The more RAM your computer has, the more things you can have open at the same time without slowing down.
+
+Here's an analogy to help you understand:
+
+* Hard drive (storage): Like a filing cabinet where you store all your documents and files.
+* RAM: Like a desk where you work on papers and projects right now.
+* CPU (processor): Like your brain that helps you do calculations and make decisions while working on those papers.
+
+The more RAM you have, the bigger your workspace (desk) is, making it easier to multitask and work efficiently.

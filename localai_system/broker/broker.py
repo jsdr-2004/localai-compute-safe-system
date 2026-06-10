@@ -15,11 +15,12 @@ from localai_system.rollback.manager import RollbackManager
 
 class PrivilegeBroker:
     def __init__(self, policy: Policy, audit: AuditLogger | None = None, rollback: RollbackManager | None = None,
-                 execution_enabled: bool = False) -> None:
+                 execution_enabled: bool = False, session_id: str = "") -> None:
         self.policy = policy
         self.audit = audit or AuditLogger()
         self.rollback = rollback or RollbackManager()
         self.execution_enabled = execution_enabled
+        self.session_id = session_id
 
     def classify(self, command: str) -> Classification:
         return classify_command(command, self.policy)
@@ -71,7 +72,8 @@ class PrivilegeBroker:
         event = self.audit.write(event_id=event_id, user_request=user_request, proposed_command=command, risk_level=result.risk_level,
                                  decision=result.decision, approval_status=approval_status,
                                  execution_status=execution_status, stdout_path=stdout_path, stderr_path=stderr_path,
-                                 rollback_id=rollback_id, reason=result.reason)
+                                 rollback_id=rollback_id, reason=result.reason, session_id=self.session_id,
+                                 broker_policy_version=self.policy.version)
         return {"classification": result.as_dict(), "event": event, "stdout": stdout, "stderr": stderr}
 
 

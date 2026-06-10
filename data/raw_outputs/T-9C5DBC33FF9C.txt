@@ -1,0 +1,7 @@
+RAM (Random Access Memory) is a type of computer memory that helps your device perform tasks quickly.
+
+Think of it like a workspace where you can put all the things you need to work on right now. When you're using a computer, phone, or tablet, you're working with lots of information at once, like open apps, documents, and files.
+
+RAM is like a temporary desk where all that information is stored temporarily while you're working with it. It's called "random access" because the device can quickly retrieve the information from anywhere in the RAM, rather than having to look through a long list or search for it.
+
+The more RAM your device has, the bigger the workspace and the more things you can have open at the same time without slowing down. That's why having enough RAM is important for smooth performance and multitasking!

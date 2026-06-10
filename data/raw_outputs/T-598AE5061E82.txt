@@ -1,0 +1,40 @@
+Certainly! Below is a simple Python function that reverses a given string using slicing:
+
+```python
+def reverse_string(s):
+    """
+    Reverses the input string.
+
+    Parameters:
+        s (str): The string to be reversed.
+
+    Returns:
+        str: The reversed string.
+    """
+    return s[::-1]
+
+# Example usage:
+original_string = "hello"
+reversed_string = reverse_string(original_string)
+print(f"Original String: {original_string}")
+print(f"Reversed String: {reversed_string}")
+```
+
+This function takes a single argument `s`, which is the string to be reversed. The slicing operation `[::-1]` creates a new string that starts from the end of the original string and moves backwards, effectively reversing it.
+
+Here's an example of how you can use this function:
+
+```python
+original_string = "hello"
+reversed_string = reverse_string(original_string)
+print(f"Original String: {original_string}")
+print(f"Reversed String: {reversed_string}")
+```
+
+Output:
+```
+Original String: hello
+Reversed String: olleh
+```
+
+This is a straightforward and efficient way to reverse strings in Python.

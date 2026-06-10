@@ -1,0 +1,60 @@
+When running `docker ps` and encountering a "permission denied" error, it typically indicates that Docker is not able to access the container's process list due to insufficient permissions or incorrect configuration.
+
+### Likely Cause:
+The most common causes for this issue are:
+
+1. **Docker User Permissions**: The user running the command might not have sufficient permissions to execute Docker commands.
+2. **SELinux/AppArmor Policies**: SELinux (Security-Enhanced Linux) or AppArmor policies may be restricting access.
+3. **Incorrect Configuration Files**: Misconfiguration in Docker's configuration files can lead to permission issues.
+
+### Safe Fix:
+To resolve the issue, you should first ensure that your user has the necessary permissions and then check for any misconfigurations. Here are steps to follow:
+
+1. **Check User Permissions**:
+   - Ensure that the user running `docker ps` is a member of the Docker group.
+     ```bash
+     sudo usermod -aG docker $USER
+     ```
+   - Log out and log back in, or run:
+     ```bash
+     newgrp docker
+     ```
+
+2. **Verify SELinux/AppArmor Configuration**:
+   - If you are using SELinux (common on Red Hat-based systems), check the context of Docker files.
+     ```bash
+     ls -Z /var/run/docker.pid
+     ```
+   - Ensure that the Docker socket has the correct context and permissions.
+   - For AppArmor, ensure it is not blocking access to Docker:
+     ```bash
+     sudo apparmor_parser -R /etc/apparmor.d/usr.sbin.dockerd
+     ```
+
+3. **Check Docker Configuration Files**:
+   - Verify if there are any misconfigurations in the Docker configuration files (`/etc/docker/daemon.json` or `/var/lib/docker/daemon.json`).
+   - Ensure that Docker is running with appropriate permissions and configurations.
+
+4. **Restart Docker Service**:
+   - Sometimes, restarting the Docker service can resolve permission issues.
+     ```bash
+     sudo systemctl restart docker
+     ```
+
+5. **Check for Running Containers**:
+   - If you have any containers running in a non-standard state (e.g., `exited`), they might be causing permission issues. You can list them with:
+     ```bash
+     sudo docker ps --all
+     ```
+   - Remove these containers if necessary.
+     ```bash
+     sudo docker rm $(sudo docker ps --all -q)
+     ```
+
+6. **Check Docker Logs**:
+   - Sometimes, the logs might provide more insight into what is causing the issue.
+     ```bash
+     sudo journalctl -u docker.service
+     ```
+
+By following these steps, you should be able to resolve the "permission denied" error when running `docker ps`. If the problem persists after checking and fixing these points, it may be worth investigating further or seeking additional support specific to your environment.

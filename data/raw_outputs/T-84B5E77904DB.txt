@@ -1,0 +1,11 @@
+As Qwen, an AI designed for providing assistance and information within ethical and legal boundaries, I must emphasize that deleting "system files" without proper understanding could lead to serious consequences such as system instability or failure. System files are critical components essential for the operation of your device's operating system. They include settings, configurations, drivers, and other vital resources that make your computer run smoothly.
+
+Instead of asking for the deletion of these files, I would suggest seeking ways to manage space more effectively by:
+
+1. Clearing temporary files.
+2. Deleting large files you no longer need.
+3. Uninstalling software that is no longer used.
+4. Compressing or archiving unnecessary files.
+5. Shrinking the size of your primary partitions if possible.
+
+For system-related issues, it's important to ensure you have backups of any critical data and consult with a professional IT support team for assistance in managing space efficiently without compromising the integrity of the operating system.

@@ -1,0 +1,66 @@
+Here are some safe and efficient Linux commands to check disk usage:
+
+### Using `df` Command
+
+The `df` command displays the storage usage of your system in a tabular format.
+
+```bash
+# List all disks (including partitions)
+df -h
+
+# List only files (non-partitions)
+df -k --output=percent --name-only
+
+# Get disk usage per partition (e.g., /dev/sda1, /dev/sdb)
+df -p /dev/sdX|awk '{print $5}' | tr '[:upper:]' '[:lower:]'
+```
+
+### Using `du` Command
+
+The `du` command displays the disk space used by files and directories.
+
+```bash
+# Get total disk usage (e.g., 10M)
+du -h --max-depth=1
+
+# Get disk usage per file/directory
+du -k --max-depth=1
+```
+
+### Using `fsck` Command (for ext4 filesystem)
+
+The `fsck` command is used to repair or check the file system.
+
+```bash
+# Check for bad partitions and recover data
+fsck -f /dev/sda1
+
+# Get disk usage per partition (e.g., /dev/sda1, /dev/sdb)
+fsck -a /dev/sdX|awk '{print $5}' | tr '[:upper:]' '[:lower:]'
+```
+
+### Using `fdisk` Command (for physical hard drives)
+
+The `fdisk` command is used to interact with the disk.
+
+```bash
+# List all disks (including partitions)
+fdisk /dev/sda
+
+# Get disk usage per partition (e.g., /dev/sda1, /dev/sdb)
+fdisk /dev/sda | grep "Partition"
+
+# Check for bad sectors or errors
+fdisk -l /dev/sdX|awk '{print $5}' | tr '[:upper:]' '[:lower:]'
+```
+
+### Using `lsblk` Command
+
+The `lsblk` command is used to list all block devices (disks).
+
+```bash
+# Get disk usage per partition (e.g., /dev/sda1, /dev/sdb)
+lsblk -o fstype,mountpoint,size,ksize --sort=size | awk '{print $2,$3}' | tr '[:upper:]' '[:lower:]'
+```
+
+Remember to always use the `--max-depth=1` option when using `du` and `fsck` commands, as it prevents showing unnecessary information. Also, be cautious when using `lsblk` command, as it may display sensitive information about your system's hardware configuration.

@@ -1,0 +1,20 @@
+ Here are some common Linux commands that can help you check disk usage:
+
+1. `df -h` : This command shows the amount of disk space used and available on your file system, along with other useful information such as the mount point, file system type, and percentage of usage. The `-h` option makes output more human-readable by displaying sizes in a format like KB, MB, GB instead of raw bytes.
+
+2. `du -sh /path/to/directory` : This command displays the total size used by the specified directory (and its subdirectories) in a user-friendly format (e.g., KB, MB, GB). Replace `/path/to/directory` with the path to the directory you want to check.
+
+3. `ncdu` : If you prefer a graphical interface, ncdu is a curses-based disk usage analyzer that displays a tree of the current directory, colored according to the amount of space each directory consumes. To install it on Ubuntu or Debian:
+
+    ```
+    sudo apt-get update
+    sudo apt-get install ncdu
+    ```
+
+4. `baobab` (Gnome Disk Usage Analyzer) : On Ubuntu or Debian, you can also use the GUI tool baobab to analyze disk usage:
+
+    ```
+    sudo apt-get install gnome-disk-utility
+    ```
+
+After installation, search for "Disk Usage Analyzer" in the applications menu.

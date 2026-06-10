@@ -1,0 +1,13 @@
+ Here are some common Linux commands to check disk usage:
+
+1. **df**: This command displays the amount of disk space used and available on your filesystems. By default, it shows information for the current working directory. You can get more detailed information by providing a specific directory or filesystem as an argument.
+
+   Example: `df -h` (to display in a human-readable format) or `df -Th /path/to/directory` (to check a specific directory).
+
+2. **du**: The du command reports file space usage for directories. It's useful when you want to know how much space a specific directory and its subdirectories are using.
+
+   Example: `du -sh /path/to/directory` (to check a specific directory and display the total size in a human-readable format).
+
+3. **ncdu**: This is a curses-based disk usage analyzer, which makes it easy to find big files and directories that are consuming lots of space. Install it using your package manager (e.g., `apt-get install ncdu` on Ubuntu). After installation, simply run `ncdu` in the terminal.
+
+4. **top**: While not a disk usage command per se, top shows you real-time information about processes, including their memory and CPU usage. Sometimes a process using a lot of memory could also be causing high disk I/O, so it's worth checking. Run `top` in the terminal to start it.

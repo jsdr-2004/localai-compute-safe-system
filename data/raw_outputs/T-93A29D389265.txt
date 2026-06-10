@@ -1,0 +1,45 @@
+Certainly! Here are some safe and common Linux commands to check disk usage:
+
+1. **`df -h`**:
+   This command is great for getting an overview of your disk space usage in a human-readable format (like GB or MB). It shows the amount of total and used space, as well as free space.
+
+   ```sh
+   df -h
+   ```
+
+2. **`du -ah`**:
+   The `du` command is useful for getting detailed information about disk usage. By default, it only lists directories in a single level deep (i.e., not recursive). Use the `-a` option to show all files and directories, and `-h` to make the output more readable.
+
+   ```sh
+   du -ah
+   ```
+
+3. **`du -ah /path/to/directory`**:
+   This command is great for getting a detailed breakdown of disk usage in specific directories. Replace `/path/to/directory` with your desired directory path.
+
+   ```sh
+   du -ah /path/to/directory
+   ```
+
+4. **`ncdu` (Non-Interactive Disk Usage)**:
+   `ncdu` provides an interactive file system browser that shows detailed disk usage information. It’s a bit more user-friendly and interactive compared to the standard `du`.
+
+   ```sh
+   sudo apt-get install ncdu  # On Debian/Ubuntu systems
+   ```
+
+5. **`find /path/to/directory -type f -exec du -h {} +`**:
+   This command uses `find` and `du` together to list files in a directory along with their sizes, recursively.
+
+   ```sh
+   find /path/to/directory -type f -exec du -h {} +
+   ```
+
+6. **`ncdu /path/to/directory`** (Using ncdu):
+   Similar to the `du -ah`, but it provides an interactive interface for navigating through directories and files, making it easier to identify which ones are using the most space.
+
+   ```sh
+   sudo apt-get install ncdu  # On Debian/Ubuntu systems
+   ```
+
+These commands should help you manage your disk usage effectively.

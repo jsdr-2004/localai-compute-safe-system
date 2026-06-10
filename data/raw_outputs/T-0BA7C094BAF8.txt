@@ -1,0 +1,10 @@
+RAM (Random Access Memory) is a type of computer memory that temporarily stores data and applications while your computer is running.
+
+Think of it like a workspace where you can quickly access and work on things. When you open a program or file, it's copied to the RAM so you can use it right away. The faster and more powerful the RAM, the more programs you can run at the same time without slowing down.
+
+Here's an analogy:
+
+* Hard drive (storage): A big filing cabinet where you store all your files and documents.
+* RAM: A desk or workspace where you can quickly access and work on papers from the filing cabinet.
+
+Just like how you might need to switch between different papers on your desk, a computer needs to switch between different programs in its RAM. If the RAM gets too full, it can slow down the computer.

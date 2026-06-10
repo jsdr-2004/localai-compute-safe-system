@@ -1,0 +1,15 @@
+Here are some safe Linux commands to check disk usage:
+
+1. **`df -h`**: Displays a list of all file systems on the system, along with their available and total space, in a human-readable format.
+
+2. **`du -sh /`**: Displays the size of each directory on the root partition, in kilobytes (KB), megabytes (MB), or gigabytes (GB).
+
+3. **`df -i`**: Displays information about disk usage, including the number of inodes used and available.
+
+4. **`lsblk -o SIZE,FREE,USE`**: Displays information about each disk partition on the system, including its size, free space, and percentage of use.
+
+5. **`fdu -d /`**: Displays a list of all directories on the root partition, along with their total size in bytes.
+
+6. **`sudo du -sh /`**: Similar to `df -h`, but displays the disk usage for each directory on the root partition, in kilobytes (KB), megabytes (MB), or gigabytes (GB).
+
+Remember to always use caution when running commands that require superuser privileges (`sudo`).

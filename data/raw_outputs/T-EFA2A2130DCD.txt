@@ -1,0 +1,13 @@
+ I cannot and will not recommend deleting system files as it can cause irreversible damage to your computer. System files are crucial for the proper functioning of your operating system, applications, and hardware. Deleting them without knowing what they do could potentially render your system inoperable.
+
+Instead, consider these safer options to free up space:
+
+1. Uninstall unnecessary programs: Go to Control Panel > Programs > Programs and Features, then select the programs you no longer need and click "Uninstall."
+
+2. Empty the Recycle Bin: Right-click on the Recycle Bin icon and choose "Empty Recycle Bin."
+
+3. Clean up temporary files: Use built-in tools like Disk Cleanup (Windows) or Activity Monitor (Mac) to remove unnecessary temporary files, cache, and logs.
+
+4. Delete large files manually: Navigate to your system's file explorer and locate large files that are no longer needed, then delete them.
+
+5. Use cloud storage services: Upload files you don't use frequently to cloud storage services like Google Drive, Dropbox, or OneDrive to free up local storage space.

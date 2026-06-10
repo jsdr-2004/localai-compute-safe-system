@@ -1,0 +1,35 @@
+Here are some safe Linux commands to check disk usage:
+
+1. **Using the command line**:
+```
+df -h
+```
+
+ This command displays a list of disks and their current used/available space, along with file system type.
+
+2. **Using the `du` command**:
+```
+du -sh /
+```
+
+This command shows the total size of all files and directories in your root directory (`/`) in human-readable format (kilobytes, megabytes, etc.).
+
+3. **Using the `fs_usage` command**:
+```
+fs_usage --stats
+```
+
+ This command provides detailed information about disk usage, including time spent on different operations like read/write and update.
+
+4. **Using the `awk` command**:
+```
+df -h | awk '{print $5}' | sort -n
+```
+
+This command displays a list of all disks sorted by their used space in ascending order.
+
+5. **Using the `htop` or `glances` commands (optional)**
+
+ These are graphical tools that allow you to monitor system resources, including disk usage, in real-time.
+
+Remember to always use caution when checking disk usage, as excessive usage can lead to performance issues and even data loss. It's also essential to regularly clean up unnecessary files and free up disk space to maintain optimal system performance.

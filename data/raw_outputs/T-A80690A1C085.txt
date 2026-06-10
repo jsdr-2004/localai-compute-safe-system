@@ -1,0 +1,39 @@
+Here are some safe Linux commands to check disk usage:
+
+1. **df -h**: Displays a list of all mounted file systems, showing the amount of used and available space.
+
+   ```bash
+   df -h
+   ```
+
+2. **du -sh /***: Displays the total size of all files in the current directory tree.
+
+   ```bash
+   du -sh /
+   ```
+
+3. **lsblk -f**: Shows disk usage information for each disk partition.
+
+   ```bash
+   lsblk -f
+   ```
+
+4. **fdisk -l**: Lists information about all disk partitions, including their sizes and usage.
+
+   ```bash
+   fdisk -l
+   ```
+
+5. **pmap -d**: Displays the current memory usage of each process.
+
+   ```bash
+   pmap -d
+   ```
+
+6. **du -h --max-depth=1 /**: Shows the total size of all files and directories in the root directory, without going into subdirectories.
+
+   ```bash
+   du -h --max-depth=1 /
+   ```
+
+Remember to always use caution when checking disk usage, as excessive disk usage can lead to performance issues or even data loss.

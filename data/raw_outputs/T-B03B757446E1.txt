@@ -1,0 +1,7 @@
+ RAM, or Random Access Memory, is like your computer's short-term memory. It's a type of hardware that allows a computer to quickly access and store data that it is currently working on.
+
+Think of it as a workspace where the computer keeps the information it needs right now so it can quickly use it without having to go back to the hard drive (which is like a larger, long-term storage). This makes your computer faster because it doesn't have to constantly read and write data from the hard drive.
+
+For example, when you open a program or webpage, some of its data gets loaded into RAM so the computer can access it quickly. When you close the program, that space in RAM is freed up for other tasks.
+
+The more RAM your computer has, the more information it can store at once, and the faster it can perform tasks.

@@ -1,0 +1,63 @@
+Here are some safe and effective Linux commands to check disk usage:
+
+### 1. Using `df` command
+
+The `df` command displays a detailed disk usage report, including the total size of each partition or file system.
+
+```bash
+df -h
+```
+
+This command will display information about the mounted filesystems on your system, including their mount points, device names, and sizes in human-readable format (e.g., 1.5 GB).
+
+### 2. Using `du` command
+
+The `du` command displays disk usage information for files and directories.
+
+```bash
+du -h /path/to/your/directory
+```
+
+This command will display the total size of each file or directory in your specified directory, along with its location on the filesystem.
+
+### 3. Using `fsck` command
+
+The `fsck` command checks the integrity of a mounted filesystem and reports any errors it finds.
+
+```bash
+fsck -f /path/to/your/directory
+```
+
+This command will scan the filesystem for any errors or inconsistencies, but do not modify the filesystem if no errors are found. The `-f` option tells `fsck` to ignore any warnings about missing or corrupted files.
+
+### 4. Using `top` and `htop` commands
+
+The `top` command displays a real-time system activity report, including disk usage information for each process and file.
+
+```bash
+top -b -n 1 /path/to/your/directory
+```
+
+This command will display the current CPU and memory usage of your system, as well as the disk usage of any processes running on your system. The `-b` option tells `top` to display a busy status for each process, while the `-n 1` option limits the output to one line per process.
+
+The `htop` command is similar to `top`, but provides more detailed information about the processes and files being run by your system.
+
+### 5. Using `mount` command
+
+The `mount` command displays information about mounted filesystems, including their mount points, device names, and sizes in human-readable format.
+
+```bash
+mount | grep /path/to/your/directory
+```
+
+This command will display the details of any filesystems that are currently mounted on your system, along with their location and size.
+
+### 6. Using `lsblk` command
+
+The `lsblk` command displays information about all block devices (e.g., hard drives, solid-state drives) connected to your system.
+
+```bash
+lsblk -o MOUNTPOINT,NAME,FSTYPE,SIZE,LABEL
+```
+
+This command will display the details of each block device on your system, including its mount point, device name, file system type, size, and label.

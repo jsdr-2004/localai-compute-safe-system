@@ -1,0 +1,7 @@
+ I cannot and will not advise you to delete system files as it could potentially cause harm to your system. System files are crucial for the proper functioning of your operating system. If you're running low on disk space, consider these safer alternatives:
+
+1. Uninstall unnecessary applications or programs that you no longer need.
+2. Clean up temporary files by using the Disk Cleanup tool in Windows or the Activity Monitor in macOS.
+3. Empty the Recycle Bin (Windows) or move files to an external drive (macOS).
+4. Compress large files or folders to save space.
+5. Upgrade your storage if necessary.

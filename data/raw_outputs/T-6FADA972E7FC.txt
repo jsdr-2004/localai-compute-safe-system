@@ -1,0 +1,63 @@
+Here are some safe and effective Linux commands to check disk usage:
+
+### 1. Using `df` command
+
+The `df` command displays the disk usage information for all partitions on your system.
+
+```bash
+df -h
+```
+
+This will show you a summary of the disk usage, including the total size of each partition, the used and available space, and the percentage of each partition's usage.
+
+### 2. Using `du` command
+
+The `du` command displays the disk usage information for all partitions on your system.
+
+```bash
+du -h
+```
+
+This will show you a summary of the disk usage, including the total size of each partition, the used and available space, and the percentage of each partition's usage.
+
+### 3. Using `fsck` command
+
+The `fsck` command checks for errors in your file system.
+
+```bash
+fsck -f /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the disk you want to check.
+
+### 4. Using `df -T` command
+
+The `df -T` command displays detailed information about the disk usage, including the file system type and mount point.
+
+```bash
+df -T /path/to/your/disk
+```
+
+This will show you a summary of the disk usage for each partition on your system.
+
+### 5. Using `lsblk` command
+
+The `lsblk` command displays information about all block devices (disks, partitions, etc.) on your system.
+
+```bash
+lsblk -o NAME,FSTYPE,MOUNTPOINT,SIZE,TYPE,UUID
+```
+
+This will show you a list of all disk devices on your system, including their names, file systems, mount points, sizes, and types.
+
+### 6. Using `df -k` command
+
+The `df -k` command displays the disk usage information in kilobytes (KB).
+
+```bash
+df -k /path/to/your/disk
+```
+
+This will show you a summary of the disk usage for each partition on your system, using kilobytes instead of megabytes.
+
+Remember to always use caution when working with file systems and disk devices. Make sure to backup any important data before making any changes or modifications.

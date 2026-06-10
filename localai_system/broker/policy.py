@@ -32,6 +32,7 @@ class Classification:
 class Policy:
     def __init__(self, rules: dict[str, Any]) -> None:
         self.rules = rules
+        self.version = str(rules.get("version", "v0.2"))
 
     @classmethod
     def from_yaml(cls, path: str | Path) -> "Policy":

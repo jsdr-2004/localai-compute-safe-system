@@ -1,0 +1,5 @@
+ RAM, or Random Access Memory, is like your computer's short-term memory. When you turn on your computer, the operating system and the programs you're currently using are loaded into the RAM so they can be quickly accessed and used.
+
+Think of it this way: when you read a book, you don't have to go back to the library every time you want to remember what you read last. Instead, you mark your place in the book to easily find it again. Similarly, when a program is loaded into RAM, the computer doesn't have to constantly go back to the hard drive (which is like the library) to access the information it needs. This makes your computer faster and more efficient.
+
+However, unlike a bookmark in a book, the contents of RAM are temporary and get cleared when you turn off your computer or switch between tasks. That's why your computer needs to constantly move data between the RAM and the hard drive to keep things running smoothly.

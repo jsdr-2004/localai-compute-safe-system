@@ -11,5 +11,11 @@ data/audit/
 data/backups/
 data/results/*
 !data/results/sample_benchmark_results.csv
-data/raw_outputs/
+!data/results/benchmark_results.csv
+!data/results/benchmark_results.jsonl
+data/runs/
+data/raw_outputs/*
+!data/raw_outputs/*.txt
 reports/graphs/*.png
+!reports/graphs/hp001_macbook_air_m4/
+!reports/graphs/hp001_macbook_air_m4/*.png

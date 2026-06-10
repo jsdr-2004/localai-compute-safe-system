@@ -1,0 +1,53 @@
+Certainly! Here are some safe and commonly used Linux commands to check disk usage:
+
+1. **`df -h`**
+   - This command provides an overview of the available disk space in your system, including the total size of each partition and the percentage of that partition that is currently being used.
+   - Example output:
+     ```
+     Filesystem      Size  Used Avail Use% Mounted on
+     /dev/sda1       20G   5G   14G  27% /
+     ```
+
+2. **`du -sh <directory>`**
+   - This command shows the disk usage of a specified directory.
+   - Example:
+     ```
+     du -sh /home
+     ```
+   - Output:
+     ```
+     39M    /home
+     ```
+
+3. **`ncdu` (Non-Interactive Disk Usage Analysis Tool)**
+   - `ncdu` is an interactive disk usage analyzer that provides a more detailed view of the files and directories on your system.
+   - Example command to run it:
+     ```
+     ncdu /path/to/directory
+     ```
+
+4. **`lsblk` (List Block Devices)**
+   - This command lists all block devices, including partitions and filesystems attached to the system.
+   - Example output:
+     ```
+     NAME    MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+     sda       8:0    0   25G  0 disk 
+     ├─sda1   8:1    0   25G  0 part /
+     └─sda2   8:2    0     -  - swap [SWAP]
+     ```
+
+5. **`ncdu` (Non-Interactive Disk Usage Analysis Tool)**
+   - Similar to `ncdu`, this tool provides an interactive interface for analyzing disk usage.
+   - Example command:
+     ```
+     ncdu /path/to/directory
+     ```
+
+6. **`find <directory> -type f -exec du -ch {} +`**
+   - This command finds all files in a directory and its subdirectories, then calculates their total size using `du`.
+   - Example usage:
+     ```
+     find /home -type f -exec du -ch {} + | sort -hr
+     ```
+
+These commands should help you effectively monitor and manage disk space on your Linux system.

@@ -1,0 +1,25 @@
+ To check the disk usage on a Linux system, you can use several commands. Here are some of the most common and useful ones:
+
+1. `df`: This command displays the amount of disk space used and available on the file systems. It also shows the mount points and the percentage of usage.
+
+   Example: `df -h` will display the output in a human-readable format (e.g., K, M, G).
+
+2. `du`: This command displays the space usage of directories and files. By default, it shows the size in bytes for each directory.
+
+   Example: To check the disk usage of the current directory, use `du -sh`. The `-s` option summarizes the output, and the `-h` option makes the output human-readable.
+
+3. `ncdu` (Not Curse Disk Usage): This is a curses-based disk usage analyzer that allows you to navigate through your file system and find large files or directories consuming too much space. It's particularly useful when dealing with large file systems.
+
+   To install ncdu, use the following command:
+   ```
+   sudo apt-get install ncdu (for Debian/Ubuntu)
+   sudo yum install ncdu (for CentOS/Fedora)
+   ```
+
+4. `top` or `htop`: These commands display the system's running processes and their resource usage, including disk I/O. This can help you identify any processes consuming excessive disk resources.
+
+   To install htop (a more user-friendly alternative to top), use the following command:
+   ```
+   sudo apt-get install htop (for Debian/Ubuntu)
+   sudo yum install epel-release && sudo yum install htop (for CentOS/Fedora)
+   ```

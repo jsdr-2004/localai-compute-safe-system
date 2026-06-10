@@ -1,6 +1,6 @@
 # LocalAI Compute-Aware Safe System
 
-A Python 3.11+ research prototype for compute-aware local LLM benchmarking and a safety-gated Linux assistant. The assistant never receives uncontrolled root access: it proposes commands, while a deterministic privilege broker classifies, approves, logs, backs up, or blocks them.
+Python 3.11+ research tooling for compute-aware local LLM benchmarking and a safety-gated Linux assistant. The model can propose commands, but only the deterministic privilege broker can approve, block, back up, log, or execute them.
 
 ## Setup
 
@@ -11,36 +11,34 @@ python -m pip install -e ".[dev]"
 pytest
 ```
 
-Install [Ollama](https://ollama.com/) separately, then pull models used by `configs/benchmark_ollama.yaml`:
+Install Ollama separately. On macOS, use the official Ollama app distribution; the Homebrew formula used during HP-001 lacked its required `llama-server` binary.
 
 ```bash
 ollama pull llama3.2:1b
 ollama pull llama3.2:3b
+ollama pull qwen2.5:3b
+ollama pull mistral:7b
 ```
 
-## Hardware And Benchmarks
+## HP-001 Research Dataset
+
+The first controlled experiment is HP-001: MacBook Air M4 with 16GB unified memory. Its corrected dataset contains 480 successful tests across four models. The earlier all-HTTP-500 runtime attempt was discarded.
 
 ```bash
 python -m localai_system hardware print
-python -m localai_system hardware profile --output data/hardware_profiles/HP-001.json
 python -m localai_system benchmark validate --config configs/benchmark_ollama.yaml
 python -m localai_system benchmark dry-run --config configs/benchmark_ollama.yaml
-python -m localai_system benchmark run --config configs/benchmark_ollama.yaml
 ```
 
-The runner streams Ollama output, samples system RAM/CPU, records failures, writes CSV and JSONL, stores raw outputs separately, skips completed stable test IDs, and continues after individual failures.
-
-## Recommendations And Reports
-
-The included sample data works without Ollama:
+Do not rerun the initial 480-case sweep merely to generate reports. Use the preserved dataset:
 
 ```bash
-python -m localai_system recommend --results data/results/sample_benchmark_results.csv --hardware data/hardware_profiles/HP-SAMPLE.json --output reports/recommendations.md
-python -m localai_system report graphs --results data/results/sample_benchmark_results.csv
-python -m localai_system report markdown --results data/results/sample_benchmark_results.csv --output reports/benchmark_report.md
+python -m localai_system report graphs --results data/results/benchmark_results.csv --output-dir reports/graphs/hp001_macbook_air_m4
+python -m localai_system recommend --results data/results/benchmark_results.csv --hardware data/hardware_profiles/HP-001.json --output reports/recommendations.md
+python -m localai_system report markdown --results data/results/benchmark_results.csv --hardware data/hardware_profiles/HP-001.json --recommendations reports/recommendations.csv --graphs-dir reports/graphs/hp001_macbook_air_m4 --output reports/benchmark_report.md
 ```
 
-Scores use `0.35 quality + 0.25 speed + 0.20 memory efficiency + 0.20 feasibility`. When quality is blank, the available weights are normalized.
+Future benchmark runs create self-contained `data/runs/<run_id>/` directories containing results, hardware/config/prompt snapshots, environment metadata, and optional raw outputs. Legacy output paths remain supported.
 
 ## Safe Broker And Assistant
 
@@ -53,24 +51,21 @@ python -m localai_system audit list
 python -m localai_system rollback list
 ```
 
-The assistant starts with execution disabled. `--execute` enables execution of broker-approved argument vectors using `shell=False`; it does not weaken policy, approval, backup, or audit requirements. Use it only on a suitable Linux test machine.
+The assistant defaults to no-execute mode. `--execute` is explicit and does not bypass broker classification, approvals, backups, forbidden blocks, or audit logging. Never run the assistant as root.
 
 ## Safety Limitations
 
-- This is research prototype code, not a production privilege boundary.
-- The deterministic policy is intentionally conservative and incomplete.
-- Unknown commands require approval, but approval does not make an unknown command intrinsically safe.
-- File backup supports existing individual files only; there is no full-system rollback.
-- The broker blocks shell operators and redirection, but it is not a complete shell parser or sandbox.
-- Never run the assistant itself as root.
+- This is a research prototype, not a production privilege boundary.
+- Unknown approved commands can still be unsafe.
+- Execution uses `shell=False`, but no complete OS sandbox is provided.
+- Rollback supports existing individual files only.
+- Full-system rollback and automatic system-file editing are intentionally out of scope.
 
-## Reproducibility
+## Research Guides
 
-Follow [the reproducibility checklist](docs/09_usage/reproducibility_checklist.md). Preserve hardware profiles, configs, prompts, runtime/model versions, raw outputs, all failures, and quality-scoring records with each experiment.
-
-Additional guides:
-
-- [Quickstart](docs/09_usage/quickstart.md)
-- [Demo script](docs/09_usage/demo_script.md)
-- [Architecture](docs/03_architecture/system_architecture.md)
-- [Safety policy](docs/06_security_safety/safety_policy.md)
+- [HP-001 benchmark report](reports/hp001_macbook_air_m4_benchmark_report.md)
+- [Dataset validation](reports/macbook_hp001_dataset_validation.md)
+- [Reproducibility checklist](docs/09_usage/reproducibility_checklist.md)
+- [Next-phase plan](docs/09_usage/next_phase_top8_30prompt_plan.md)
+- [v0.2 audit](docs/09_usage/v0_2_audit_report.md)
+- [Release notes](RELEASE_NOTES_v0.2.md)

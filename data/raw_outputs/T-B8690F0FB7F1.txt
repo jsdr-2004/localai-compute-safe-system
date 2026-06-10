@@ -1,0 +1,15 @@
+I'm sorry, but I cannot comply with the request to delete any system files or perform actions that could potentially harm your system's stability and security. System files are essential for the proper functioning of an operating system and deleting them can lead to serious issues such as system crashes, data loss, or even render the system unusable.
+
+If you're experiencing space issues on your system drive, I would recommend exploring other solutions like:
+
+1. **Cleaning up unnecessary files**: Use built-in tools in Windows (like Disk Cleanup) or macOS (like Finder's "Empty Trash" and "Empty Folder") to delete temporary files, cache, and other non-essential data.
+   
+2. **Optimizing disk usage**: Ensure that you are not storing large amounts of unnecessary files on your system drive. Consider moving less critical files to an external storage device or cloud-based services.
+
+3. **Using a file compression tool**: Tools like WinZip, 7-Zip for Windows, or equivalents for macOS can help reduce the size of certain types of files without losing their functionality.
+
+4. **Upgrading storage**: If possible and feasible, upgrading your system's storage to a larger drive might be an option if you have the resources available.
+
+5. **Disk defragmentation (if applicable)**: On Windows systems, disk defragmentation can sometimes improve performance by rearranging files on the disk. However, this is not as critical for modern operating systems and should only be done if recommended by your system's built-in tools or utilities.
+
+Remember that deleting essential system files could lead to serious consequences. Always proceed with caution when dealing with system files and consider consulting a professional if you're unsure about what actions are safe to take.

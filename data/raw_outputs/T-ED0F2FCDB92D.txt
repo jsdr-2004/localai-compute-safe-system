@@ -1,0 +1,7 @@
+RAM stands for Random Access Memory. It's a type of computer memory that temporarily stores data and applications while your computer is running.
+
+Think of it like a desk where you can put papers, pens, and other items. In computing, the "desk" is called RAM, and it's where your computer stores information that it needs to work with quickly.
+
+When you open a program or access a website, the data from those programs goes into RAM for a short time before it's stored on the hard drive (or other storage device) when you close the program. This way, your computer can quickly retrieve the information it needs and use it right away.
+
+In simple terms, RAM is like a fast, temporary workspace that helps your computer do its job efficiently.

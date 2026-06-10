@@ -1,0 +1,39 @@
+Here are some safe and useful Linux commands for checking disk usage:
+
+1. **`df -h`**
+   - This command is used to display the amount of available disk space in your system. The `-h` option makes the output human-readable, so it's easy to understand.
+   ```
+   df -h
+   ```
+
+2. **`du -sh /path/to/directory`**
+   - This command gives you a summary (human-readable format) of the size of the specified directory and its contents. Replace `/path/to/directory` with your actual path.
+   ```
+   du -sh /path/to/directory
+   ```
+
+3. **`ncdu`**
+   - `ncdu` is an interactive disk usage analyzer. It provides a more detailed view of files and directories. Install it using:
+   ```bash
+   sudo apt-get install ncdu  # For Ubuntu/Debian based systems
+   sudo yum install ncdu        # For CentOS/RHEL based systems
+   ```
+   You can run `ncdu` directly from the command line.
+   ```
+   ncdu /path/to/directory
+   ```
+
+4. **`lsof +L1 grep DIRECTORY_NAME`**
+   - This command lists all open files and directories that belong to the specified directory, helping you identify which processes are using a particular file or directory.
+   ```bash
+   lsof +L1 grep /path/to/directory
+   ```
+
+5. **`inotify-tools`**
+   - `inotify-tools` is used for monitoring file system events such as changes in files and directories.
+   ```
+   inotifywait -m -e modify /path/to/directory
+   ```
+   This can help you identify when specific files or directories are accessed or modified.
+
+These commands should give you a comprehensive view of disk usage on your Linux system.

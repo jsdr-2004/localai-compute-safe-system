@@ -1,0 +1,49 @@
+Certainly! Here are some safe and commonly used Linux commands to check disk usage:
+
+1. **`df -h`**
+   - This command provides an overview of the available disk space in your system, with sizes displayed in a human-readable format (e.g., KB, MB, GB).
+   ```bash
+   df -h
+   ```
+
+2. **`du -sh /path/to/directory`**
+   - This command gives you the total size of a directory and its contents.
+   ```bash
+   du -sh /path/to/directory
+   ```
+   Replace `/path/to/directory` with the path to the directory you want to check.
+
+3. **`du --max-depth=1 /path/to/directory`**
+   - This command lists all files in a specified directory and its subdirectories, showing their sizes.
+   ```bash
+   du --max-depth=1 /path/to/directory
+   ```
+   Again, replace `/path/to/directory` with the path to your target.
+
+4. **`ncdu /path/to/directory`**
+   - `ncdu` (NCurses Disk Usage) is a disk usage analyzer that provides an interactive interface for navigating through directories and files.
+   ```bash
+   ncdu /path/to/directory
+   ```
+   Replace `/path/to/directory` with the path to your target.
+
+5. **`find /path/to/directory -type f -exec du -sh {} \;`**
+   - This command finds all files in a directory and its subdirectories, then uses `du` to show their sizes.
+   ```bash
+   find /path/to/directory -type f -exec du -sh {} \;
+   ```
+   Replace `/path/to/directory` with the path to your target.
+
+6. **`lsblk`**
+   - This command lists all block devices (like hard drives and SSDs) along with their sizes.
+   ```bash
+   lsblk
+   ```
+
+7. **`parted /dev/sdX print`** (for specific disks)
+   - If you want to see the partition table of a specific disk, use this command where `/dev/sdX` is replaced by your actual device identifier (e.g., `/dev/sda`, `/dev/nvme0n1`).
+   ```bash
+   parted /dev/sdX print
+   ```
+
+These commands are safe and commonly used to check disk usage in Linux systems. They provide detailed information about the storage space available on different levels of your file system, from individual files to entire directories or devices.

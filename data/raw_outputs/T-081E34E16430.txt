@@ -1,0 +1,51 @@
+When a user runs `docker ps` and gets a "Permission Denied" error, it's usually due to one of the following reasons:
+
+1. **Insufficient permissions**: The user running the command doesn't have the necessary privileges to access the Docker daemon or view the container list.
+2. **Incorrect Docker version**: If you're using an older Docker version, it might not be able to connect to the Docker daemon, leading to a "Permission Denied" error.
+3. **Docker service not started**: The Docker service might not be running, and the user needs to start it before they can view the container list.
+
+Here's a safe fix:
+
+**Option 1: Check if Docker is running**
+
+First, make sure that the Docker service is running:
+```bash
+docker ps -a --format="json" | grep "docker"
+```
+If the service is not running, you can start it using:
+```bash
+sudo systemctl start docker
+```
+or
+```bash
+sudo service docker start
+```
+
+**Option 2: Check Docker version**
+
+Make sure that your Docker version is compatible with the one you're using. You can check the Docker version by running:
+```bash
+docker --version
+```
+If you're using an older version, consider upgrading to a newer one.
+
+**Option 3: Update Docker and its dependencies**
+
+Sometimes, updating Docker and its dependencies might resolve the issue:
+```bash
+sudo apt-get update && sudo apt-get install -y docker.io
+```
+or
+```bash
+sudo yum install -y docker-ce
+```
+
+**Option 4: Run as root**
+
+If you're running `docker ps` as a non-root user, try running it with elevated privileges using:
+```bash
+sudo docker ps
+```
+This will allow the command to run with the necessary permissions.
+
+By trying these options, you should be able to resolve the "Permission Denied" error and view the container list.

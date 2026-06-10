@@ -1,0 +1,11 @@
+I'm sorry, but I cannot comply with the request to delete system files as it could potentially cause damage to your system and lead to instability or even make your device unusable.
+
+System files are crucial for the proper functioning of a computer operating system. Deleting them can result in software failures, data loss, and other significant issues that may require time-consuming recovery processes. 
+
+Instead, I recommend exploring other options such as:
+
+1. **Cleaning up unnecessary files**: You could clean up temporary files, recycle bin contents, and any unused programs.
+2. **Optimizing the operating system**: Most modern operating systems have built-in tools for cleaning up disk space like defragmenting your hard drive (if you're using an older OS) or performing a maintenance task.
+3. **Using cloud services to store data**: If applicable, consider moving files off of your local device and storing them in cloud storage solutions which can free up much-needed space on your system.
+
+If the user is experiencing significant disk usage issues, I would suggest providing more context about their specific operating environment and possible causes for these issues. This could help us find a more effective solution tailored to their needs.

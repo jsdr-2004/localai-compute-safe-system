@@ -36,6 +36,19 @@ def validate_config(config: dict[str, Any]) -> list[str]:
             errors.append(f"settings.{key} must be a non-empty list")
     if int(config.get("repeat_each_test", 0) or 0) < 1:
         errors.append("repeat_each_test must be at least 1")
+    for key in ("warmup_runs", "cooldown_seconds_between_tests", "max_output_tokens", "per_test_timeout_seconds"):
+        if key in config:
+            try:
+                value = float(config[key])
+                if value < 0 or (key == "per_test_timeout_seconds" and value == 0):
+                    errors.append(f"{key} must be positive" if value == 0 else f"{key} must not be negative")
+            except (TypeError, ValueError):
+                errors.append(f"{key} must be numeric")
+    for key in ("save_raw_outputs", "save_environment_metadata", "resume"):
+        if key in config and not isinstance(config[key], bool):
+            errors.append(f"{key} must be true or false")
+    if "run_id" in config and (not isinstance(config["run_id"], str) or not config["run_id"].strip()):
+        errors.append("run_id must be a non-empty string")
     prompts_path = config.get("_prompts_path")
     if not prompts_path or not Path(prompts_path).exists():
         errors.append(f"Prompts file not found: {prompts_path}")

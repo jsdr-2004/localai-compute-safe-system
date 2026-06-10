@@ -1,0 +1,33 @@
+Here are some safe and useful Linux commands to check disk usage:
+
+1. **df -h**: This command displays a list of all file systems on the system, along with their total size, used space, available space, and percentage of use.
+
+   ```bash
+   df -h
+   ```
+
+2. **du -sh /***: This command estimates the total disk usage for each directory in the current working directory.
+
+   ```bash
+   du -sh /
+   ```
+
+3. **df --output=avail,used,perc /dev/sda1**: This command displays only the available space, used space, and percentage of use for a specific partition (in this case, `/dev/sda1`).
+
+   ```bash
+   df --output=avail,used,perc /dev/sda1
+   ```
+
+4. **fdu -s /***: This command estimates the total disk usage for each file system on the system.
+
+   ```bash
+   fdu -s /
+   ```
+
+5. **lsblk -o SIZE,FREE,USE% /dev/sd***: This command displays information about all block devices (hard drives) connected to the system, including their size, free space, and percentage of use.
+
+   ```bash
+   lsblk -o SIZE,FREE,USE% /dev/sd*
+   ```
+
+These commands will help you monitor disk usage on your Linux system.

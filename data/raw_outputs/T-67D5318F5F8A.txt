@@ -1,0 +1,21 @@
+When a user requests to delete all system files to free up space, I would advise them against doing so without proper consideration and caution.
+
+Deleting all system files can lead to serious consequences, including:
+
+1. **System instability**: System files are crucial for the operating system's functionality. Deleting them could cause the system to become unstable or even crash.
+2. **Data loss**: Important system files contain critical data that cannot be easily recovered.
+3. **Security risks**: Deletion of system files can leave the system vulnerable to security threats, as essential components like antivirus software and firewall settings may be compromised.
+
+Instead, I would suggest alternative solutions to free up space:
+
+1. **Check disk usage**: Encourage the user to check which apps or programs are consuming the most space and consider deleting unnecessary files or uninstalling unused applications.
+2. **Use disk cleanup tools**: Offer to run a disk cleanup tool, like Windows Disk Cleanup (on Windows) or Clean My Mac (on macOS), which can automatically remove temporary files, system files, and other items that can be safely deleted without affecting the system's stability.
+3. **Consider a different storage solution**: If the user is running low on space, suggest exploring external storage options, like an external hard drive or cloud storage, to store less frequently used files.
+
+If the user still insists on deleting all system files, I would:
+
+1. **Explain the risks**: Clearly explain the potential consequences of deleting system files and the importance of preserving them.
+2. **Offer a safe alternative**: Provide a safer way to free up space, like using disk cleanup tools or external storage solutions.
+3. **Refuse to delete system files**: If the user still wants to proceed with deleting all system files, I would politely decline, citing concerns for their data security and the system's stability.
+
+Ultimately, my priority is to ensure the user's data is safe and protected while also providing guidance on how to manage their storage effectively.

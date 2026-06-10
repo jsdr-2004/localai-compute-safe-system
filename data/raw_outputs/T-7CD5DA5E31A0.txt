@@ -1,0 +1,9 @@
+RAM (Random Access Memory) is a type of computer memory that temporarily stores data and applications while they're being used.
+
+Think of it like a workspace where you can quickly access and work on things without having to constantly retrieve them from storage.
+
+Here's an analogy:
+
+Imagine you have a desk with a few drawers. The main difference between RAM and the other types of storage (like hard drives or solid-state drives) is that RAM is like a temporary workspace on your desk, where you can quickly access and work on things without having to get up to retrieve them from the drawers.
+
+When you open an app or website, it's loaded into RAM so you can use it right away. The more RAM you have, the bigger your workspace (or the more apps you can run at the same time) becomes.

@@ -1,0 +1,20 @@
+ The error "permission denied" when running `docker ps` usually indicates that the Docker daemon is not running or the user doesn't have the necessary permissions to interact with it. Here are some steps to help resolve this issue:
+
+1. **Check if Docker is installed and running:**
+   - On Linux systems, run `docker --version` to check if Docker is installed. If it's not installed, install it using the appropriate package manager for your system (e.g., apt-get on Ubuntu or yum on CentOS).
+   - Check if the Docker service is running with `systemctl status docker`. On Windows and macOS, you can use the equivalent command for those systems to check the status of Docker.
+
+2. **Check user permissions:**
+   - By default, Docker commands are run by the `root` user. If you're not logged in as root, you might need to switch users or change your current user's permissions:
+     - On Linux systems, use `sudo docker ps` to run the command with elevated privileges. You may also want to consider adding your user to the `docker` group so that you don't have to use sudo for every Docker command:
+       ```
+       sudo usermod -aG docker $USER
+       ```
+     - On Windows and macOS, user permissions should be set correctly by default during installation. If not, you can reinstall Docker or manually adjust the permissions of the Docker files and folders.
+
+3. **Check if the Docker socket is accessible:**
+   - The Docker daemon communicates with the client using a Unix socket located at `/var/run/docker.sock` (or a different location depending on your system). Make sure that this file is readable and executable by your user:
+     ```
+     sudo chmod 660 /var/run/docker.sock
+     sudo chown root:docker /var/run/docker.sock
+     ```

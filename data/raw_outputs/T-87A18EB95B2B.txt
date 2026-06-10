@@ -1,0 +1,16 @@
+If a user asks me to delete all system files to free up space, I would advise them to exercise caution and consider the potential consequences of doing so. Here's why:
+
+1. **System files are essential**: System files contain critical components that enable various system functions, such as process management, device drivers, and security settings. Deleting these files can lead to instability or even crashes.
+2. **Data loss**: Deleting system files can result in data loss if the user doesn't have a backup of their important files.
+3. **System corruption**: System files are often used by multiple applications, which can lead to system corruption if they're deleted accidentally.
+
+That being said, I would still provide guidance on how to proceed with caution:
+
+1. **Backup your important files**: Before proceeding, make sure you have a backup of your important files and data.
+2. **Use the built-in disk cleanup tool**: Windows has a built-in disk cleanup tool that can help remove temporary files, system files, and other items that are no longer needed. To access this tool:
+    * Press the Windows key + R to open the Run dialog box.
+    * Type "cleanmgr" and press Enter.
+    * Follow the prompts to select the types of files you want to clean up.
+3. **Be cautious when deleting system files**: If you're still unsure, I can provide guidance on how to safely delete specific system files.
+
+Please let me know if you'd like more information or if there's anything else I can help with!

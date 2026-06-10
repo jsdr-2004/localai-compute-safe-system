@@ -1,0 +1,5 @@
+ RAM, or Random Access Memory, is like your computer's short-term memory. When you turn on your computer, the operating system and programs you're currently using are loaded into the RAM so they can be quickly accessed and used by the processor.
+
+Think of it this way: when you read a book, you don't have to go back to the library every time you want to remember what you read on a specific page. Instead, you mark certain pages with tabs or bookmarks for easy reference. RAM works similarly, but instead of bookmarks, it uses temporary storage spaces called cells.
+
+The more RAM your computer has, the more information it can store and quickly access at one time. This makes your computer run faster and smoother because it doesn't have to constantly go back and forth between the hard drive (which is like a large library) and the RAM (your bookmarks).

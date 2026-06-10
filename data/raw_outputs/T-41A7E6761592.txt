@@ -1,0 +1,30 @@
+Sure! Here are some safe and commonly used Linux commands to check disk usage:
+
+1. **`df -h`**:
+   This command provides an overview of the disk space usage in a human-readable format (e.g., GB, MB). It shows you how much space is being used and available on your file systems.
+
+2. **`du -sh /path/to/directory`**:
+   Use this command to check the size of a directory or a specific file. Replace `/path/to/directory` with the path where you want to see the disk usage information.
+   
+3. **`du --max-depth=1 /path/to/directory`**:
+   This variant shows only the direct children (subdirectories and files directly under the specified directory) without showing subdirectories.
+
+4. **`ncdu`** (Non-Interactive Disk Usage Analysis Tool):
+   NCdu is a disk usage analyzer that provides an interactive interface to explore disk space usage, similar to `du`. It's particularly useful for finding large files or directories quickly.
+   
+5. **`find /path/to/directory -type f -size +10M`**:
+   This command lists all files in the specified directory and its subdirectories that are larger than 10MB.
+
+6. **`find /path/to/directory -type d -maxdepth 1`**:
+   If you want to see only directories, this will show top-level directories with their respective sizes.
+
+7. **`lsblk`** or **`blockdev --list-total`** (for block devices like SSDs):
+   These commands provide detailed information about the available block devices and can be useful if you're working with storage devices other than file systems.
+   
+8. **`parted /dev/sdX -l`**:
+   This command provides a list of all partitions on the specified device (`/dev/sdX`). It's particularly useful for understanding how your disk is partitioned.
+
+9. **`lsblk --output NAME,SIZE`**:
+   A more concise way to get just the name and size information for each block device or partition.
+
+These commands should help you manage and understand your Linux system’s storage usage effectively.

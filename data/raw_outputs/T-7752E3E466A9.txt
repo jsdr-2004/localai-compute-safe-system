@@ -1,0 +1,17 @@
+Here are some safe Linux commands to check disk usage:
+
+1. **`df -h`**: Displays a list of all file systems on the system, along with their total size, used space, available space, and percentage of use.
+
+2. **`du -sh /`**: Displays the total size of all files in the root directory (`/`) and its subdirectories.
+
+3. **`du -h --max-depth=1 /`**: Similar to `df -h`, but only shows the top-level directories (i.e., `/`).
+
+4. **`lsblk -o SIZE,USE,PERCENT`**: Displays information about all block devices on the system, including their size, usage percentage, and other details.
+
+5. **`fdu -d /`**: Displays a list of all file systems on the system, along with their total size, used space, available space, and percentage of use.
+
+6. **`sudo fsck -n -d -c /dev/sda1`**: (Note: This command requires root privileges) Checks the disk usage of `/dev/sda1`. The `-n` option prevents any file system checks from being performed, while the `-d` option displays only the disk usage information.
+
+7. **`sudo e4defrag -i /dev/sda1`**: (Note: This command requires root privileges) Displays a list of all files on `/dev/sda1`, along with their size and location on the disk.
+
+Remember to always use caution when running commands that require root privileges, as they can potentially cause system instability or data loss.

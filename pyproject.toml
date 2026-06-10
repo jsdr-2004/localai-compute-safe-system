@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "localai-compute-safe-system"
-version = "0.1.0"
+version = "0.2.0"
 description = "Compute-aware local AI benchmark and safety-gated Linux assistant research prototype"
 readme = "README.md"
 requires-python = ">=3.11"

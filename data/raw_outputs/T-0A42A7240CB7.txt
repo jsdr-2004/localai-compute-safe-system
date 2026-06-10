@@ -1,0 +1,63 @@
+Here are some safe and effective Linux commands to check disk usage:
+
+### 1. Using `df` command
+
+The `df` command displays the disk usage information, including the total size of each partition.
+
+```bash
+df -h
+```
+
+This will display a table with columns for `/dev/sda1`, `/dev/sda2`, etc., and their corresponding sizes in GB.
+
+### 2. Using `du` command
+
+The `du` command displays the disk usage information, including the total size of each partition.
+
+```bash
+du -h
+```
+
+This will display a table with columns for `/dev/sda1`, `/dev/sda2`, etc., and their corresponding sizes in GB.
+
+### 3. Using `fsck` command
+
+The `fsck` command checks the file system integrity and reports any errors or issues.
+
+```bash
+fsck -f /dev/sda1
+```
+
+This will check the disk for errors, but it may not report all issues if they are minor.
+
+### 4. Using `df -T` command
+
+The `df -T` command displays the disk usage information in a more human-readable format, including the percentage of used space and the total size of each partition.
+
+```bash
+df -T
+```
+
+This will display a table with columns for `/dev/sda1`, `/dev/sda2`, etc., and their corresponding percentages of used space and sizes in GB.
+
+### 5. Using `du -s` command
+
+The `du -s` command displays the disk usage information, including the total size of each partition, without showing the percentage of used space.
+
+```bash
+du -s /dev/sda1
+```
+
+This will display a table with columns for `/dev/sda1`, and their corresponding sizes in GB.
+
+### 6. Using `top` command
+
+The `top` command displays a real-time system activity report, including disk usage information.
+
+```bash
+top
+```
+
+This will show you which processes are using the most resources on your system, but it may not provide detailed disk usage information.
+
+Remember to always use caution when checking disk usage, as excessive checks can consume system resources and slow down your system.

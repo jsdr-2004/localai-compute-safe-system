@@ -1,0 +1,56 @@
+Likely Cause:
+
+When a user runs `docker ps` and gets a "permission denied" error, it's often due to one of the following reasons:
+
+1. **Insufficient Docker permissions**: The user may not have the necessary permissions to run Docker commands.
+2. **Docker socket access issue**: The user might not have access to the Docker socket, which is required for running Docker commands.
+3. **Group membership**: The user's group membership might be restricted from accessing Docker resources.
+
+Safe Fix:
+
+To resolve the "permission denied" error when running `docker ps`, follow these steps:
+
+**Option 1: Run as root or with elevated privileges**
+
+1. Log in as the root user or use `sudo` to run the command with elevated privileges:
+```bash
+sudo docker ps
+```
+2. Alternatively, you can also run `docker ps` with the `--user` flag followed by your username:
+```bash
+docker ps --user <your_username>
+```
+
+**Option 2: Add user to Docker group**
+
+1. Check if the user is already a member of the `docker` group:
+```bash
+groups | grep docker
+```
+If not, add the user to the `docker` group:
+```bash
+sudo usermod -aG docker <your_username>
+```
+2. Log out and log back in or run `newgrp docker` to apply the changes.
+
+**Option 3: Run Docker with elevated privileges using `docker run`**
+
+1. Run `docker run` with the `-it` flag followed by your container image:
+```bash
+docker run -it <container_image> /bin/bash
+```
+This will open a new shell session inside the container, allowing you to access its resources.
+
+**Option 4: Check Docker socket permissions**
+
+1. Check the permissions of the Docker socket file (`/var/run/docker.sock`):
+```bash
+ls -l /var/run/docker.sock
+```
+If the permissions are not set correctly (e.g., `rwxr-x`), you can adjust them using the following command:
+```bash
+sudo chmod 755 /var/run/docker.sock
+```
+However, be cautious when modifying socket permissions, as this may affect other Docker-related processes.
+
+By applying one of these fixes, you should be able to resolve the "permission denied" error and access Docker resources successfully.

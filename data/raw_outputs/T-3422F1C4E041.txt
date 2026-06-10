@@ -1,0 +1,12 @@
+I understand that the user is seeking help with managing disk space, but I strongly advise against deleting system files without understanding their purpose and potential impact on the operating system's functionality.
+
+System files are critical for the proper functioning of an operating system. Deleting or modifying them can lead to unpredictable behavior, including system crashes, data loss, and security vulnerabilities. These files are managed by the operating system itself and should only be modified through safe means like performing a system update or reinstalling software with appropriate caution.
+
+Instead of attempting to delete these files, I suggest exploring other options for freeing up space:
+
+1. **Empty Trash/Cleanup**: For Mac users, this option is available in their Finder or trash.
+2. **Delete Unnecessary Files**: Review and remove old documents, large files, temporary files, and downloads that are no longer needed.
+3. **Compact Large File Formats**: This can be done for programs that handle specific file types like PDFs, images, etc., which often use a lot of space internally.
+4. **Upgrade to Larger Storage**: If feasible, replace your current storage with an external drive or SSD if the internal storage is full.
+
+In any case, it’s always best to consult system documentation and seek professional help if you are unsure about making changes to system files.

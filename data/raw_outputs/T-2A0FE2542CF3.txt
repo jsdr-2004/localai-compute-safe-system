@@ -1,0 +1,77 @@
+When running `docker ps` and encountering a "permission denied" error, it typically indicates that Docker is not able to access the container's processes or files due to insufficient permissions. Here are some common causes and steps to resolve this issue:
+
+### Common Causes:
+1. **Docker User Permissions**: The user running the command might not have the necessary permissions to view containers.
+2. **SELinux/AppArmor Policies**: If SELinux (or AppArmor) is enabled, it could be blocking Docker from accessing container processes or files.
+3. **Firewall Rules**: Sometimes firewall rules can interfere with Docker's ability to communicate with containers.
+4. **Docker Configuration Issues**: There might be issues in the Docker configuration file (`daemon.json`) that are preventing access.
+
+### Safe Fix Steps:
+
+#### 1. Check Docker User Permissions
+Ensure that the user running `docker ps` has the necessary permissions. This typically means ensuring they have sudo privileges or are a member of the `docker` group.
+
+- **For Sudo Privileges**:
+  ```bash
+  docker ps
+  ```
+  If you need to run commands with elevated privileges, use `sudo`.
+
+- **Add User to Docker Group**:
+  Add your user to the `docker` group. This allows non-root users to interact with Docker without needing sudo.
+  
+  ```bash
+  sudo usermod -aG docker $USER
+  ```
+  After adding, log out and log back in for changes to take effect.
+
+#### 2. Check SELinux/AppArmor Policies (if applicable)
+If you are using a Linux distribution that uses SELinux or AppArmor, ensure these security modules do not have restrictive policies preventing Docker from accessing containers.
+
+- **SELinux**:
+  - Disable SELinux temporarily:
+    ```bash
+    sudo setenforce 0
+    ```
+  - Check if SELinux is the issue by running `docker ps` again. If it works, you may need to adjust your SELinux policy configuration.
+  
+- **AppArmor**:
+  - Temporarily disable AppArmor:
+    ```bash
+    sudo service apparmor stop
+    ```
+  - Run `docker ps`. If this resolves the issue, you might want to configure AppArmor appropriately.
+
+#### 3. Check Docker Daemon Configuration (`daemon.json`)
+Ensure that your Docker daemon configuration file is not blocking access to containers.
+
+- **Check and Modify `daemon.json`**:
+  ```bash
+  sudo nano /etc/docker/daemon.json
+  ```
+  Ensure the following settings are correct or remove any restrictive configurations:
+
+  - `data-root`: Make sure it points to a directory where your user has read/write permissions.
+  
+  Example configuration:
+  ```json
+  {
+    "data-root": "/var/lib/docker",
+    "log-driver": "syslog"
+  }
+  ```
+
+#### 4. Restart Docker Daemon
+After making changes, restart the Docker service to apply them.
+
+- **Restart Docker Service**:
+  ```bash
+  sudo systemctl restart docker
+  ```
+  Or if you are using a different init system (like systemd):
+  ```bash
+  sudo service docker restart
+  ```
+
+### Conclusion
+By following these steps, you should be able to resolve the "permission denied" issue when running `docker ps`. If problems persist, consider checking Docker logs for more detailed error messages or consulting your distribution's documentation.

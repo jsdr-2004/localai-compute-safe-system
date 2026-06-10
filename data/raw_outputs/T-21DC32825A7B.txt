@@ -1,0 +1,27 @@
+Certainly! Here are some safe and commonly used Linux commands to check disk usage:
+
+1. **`df -h`**:
+   This command provides an overview of the disk space usage in a human-readable format (e.g., gigabytes or megabytes). It shows how much space is being used, available, and total for each mounted file system.
+
+2. **`du -sh /path/to/directory`**:
+   The `-s` option tells `du` to display only the total size of the directory specified by `/path/to/directory`. The `-h` option makes the output more readable by using units like "K" for kilobytes, "M" for megabytes, etc.
+
+3. **`ncdu /path/to/directory`**:
+   NCdu (Ncdu stands for 'nice du') is a disk usage analyzer that provides an interactive and easy-to-use interface to navigate through directories and files. It also shows the size of each file in a tree-like structure.
+
+4. **`lsblk -o NAME,SIZE`**:
+   This command lists all block devices along with their sizes. You can filter this output by specifying `/dev/sdX` or `/dev/nvme0n1pX`, where `X` is the partition number (e.g., 1 for the first partition).
+
+5. **`parted /dev/sda print`**:
+   This command uses the `parted` utility to display information about all partitions on a disk.
+
+6. **`lsblk -o NAME,SIZE,MOUNTPOINT`**:
+   Similar to `lsblk`, but this one also includes the mount points of each block device, which can be useful for understanding where these devices are mounted in your system.
+
+7. **`mount | grep /dev`**:
+   This command lists all currently mounted file systems and filters them by looking at `/dev` entries. It's a quick way to see what is mounted on your system.
+
+8. **`du -sh /path/to/directory/*`**:
+   If you want to check the disk usage of files within a directory, use this command with `-s` to get only the total size and `*` to include all files in that directory.
+
+These commands should help you effectively monitor your system's disk space usage.

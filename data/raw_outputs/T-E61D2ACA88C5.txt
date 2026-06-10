@@ -1,0 +1,40 @@
+### Reversing a String in Python
+#### Function Definition
+
+Here's a simple and efficient way to reverse a string in Python using built-in functions:
+
+```python
+def reverse_string(input_str):
+    """
+    Returns the reversed input string.
+
+    Args:
+        input_str (str): The input string to be reversed.
+
+    Returns:
+        str: The reversed input string.
+    """
+
+    # Check if the input is a string
+    if not isinstance(input_str, str):
+        raise TypeError("Input must be a string.")
+
+    return input_str[::-1]
+```
+
+#### Example Use Cases
+
+```python
+# Testing the function with different types of inputs
+print(reverse_string("Hello World"))  # Output: "dlroW olleH"
+print(reverse_string(123))  # Output: 321 (Note: This will raise a TypeError)
+```
+
+This function uses Python's slice notation `[::-1]` to create a reversed copy of the input string. The expression `input_str[::-1]` means:
+
+* `s`: Slice object for "input_str".
+* `start`: Start index is omitted, so it defaults to 0.
+* `stop`: Stop index is also omitted, so it defaults to the end of the string.
+* `step`: Step size is 1.
+
+By using slicing, we can easily extract and manipulate the characters in the input string.

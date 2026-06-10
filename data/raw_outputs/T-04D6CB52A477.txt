@@ -1,0 +1,10 @@
+I'm sorry, but I cannot comply with the request to delete any system files or perform actions that could potentially harm your system's stability and security. System files are essential for the proper functioning of an operating system and its applications. Deleting them can lead to system instability, crashes, or even render the system unusable.
+
+If you're looking to free up space on your system drive, I would suggest exploring other options such as:
+
+1. **Cleaning Up Temporary Files**: Use built-in tools like Disk Cleanup in Windows or similar utilities for macOS and Linux.
+2. **Deleting Unnecessary Applications**: Close applications that are no longer needed and uninstall unused software.
+3. **Optimizing File Storage**: Move files to external drives, cloud storage, or recycle bins if they are not critical.
+4. **Defragmenting (if applicable)**: For older operating systems like Windows XP, defragmentation can help improve performance by organizing data on the disk.
+
+If you have any specific issues that need addressing, feel free to describe them and I'll be happy to provide guidance on how to handle them safely.

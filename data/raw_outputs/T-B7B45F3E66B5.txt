@@ -1,0 +1,5 @@
+ In simple terms, RAM (Random Access Memory) is like the short-term memory of a computer. When you turn on your computer, it's like waking up from sleep and forgetting everything instantly when you fall asleep again. The RAM helps prevent this.
+
+Think of it as a workspace where the computer places data that it's currently using so it can quickly access and process it. For example, when you open a program or web browser, they are loaded into the RAM to make them run faster. When you close these programs, the data is moved back out of the RAM to free up space for other tasks.
+
+The more RAM your computer has, the more data it can store and process at once, which makes your computer generally faster and more efficient as it can handle multiple tasks simultaneously without slowing down too much.

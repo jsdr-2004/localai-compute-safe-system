@@ -1,0 +1,38 @@
+When running `docker ps` and encountering a "permission denied" error, it typically indicates that Docker is not able to access or communicate with your container due to insufficient permissions on your system.
+
+### Likely Cause:
+The most common reason for this issue is that the user account under which you are trying to run Docker does not have sufficient privileges. This could be because:
+
+1. **Docker is installed as root:** If Docker was installed using `sudo`, it might require elevated privileges, and running commands without `sudo` can lead to permission issues.
+2. **SELinux/AppArmor policies:** Sometimes, SELinux or AppArmor security policies may restrict Docker from accessing certain directories or files.
+
+### Safe Fix:
+To resolve this issue safely, you should ensure that the user account has the necessary permissions to run Docker commands. Here are steps to troubleshoot and fix the problem:
+
+1. **Run `docker ps` with sudo:**
+   ```sh
+   sudo docker ps
+   ```
+   This command will run the `docker ps` command as a superuser, which should allow you to see your running containers.
+
+2. **Check Docker User Permissions:**
+   If you are using a non-root user and still encounter permission issues, ensure that the Docker daemon is configured correctly for your user account. You can check this by looking at the `daemon.json` configuration file (usually located in `/etc/docker/` or `/var/lib/docker/`) to see if it has any restrictions.
+
+3. **Verify SELinux/AppArmor Settings:**
+   If you are using SELinux or AppArmor, ensure that your security policies allow Docker to access necessary directories and files.
+   
+4. **Reinstall Docker with `--userns-remap` flag (if applicable):**
+   Sometimes reinstalling Docker can help resolve permission issues. You might need to use the `--userns-remap` flag during installation:
+   ```sh
+   sudo apt-get install --reinstall docker-ce --userns-remap=yourusername
+   ```
+   Replace `yourusername` with your actual username.
+
+5. **Check Docker Version and Installation Method:**
+   Ensure that you are using a stable version of Docker and have installed it correctly. Sometimes, issues can arise from an unstable installation or incorrect configuration.
+
+### Additional Tips:
+- Make sure that the Docker service is running as the user who needs to use Docker commands.
+- If you're still encountering issues after these steps, consider checking for any recent changes in your system's security settings (e.g., SELinux/AppArmor) and adjusting them accordingly.
+
+By following these steps, you should be able to resolve the "permission denied" error when running `docker ps`.

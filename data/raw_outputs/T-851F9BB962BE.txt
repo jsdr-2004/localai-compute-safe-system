@@ -1,0 +1,54 @@
+When running `docker ps` and encountering a "permission denied" error, it typically indicates that Docker does not have the necessary permissions to list containers on your system. This can be due to several reasons, such as incorrect configuration of Docker or insufficient user permissions.
+
+### Likely Causes
+
+1. **Incorrect User Permissions**: The user executing the `docker ps` command might not have permission to access and interact with Docker.
+2. **Docker Daemon Configuration**: There could be issues in how Docker is configured, particularly related to network settings which are crucial for managing containers.
+3. **UID/GID Mapping Issues**: In some setups, UID/GID mapping can cause issues if the user account running `docker ps` does not have correct mappings set up.
+
+### Safe Fix
+
+To resolve this issue safely, follow these steps:
+
+#### Step 1: Check Docker User and Group Membership
+Ensure that your user (or a specific user) is part of the Docker group. You can add yourself to the docker group using:
+```sh
+sudo usermod -aG docker $USER
+```
+Replace `$USER` with your actual username if it's different.
+
+#### Step 2: Log Out and Log In Again
+After adding your user to the Docker group, you might need to log out of your current session and then log back in so that your new membership is recognized. Alternatively, you can perform this action directly:
+```sh
+newgrp docker
+```
+
+#### Step 3: Verify User Membership
+You can verify if your user has been added to the Docker group by running:
+```sh
+groups
+```
+Your output should include `docker` if everything was set up correctly.
+
+#### Step 4: Test Docker Commands
+Once you are logged in and have verified that you are a member of the Docker group, try running the following command again to see if the issue is resolved:
+```sh
+docker ps
+```
+
+### Additional Troubleshooting Steps
+
+If `docker ps` still fails after ensuring your user is part of the Docker group:
+
+1. **Check Docker Daemon Status**: Ensure that the Docker daemon is started and active.
+    ```sh
+    sudo systemctl status docker
+    ```
+2. **Restart Docker Service**: If there are issues with the Docker service, restarting it can resolve many permission-related problems:
+    ```sh
+    sudo systemctl restart docker
+    ```
+
+### Conclusion
+
+By ensuring your user account has proper membership in the Docker group, you should be able to run `docker ps` without encountering a "permission denied" error. If other troubleshooting steps are necessary, such as checking network settings or reconfiguring UID/GID mappings, they can also be explored based on further diagnostic information from running these commands and system logs.

@@ -1,0 +1,41 @@
+To check disk usage on a Linux system, you can use the following commands:
+
+1. `df -h`: This command displays the disk usage statistics for all mounted file systems.
+2. `du -h`: This command displays the disk usage in human-readable format (e.g., "10K").
+3. `lsblk` or `fdisk -l`: These commands display a list of all block devices connected to your system, along with their corresponding partition information and usage statistics.
+
+Here are some examples:
+
+### Checking Disk Usage by Filesystem
+
+```bash
+df -h / | grep -v "sys"  # Display only filesystems
+```
+
+This command will show you the disk usage for each filesystem on your system, excluding the `/` mountpoint.
+
+### Checking Total and Used Space
+
+```bash
+du -hs /  # Display total and used disk space (in GB)
+```
+
+This command will display the total size of the filesystem in bytes and the used size.
+
+### Checking Disk Usage by Partition
+
+```bash
+df -h /dev/sdb | grep -v "sys"  # Display only partitions on /dev/sdb
+```
+
+Replace `/dev/sdb` with the device path for your partition (e.g., `sda1`, `ext4`). This command will show you the disk usage for each partition.
+
+### Checking Disk Usage by File System Type
+
+```bash
+df -h | grep "ext5"  # Display only ext file systems (like `/dev/sdb1`)
+```
+
+This command will display the disk usage for only ext file systems, which are commonly used in Linux.
+
+Remember to replace `/` with your root directory if you want to check disk usage for a specific partition or filesystem.

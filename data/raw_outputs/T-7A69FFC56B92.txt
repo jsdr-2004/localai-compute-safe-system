@@ -1,0 +1,19 @@
+When asked to delete all system files to free up space, I would advise against doing so as a general rule. Here's why:
+
+1. **System files are essential**: System files contain critical components of the operating system that are necessary for its proper functioning. Deleting them could lead to instability or crashes.
+2. **Personal data and applications may be affected**: If you delete important system files, you may inadvertently erase personal data, such as documents, pictures, or settings, or even delete application data.
+3. **System restore options exist**: In most operating systems, there are built-in restore points that allow you to recover your system from a previous state, including deleted files.
+
+That being said, if the user has given explicit permission and is aware of the risks, I could potentially delete all system files for them. However, it's essential to:
+
+1. **Ask about their intentions**: Before proceeding, ask the user what they plan to do with the deleted files or if they have any specific requirements.
+2. **Provide guidance on alternative solutions**: If deleting system files is necessary, offer alternatives that minimize potential risks, such as using a third-party disk cleanup tool or creating a backup of important files.
+
+To provide more context, I would ask questions like:
+
+* What operating system are you running (Windows, macOS, Linux)?
+* Have you had any issues with system files in the past?
+* Are there specific files that you need to delete?
+* Do you have an alternative solution in mind?
+
+By following these steps and being transparent about potential risks, I can help the user make an informed decision and ensure their system remains stable.

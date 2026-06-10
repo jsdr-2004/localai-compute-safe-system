@@ -1,0 +1,43 @@
+When a user runs `docker ps` and gets a "Permission Denied" error, it's usually due to one of the following reasons:
+
+1. **Insufficient permissions**: The container is running with elevated privileges (e.g., root), but the user trying to run `docker ps` doesn't have sufficient permissions to access the container.
+2. **Incorrect Docker credentials**: The Docker client isn't able to connect to the Docker daemon due to incorrect authentication or authorization settings.
+3. **Docker daemon issues**: There might be a problem with the Docker daemon itself, such as a misconfigured service or a network issue.
+
+Here's a safe fix:
+
+**1. Check your Docker credentials**
+
+Ensure that you're using the correct Docker username and password. You can check your Docker credentials by running:
+```bash
+docker login
+```
+If you're using a non-root user, make sure to use the correct username and password.
+
+**2. Verify Docker daemon configuration**
+
+Check if the Docker daemon is properly configured on your system. You can do this by checking the Docker daemon logs:
+```bash
+docker logs -f
+```
+Look for any error messages that might indicate issues with the Docker daemon.
+
+**3. Check network connectivity**
+
+Ensure that you're connected to the correct network and that there are no firewall rules blocking access to the Docker service.
+
+**4. Try running `docker ps` as root or an elevated user**
+
+Try running `docker ps` from a non-root user (e.g., using `sudo`) to see if it resolves the issue:
+```bash
+sudo docker ps
+```
+If you're still getting permission denied, try running `docker ps` with elevated privileges by adding `sudo` before the command:
+```bash
+sudo docker ps
+```
+**5. Check for Docker service issues**
+
+If none of the above steps resolve the issue, check if there are any Docker services (e.g., containers, volumes) that might be preventing access to the container.
+
+By following these steps, you should be able to identify and fix the likely cause of the "Permission Denied" error when running `docker ps`.

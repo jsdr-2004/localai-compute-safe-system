@@ -1,0 +1,64 @@
+When running `docker ps` and encountering a "permission denied" error, there could be several causes related to Docker permissions or configuration issues. Here's an explanation of some common scenarios and how to safely resolve them:
+
+### Common Causes
+
+1. **User is not part of the docker group:**
+   - Running Docker commands as non-root users often requires adding the user to the `docker` group.
+   
+2. **Docker daemon is not running or configured improperly:**
+   - The Docker service might be stopped, or there could be issues with its configuration.
+
+3. **SELinux/AppArmor/iptables rules preventing access:**
+   - Security settings such as SELinux, AppArmor, or iptables can sometimes block Docker commands if not correctly configured.
+   
+4. **Filesystem permissions issue:**
+   - There might be permission issues within the container itself or with shared directories.
+
+5. **Docker daemon has insufficient privileges:**
+   - The Docker service might be running without the necessary rights to access certain directories.
+
+### Safe Fix
+
+To resolve these issues, you can follow a safe and step-by-step approach:
+
+#### Step 1: Verify Docker is Running
+First, ensure that the Docker service is running. You can do this by checking its status:
+```bash
+sudo systemctl status docker
+```
+If it's not running, start it with:
+```bash
+sudo systemctl start docker
+```
+
+#### Step 2: Add User to the Docker Group
+If you're using a non-root user (i.e., `root` is not required for executing commands), add your current user to the `docker` group:
+```bash
+sudo usermod -aG docker $USER
+```
+After adding, log out and log back in so that the new group membership takes effect. You can verify if you are now part of the Docker group with:
+```bash
+groups
+```
+
+#### Step 3: Check Docker Configuration
+Ensure that your Docker configuration is correct. You might need to review `/etc/docker/daemon.json` or other relevant configuration files.
+
+#### Step 4: Verify SELinux/AppArmor Rules (if applicable)
+If you are using SELinux, ensure that the appropriate policies allow for Docker activities:
+```bash
+sudo semanage fcontext -a -t docker_t /path/to/container
+```
+Similarly, if AppArmor is in use, adjust the profile to include Docker-related paths.
+
+#### Step 5: Clear iptables Rules (if applicable)
+Sometimes, iptables rules might cause issues. You can clear them with:
+```bash
+sudo iptables --flush
+```
+
+### Troubleshooting
+
+If none of these steps resolve your issue, you may need to delve deeper into the specific environment where Docker is running and its configuration.
+
+For a more detailed troubleshooting approach, consider consulting Docker's official documentation or reaching out to their support for further assistance.

@@ -1,0 +1,10 @@
+ I'm here to help with questions and provide information, but it's important to note that deleting system files can potentially cause issues with the proper functioning of your computer. System files are crucial for the smooth operation of your operating system.
+
+If you're running low on storage space, there are safer alternatives to free up space:
+1. Uninstall unnecessary applications or programs.
+2. Clean up temporary files using the Disk Cleanup tool (on Windows) or Activity Monitor (on macOS).
+3. Empty the Recycle Bin or Trash can.
+4. Move files from your primary drive to an external storage device or cloud storage service.
+5. Compress large folders into ZIP files.
+
+It's always best to consult with a professional before deleting system files, if you're unsure about what they do and how they impact the computer's performance.

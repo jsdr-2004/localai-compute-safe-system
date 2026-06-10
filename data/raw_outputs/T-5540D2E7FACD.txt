@@ -1,0 +1,9 @@
+ I cannot comply with your request as it could potentially cause harm to the system or lead to unexpected issues. It's essential to avoid deleting important system files, especially without a clear understanding of their purpose and potential consequences.
+
+Instead, consider using other methods to free up space on your system, such as:
+
+1. Uninstalling unnecessary applications
+2. Deleting temporary files (e.g., cached data)
+3. Emptying the Recycle Bin (if applicable)
+4. Removing large files or media no longer needed
+5. Using disk cleanup or disk optimization tools built into your operating system.

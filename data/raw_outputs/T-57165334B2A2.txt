@@ -1,0 +1,21 @@
+def reverse_string(input_str):
+    """
+    Reverses the input string.
+
+    Args:
+        input_str (str): The string to be reversed.
+
+    Returns:
+        str: The reversed string.
+    """
+
+    # Convert the string into a list of characters
+    char_list = list(input_str)
+
+    # Reverse the list using slicing
+    reversed_list = char_list[::-1]
+
+    # Join the characters back into a string
+    reversed_str = ''.join(reversed_list)
+
+    return reversed_str

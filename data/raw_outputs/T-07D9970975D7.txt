@@ -1,0 +1,11 @@
+ Here are some common Linux commands to check disk usage:
+
+1. `df -h` : This command displays the amount of disk space used and available on the file system, including the percentage of disk space used. The `-h` option makes the output more human-readable by showing sizes in a format that is easier to understand (e.g., KB, MB, GB).
+
+2. `du -sh /path/to/directory` : This command shows the total size of the directory and its subdirectories in a human-readable format. Replace `/path/to/directory` with the path to the directory you want to check.
+
+3. `ncdu` : ncdu (Ncurses Disk Usage) is a command-line disk usage analyzer that provides an interactive tree view of your directories, allowing you to quickly find and delete large files or directories. To install it on Ubuntu/Debian, use the command `sudo apt-get install ncdu`.
+
+4. `top` : While not specifically for disk usage, the `top` command can provide real-time information about system resources, including disk I/O (input/output) statistics. Press `1` to sort by I/O and look for high values in the `si` (swap in) and `so` (swap out) columns, which indicate disk activity.
+
+5. `iostat` : This command provides information about CPU utilization, system I/O statistics, and disk I/O statistics. To see the current disk I/O statistics, run `iostat`. You can also specify an interval (e.g., `iostat 1`) to update the output every second.

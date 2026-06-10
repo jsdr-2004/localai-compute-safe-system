@@ -1,0 +1,5 @@
+# Paper 1 Abstract
+
+## Compute-Aware Configuration Tuning for Local Large Language Models Across Consumer Hardware Classes
+
+Local large language model deployment on consumer hardware remains a trial-and-error process because model size and runtime settings interact with limited memory, compute throughput, and latency requirements. This study introduces a reproducible configuration-sweep methodology and recommendation framework for compute-aware local LLM selection. The first controlled experiment, HP-001, evaluates four Ollama-hosted models across context length, temperature, and top-p settings on a MacBook Air M4 with 16GB unified memory. The 480-run initial sweep measures first-token latency, total response time, estimated tokens per second, peak RAM, CPU use, and feasibility. HP-001 establishes the methodology and produces provisional partial-score recommendations; human quality scoring and validation on HP-002 and HP-003 remain future work. The study does not claim universal model superiority from the first hardware profile.

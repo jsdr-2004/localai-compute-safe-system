@@ -1,0 +1,54 @@
+When a user runs `docker ps` and receives a "Permission Denied" error, it's often due to one of the following reasons:
+
+1. **Non-root user**: If you're running the command as a non-root user (e.g., `sudo`), Docker doesn't have elevated privileges to access all containers.
+2. **Docker daemon configuration**: The Docker daemon might not be configured to allow non-root users to run `docker ps`.
+3. **Container name or ID issues**: The container you're trying to list is either not running or has a different name or ID than expected.
+
+To fix the issue, try these steps:
+
+**For non-root users:**
+
+1. Run the command as the root user using `sudo`:
+```bash
+sudo docker ps
+```
+This should allow Docker to access all containers.
+
+Alternatively, you can create a new user and run the command with that user instead of `sudo`. For example:
+```bash
+useradd -m myuser
+su myuser
+docker ps
+```
+**For Docker daemon configuration issues:**
+
+1. Check the Docker daemon configuration file (`/etc/docker/daemon.json` or `/var/lib/docker/daemon.json` on Linux). Make sure it allows non-root users to access containers.
+2. Try setting `unsafeMode = false` in the configuration file:
+```json
+{
+  "execLockTimeout": 10,
+  "networkPolicy": {
+    "disableDns": true
+  },
+  "log`: {
+    "captureOutput": true,
+    "streamContext": true
+  },
+  "securityOptions": {
+    "insecureRegistries": [],
+    "registryAccess": ["*"]
+  }
+}
+```
+Replace `unsafeMode = false` with the correct value for your setup.
+
+**For container name or ID issues:**
+
+1. Check the container names and IDs by running `docker ps -a`. This should show you all containers, including those that might be not running.
+2. If a specific container is not running, try removing it from the list:
+```bash
+docker ps -a | grep <container_name>
+```
+Replace `<container_name>` with the actual name of the container.
+
+By following these steps, you should be able to resolve the "Permission Denied" error and successfully run `docker ps`.

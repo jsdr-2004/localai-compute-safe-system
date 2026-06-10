@@ -1,0 +1,30 @@
+**Likely Cause:**
+
+When a user runs `docker ps` and gets a "permission denied" error, it's often due to one of the following reasons:
+
+1. **Insufficient Docker permissions**: The user may not have the necessary permissions to run Docker commands.
+2. **Incorrect group membership**: The user might be part of a group that doesn't have Docker permissions.
+3. **Docker socket access denied**: The user may not have access to the Docker socket, which is required for running `docker ps`.
+
+**Safe Fix:**
+
+To resolve this issue, you can try the following steps:
+
+1. **Check Docker permissions**:
+	* Run `sudo docker ps` (or `sudo docker ps -a`) to see if the command works with elevated privileges.
+	* If it does, check the user's group membership and ensure they are part of a group that has Docker permissions (e.g., `docker` or `docker-dev`).
+2. **Add user to Docker group**:
+	* Run `sudo usermod -aG docker <username>` (replace `<username>` with the actual username) to add the user to the Docker group.
+3. **Set Docker socket permissions**:
+	* Run `sudo setfacl -R -m user:<username> -m group:docker -p user:rw,g:s--x /var/run/docker.sock` (assuming the Docker socket is located at `/var/run/docker.sock`) to set the permissions for the user and Docker group.
+4. **Verify Docker configuration**:
+	* Check the Docker configuration file (`/etc/docker/daemon.json`) to ensure it's not restricting access to the Docker socket.
+
+**Additional Steps:**
+
+If none of the above steps resolve the issue, you can try:
+
+1. **Run `docker ps` with elevated privileges**: Use `sudo docker ps` (or `sudo docker ps -a`) to run the command with elevated privileges.
+2. **Check for conflicting system configurations**: Ensure that there are no other system configurations or software conflicts that might be interfering with Docker access.
+
+By following these steps, you should be able to resolve the "permission denied" issue and allow users to run `docker ps` successfully.

@@ -23,7 +23,8 @@ def cli(args: Any) -> int:
         print(f"Plan: {plan.explanation}")
         for command in plan.commands:
             classification = broker.classify(command)
-            print(f"\nCommand: {command}\nRisk: {classification.risk_level}\nDecision: {classification.decision}\nReason: {classification.reason}")
+            print(f"\nCommand: {command}\nExplanation: {plan.explanation}\nRisk: {classification.risk_level}\n"
+                  f"Decision: {classification.decision}\nReason: {classification.reason}")
             approved = False
             if classification.requires_approval:
                 phrase = "CONFIRM" if classification.decision == "explicit_confirmation_required" else "yes"

@@ -1,0 +1,13 @@
+RAM, which stands for Random Access Memory, is a type of computer memory that can be read from and written to at any time. Think of it as the temporary workspace where your computer stores data that you're actively using or working with right now.
+
+Here are some key points about RAM:
+
+1. **Temporary Storage**: Unlike hard drives or solid-state drives (SSDs), which store files for long-term use, RAM is used only temporarily and gets cleared when the device is turned off.
+   
+2. **Fast Access**: Data in RAM can be accessed much faster than data stored on a disk drive because it's closer to the CPU.
+
+3. **Volatility**: One of the most important characteristics of RAM is that it loses its contents as soon as power is removed from the system (like when you turn off your computer). This means if you lose power, all the information in RAM will be lost unless it has been saved to a non-volatile storage like a hard drive or SSD.
+
+4. **Types**: There are different types of RAM such as DDR3, DDR4, and newer DDR5. Each type is designed for specific purposes and can handle certain data transfer rates.
+
+RAM plays a crucial role in how quickly your computer responds to commands and handles multiple tasks simultaneously. If you have more RAM available, your computer will be able to run more applications without slowing down as much.

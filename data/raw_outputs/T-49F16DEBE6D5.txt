@@ -1,0 +1,61 @@
+Here are some safe and effective Linux commands to check disk usage:
+
+### 1. Using `df` Command
+
+The `df` command displays the disk usage information, including the total size of each partition or file system.
+
+```bash
+df -h
+```
+
+This will display a summary of the disk usage for all partitions on your system.
+
+### 2. Using `du` Command
+
+The `du` command is similar to `df`, but it displays the disk usage in terms of bytes.
+
+```bash
+du -h /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition or file system you want to check.
+
+### 3. Using `fsck` Command
+
+The `fsck` command checks the integrity and structure of your file systems, including disk usage.
+
+```bash
+fsck -f /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition or file system you want to check.
+
+### 4. Using `df -k` Command
+
+The `-k` option displays the disk usage in kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB), and petabytes (PB).
+
+```bash
+df -k /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition or file system you want to check.
+
+### 5. Using `top` Command
+
+The `top` command displays a real-time list of processes running on your system, including disk usage.
+
+```bash
+top -b -n 1 /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition or file system you want to check. The `-b` option displays the process list in real-time, and the `-n 1` option limits the output to only one line per process.
+
+### 6. Using `htop` Command
+
+The `htop` command is a more advanced process viewer that also displays disk usage information.
+
+```bash
+htop -b /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition or file system you want to check.

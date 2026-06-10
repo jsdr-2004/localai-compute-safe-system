@@ -1,0 +1,12 @@
+RAM (Random Access Memory) is like a workspace where your computer stores information that it's currently using.
+
+Think of it like a desk:
+
+- Your documents, photos, and apps are like the papers, files, and tools on your desk.
+- When you open an app or file, it gets moved to your desk (RAM).
+- As long as the computer is working with it, the information stays on the desk.
+- But when you close the app or put things away, it goes back to its original place, like a filing cabinet.
+
+The more RAM your computer has, the bigger and emptier your desk can be. This means you can have more apps open at the same time without slowing down. Less RAM is like having a cluttered desk with too many papers and tools - it can make it harder for you to work.
+
+Does that make sense?

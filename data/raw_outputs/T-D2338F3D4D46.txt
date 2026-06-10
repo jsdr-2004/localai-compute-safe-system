@@ -1,0 +1,27 @@
+Certainly! Below is a simple and straightforward Python function that reverses a given string:
+
+```python
+def reverse_string(s):
+    """
+    Reverses the input string.
+
+    Parameters:
+        s (str): The string to be reversed.
+
+    Returns:
+        str: The reversed string.
+    """
+    return s[::-1]
+
+# Example usage:
+original_str = "Hello, World!"
+reversed_str = reverse_string(original_str)
+print(f"Original String: {original_str}")
+print(f"Reversed String: {reversed_str}")
+```
+
+This function uses Python's slicing feature to create a reversed copy of the input string. Here’s how it works:
+
+- `s[::-1]`: This slice notation starts from the end of the string and moves backwards by one step (`-1` step), effectively reversing the order.
+
+You can test this function with different strings to see how it behaves.

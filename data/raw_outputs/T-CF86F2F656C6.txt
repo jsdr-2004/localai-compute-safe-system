@@ -1,0 +1,5 @@
+ RAM, or Random Access Memory, is like your computer's short-term memory. When you turn on your computer, the operating system and programs you're currently using are stored in the RAM so they can be quickly accessed and used by the processor.
+
+Think of it this way: when you read a book, you don't have to go back to the library every time you want to remember something from the book. Instead, you might make notes or highlight important parts in a notepad next to you for quick reference. RAM does something similar for your computer - it stores data temporarily so the processor can access it quickly without having to constantly read from the slower hard drive.
+
+The more RAM a computer has, the more data it can store at once, which means it can run multiple programs or handle larger files more efficiently. When you close a program, the data it was using gets cleared out of the RAM and can be used for something else.

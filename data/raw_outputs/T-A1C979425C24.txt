@@ -1,0 +1,31 @@
+**Likely Cause:**
+
+When a user runs `docker ps` and gets a "permission denied" error, it's often due to one of the following reasons:
+
+1. **Insufficient Docker permissions**: The user may not have the necessary permissions to run Docker commands.
+2. **Incorrect group membership**: The user may be part of a group that doesn't have Docker permissions.
+3. **File system restrictions**: There might be file system restrictions or ACLs (Access Control Lists) that prevent the user from accessing Docker-related files.
+
+**Safe Fix:**
+
+To resolve this issue, you can try the following steps:
+
+1. **Check Docker permissions**:
+	* Run `docker ps` as the root user to verify if it's working correctly.
+	* Check the Docker group membership by running `id -Gn <username>`. If the user is not in the Docker group, add them using `sudo usermod -aG docker <username>`.
+2. **Change file system permissions**:
+	* Run `ls -ld /var/run/docker` to check the permissions of the Docker socket directory.
+	* Adjust the permissions to allow the user to read and write to this directory (e.g., `chmod g+rw /var/run/docker`).
+3. **Run Docker as a non-root user**:
+	* Create a new user with Docker permissions using `sudo useradd -m -s /bin/bash dockeruser`.
+	* Switch to the new user and run `docker ps` to verify that it works correctly.
+4. **Use Docker's built-in permission system**:
+	* Run `docker run --user=<username> <image>` to run a container with the specified user.
+
+**Additional Recommendations:**
+
+1. **Use a Docker daemon with restricted privileges**: Consider running the Docker daemon with restricted privileges using `docker daemon -g none` or `docker daemon -g unix:///var/run/docker.sock`.
+2. **Use a Docker configuration file**: Create a Docker configuration file (e.g., `~/.docker/config.json`) to store your Docker credentials and permissions.
+3. **Monitor Docker logs**: Regularly check the Docker logs (`/var/log/docker.log`) for any permission-related errors or issues.
+
+By following these steps, you should be able to resolve the "permission denied" error when running `docker ps`.

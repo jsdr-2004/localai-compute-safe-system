@@ -1,0 +1,73 @@
+Here are some safe and effective Linux commands to check disk usage:
+
+### 1. Using `df` Command
+
+The `df` command displays the disk usage information for all partitions on your system.
+
+```bash
+df -h
+```
+
+This will show you the total, used, and free space on each partition, as well as the percentage of each.
+
+### 2. Using `du` Command
+
+The `du` command is similar to `df`, but it displays only the used disk space.
+
+```bash
+du -h /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition you want to check.
+
+### 3. Using `fsck` Command
+
+The `fsck` command checks the file system for errors and reports any issues.
+
+```bash
+fsck -f /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition you want to check.
+
+### 4. Using `df -k` Command
+
+The `-k` option displays disk usage in kilobytes, megabytes, gigabytes, and terabytes.
+
+```bash
+df -k /path/to/your/disk
+```
+
+This will show you the total, used, and free space on each partition, as well as the percentage of each.
+
+### 5. Using `du -s` Command
+
+The `-s` option displays disk usage in bytes.
+
+```bash
+du -s /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition you want to check.
+
+### 6. Using `fsstat` Command
+
+The `fsstat` command displays detailed information about the file system, including disk usage statistics.
+
+```bash
+fsstat -a /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition you want to check.
+
+### 7. Using `df -B` Command
+
+The `-B` option displays detailed information about the file system, including disk usage statistics.
+
+```bash
+df -B /path/to/your/disk
+```
+
+Replace `/path/to/your/disk` with the path to the partition you want to check.
+
+Remember to always use caution when working with file systems and disk space. Make sure to back up your data regularly and avoid deleting important files or directories.

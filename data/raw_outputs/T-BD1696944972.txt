@@ -1,0 +1,7 @@
+RAM stands for Random Access Memory. It's essentially the temporary storage space inside your computer that allows it to quickly read and write data. 
+
+Think of RAM like a large workspace where your computer can keep frequently used programs, files, or parts of larger files temporarily so they are ready for quick access by the processor (your computer’s brain). The more RAM your computer has, the more things you can have working at once without slowing down.
+
+Unlike hard drives and solid-state drives, which store data permanently, RAM is volatile. This means it loses all its information when the power is turned off. When you start a program or open an application, that process goes into RAM so your system can quickly access and run it. After using the program for a while, it might be moved to permanent storage like the hard drive.
+
+So in simple terms, RAM helps make your computer's performance feel faster by allowing it to handle tasks more efficiently.

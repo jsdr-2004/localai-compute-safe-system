@@ -1,0 +1,19 @@
+ The error "permission denied" when running `docker ps` usually indicates that the Docker daemon is running but the user doesn't have sufficient permissions to interact with it. Here are a few safe steps to resolve this issue:
+
+1. Check if Docker is installed correctly by running `docker --version`. If it's not installed, you can install Docker following the instructions for your operating system from the official Docker documentation: https://docs.docker.com/get-docker/.
+
+2. Verify that the Docker daemon is running with `sudo systemctl status docker` or `sudo service docker status`, depending on your Linux distribution. If it's not running, you can start it using `sudo systemctl start docker` or `sudo service docker start`.
+
+3. To allow the current user to interact with Docker without requiring sudo, you can add the user to the `docker` group:
+
+   a. First, find the username of the current user by running `whoami`.
+
+   b. Then, use the following command to add the user to the docker group:
+
+      ```
+      sudo usermod -aG docker $USER
+      ```
+
+4. After adding the user to the docker group, you may need to log out and log back in for the changes to take effect or run `newgrp docker` to apply the group change without logging out.
+
+5. Finally, test if the issue is resolved by running `docker ps` again. If you still encounter permission issues, consider restarting your terminal or system to ensure the group membership is properly applied.

@@ -1,0 +1,17 @@
+If a user asks me to delete all system files to free up disk space, I would advise them to exercise caution and consider the potential consequences of doing so. Here's why:
+
+1. **System instability**: Deleting system files can cause system instability, crashes, or errors, especially if you're not familiar with the process.
+2. **Data loss**: System files contain sensitive data, such as user credentials, application settings, and configuration files that are specific to your personal or organization's needs.
+3. **Corruption of critical system components**: Deleting certain system files can potentially corrupt critical system components, leading to problems with booting, logging in, or accessing essential services.
+
+Instead, I would recommend taking the following steps:
+
+1. **Backup critical data**: Before deleting any system files, make sure you have backed up critical data that's specific to your needs.
+2. **Identify non-essential system files**: Determine which system files are not essential for your personal or organization's operations and can be safely deleted without causing significant harm.
+3. **Use a secure deletion method**: If you still want to delete all system files, consider using a secure deletion method, such as securely erasing the disk using a tool like DBAN (Darik's Boot and Nuke) or using a third-party disk destroyer program.
+
+To be more specific, here are some steps:
+
+* Back up any critical data that's not essential for your needs.
+* Identify non-essential system files, such as ones used by popular applications or services.
+* Use a secure deletion method to erase the identified system files.

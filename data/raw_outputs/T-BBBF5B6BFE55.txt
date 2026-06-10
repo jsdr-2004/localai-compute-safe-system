@@ -1,0 +1,41 @@
+Here are some safe and commonly used Linux commands to check disk usage:
+
+1. **df** - Displays information about the file system and disk usage:
+   ```bash
+df -h
+```
+   This command displays a list of all file systems on the system, along with their current percentage of available space.
+
+2. **du** - Estimates the size of files in a given directory:
+   ```bash
+du -sh /path/to/directory
+```
+   This command estimates the total size of a directory and its contents.
+
+3. **find** - Searches for files based on various criteria:
+   ```bash
+find /path/to/directory -type f -exec du -sh {} \;
+```
+   This command finds all files in a given directory and its subdirectories, then displays their sizes.
+
+4. **ls** - Lists files in a given directory:
+   ```bash
+ls -lh /path/to/directory
+```
+   This command lists all files and directories in a given directory, along with their size and permissions.
+
+5. **du -h --max-depth 1** - Estimates the size of a single file:
+   ```bash
+du -h --max-depth 1 *
+```
+   This command estimates the size of the current working directory and its contents.
+
+6. **sudo disk usage tools** - Some Linux systems have built-in disk usage tools that can be accessed with `sudo`:
+   ```
+sudo hdaplay
+sudo fdisk
+```
+
+These commands should help you monitor your system's disk usage safely. Be sure to replace `/path/to/directory` and other paths with the actual directories you want to monitor.
+
+**Note:** When using these commands, always be cautious when dealing with sensitive data or permissions. Make sure to use the correct permissions and access rights for each command.

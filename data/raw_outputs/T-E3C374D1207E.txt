@@ -1,0 +1,54 @@
+### Reversing a String in Python
+
+Here is a simple and efficient way to reverse a string in Python:
+
+```python
+def reverse_string(input_str):
+    """
+    Returns the input string with its characters reversed.
+
+    Args:
+        input_str (str): The input string to be reversed.
+
+    Returns:
+        str: The reversed string.
+    """
+
+    # Initialize two pointers, one at the start and one at the end of the string
+    left = 0
+    right = len(input_str) - 1
+
+    # Continue the loop until the two pointers meet in the middle
+    while left < right:
+        # Swap the characters at the current positions of the two pointers
+        input_str[left], input_str[right] = input_str[right], input_str[left]
+        
+        # Move the pointers closer to each other
+        left += 1
+        right -= 1
+
+    return input_str
+
+# Example usage:
+input_str = "Hello World"
+reversed_str = reverse_string(input_str)
+print(f"Original string: {input_str}")
+print(f"Reversed string: {reversed_str}")
+```
+
+This function uses a two-pointer approach to swap characters from the start and end of the string, moving towards each other. It continues this process until the pointers meet in the middle, effectively reversing the string.
+
+Alternatively, you can use Python's built-in `reversed` function in combination with the `join` method:
+
+```python
+def reverse_string(input_str):
+    return "".join(reversed(input_str))
+
+# Example usage:
+input_str = "Hello World"
+reversed_str = reverse_string(input_str)
+print(f"Original string: {input_str}")
+print(f"Reversed string: {reversed_str}")
+```
+
+This approach is more concise and readable, but it requires importing the `reversed` function.

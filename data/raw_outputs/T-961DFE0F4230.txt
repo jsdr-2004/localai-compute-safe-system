@@ -1,0 +1,53 @@
+Here are some safe Linux commands to check disk usage:
+
+### Using `df` Command
+
+The `df` command is a simple and easy-to-use tool for checking disk usage.
+
+```bash
+# Check disk usage
+df -h
+
+# Get detailed information about disk usage (e.g., total, used, free)
+df -k
+```
+
+You can also use the `-T` option to get a more detailed view of disk usage:
+
+```bash
+df -T
+```
+
+### Using `du` Command
+
+The `du` command is another simple tool for checking disk usage.
+
+```bash
+# Check disk usage (e.g., total, used, free)
+du -h
+
+# Get detailed information about disk usage (e.g., total, used, free)
+du -k
+```
+
+### Using `fsck` Command
+
+The `fsck` command is a more advanced tool for checking and repairing file systems.
+
+```bash
+# Check disk usage and repair file system errors
+fsck -f /dev/sda1
+```
+
+Note: The `/dev/sda1` device path may vary depending on your Linux distribution and the type of disk you are using.
+
+### Using `lsblk` Command
+
+The `lsblk` command is a more comprehensive tool for checking disk usage and other disk-related information.
+
+```bash
+# Check disk usage and other disk-related information
+lsblk -d
+```
+
+This will display detailed information about all disks, including their mount points, device names, and usage statistics.

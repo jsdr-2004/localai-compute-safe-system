@@ -1,0 +1,41 @@
+Here are some safe and commonly used Linux commands to check disk usage:
+
+1. **df** (Disk Free) - Displays the current disk space usage for each partition.
+   ```
+   df -h
+   ```
+
+2. **du** (Disk Usage) - Estimates the amount of space used by files on a file system.
+   ```
+   du -sh /path/to/directory
+   ```
+
+3. **fsck** (File System Check) - Checks the integrity of a file system and reports any errors.
+   ```
+   fsck -n /dev/sda1
+   ```
+
+4. **df -i** (Displays disk I/O statistics)
+   ```
+   df -i
+   ```
+
+5. **du -d 3** ( Estimates the amount of space used by files on a file system, showing up to three levels deep)
+   ```
+   du -d 3 /path/to/directory
+   ```
+
+6. **hdid** (Displays information about a hard disk device and its partitions)
+   ```
+   hdid /dev/sda1
+   ```
+
+7. **parted** (Displays the partition table for a device, showing all disks and partitions)
+   ```
+   parted /dev/sda
+   ```
+
+8. **lsblk** (Displays information about block devices, such as hard disk partitions and network file systems)
+   ```
+   lsblk -o NAME,FSTYPE,LABEL,MOUNTPOINT,SIZE,RFILESYSTEM,XFS,EXT4
+   ```

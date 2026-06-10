@@ -1,0 +1,13 @@
+If a user asks me to delete all system files to free up space, I would advise them to exercise caution and consider the potential consequences of doing so. Here's why:
+
+1. **System files are essential**: System files are critical components of your operating system that provide functionality, security, and stability. Deleting them could potentially cause problems with your computer's overall performance.
+2. **Data loss**: If you delete a system file without backing up important data, you might lose valuable information or data that's not easily recoverable.
+3. **System instability**: Removing critical system files can lead to system instability, crashes, and errors.
+
+Instead of deleting all system files, I would recommend the following:
+
+1. **Backup your important files**: Make sure to backup any essential files, documents, and data that you want to keep on your computer.
+2. **Identify which files are critical**: Determine which system files are essential for your computer's functionality and identify them specifically.
+3. **Use a disk cleanup tool**: Use a reputable disk cleanup tool (e.g., CCleaner) to remove temporary files, system logs, and other unnecessary data that can help free up space without deleting important system files.
+
+If you're still unsure about what files to delete or how to proceed, I would suggest consulting the user's operating system documentation or seeking guidance from a qualified IT professional.

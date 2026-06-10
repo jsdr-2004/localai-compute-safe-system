@@ -1,0 +1,33 @@
+Here are some safe Linux commands to check disk usage:
+
+1. **df** command:
+   ```bash
+df -h
+```
+   This command displays the amount of disk space used by each file system on the system, along with a percentage of how much is being used.
+
+2. **du** command:
+   ```bash
+du -sh /
+```
+   This command estimates the total size of files in the root directory (`/`) and its subdirectories. The `-h` option displays the output in human-readable format (e.g., 1K, 234M, etc.).
+
+3. **fs_usage** command:
+   ```bash
+fs_usage -a
+```
+   This command displays a summary of disk usage for all file systems on the system.
+
+4. **du -h** command with `*` wildcard:
+   ```bash
+du -h *
+```
+   This command estimates the total size of files in the current directory and its subdirectories, and displays the output in human-readable format.
+
+5. **df -i** command:
+   ```bash
+df -i
+```
+   This command displays information about disk usage for all file systems on the system, including the number of inodes used.
+
+Remember to always use caution when working with disk space, as excessive usage can lead to performance issues and even data loss.

@@ -1,0 +1,16 @@
+I would advise against deleting all system files to free up space, as it can cause significant instability and potentially lead to data loss or system crashes.
+
+Here's why:
+
+1. System files are essential for the operating system to function properly.
+2. Deleting them can disrupt critical system processes and services.
+3. It may also remove important system updates, patches, and security fixes that are stored in these files.
+
+Instead, I would recommend exploring other ways to free up space on the user's device:
+
+1. Check for disk errors and defragmentation: Run a disk check and defragmentation tool to identify and fix any issues with the hard drive or solid-state drive.
+2. Remove unnecessary files and programs: Help the user remove any unnecessary files, programs, or apps that are taking up space.
+3. Use storage management tools: Suggest using built-in storage management tools, such as Disk Cleanup (Windows) or Storage Management (macOS), to identify and delete temporary files, system files, and other items that can be safely removed.
+4. Consider upgrading storage: If the device has limited storage capacity, suggest considering upgrading to a larger storage device or cloud storage service.
+
+It's essential to approach this task with caution and only recommend deleting system files as a last resort, if absolutely necessary, and after thoroughly explaining the potential risks and consequences.

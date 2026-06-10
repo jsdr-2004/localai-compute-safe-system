@@ -1,0 +1,11 @@
+RAM stands for Random Access Memory.
+
+Think of RAM like a workspace where you can temporarily work on things.
+
+Imagine you're doing math problems in your head, and each equation requires a certain amount of space to hold the numbers and calculations. That's kind of like how RAM works:
+
+* When you open an app or game on your computer, it creates a temporary workspace (RAM) that stores all the information needed for the task.
+* The more RAM you have, the bigger the workspace, and the more things you can do simultaneously without slowing down.
+* When you close the app or game, the workspace is cleared, and the memory is released back to the computer's main storage.
+
+In simple terms, RAM is like a temporary holding area for your computer where it can quickly access information when you need it.

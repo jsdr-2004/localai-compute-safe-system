@@ -1,0 +1,5 @@
+ RAM, or Random Access Memory, is like your computer's short-term memory. When you turn on your computer, the operating system and applications need a place to store information they are currently using so they can quickly access it. That's where RAM comes in.
+
+Think of it this way: When you're reading a book, you don't have to flip through all the pages to find a specific sentence or word because you remember what's on each page for a short while. Similarly, your computer uses RAM to store information it needs quickly without having to go back to the hard drive (which is like the long-term memory of the computer).
+
+The more RAM a computer has, the more information it can keep readily available, making tasks run faster and smoother. However, unlike data stored on a hard drive or SSD, any data in RAM gets erased when you turn off your computer.

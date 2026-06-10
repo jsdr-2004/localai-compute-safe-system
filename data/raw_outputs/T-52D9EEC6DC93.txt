@@ -1,0 +1,5 @@
+ RAM, which stands for Random Access Memory, is like your computer's short-term memory. It's a type of hardware in a computer that stores data temporarily while the computer is running.
+
+Think of it this way: when you open a program on your computer, the instructions and data needed to run that program are loaded from the hard drive into the RAM. While the program is open, it can quickly access and manipulate this data without having to go back to the slow hard drive every time. Once you close the program, the data in the RAM gets cleared so it's ready for the next program.
+
+So, in simple terms, RAM helps your computer run smoothly by providing a fast place to store the information that the computer is currently using. The more RAM a computer has, the more data it can hold at once, and the faster it can perform tasks.

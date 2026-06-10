@@ -1,0 +1,25 @@
+run_id: HP003-TOP8-30PROMPTS
+hardware_profile_id: HP-003
+hardware_profile_path: data/hardware_profiles/HP-003.json
+runtime: ollama
+prompts_file: ../data/prompts/expanded_30_prompt_suite.json
+models:
+  - name: llama3.2:1b
+    size: 1B
+    quantization: default
+settings:
+  context_lengths: [1024, 2048]
+  temperatures: [0.2, 0.7]
+  top_p: [0.8, 0.95]
+  threads: [4]
+repeat_each_test: 3
+warmup_runs: 1
+cooldown_seconds_between_tests: 2
+max_output_tokens: 512
+per_test_timeout_seconds: 300
+save_raw_outputs: true
+save_environment_metadata: true
+resume: true
+output_csv: data/results/hp003_top8_30prompts.csv
+output_jsonl: data/results/hp003_top8_30prompts.jsonl
+raw_output_dir: data/raw_outputs/hp003_top8_30prompts

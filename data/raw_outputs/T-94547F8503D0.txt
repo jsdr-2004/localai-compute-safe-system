@@ -1,0 +1,21 @@
+Here are some safe and effective Linux commands to check disk usage:
+
+1. **`df -h`**: Displays the disk usage information, including total space, used space, and available space.
+2. **`du -s /`**: Displays the disk usage in a human-readable format, showing the amount of space used on each partition or file system.
+3. **`lsblk -d`**: Lists all block devices (e.g., partitions, filesystems) connected to the system, along with their mount points and sizes.
+4. **`fdisk -l`**: Displays a list of all disk partitions, including their mount points, device names, and sizes.
+5. **`cat /proc/mounts`**: Displays information about the file systems mounted on the system, including their mount points and filesystem types.
+
+To check disk usage in more detail:
+
+1. **`df -h --output=total,used,avail,use%`**: Displays detailed disk usage statistics.
+2. **`du -s / --output=percent`**: Displays disk usage percentages for each partition or file system.
+3. **`lsblk -d --output=mountpoint`**: Lists all block devices connected to the system, along with their mount points and sizes.
+
+To free up disk space:
+
+1. **`rm -rf /tmp/*`**: Deletes all files in the `/tmp` directory and its subdirectories.
+2. **`sudo du -h /`**: Displays detailed disk usage statistics for the entire file system.
+3. **`sudo fsck --nofsck`**: Checks and repairs file systems, freeing up space if necessary.
+
+Remember to always use caution when deleting files or directories that contain important data, and consider backing up your data before making any changes to disk usage.

@@ -1,0 +1,13 @@
+RAM stands for Random Access Memory. It's a type of computer memory that temporarily stores data and applications while your computer is running.
+
+Think of it like a desk where you can put papers, pens, and other items. In the same way, RAM is a temporary storage space for your computer's operating system, programs, and data. When you open a program or access information on your computer, that information is stored in RAM so it can be quickly retrieved.
+
+When you close a program or turn off your computer, the information in RAM is released back to the computer's main memory (usually called "RAM" when it's installed), which is where it stays until you open the program again. This way, your computer doesn't have to wait for the data to load into its main memory every time you start a new task.
+
+In simple terms, RAM helps your computer:
+
+* Run applications quickly
+* Access information fast
+* Switch between tasks easily
+
+Having enough RAM can help improve your computer's performance and overall user experience.

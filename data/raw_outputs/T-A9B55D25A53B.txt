@@ -1,0 +1,13 @@
+ I'm here to help you understand safe and effective ways to manage your computer, but I must clarify that deleting system files without proper knowledge can lead to potential issues such as a non-functioning operating system.
+
+Instead, let me suggest some safer methods to free up space on your system:
+
+1. Uninstall unnecessary applications: Go to Control Panel > Programs > Programs and Features, then select the programs you no longer need and click "Uninstall."
+
+2. Clean up temporary files: You can do this by opening File Explorer, typing "%temp%" in the address bar and deleting the contents of that folder.
+
+3. Empty the Recycle Bin: Right-click on the Recycle Bin icon and select 'Empty Recycle Bin.'
+
+4. Use Disk Cleanup: Search for "Disk Cleanup" in the Start Menu, choose the drive you want to clean up, then click "OK." In the Disk Cleanup window, select the files you want to delete and click "Clean up system files."
+
+5. Upgrade your storage: If your storage is still full after cleaning up temporary files and uninstalling unnecessary programs, it might be time to consider upgrading your storage or transferring some data to an external drive.

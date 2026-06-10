@@ -1,0 +1,47 @@
+When a user runs `docker ps` and gets a "permission denied" error, it's likely due to one of the following causes:
+
+1. **Insufficient permissions**: The user might not have the necessary permissions to run Docker commands. This could be because their user account doesn't have the required privileges or because they're running on a system where Docker requires special permissions.
+2. **Missing Docker configuration**: If Docker is not properly configured, it may not work correctly for all users. For example, if Docker is installed in a non-standard location, it might require additional configuration to run successfully.
+3. **Docker socket access issue**: The user might be missing access to the Docker socket, which is required to interact with Docker containers.
+
+To fix this issue, you can try the following steps:
+
+**1. Verify user permissions**
+
+Check if the user has the necessary permissions by running:
+```bash
+docker ps --user=<username>
+```
+Replace `<username>` with the actual username of the user who's experiencing permission issues.
+
+If the user doesn't have the required permissions, you'll need to add them to the Docker group or grant them explicit permissions.
+
+**2. Check Docker configuration**
+
+Verify that Docker is properly configured by running:
+```bash
+docker run --rm --gpus all --no-pid --net none -v /tmp:/tmp tmpfs
+```
+This command checks if Docker can create a new container and access the Docker socket.
+
+If Docker doesn't work, you may need to modify your system configuration or reinstall Docker.
+
+**3. Grant Docker socket access**
+
+To grant the user access to the Docker socket, you can run:
+```bash
+sudo docker ps --user=<username> -a
+```
+This command will show all running containers for the specified user.
+
+If the user doesn't see any containers, it means they don't have access to the Docker socket. You'll need to grant them explicit permissions to access the socket.
+
+**4. Add user to Docker group**
+
+You can add the user to the Docker group by running:
+```bash
+sudo usermod -aG docker <username>
+```
+Replace `<username>` with the actual username of the user who's experiencing permission issues.
+
+After adding the user to the Docker group, they should be able to run `docker ps` without any permission errors.

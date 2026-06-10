@@ -1,0 +1,48 @@
+### Reversing a String in Python
+
+You can use the built-in `reversed` function and the `join` method to reverse a string in Python.
+
+#### Code
+```python
+def reverse_string(s):
+    """
+    Returns the reversed string.
+
+    Args:
+        s (str): The input string.
+
+    Returns:
+        str: The reversed string.
+    """
+    return ''.join(reversed(s))
+```
+
+#### Explanation
+
+*   The `reversed` function returns a reverse iterator of the input sequence (in this case, the string).
+*   We use the `join` method to concatenate all the characters in the reversed iterator into a single string.
+
+#### Example Use Cases
+```python
+print(reverse_string("hello"))  # Output: "olleh"
+print(reverse_string("Python"))  # Output: "nohtyP"
+```
+
+Alternatively, you can also use slicing to reverse a string:
+
+#### Code
+```python
+def reverse_string(s):
+    """
+    Returns the reversed string.
+
+    Args:
+        s (str): The input string.
+
+    Returns:
+        str: The reversed string.
+    """
+    return s[::-1]
+```
+
+This method is more concise and efficient, but it only works for strings that are at least one character long.

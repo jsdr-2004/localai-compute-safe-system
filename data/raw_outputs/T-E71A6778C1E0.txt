@@ -1,0 +1,5 @@
+ In simple terms, RAM (Random Access Memory) is a type of computer memory that allows the computer to quickly access and use data that it's currently working on. Think of it as the short-term memory of a computer.
+
+When you turn on your computer, the operating system and other programs load into the RAM so they can be quickly accessed and used by the processor (CPU). The faster the RAM, the quicker these programs can be loaded and run, which makes the overall computer feel more responsive and smooth.
+
+Once the computer is turned off or the power is lost, any data stored in the RAM is erased, so it's not a permanent storage like a hard drive or SSD (solid-state drive). However, because of its speed, RAM plays a crucial role in making a computer fast and efficient.

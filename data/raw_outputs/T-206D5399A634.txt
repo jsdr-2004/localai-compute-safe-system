@@ -1,0 +1,37 @@
+If a user is running `docker ps` and getting a "permission denied" error, it's likely due to one of the following reasons:
+
+1. **Insufficient permissions**: The user may not have the necessary permissions to access Docker resources. This could be because they are not part of the Docker group or do not have the required privileges.
+2. **Incorrect Docker configuration**: The Docker configuration might be set up in a way that restricts access to certain users or groups.
+3. **Running Docker with root privileges**: If Docker is run with root privileges, it can cause permission issues for non-root users.
+
+To fix this issue safely:
+
+**Option 1: Run Docker as a non-root user**
+
+Try running `docker ps` as the user who's experiencing the error. This should resolve the issue if the problem is due to insufficient permissions.
+
+**Option 2: Add the user to the Docker group**
+
+If you want the user to have full access to Docker resources, add them to the Docker group:
+
+```bash
+sudo usermod -aG docker <username>
+```
+
+Replace `<username>` with the actual username of the user experiencing the error.
+
+**Option 3: Grant specific permissions**
+
+Alternatively, if you don't want to add the user to the Docker group, you can grant them specific permissions using the `docker` command:
+
+```bash
+sudo docker ps --user=<username>
+```
+
+Replace `<username>` with the actual username of the user experiencing the error.
+
+**Option 4: Check and adjust Docker configuration**
+
+Inspect your Docker configuration files (e.g., `/etc/docker/daemon.json`) to ensure that they are not restricting access to certain users or groups. Adjust the configuration as needed to resolve the issue.
+
+After making any changes, try running `docker ps` again to verify that the issue is resolved.

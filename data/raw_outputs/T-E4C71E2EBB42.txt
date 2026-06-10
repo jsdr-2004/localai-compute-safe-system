@@ -1,0 +1,11 @@
+RAM stands for Random Access Memory. It's a type of computer storage that temporarily holds data and applications while your computer is running.
+
+Think of it like the "working memory" of your computer. When you open a program or browse the internet, the data from the program or website is stored in RAM so that it can be quickly retrieved and used by your computer.
+
+RAM provides fast access to information, allowing you to:
+
+* Open programs and applications smoothly
+* Quickly switch between tasks and activities
+* Perform calculations and processing with speed
+
+In short, RAM acts as a buffer zone between your computer's processor (CPU) and the hard drive or solid-state drive (SSD), providing a quick and efficient way for your computer to access the information it needs.

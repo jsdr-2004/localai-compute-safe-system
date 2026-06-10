@@ -1,0 +1,7 @@
+ RAM, or Random Access Memory, is like your computer's short-term memory. When you turn on your computer, the operating system and programs you're currently using are loaded into the RAM so they can be quickly accessed and used.
+
+Think of it this way: when you read a book, you don't have to go back to the library every time you want to remember what you read earlier. Instead, you can keep the pages open in front of you for quick reference. Similarly, RAM keeps frequently used data easily accessible so your computer can work faster.
+
+However, unlike a book, which you can leave open for as long as you want, the information in RAM is temporary and gets erased when you turn off your computer. That's why when you close a program, it disappears from your screen, and why you have to reload programs every time you start your computer.
+
+The more RAM a computer has, the more data it can keep in this short-term memory, which means it can run more programs at once without slowing down. So, if you're running many programs or large applications, having more RAM can make your computer faster and more efficient.

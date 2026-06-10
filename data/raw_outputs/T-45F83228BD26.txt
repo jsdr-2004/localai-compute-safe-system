@@ -1,0 +1,51 @@
+Here are some safe and effective Linux commands to check disk usage:
+
+1. **df -h**: Displays the total, used, and free space on each partition.
+```
+df -h /path/to/your/disk
+```
+Replace `/path/to/your/disk` with the path to your disk.
+
+2. **lsblk -d**: Shows a list of partitions on the system, along with their mount points and file systems.
+```
+lsblk -d
+```
+This command will display information about all block devices (such as partitions) on your system.
+
+3. **fdisk -l**: Displays a list of all disk partitions, including their size and location.
+```
+fdisk -l
+```
+Replace `/dev/sdx` with the device identifier for your disk, where `sdx` is the partition number (e.g., `/dev/sda1`). For example: `/dev/sdc`
+
+4. **mountpoint**: Shows information about each mounted file system on your system.
+```
+mountpoint /path/to/your/disk
+```
+Replace `/path/to/your/disk` with the path to your disk.
+
+5. **du -h**: Displays the disk usage of a directory or a single file.
+```
+du -h /path/to/your/directory
+```
+Replace `/path/to/your/directory` with the path to the directory you want to check.
+
+6. **ps -ef | grep -v 'grep'`: Finds processes that are not running `grep`.
+```
+ps -ef | grep -v 'grep'
+```
+This command will display a list of processes on your system, excluding any that are marked as running `grep`.
+
+7. **find /path/to/your/directory**: Searches for files in a directory or a subdirectory.
+```
+find /path/to/your/directory
+```
+Replace `/path/to/your/directory` with the path to the directory you want to search.
+
+8. **echo 'Disk usage statistics': | less`: Displays disk usage statistics, including total, used, and free space, in real-time.
+```
+echo 'Disk usage statistics'
+```
+This command will display the current disk usage information, which is updated every second.
+
+These commands are safe and effective ways to check disk usage on Linux systems.

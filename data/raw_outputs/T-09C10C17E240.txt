@@ -1,0 +1,26 @@
+ The issue "permission denied" when running `docker ps` suggests that the Docker daemon is running but the user does not have sufficient permissions to interact with it. This could happen if you're not logged in as the root user or if the user doesn't belong to the 'docker' group.
+
+Here are some safe steps to fix this issue:
+
+1. First, check if Docker is installed and running by executing `docker -v` and `systemctl status docker`. If Docker is not installed, you will need to install it first.
+
+2. To allow the current user to access the Docker daemon without requiring sudo, add the user to the 'docker' group:
+
+   ```
+   sudo usermod -aG docker $USER
+   ```
+
+3. After adding the user to the 'docker' group, you need to log out and log back in so that the group membership is re-evaluated or use `newgrp docker` command to immediately apply the changes without logging out:
+
+   ```
+   logout
+   login
+   ```
+
+   Or
+
+   ```
+   newgrp docker
+   ```
+
+4. Verify if the user has access by running the `docker ps` command again without using sudo. If everything was done correctly, you should now be able to see the list of active Docker containers.

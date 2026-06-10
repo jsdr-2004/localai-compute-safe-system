@@ -1,0 +1,5 @@
+RAM, which stands for Random Access Memory, is like a temporary storage place inside your computer where programs and data can be quickly accessed and modified.
+
+Imagine you have a desk with only two drawers: one drawer contains all your important documents (which we could compare to the hard drive), while the other drawer is much faster but has less space (this would be RAM). When you need to work on something specific, like writing a letter or solving a math problem, you pull out that document from the faster, smaller drawer and put everything else away. This makes it very quick for you to find what you need when working on your task.
+
+In computers, programs are loaded into RAM so they can run quickly and efficiently while the computer is operating. The more RAM your computer has, the more programs and tasks it can handle simultaneously without slowing down because of lack of space.

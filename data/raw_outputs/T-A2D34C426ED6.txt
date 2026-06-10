@@ -1,0 +1,32 @@
+ The error "permission denied" when running `docker ps` usually indicates that Docker is not running with sufficient privileges. Here are a few potential causes and their respective solutions:
+
+1. **Incorrect User Permissions**: Docker runs as the 'root' user by default, but it's recommended to use non-root users for security reasons. If you haven't set up Docker permissions correctly for your current user, you may encounter this error. To fix this issue, you need to add your current user to the `docker` group.
+
+Run the following command in your terminal:
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+After running the above command, log out and log back in for the changes to take effect. Alternatively, you can use `su -` to switch to the root user and run the command without logging out:
+
+```bash
+sudo su -
+usermod -aG docker $USER
+exit
+```
+
+2. **Docker not installed properly**: If Docker is not correctly installed, you may face permission issues. Make sure that Docker has been set up and started successfully on your system. You can check the installation status by running:
+
+```bash
+docker --version
+```
+
+If Docker is not installed, refer to the official documentation for installing Docker on your specific operating system: https://docs.docker.com/get-docker/
+
+3. **Container runtime permissions**: In some cases, the container runtime used by Docker (such as runc or containerd) may lack sufficient permissions. To resolve this issue, you can change the ownership and group of the runtime files to your user:
+
+```bash
+sudo chown $USER:$USER /var/run/docker.sock
+sudo chmod 660 /var/run/docker.sock
+```

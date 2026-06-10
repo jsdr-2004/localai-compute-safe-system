@@ -1,0 +1,35 @@
+When a Docker container runs `docker ps` and receives a "Permission denied" error, it typically means that the container is trying to access resources on your host machine that it doesn't have permission to access.
+
+Here are some possible causes:
+
+1. **Insufficient permissions**: The container might not be running with sufficient privileges to access certain files or directories on your host machine.
+2. **Incorrect permissions**: The container's configuration file (usually `docker-compose.yml` or `Dockerfile`) might contain incorrect permissions that prevent it from accessing the resources you want it to use.
+3. **Container isolation**: Docker containers are isolated by default, which means they have their own private network and filesystems. This isolation is necessary for security reasons, but it can also cause issues if the container's configuration file contains unexpected permissions.
+
+To safely fix this issue:
+
+**1. Check container permissions:**
+
+* Run `docker inspect <container_id>` to see if the container has any restricted permissions.
+* If you're using Docker Compose, check the `networks` section of your `docker-compose.yml` file to ensure that the container's network settings are correct.
+
+**2. Correct permissions in Dockerfile (if applicable):**
+
+* Check your `Dockerfile` for any lines that allow or deny access to specific files or directories. You can do this by running `docker build -t <image_name> .` and then checking the resulting image's output.
+* Make sure that any permissions you want to grant are included in the Dockerfile.
+
+**3. Add a "volume" configuration (if necessary):**
+
+* If you're using Docker Compose, consider adding a `volumes` section to your `docker-compose.yml` file to specify where the container should store its files.
+* This can help prevent issues caused by isolation and ensure that the container has access to resources as intended.
+
+**4. Check for permission issues in your host machine:**
+
+* Make sure that the user running Docker (e.g., `sudo`) has sufficient permissions to write to the directory or file you're trying to access.
+* If you're using a non-root user, consider setting up a separate user with elevated privileges to run Docker.
+
+**5. Try running the container without the "docker-compose" command:**
+
+Sometimes, issues can be caused by the `docker-compose` command itself. Try running `docker run -d <image_name>` instead of `docker ps`. This can help isolate any specific issues that might be related to your Compose configuration.
+
+By following these steps, you should be able to identify and correct the permission issue causing "Permission denied" errors when running Docker containers.

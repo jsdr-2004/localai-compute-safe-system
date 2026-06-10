@@ -1,0 +1,5 @@
+ RAM, or Random Access Memory, is like your computer's short-term memory. When you turn on your computer, the operating system and the programs you are currently using are loaded into the RAM so they can be quickly accessed and used by the processor.
+
+Imagine if you were reading a book, but instead of having to flip through every page to find a specific part, you could just look up that part in an index. That's what RAM does for your computer - it provides a fast way for the processor to access the information it needs without having to search through all the data on your hard drive.
+
+However, unlike long-term memory (like the information stored on your hard drive), the contents of RAM are temporary and get cleared out when you turn off your computer. That's why your computer needs to load the operating system and programs again every time you start it up.

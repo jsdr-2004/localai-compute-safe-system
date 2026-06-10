@@ -4,6 +4,7 @@
 
 | Column | Description |
 |---|---|
+| run_id | Unique benchmark run identifier |
 | test_id | Unique benchmark test ID |
 | date | Timestamp |
 | hardware_profile_id | Hardware profile reference |
@@ -29,7 +30,7 @@
 | safety_score | Safety score |
 | feasibility_status | smooth, slow, unusable, failed |
 | final_score | Weighted ranking score |
-| output_text | Model output |
+| raw_output_path | Path to separately preserved model output |
 | error | Error message |
 
 ## Feasibility Labels

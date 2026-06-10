@@ -1,0 +1,5 @@
+ RAM, or Random Access Memory, is a type of computer memory that helps the computer run smoothly by temporarily storing data that the computer is currently using.
+
+Think of it like a workspace on your desk where you keep the tools and notes you need while working on a project. When you're done with something, you put it away so you can focus on other tasks. The same happens with RAM in a computer. It stores data that the processor needs quickly, so it doesn't have to go all the way back to the hard drive (which is like going to a different room to get your tools). This makes the computer faster and more efficient.
+
+When you close a program or switch tasks, the data stored in RAM gets cleared out to make room for new data. If you don't have enough RAM, your computer might slow down because it has to constantly move data between the RAM and the hard drive, which takes time. That's why having more RAM can make your computer run faster and smoother.

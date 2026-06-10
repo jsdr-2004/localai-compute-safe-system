@@ -1,0 +1,40 @@
+Certainly! Here are some safe and commonly used Linux commands to check disk usage:
+
+1. **`df -h`**: This command is useful for getting the disk space information in a human-readable format (e.g., MB, GB). It shows you how much of your file system's total capacity is currently being used.
+
+   ```bash
+   df -h
+   ```
+
+2. **`du -sh /path/to/directory`**: This command provides an overview of the space usage for a directory and its subdirectories in a human-readable format.
+
+   ```bash
+   du -sh /path/to/directory
+   ```
+
+3. **`ncdu` (Non-interactive Disk Usage)**: `ncdu` is a faster alternative to `du`. It allows you to navigate through the directories like an interactive file browser and provides more detailed information about disk usage.
+
+   ```bash
+   ncdu /path/to/directory
+   ```
+
+4. **`lsblk`**: This command lists block devices, including their mount points, sizes, etc., which can be useful for understanding your storage layout.
+
+   ```bash
+   lsblk
+   ```
+
+5. **`parted`**: `parted` is another way to inspect partition information and can help you understand how your disk space is divided among partitions.
+
+   ```bash
+   parted /dev/sdX
+   (where sdX is the device name, e.g., sda, sdb)
+   ```
+
+6. **`find`**: If you want to find files that are consuming a lot of space or only specific types of files like directories, you can use `find`.
+
+   ```bash
+   sudo find /path/to/directory -type d -name "big_directory_name" -print | xargs du -sh
+   ```
+
+These commands should help you get a good understanding of your disk usage.

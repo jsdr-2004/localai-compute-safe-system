@@ -1,0 +1,42 @@
+When a user runs `docker ps` and gets a "permission denied" error, it's often due to one of the following reasons:
+
+1. **Insufficient Docker permissions**: The user may not have the necessary permissions to run Docker commands.
+2. **Incorrect group membership**: The user might be part of a group that doesn't have Docker permissions.
+3. **Docker socket access denied**: The user may not have access to the Docker socket, which is required for running Docker commands.
+
+To fix this issue, follow these steps:
+
+**Solution 1: Run as root or with elevated privileges**
+
+If you're using a Linux system, you can run `docker ps` with elevated privileges by using `sudo`:
+```bash
+sudo docker ps
+```
+This will execute the command with root privileges, allowing access to Docker commands.
+
+**Solution 2: Add user to the Docker group**
+
+To grant the user permission to run Docker commands without needing to use `sudo`, you can add them to the Docker group. This group has read-only access to the Docker socket:
+```bash
+useradd -m -g docker <username>
+```
+Replace `<username>` with the actual username of the user who's experiencing issues.
+
+**Solution 3: Grant explicit permissions**
+
+Alternatively, you can grant the user explicit permissions to run Docker commands using `chmod` and `chown`:
+```bash
+sudo chown -R $USER:$USER /var/run/docker.sock
+sudo chmod u+x /var/run/docker.sock
+```
+This will change the ownership of the Docker socket to the current user, allowing them to access it without needing root privileges.
+
+**Solution 4: Use `docker ps` with --user**
+
+If you're running a container and want to view its logs or inspect its status, you can use the `--user` flag to specify the user ID for the command:
+```bash
+docker ps -a --user=<username>
+```
+Replace `<username>` with the actual username of the user who's experiencing issues.
+
+By applying one of these solutions, you should be able to resolve the "permission denied" error when running `docker ps`.

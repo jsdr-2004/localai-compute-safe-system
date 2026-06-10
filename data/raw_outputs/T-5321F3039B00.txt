@@ -1,0 +1,5 @@
+RAM, which stands for Random Access Memory, is a type of computer memory that can be accessed randomly. This means data can be stored or retrieved from any location within the memory, as opposed to other types of storage like hard drives where you have to read through sectors sequentially.
+
+Think of RAM as temporary scratch paper in your mind while solving a math problem. You can quickly write down numbers and equations wherever they need to go without having to organize them in a specific order first. Once you're done with the problem, all that information is erased from this "scratch paper," just like how data stored in RAM gets deleted when the computer isn't using it.
+
+In computing terms, RAM allows your computer to run programs and applications more quickly by providing fast access to data. The amount of RAM a computer has can affect its performance, especially for tasks that require handling many things at once or running multiple applications simultaneously.

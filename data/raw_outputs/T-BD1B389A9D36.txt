@@ -1,0 +1,9 @@
+RAM, which stands for Random Access Memory, is like temporary storage space inside your computer where data and programs can be quickly read from or written to. 
+
+Think of it as a large table with lots of small compartments, each compartment being capable of holding one bit (0 or 1) of information. This table is part of the hardware in your computer, separate from the hard drive or SSD.
+
+When you're working on something like opening a document, running a program, or playing a game, RAM is where most of that data gets stored so it can be accessed very quickly by your processor (like how you might access items from a table more easily than from a closet). 
+
+The amount of RAM in a computer affects its performance: the more RAM, the better it can handle multiple tasks at once without slowing down. However, not all computers have enough RAM to run demanding applications like professional design software or video editing tools.
+
+In summary, RAM is short-term memory that your CPU uses for quick access during operations and data processing.

@@ -1,0 +1,9 @@
+RAM, or Random Access Memory, is a type of computer memory that can be accessed randomly. This means data can be stored and retrieved from any location within the memory at any time. 
+
+Think of your RAM as a temporary workspace where programs run on your computer store information temporarily. It's like having a digital notepad that you can write in quickly whenever you need to jot down notes or work with something.
+
+When you open an application, your operating system will typically load part of the program and its data into RAM so it can be accessed very fast. The amount of RAM your computer has directly affects how many applications you can run at once without slowing down significantly.
+
+Unlike hard drives or solid-state drives (SSDs), which are slower because they have to physically move a read/write head over spinning disks, RAM operates much faster as it resides in the same chip as the CPU. This makes data access very quick and responsive when using programs.
+
+However, since RAM is volatile memory, once you turn off your computer or lose power, any information stored in RAM gets erased. That's why we use non-volatile storage like hard drives or SSDs to keep important files that need to persist even after the computer has been turned off.

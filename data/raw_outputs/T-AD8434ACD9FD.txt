@@ -1,0 +1,9 @@
+RAM (Random Access Memory) is a type of computer storage that temporarily holds data and applications while your computer is running.
+
+Think of it like a workspace where you can quickly access the things you need to do right now, without having to search for them elsewhere.
+
+When you open an app or file on your computer, it's copied from its permanent storage (like a hard drive) into RAM so that it can be accessed faster. This way, your computer can process and use the data more quickly.
+
+The good news is that RAM is temporary, so when you shut down your computer, all the data in RAM is erased and stored back on the hard drive for next time.
+
+In simple terms: RAM is like a "workbench" where your computer stores things temporarily to help it work faster.

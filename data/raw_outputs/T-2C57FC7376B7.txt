@@ -1,0 +1,7 @@
+RAM stands for Random Access Memory. It's a type of computer memory that temporarily stores data and applications while your computer is running.
+
+Think of it like a desk where you can put papers, notes, and other items you need to work on right away. Just as you can pick up the paper from the desk and start working on it immediately, RAM allows your computer's processor (the brain of your computer) to access the data it needs quickly.
+
+When you open a program or save a file, the data is stored in RAM for a short time before being transferred to the hard drive or other storage devices. This means that if you close a program or shut down your computer, all the data in RAM will be lost until you reopen it.
+
+RAM is usually divided into different "slots" or sections, and each section can hold a certain amount of data. The more slots available, the more data your computer can store in RAM at once.

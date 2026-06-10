@@ -1,0 +1,7 @@
+RAM, which stands for Random Access Memory, is a type of computer memory that can be read from and written to at any time. Think of it as the temporary workspace where your computer stores data that you're actively using or working with.
+
+When you open an application (like a word processor), your operating system allocates some RAM to hold information about that program and what you've typed in. This allows the program to run smoothly, allowing you to type text, edit documents, etc., without having to wait for data to be loaded from slower storage like the hard disk.
+
+Once you close the application or turn off your computer, the RAM is cleared out (or "flushed"), and all of its contents are lost. This is why it's important to save work often when using a computer!
+
+In summary, RAM helps your computer run programs more quickly by providing fast access to data that your programs need while they're running.

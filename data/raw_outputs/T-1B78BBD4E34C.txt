@@ -1,0 +1,48 @@
+When running `docker ps` and encountering a "permission denied" error, it typically indicates that Docker is unable to access or communicate with your container due to insufficient permissions. Here are some common causes and steps to resolve this issue:
+
+### Common Causes:
+1. **Docker Daemon Running as Root:**
+   - If the Docker daemon (the service running in the background) is configured to run as root, it may not have the necessary permissions to access files or directories that your user account cannot read.
+
+2. **User Permissions Issue:**
+   - Your current user might not have permission to list containers due to file system permissions.
+   
+3. **Docker Configuration Issues:**
+   - Misconfiguration in Docker's configuration files can sometimes lead to such issues, though this is less common and usually more specific error messages accompany it.
+
+### Safe Fix Steps:
+
+1. **Check Docker Daemon User:**
+   - Ensure that the Docker daemon runs as a non-root user. You can check this by running `sudo systemctl status docker` or `systemctl show --property=User docker`. If the user is root, you need to change its configuration.
+   
+2. **Change Docker User in Systemd Configuration (if applicable):**
+   - Edit your system's systemd service file for Docker if it’s configured to run as root:
+     ```sh
+     sudo systemctl edit docker
+     ```
+   - Add or modify the `User` directive to specify a non-root user, such as `nobody`, which is often used in secure configurations.
+   
+3. **Verify and Fix Filesystem Permissions:**
+   - Ensure that your Docker container images are accessible by checking file permissions:
+     ```sh
+     sudo chown -R $USER:$USER /var/lib/docker
+     ```
+   - Replace `$USER` with the actual user name or ID if necessary.
+
+4. **Restart Docker Service:**
+   - After making changes, restart the Docker service to apply them:
+     ```sh
+     sudo systemctl restart docker
+     ```
+
+5. **Check for SELinux/AppArmor Issues (if applicable):**
+   - If you are using SELinux or AppArmor, ensure that they are not blocking access.
+   
+6. **Verify Docker Configuration Files:**
+   - Check if there are any misconfigurations in the Docker configuration files (`/etc/docker/daemon.json`).
+
+### Additional Tips:
+- Ensure your Docker installation is up-to-date to avoid known issues and security vulnerabilities.
+- If you have multiple users, consider using Docker volumes or bind mounts to manage file permissions more effectively.
+
+By following these steps, you should be able to resolve the "permission denied" issue when running `docker ps`.

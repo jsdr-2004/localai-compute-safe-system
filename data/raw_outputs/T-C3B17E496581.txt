@@ -1,0 +1,5 @@
+ RAM, or Random Access Memory, is like your computer's short-term memory. When you turn on your computer, the operating system and programs you're currently using are loaded into the RAM so they can be quickly accessed and used.
+
+Think of it this way: when you read a book, you don't have to go back to the library every time you want to remember what you read last. Instead, you can keep the pages open on your desk for easy reference. In the same way, RAM keeps frequently used data easily accessible for quicker processing by the computer.
+
+However, unlike a book where you can leave the pages open indefinitely, when you close your computer or it goes into sleep mode, the information stored in RAM is erased, which is why you need to save your work regularly!

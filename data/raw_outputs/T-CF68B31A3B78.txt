@@ -1,0 +1,41 @@
+**Likely Cause:**
+
+When a user runs `docker ps` and gets a "permission denied" error, it's often due to one of the following reasons:
+
+1. **Insufficient Docker permissions**: The user may not have been granted the necessary permissions to run Docker commands.
+2. **Group membership issues**: The user's group membership might be causing issues with Docker permissions.
+3. **Docker socket permissions**: The Docker socket file (/var/run/docker.sock on Linux) might have restrictive permissions, preventing users from accessing it.
+
+**Safe Fix:**
+
+To resolve the issue, follow these steps:
+
+1. **Check Docker permissions**:
+	* Ensure that the user has execute permissions for Docker executable (`docker`): `chmod +x /usr/bin/docker`
+	* Verify that the group owning the Docker socket file (usually `docker`) has the necessary permissions: `ls -l /var/run/docker.sock`
+2. **Adjust group membership**:
+	* If the user is part of a specific group, ensure they are also part of the `docker` group.
+	* Use the command `sudo usermod -aG docker <username>` to add the user to the `docker` group (replace `<username>` with the actual username).
+3. **Change Docker socket permissions**:
+	* Run the following command to change the permissions on the Docker socket file: `chown root:docker /var/run/docker.sock`
+	* Then, set the owner and group of the Docker socket file to the `docker` user: `chmod 750 /var/run/docker.sock`
+
+Example commands:
+
+```bash
+sudo chmod +x /usr/bin/docker
+
+ls -l /var/run/docker.sock
+```
+
+If you're running a Linux distribution that uses `systemd`, you might need to add a `docker` service file to configure the Docker socket permissions.
+
+For example, on Ubuntu or Debian:
+```bash
+sudo nano /etc/systemd/system/docker.service.d/99-docker-group.conf
+
+[Service]
+ExecStartPost = chown docker:docker /var/run/docker.sock
+```
+
+After making these changes, try running `docker ps` again to verify that the issue is resolved.

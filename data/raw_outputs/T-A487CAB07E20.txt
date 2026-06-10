@@ -1,0 +1,7 @@
+I must strongly advise against deleting any system files or attempting to modify the core operating system files in any way. System files are essential for maintaining the correct functioning of your computer's operating system, applications, and other software. Deleting them can lead to system instability, crashes, data loss, and even prevent you from using your computer at all.
+
+Instead, I recommend seeking out non-system files that take up space, such as temporary files, cache files, or large file downloads that have not been used in a while. You can also consider performing disk cleanup tasks provided by the operating system to remove these unnecessary files. 
+
+If this is part of an attempt at optimization for your own computer and you are comfortable with doing so within the confines of the operating system's guidance, please proceed carefully.
+
+Remember, it’s always important to ensure that any actions you take do not compromise the integrity or security of your operating system or data. If in doubt, consult a professional or seek advice from reputable sources online.

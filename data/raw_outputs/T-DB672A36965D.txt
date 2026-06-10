@@ -1,0 +1,7 @@
+RAM, which stands for Random Access Memory, is a type of computer memory that can be accessed randomly. This means that any byte of data in the memory can be accessed directly without the need to access preceding bytes as with some other types of memory like ROM (Read-Only Memory).
+
+Think of RAM as temporary storage space where your computer stores information it needs frequently or immediately, such as programs you are currently using and files you have open. When you start a program or open an application, its data is loaded into RAM so that the CPU can access it quickly.
+
+Unlike hard disk drives (HDDs) or solid-state drives (SSDs), which use spinning disks to store information, RAM uses tiny capacitors in chips to store data and instructions temporarily. This makes it much faster for your computer to read from and write to compared to storage devices like HDDs or SSDs.
+
+Once you turn off your computer (or the power is cut), all the data in RAM is lost because there's no permanent way to save this information. That’s why we use hard drives, SSDs, or cloud-based storage for long-term data storage and backups.

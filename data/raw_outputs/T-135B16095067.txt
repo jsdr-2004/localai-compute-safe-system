@@ -1,0 +1,34 @@
+The issue of getting a "permission denied" error when running `docker ps` can occur for several reasons, typically related to Docker not having sufficient permissions or issues with how Docker is installed on your system.
+
+### Likely Cause:
+1. **Insufficient Permissions**: This could be due to the user running the command not having proper permissions to interact with Docker.
+2. **Docker Not Running as Root**: If Docker is not started as root, the container's files might be owned by a different user (like `root`), and you won't have permission to list them.
+
+### Safe Fix:
+To resolve this issue safely, follow these steps:
+
+1. **Check if Docker Service is Running**:
+   - Verify that the Docker service is running correctly.
+   ```sh
+   sudo systemctl status docker  # On Linux systems using systemd
+   ```
+
+2. **Run as Root or Use a User with Full Permissions**:
+   - If you are trying to run Docker commands, and your user account doesn't have permission, try switching users temporarily by logging in as the root user (be cautious with this step since it grants full system access).
+     ```sh
+     sudo docker ps
+     ```
+   - Alternatively, ensure that a user has been granted sufficient permissions. This could mean creating a new user specifically for Docker and granting them the necessary privileges.
+   
+3. **Check Docker Configuration**:
+   - Ensure your Docker configuration allows non-root users to use Docker commands by checking `~/.docker/credentials` files if you're using authentication with Docker Hub or similar services.
+
+4. **Reinstall Docker (if needed)**:
+   - If Docker is installed, consider reinstalling it and ensuring the installation grants required permissions.
+   
+5. **Use a Non-root User**:
+   - As an alternative to switching users, you can create a non-root user specifically for Docker purposes and ensure they have the necessary permissions.
+
+Remember, running as root should be done cautiously because it gives full system access which might expose your system to vulnerabilities if not handled properly. It's generally safer and more secure to use non-root users where possible.
+   
+If none of these steps resolve the issue, you may want to check for any Docker-specific configuration files or environment variables that might require adjustments.

@@ -1,0 +1,36 @@
+To check the disk usage on a Linux system, you can use several useful commands. Here are some of them:
+
+1. **df (Disk Free)**
+   - `df`: This command is used to display file system disk space information.
+   - `df -h`: The `-h` option makes the output more human-readable, using units like KB, MB, GB, etc.
+   ```bash
+   df -h
+   ```
+
+2. **du (Disk Usage)**
+   - `du`: This command is used to estimate file space usage by listing directories and files recursively from a starting directory specified on the command line.
+   - `du -ah /path/to/directory`: The `-a` option shows all files, not just directories; the `-h` option makes it more readable. You can specify any directory path you want.
+   ```bash
+   du -ah /
+   ```
+
+3. **ncdu (NCurses Disk Usage)**
+   - `ncdu`: This is a disk usage analyzer that provides an interactive file system browser with a simple interface and a tree-like display of the files and directories sorted by size.
+   - You can use it in combination with `find` to find large files or directories.
+   ```bash
+   ncdu /path/to/directory
+   ```
+
+4. **ncurses-df**
+   - This is another disk usage tool that uses a curses interface for displaying file system information. It’s less common than `ncdu`, but it can be useful if you prefer a text-based interface.
+   ```bash
+   ncurses-df /path/to/directory
+   ```
+
+5. **lsof (List Open Files)**
+   - Sometimes, disk usage might be high due to open files or processes that are still using the file system space. You can use `lsof` along with `df` and `du` commands.
+   ```bash
+   sudo lsof +c /path/to/directory | sort -nrk 6
+   ```
+
+These commands will help you understand how much disk space each directory or file is using on your Linux system. Remember to replace `/path/to/directory` with the actual path of the directory you want to analyze.

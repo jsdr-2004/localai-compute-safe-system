@@ -1,0 +1,11 @@
+ Here is a simple Python function that reverses a given string:
+
+```python
+def reverse_string(s):
+    return s[::-1]
+
+# Test the function
+print(reverse_string("Hello, World!"))
+```
+
+In this code, `[::-1]` is a slice notation that reverses the order of elements in a string. The `reverse_string` function takes a string as an argument and returns its reverse.

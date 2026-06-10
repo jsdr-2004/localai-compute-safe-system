@@ -1,0 +1,47 @@
+Likely Cause:
+
+When a user runs `docker ps` and gets a "permission denied" error, it's often because of a permissions issue related to Docker's container runtime or network configuration.
+
+Here are some common reasons for this error:
+
+1.  Insufficient Docker permissions: The user might not have the necessary permissions to access Docker's container runtime.
+2.  Incorrect group membership: If the user is part of a group that doesn't have Docker permissions, they may encounter permission issues when running Docker commands.
+3.  Network configuration issues: Docker uses network sockets for communication between containers and the host machine.
+
+Safe Fix:
+
+To resolve this issue, you can try the following steps:
+
+1.  Run `docker ps` with elevated privileges using `sudo`: If you're sure that the user has permission to run Docker commands, but still encounters an error, running the command with `sudo` might help.
+
+    ```bash
+sudo docker ps
+```
+
+2.  Adjust group membership: If the issue persists, check if the user is part of a group that doesn't have Docker permissions. You can do this by listing the groups to which the user belongs:
+
+    ```bash
+getent group $USER
+```
+
+    If the output shows a group without Docker permissions, you may need to add the user to a Docker-permissive group (e.g., `docker` or `dockerd`).
+
+    ```bash
+usermod -aG docker $USER
+```
+
+3.  Adjust network configuration: Make sure that Docker's network sockets are accessible to the user.
+
+4.  Check for conflicting services: If you're running other containerized services, ensure they don't interfere with Docker's runtime or network configuration.
+
+5.  Verify Docker permissions: Run `docker info` and check if the user has sufficient permissions:
+
+    ```bash
+docker info
+```
+
+6.  Update Docker configuration: Check your system's Docker configuration files (usually `/etc/docker/daemon.json` or `~/.config/docker/daemon.json`) to ensure that they don't restrict access.
+
+7.  Reboot your machine: If none of the above steps resolve the issue, try rebooting your machine to start with a clean slate.
+
+If you're still having trouble, consider checking Docker's official documentation for more detailed troubleshooting guides or seeking help from a Linux administrator or Docker expert.

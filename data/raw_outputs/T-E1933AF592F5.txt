@@ -1,0 +1,45 @@
+Here are some safe Linux commands to check disk usage:
+
+1. **df -h**: Displays the disk usage of all mounted file systems in a human-readable format.
+
+   ```
+   df -h
+   ```
+
+2. **du -sh /**: Displays the total size of the root directory and its contents.
+
+   ```
+   du -sh /
+   ```
+
+3. **df --output=pcent,avail,inuse,use% /dev/sda1**: Displays disk usage statistics for a specific device (in this case, `/dev/sda1`).
+
+   ```
+   df --output=pcent,avail,inuse,use% /dev/sda1
+   ```
+
+4. **fsck -n -d -F /dev/sda1**: Checks the file system on a specified device for errors.
+
+   ```
+   fsck -n -d -F /dev/sda1
+   ```
+
+5. **du -h --max-depth=2 /**: Displays disk usage statistics, including subdirectories, up to a maximum depth of 2 levels.
+
+   ```
+   du -h --max-depth=2 /
+   ```
+
+6. **fswipe -d /dev/sda1**: Displays disk usage statistics for a specific device (in this case, `/dev/sda1`).
+
+   ```
+   fswipe -d /dev/sda1
+   ```
+
+7. **bottleneck --disk /dev/sda1**: Displays disk usage statistics for a specific device (in this case, `/dev/sda1`), along with bottlenecks in the system.
+
+   ```
+   bottleneck --disk /dev/sda1
+   ```
+
+Note: Replace `/dev/sda1` with the actual device name you want to check. Also, be sure to run these commands as a user with sufficient privileges or use `sudo` if necessary.

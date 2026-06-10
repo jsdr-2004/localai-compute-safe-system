@@ -1,0 +1,3 @@
+ RAM, or Random Access Memory, is like the short-term memory of a computer. When you turn on your computer, it loads essential information into the RAM so that the processor can quickly access and use this data for tasks.
+
+Think of it as a waiting room where the data your computer needs right now sits, ready to be processed by the CPU (Central Processing Unit). The more RAM a computer has, the more data it can store at once, allowing it to run multiple programs smoothly without slowing down too much. When you close a program or the computer is turned off, the information in the RAM gets cleared, which is why we need to save our work regularly to ensure we don't lose any data!

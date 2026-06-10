@@ -1,0 +1,56 @@
+When you run `docker ps` in your terminal, if you get a "Permission denied" error, it's usually because Docker is unable to access the directories required by the commands used to list running containers or services.
+
+Here are some common causes:
+
+1. **No root privileges**: If you're running Docker as a non-root user (e.g., `sudo`), Docker won't have the necessary permissions to access certain directories.
+2. **Directory ownership issues**: If the directory where Docker is looking for resources doesn't have the correct owner or group, Docker might not be able to write to it.
+3. **Resource permissions issues**: Some containers might run with setuid or setgid bits that prevent Docker from accessing certain files.
+
+To fix this issue, you can try the following:
+
+**Method 1: Run as root**
+
+If you're running Docker as a non-root user, try running `docker ps` as the root user (`sudo`) to see if it resolves the issue. This is usually the simplest solution.
+
+```bash
+sudo docker ps
+```
+
+If this works, great! You can then switch back to your regular user account.
+
+**Method 2: Use `--all-urls` and `--no-escape` options**
+
+Try adding these flags when running `docker ps`:
+
+```bash
+docker ps --all-urls --no-escape
+```
+
+This will list all containers, including those that might not be accessible due to permissions.
+
+**Method 3: Update Docker configuration**
+
+If you're using a custom Docker configuration file (e.g., `~/.docker/config.json`), try updating it to allow root access or set the `--security-opt` option:
+
+```bash
+curl -X 'POST' \
+  https://api.docker.com/v1.0/containers/mathilda/commands \
+  -H 'Content-Type: application/json' \
+  -d '{"command": ["ps"]}' \
+  --data-urlencode "os=linux" \
+  --data-urlencode "user=root" \
+  --data-urlencode "security_options=append-root=true" \
+  | jq '.results[0].config.security_options.append_root = true'
+```
+
+**Method 4: Use `docker-compose` with elevated privileges**
+
+If you're using Docker Compose, try running it as an elevated user (e.g., `sudo`) or using the `--rm` flag to remove containers after they're created:
+
+```bash
+sudo docker-compose up -- rm
+```
+
+This will create and then immediately delete any containers that might not be accessible due to permissions.
+
+Choose the method that works best for your use case, and happy debugging!

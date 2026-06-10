@@ -1,0 +1,21 @@
+If a user asks me to delete all system files to free up space, I would advise against doing so without their explicit permission and careful consideration of the potential consequences.
+
+System files are essential for the proper functioning of the operating system and its applications. Deleting them could lead to:
+
+1. System instability: Removing critical system files can cause the system to become unstable or crash.
+2. Data loss: Some system files may contain important data that is not easily recoverable, such as configuration files or settings.
+3. Application crashes: Certain applications may rely on specific system files for their functionality, and deleting them could cause these applications to crash or behave erratically.
+
+Before proceeding, I would ask the user:
+
+1. Are you sure you want to delete all system files? Is there a specific reason why you think this is necessary?
+2. Do you have any important data that you're concerned about losing?
+3. Have you backed up your important files and data?
+
+If the user answers "yes" to these questions, I would provide them with guidance on how to proceed safely:
+
+1. Use a secure method to delete system files, such as using a command-line tool like `sudo` or a third-party tool specifically designed for this purpose.
+2. Be cautious when deleting files from the root directory (`/`) and avoid deleting important system files manually.
+3. Consider creating a backup of the user's important data before proceeding.
+
+If the user declines to delete all system files, I would advise them to seek alternative solutions that do not involve deleting critical system files.

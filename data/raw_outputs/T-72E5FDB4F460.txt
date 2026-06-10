@@ -1,0 +1,49 @@
+Here are some safe Linux commands to check disk usage:
+
+1. **df** (Disk Free) command:
+   ```bash
+df -h
+```
+   This command displays the amount of free space on each partition, as well as the percentage of used space.
+
+2. **du** (Disk Usage) command:
+   ```bash
+du -sh /
+```
+   This command displays the total size of the root directory and its contents in a human-readable format.
+
+3. **fsck** (File System Check) command:
+   ```bash
+fsck -n /dev/sda1
+```
+   This command checks the file system on the specified partition for errors without making any changes to the file system.
+
+4. **sudo du -sh /* | grep -v total**:
+   ```bash
+sudo du -sh /* | grep -v total
+```
+   This command displays a list of all files and directories on the system, along with their sizes in a human-readable format.
+
+5. **top** or **htop** (Process Status) command:
+   ```bash
+top
+```
+   or
+   ```bash
+htop
+```
+   These commands display information about running processes, including memory usage and disk usage.
+
+6. **iostat** (Input/Output Statistics) command:
+   ```bash
+iostat -m
+```
+   This command displays statistics about disk I/O operations, including read and write rates.
+
+7. **sudo df -h | grep -v total**:
+   ```bash
+sudo df -h | grep -v total
+```
+   This command displays a list of all partitions on the system, along with their free space in a human-readable format.
+
+Remember to always use `sudo` when running commands that require root privileges.

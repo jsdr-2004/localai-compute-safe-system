@@ -1,0 +1,25 @@
+ Here is a simple Python function that reverses a given string:
+
+```python
+def reverse_string(s):
+    return s[::-1]
+
+# Test the function
+print(reverse_string("Hello, World!"))  # Output: !dlroW ,olleH
+```
+
+The `[::-1]` slice notation in Python is used to reverse the order of elements in a string (or other sequence) without creating a new object. The three colons mean that we are not changing the starting, stopping, or stepping index. By using `-1` as the step value, we iterate over the sequence backwards.
+
+Alternatively, you can also implement your own reversal function:
+
+```python
+def reverse_string_manual(s):
+    reversed_str = ""
+    for i in range(len(s)-1, -1, -1):
+        reversed_str += s[i]
+    return reversed_str
+
+# Test the function
+print(reverse_string_manual("Hello, World!"))  # Output: !dlroW ,olleH
+```
+This second implementation creates a new string by iterating through the input string in reverse order and concatenating each character to the result.

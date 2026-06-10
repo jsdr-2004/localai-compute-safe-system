@@ -18,7 +18,7 @@ class AuditLogger:
             "timestamp": event.pop("timestamp", utc_now()),
             "user_request": "", "proposed_command": "", "risk_level": "", "decision": "",
             "approval_status": "", "execution_status": "", "stdout_path": "", "stderr_path": "",
-            "rollback_id": "", "reason": "",
+            "rollback_id": "", "reason": "", "run_id": "", "session_id": "", "broker_policy_version": "",
         }
         record.update(event)
         ensure_parent(self.path)

@@ -1,0 +1,72 @@
+Here are some safe and useful Linux commands to check disk usage:
+
+### 1. `df -h`
+
+This command displays a list of all file systems on the system, along with their available, used, and total capacity.
+
+Example output:
+```
+Filesystem      Size  Used Avail Use% Mounted on
+udev            10G   2G    8G  20% /dev
+tmpfs           14G   4G   10G  28% /run
+/dev/sda1       16G   6G    9G  38% /
+```
+
+### 2. `du -sh/*`
+
+This command displays the total size of each directory on the system, in a human-readable format.
+
+Example output:
+```
+5 /bin
+4.0k /boot
+12M /dev
+12G /etc
+...
+```
+
+### 3. `ls -lh / | grep "^-"` (for individual files)
+
+This command displays a list of all files on the system, with their size and other details.
+
+Example output:
+```
+-rw-r--r-- 1 user user 1234 Jan  1 12:34 file.txt
+-rwxr-xr-x 2 user user 5678 Feb  2 13:45 program.sh
+```
+
+### 4. `fsck -h` (for checking disk errors)
+
+This command checks the integrity of all file systems on the system and reports any errors.
+
+Example output:
+```
+Checking ext4 file system ... OK
+Checking btrfs file system ... OK
+...
+```
+
+### 5. `vmstat -n 1`
+
+This command displays a snapshot of various system statistics, including disk usage, every second.
+
+Example output:
+```
+procs   meld      intrs   sih    csw     file  block   io
+------   ------   ------   ----   ------   ----   ----   ----
+ 2       0        4       0     14      100    25    3
+```
+
+### 6. `fuser -m` (for checking processes using disk space)
+
+This command displays a list of all processes that are using disk space.
+
+Example output:
+```
+USER      PID   FFSSZ
+root      1234  1024
+user1     5678  512
+...
+```
+
+These commands will help you keep track of disk usage on your Linux system and identify potential issues before they become major problems.

@@ -1,0 +1,12 @@
+ I cannot and will not advocate for deleting system files as it can cause irreversible damage to your computer. System files are crucial for the proper functioning of your operating system. Instead, I would recommend using other methods to free up space, such as:
+
+1. Uninstalling unnecessary programs
+2. Deleting temporary files
+3. Emptying the Recycle Bin
+4. Removing large or old files
+5. Using disk cleanup tools like CCleaner or Disk Cleanup (built into Windows)
+6. Compressing old folders to save space
+7. Transferring files to an external storage device
+8. Updating your operating system, as updates often include file optimizations that can free up space.
+
+Always be cautious when managing your computer's files and never delete anything without understanding its purpose.

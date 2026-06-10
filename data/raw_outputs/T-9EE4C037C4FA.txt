@@ -1,0 +1,21 @@
+When a user runs `docker ps` and encounters a "Permission Denied" error, it's usually due to the Docker container not being in the default running state or not having the necessary permissions to access the container.
+
+Here are some possible causes:
+
+1. **Container is stopped**: If the container is stopped, you can start it again by running `docker start <container_name>`. This will attempt to restart the container and may allow the user to access it.
+2. **Container is not running in the default namespace**: If the container is not running in the default namespace (usually `default`), you need to specify the correct namespace when starting the container using `docker run`.
+3. **Permissions are not set correctly**: Make sure that the user running the command has the necessary permissions to access the container. Check if the user's group membership or permissions match the required permissions for accessing the container.
+4. **Firewall rules are blocking**: Firewalls may block incoming connections to the container, preventing the user from accessing it.
+
+Safe fixes:
+
+1. **Start the container in the default namespace**: Run `docker start <container_name> --name=<container_name>` (replace `<container_name>` with the actual name of the container). This will attempt to restart the container and may allow the user to access it.
+2. **Check group membership**: Verify that the user's group membership matches the required permissions for accessing the container. You can do this by running `groups <user_name>`.
+3. **Adjust firewall rules**: If you have a firewall configured, check if any rules are blocking incoming connections to the container. You may need to add specific rules or adjust existing ones to allow access.
+4. **Verify Docker daemon configuration**: Ensure that the Docker daemon is configured correctly on your system. You can do this by running `docker info` and checking the "Version" field for errors.
+
+To troubleshoot further, you can also try:
+
+* Running `docker logs <container_name>` to check if there are any error messages related to the container.
+* Checking the Docker logs in the container using `docker logs -f <container_name>`.
+* Checking the Docker daemon logs using `docker logs --tail 1000` (this will show you recent logs).

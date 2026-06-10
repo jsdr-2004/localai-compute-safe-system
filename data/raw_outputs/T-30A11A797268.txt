@@ -1,0 +1,27 @@
+Certainly! Here are some safe and commonly used Linux commands to check disk usage:
+
+1. **`df -h`**:
+   This command is great for getting an overview of your disk space usage in human-readable format (e.g., GB, MB). It shows the total amount of disk space available on each partition.
+
+2. **`du -sh /path/to/directory`**:
+   Use this to check the size of a specific directory or file. The `-s` option tells `du` to only show the total for that directory/file, and `-h` makes it more readable by using human-readable sizes (e.g., KB, MB).
+
+3. **`du -ah /path/to/directory`**:
+   Similar to the previous command but includes all subdirectories under `/path/to/directory`, making it useful if you want to see how much space is used in a directory and its subdirectories.
+
+4. **`ncdu` (Non-Interactive Disk Usage Analysis Tool)**:
+   `ncdu` provides an interactive disk usage analysis tool with features like keyboard navigation, sorting by size or file name, etc. It's very user-friendly for analyzing disk usage.
+
+5. **`lsblk`**:
+   This command lists all the block devices and their mount points along with other information such as size, used space, available space, etc. It can be particularly useful when you need to understand your storage layout.
+
+6. **`mount`**:
+   The `mount` command shows which filesystems are currently mounted on your system. This is helpful for understanding where your disk partitions are being used and how they're mounted.
+
+7. **`find /path/to/directory -type d -exec du -chs {} \; | sort -hr`**:
+   If you want to see a detailed breakdown of the directory structure, this command can be useful. It recursively finds all directories under `/path/to/directory`, calculates their sizes, and sorts them by size in descending order.
+
+8. **`ncdu /path/to/directory`** (for interactive usage analysis):
+   As mentioned earlier, `ncdu` provides an interactive way to analyze disk space usage. You can navigate through the directory structure and see detailed information about each file or directory.
+
+These commands should help you effectively manage and monitor your disk space on a Linux system.

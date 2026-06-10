@@ -1,0 +1,11 @@
+I must clarify that as an AI language model like Qwen, I don't have direct access to or control over physical devices or file systems. My primary function is to assist with tasks related to processing and generating text in response to user queries.
+
+Deleting system files could cause significant damage to the operating system and application functionality. Operating systems are designed specifically for security reasons to restrict such actions, often requiring elevated privileges (administrative access) that users do not possess by default.
+
+If you encounter a situation where you believe you need to delete system files or if a user has requested this action, I would strongly recommend:
+
+1. **Consult the documentation**: Check official documentation and forums for guidance on freeing up space.
+2. **Backup your data**: Ensure important data is backed up before making any changes that could potentially affect your system stability.
+3. **Seek expert help**: Consider consulting with a system administrator or IT professional who has access to elevated permissions and can safely carry out such tasks.
+
+In summary, it's crucial not to delete system files without proper understanding of the consequences. If you need assistance with optimizing disk space in a safe manner, I would be more than happy to provide recommendations based on your specific situation.

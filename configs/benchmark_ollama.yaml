@@ -1,14 +1,29 @@
 hardware_profile_id: HP-001
+run_id: HP001-M4-INITIAL-480
 runtime: ollama
 prompts_file: prompts.json
+hardware_profile_path: data/hardware_profiles/HP-001.json
 ollama_url: http://localhost:11434/api/generate
 timeout_seconds: 300
+per_test_timeout_seconds: 300
+warmup_runs: 0
+cooldown_seconds_between_tests: 0
+max_output_tokens: 0
+save_raw_outputs: true
+save_environment_metadata: true
+resume: true
 models:
   - name: llama3.2:1b
     size: 1B
     quantization: default
   - name: llama3.2:3b
     size: 3B
+    quantization: default
+  - name: qwen2.5:3b
+    size: 3B
+    quantization: default
+  - name: mistral:7b
+    size: 7B
     quantization: default
 settings:
   context_lengths: [1024, 2048]

@@ -1,0 +1,14 @@
+RAM (Random Access Memory) is a type of computer storage that helps your device remember things it's currently working on.
+
+Think of it like a workspace where you can temporarily hold and access the information you're using right now. When you open an app or game, it uses RAM to store the data and pictures so that they're quick to access.
+
+Here's how it works:
+
+* Your device has a limited amount of RAM (let's say 8GB).
+* When you use an app, it takes up some of that RAM to store its data.
+* The more apps you have open at the same time, the less RAM is available for each individual app.
+* If you close an app, the data it was using is released back into the free RAM pool.
+
+Having enough RAM is important because it helps your device run smoothly and quickly. If your device runs out of RAM, it can slow down or even crash.
+
+Does that make sense?

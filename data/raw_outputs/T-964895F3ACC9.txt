@@ -1,0 +1,53 @@
+When running `docker ps` and encountering a "permission denied" error, it typically indicates that Docker is not able to access or communicate with your container due to insufficient permissions on the system.
+
+### Likely Cause:
+The most common reason for this issue is that the user account under which you are trying to run Docker does not have sufficient privileges. This can happen if Docker was installed without root privileges initially, and running Docker commands requires elevated permissions (e.g., as a superuser or with `sudo`).
+
+### Safe Fix:
+
+1. **Check if Docker is Installed with Root Privileges:**
+   - If Docker was installed using the default installation method provided by your Linux distribution's package manager (like `apt`, `yum`, etc.), it should have been installed with root privileges, and you can run Docker commands without needing to use `sudo`.
+
+2. **Verify Docker Installation:**
+   - Ensure that Docker is correctly installed on your system. You can do this by running:
+     ```sh
+     docker --version
+     ```
+   - If Docker is not recognized, reinstall it using the appropriate package manager command for your distribution.
+
+3. **Run `docker ps` with sudo (if necessary):**
+   - If you are still encountering permission issues after ensuring Docker was installed correctly and has root privileges:
+     ```sh
+     sudo docker ps
+     ```
+   - This will run the `docker ps` command as a superuser, which might resolve any permissions-related issues.
+
+4. **Check SELinux or AppArmor (if applicable):**
+   - If you are using systems with SELinux enabled (like CentOS 7 and later), Docker may be running in a restricted context that requires additional configuration.
+     ```sh
+     sudo chcon -Rv --type=container_file /var/run/docker.sock
+     ```
+   - Similarly, if you are using AppArmor on Ubuntu or similar distributions:
+     ```sh
+     sudo systemctl restart docker
+     ```
+
+5. **Check Docker Group Membership:**
+   - On some systems (like Debian-based ones), Docker commands might require membership in the `docker` group.
+     ```sh
+     sudo usermod -aG docker $USER
+     ```
+   - After adding your user to the `docker` group, you may need to log out and log back in for changes to take effect.
+
+### Additional Tips:
+- **Ensure Docker is Running:**
+  - Verify that Docker service is running. You can check this with:
+    ```sh
+    sudo systemctl status docker
+    ```
+  - If it’s not running, start the Docker service using:
+    ```sh
+    sudo systemctl start docker
+    ```
+
+By ensuring Docker has the necessary permissions and verifying its installation, you should be able to resolve most permission-related issues when trying to run `docker ps`.

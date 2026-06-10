@@ -1,0 +1,52 @@
+ The error "permission denied" when running `docker ps` usually indicates that the Docker service is not running with sufficient permissions or the user does not have the necessary privileges to interact with Docker.
+
+Here are a few steps to help resolve this issue:
+
+1. Check if Docker is installed and running:
+   ```
+   docker --version
+   systemctl status docker
+   ```
+   If Docker is not installed, you can install it using the appropriate package manager for your operating system (e.g., `apt-get`, `yum`, or Homebrew).
+
+2. Verify that the user has the necessary permissions to use Docker:
+   - On Ubuntu/Debian systems, add the current user to the `docker` group:
+     ```
+     sudo usermod -aG docker $USER
+     # or for a specific user: sudo usermod -aG docker username
+     ```
+   - Log out and log back in so that the group membership takes effect, or use the following command to apply the changes immediately:
+     ```
+     sudo exec $SHELL
+     ```
+
+3. If you are using a non-root user, you may need to preface Docker commands with `sudo`:
+   ```
+   sudo docker ps
+   ```
+
+4. To avoid having to use `sudo` for every Docker command, consider configuring key-based authentication between your user and the Docker daemon:
+   - Generate a new SSH key pair (if you don't have one already):
+     ```
+     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+     ```
+   - Copy the public key to the Docker daemon:
+     ```
+     cat ~/.ssh/id_rsa.pub | sudo tee -a /etc/docker/key.d/$(whoami).pub
+     ```
+   - Add the following line to `~/.bashrc` or `~/.bash_profile`:
+     ```
+     eval $(ssh-agent -s)
+     ssh-add ~/.ssh/id_rsa
+     ```
+   - Start the SSH agent and add your private key:
+     ```
+     eval $(ssh-agent -s)
+     ssh-add ~/.ssh/id_rsa
+     ```
+   - Restart Docker to apply the changes:
+     ```
+     sudo systemctl restart docker
+     ```
+
+After following these steps, you should be able to run `docker ps` without encountering a "permission denied" error.

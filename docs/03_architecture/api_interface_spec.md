@@ -37,6 +37,7 @@
 
 ```json
 {
+  "run_id": "HP001-TOP8-30PROMPTS",
   "test_id": "T00001",
   "status": "success",
   "first_token_latency_sec": 0.8,
@@ -83,6 +84,8 @@
 {
   "event_id": "EVT-001",
   "timestamp": "",
+  "run_id": "",
+  "session_id": "",
   "user_request": "",
   "command": "",
   "risk_level": "",
@@ -90,6 +93,8 @@
   "execution_status": "",
   "stdout_path": "",
   "stderr_path": "",
-  "rollback_id": ""
+  "rollback_id": "",
+  "reason": "",
+  "broker_policy_version": "v0.2"
 }
 ```
