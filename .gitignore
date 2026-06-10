@@ -10,17 +10,3 @@ dist/
 *.egg-info/
 data/audit/
 data/backups/
-data/results/*
-!data/results/sample_benchmark_results.csv
-!data/results/benchmark_results.csv
-!data/results/benchmark_results.jsonl
-data/runs/*
-!data/runs/hp001_balanced_top8_30prompts_v1/
-!data/runs/hp001_balanced_top8_30prompts_v1/**
-data/raw_outputs/*
-!data/raw_outputs/*.txt
-reports/graphs/*.png
-!reports/graphs/hp001_macbook_air_m4/
-!reports/graphs/hp001_macbook_air_m4/*.png
-!reports/graphs/hp001_balanced_top8_30prompts/
-!reports/graphs/hp001_balanced_top8_30prompts/*.png
