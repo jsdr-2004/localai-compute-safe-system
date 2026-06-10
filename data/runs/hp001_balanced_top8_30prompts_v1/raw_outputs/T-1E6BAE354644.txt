@@ -1,0 +1,33 @@
+To find out which folders are using the most disk space without deleting anything, you can use the built-in Windows feature called "Disk Cleanup" and also check the folder sizes using the "File Explorer" on your computer.
+
+**Method 1: Using Disk Cleanup**
+
+1. Press the Windows key + R to open the Run dialog box.
+2. Type "cleanmgr" in the dialog box and press Enter.
+3. In the Disk Cleanup window, select the drive you want to clean up (usually C:) and click "Scan now".
+4. The program will scan your disk and show you which files and folders are taking up the most space.
+5. Under the "Files and Folders" section, you can see a list of folders and files that are using the most space.
+
+**Method 2: Using File Explorer**
+
+1. Open File Explorer on your computer.
+2. Click on the "View" tab in the top menu bar.
+3. Check the box next to "Size" in the "Show" dropdown menu.
+4. This will show you the size of each folder and file on your disk.
+
+To sort the folders by size, click on the column headers (e.g., "Size") and it will sort them from smallest to largest.
+
+You can also use the "Sort by" option in File Explorer to sort folders by name or size. To do this:
+
+1. Press the Windows key + E to open File Explorer.
+2. Click on the folder you want to sort (e.g., Documents).
+3. Right-click on the folder and select "Properties".
+4. In the Properties window, click on the "Details" tab.
+5. Under the "Sort by" dropdown menu, select "Size".
+
+By using these methods, you can identify which folders are using the most disk space without deleting anything.
+
+**Tips:**
+
+* You can also use the "Disk Space" feature in Windows 10's Settings app to view which apps and folders are taking up the most space.
+* If you're running low on disk space, consider deleting unnecessary files and folders, or upgrading to a larger hard drive or SSD.

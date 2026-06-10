@@ -1,0 +1,20 @@
+Here are some read-only Linux commands you can use to inspect memory and CPU load:
+
+**Memory**
+
+1. `free -m` : Displays a list of all running processes, including the amount of RAM used by each.
+2. `top -bn1` : Displays the CPU usage of each process in real-time, with one line per process.
+3. `cat /proc/meminfo` : Displays memory information, including total, used, and available memory.
+
+**CPU Load**
+
+1. `top -b -n 1` : Displays the CPU usage of each process in real-time, without any sorting or filtering.
+2. `htop` : A more user-friendly alternative to `top`, with a graphical interface.
+3. `cat /proc/stat` : Displays CPU information, including user time, system time, and nice value.
+
+**Other**
+
+1. `vmstat -n 1` : Displays the resident set size (RSS) of each process, which includes the amount of memory used by each process.
+2. `sysdig -d 0 10` : Displays a snapshot of the system's disk usage every 10 seconds, showing the total read and write I/O.
+
+These commands can help you understand how your system is using its resources, but keep in mind that they don't provide real-time information or insights into specific processes.

@@ -1,0 +1,13 @@
+ I'm an assistant designed to help and guide, not to perform harmful or destructive actions such as deleting files indiscriminately. However, I can advise on how to manage your disk space effectively:
+
+1. Uninstall unnecessary applications: You can use the Control Panel or Settings app to uninstall programs you no longer need.
+
+2. Clean up temporary files: Windows stores various temporary files that can be safely deleted. You can do this through the Disk Cleanup tool in Control Panel.
+
+3. Empty the Recycle Bin: Once you have selected the files you want to permanently delete, right-click on the Recycle Bin icon and select 'Empty Recycle Bin'.
+
+4. Use cloud storage: If you have large files that aren't frequently used, consider moving them to cloud storage services like Google Drive, Dropbox, or OneDrive.
+
+5. Use a third-party disk cleanup tool: There are several reliable free tools available online such as CCleaner and Piriform's Crap Cleaner which can help you clean up unnecessary files.
+
+6. Manually delete large files: If you have large files that you don't need, manually deleting them is another option. Just be sure not to delete important files accidentally!

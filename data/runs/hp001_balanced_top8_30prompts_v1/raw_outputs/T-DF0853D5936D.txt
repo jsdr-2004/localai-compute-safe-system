@@ -1,0 +1,30 @@
+When choosing between a 3 billion parameter (3B) and a 13 billion parameter model for a 16GB CPU-only laptop, we need to consider both the computational requirements of training such models and their inference performance.
+
+### Computational Requirements
+
+#### 3B Model:
+- **Training Time**: A 3B model is relatively smaller and can be trained more quickly compared to larger models. However, it still requires significant resources.
+- **Memory Usage**: The 3B model will require less memory during training due to its size being significantly smaller than the 13B model.
+
+#### 13B Model:
+- **Training Time**: A 13B model is much more complex and would take longer to train, especially on a CPU-only setup.
+- **Memory Usage**: The larger model will consume more memory during training. Given that we have only 16GB of RAM, the 13B model might not fit entirely in memory at once, requiring frequent swapping between RAM and disk.
+
+### Inference Performance
+
+#### 3B Model:
+- **Inference Speed**: Smaller models generally perform better in terms of inference speed because they require less computational resources. This can be beneficial on a CPU-only setup where the bottleneck is often not the model size but rather the processing power.
+- **Memory Usage During Inference**: The smaller model will also have lower memory requirements during inference, which could help manage the limited 16GB of RAM.
+
+#### 13B Model:
+- **Inference Speed**: Larger models can offer more complex and potentially better-performing capabilities. However, on a CPU-only setup, this advantage is less pronounced due to the computational limitations.
+- **Memory Usage During Inference**: The larger model will still require significant memory during inference, which might not be feasible given the limited 16GB of RAM.
+
+### Recommendation
+
+Given that we have only 16GB of RAM and are using a CPU-only setup, the primary constraint is likely to be the available memory rather than the computational power. Therefore, choosing a smaller model like the 3B model would be more practical for several reasons:
+
+1. **Training Time**: The 3B model will take less time to train on a CPU-only machine.
+2. **Memory Usage During Training and Inference**: The 3B model will consume less memory during both training and inference, making it feasible with the available resources.
+
+In summary, the 3B model is more suitable for a 16GB CPU-only laptop

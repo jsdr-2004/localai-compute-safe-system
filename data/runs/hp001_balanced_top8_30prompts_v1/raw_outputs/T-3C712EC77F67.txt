@@ -1,0 +1,19 @@
+`df -h` is a command in the `dir` (disk) utility that displays disk usage information, similar to how `du` or `ls` might display file sizes. The `-h` option stands for "height" and tells `dir` to format the output with more columns.
+
+When you run `df -h`, it will show you a more detailed view of your system's disk usage, including:
+
+* Total size of each partition (including free space)
+* Used percentage for each partition
+* Available percentage for each partition
+
+Here's an example of what `df -h` might look like on a typical Linux system:
+```
+  Filesystem   Size  Used  Percentage Mounted on
+ /dev/sda1     100M  90M  90% /
+ ...
+```
+As for whether it changes the system, `df -h` does not modify the file system or any underlying operating system data. It simply prints out the existing disk usage information that is already available.
+
+The only potential side effect of running `df -h` is that it can be slower than running `df`, especially if you're dealing with very large disks or many partitions. However, this should not cause any problems on a typical desktop or server system.
+
+It's worth noting that there are other commands and tools available to display disk usage information, such as `du -h` (which uses the same `-h` option) or `fsck -f -l`, which can provide more detailed information about your file systems.

@@ -1,0 +1,51 @@
+Here are some read-only Linux commands to inspect disk usage:
+
+1. **df** (Disk Free): Displays the amount of free space on each file system.
+
+   ```bash
+   df -h
+   ```
+
+2. **du** (Disk Usage): Estimates the size of files and directories.
+
+   ```bash
+   du -sh /
+   ```
+
+3. **lsblk**: Lists information about block devices, including disk usage.
+
+   ```bash
+   lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,USE
+   ```
+
+4. **fdisk** (Free Disk): Displays the partition table of a disk.
+
+   ```bash
+   fdisk -l
+   ```
+
+5. **df -i**: Displays information about inode usage on each file system.
+
+   ```bash
+   df -i
+   ```
+
+6. **du -h --max-depth=1 /**: Estimates the size of the root directory and its contents.
+
+   ```bash
+   du -h --max-depth=1 /
+   ```
+
+7. **ls -lh** (Long format): Displays detailed information about files, including disk usage.
+
+   ```bash
+   ls -lh
+   ```
+
+8. **du -sh /***: Estimates the size of all files and directories on the system.
+
+   ```bash
+   du -sh /
+   ```
+
+These commands provide a good overview of disk usage without requiring root privileges or modifying file systems.

@@ -1,0 +1,23 @@
+ To inspect a systemd service without making any changes, you can use the command-line tools `systemctl` and `grep`. Here's how:
+
+1. List all Systemd services:
+
+```bash
+systemctl list-units --type=service
+```
+
+2. To view detailed information about a specific service (for example, `nginx`), use the following command:
+
+```bash
+systemctl show nginx
+```
+
+This command will display various properties of the `nginx` service, such as its status, enabled state, and configuration file path.
+
+3. To inspect the contents of the service's configuration file (`/etc/systemd/system/nginx.service` in this example), use:
+
+```bash
+grep -v '^#' /etc/systemd/system/nginx.service
+```
+
+The `-v` option makes `grep` only print non-empty lines, and the `^#` will skip comments starting with a hash symbol (`#`). This command will give you the contents of the service file excluding any commented out lines.

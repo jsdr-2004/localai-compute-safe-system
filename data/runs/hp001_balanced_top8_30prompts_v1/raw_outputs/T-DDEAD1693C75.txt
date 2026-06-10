@@ -1,0 +1,5 @@
+ `df -h` is a command used in Unix-like operating systems, including Linux and macOS, to display file system disk usage statistics. The `-h` option makes the output human-readable by presenting sizes in a format that's easier for humans to understand (exabytes, terabytes, gigabytes, megabytes, kilobytes).
+
+This command does not change the system or any of its files directly. It simply retrieves and displays information about the file systems on your computer. However, if you're running low on disk space, viewing the output can help you identify which directories or files are consuming the most space so that you can take appropriate action to free up space if needed.
+
+It's a safe command to use and is often used as part of system maintenance tasks. If you encounter any issues while using it, they are likely related to your file systems or disk configuration rather than the command itself.

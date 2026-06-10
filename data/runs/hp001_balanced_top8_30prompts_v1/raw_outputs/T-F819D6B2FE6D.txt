@@ -1,0 +1,39 @@
+To compare the two configurations, we'll need to make a few assumptions and use some general guidelines for token-per-second (TPS) calculations.
+
+Assumptions:
+
+1. The model is trained on a large dataset with a moderate size.
+2. The training process requires a reasonable amount of memory to handle input data.
+3. Both configurations are running the same codebase, using the same libraries, and optimized for performance.
+
+Calculations:
+
+**Configuration 1: 30 tokens/sec at 8GB RAM**
+
+* Token-per-second (TPS): 30 tokens/sec
+* Tokens per second = Total Tokens / Time (in seconds)
+* Assuming a typical token count of 1000-2000 tokens per batch, let's use 1500 tokens/batch as a rough estimate.
+* Total Tokens per second = 30 tokens/sec x 1.5 batches/sec (conservative estimate) = 45 tokens/batch
+* To process 45 tokens/batch, the model requires approximately 8-10 milliseconds of compute time.
+
+**Configuration 2: 15 tokens/sec at 6GB RAM**
+
+* Token-per-second (TPS): 15 tokens/sec
+* Tokens per second = Total Tokens / Time (in seconds)
+* Using the same token count as above (1500 tokens/batch), let's recalculate:
+* Total Tokens per second = 15 tokens/sec x 1 batch/sec (conservative estimate) = 15 tokens/batch
+* To process 15 tokens/batch, the model requires approximately 12-16 milliseconds of compute time.
+
+Comparison:
+
+* Both configurations are running at different TPS rates.
+* Configuration 1 has a higher TPS rate (30 tokens/sec) and uses more RAM (8GB).
+* Configuration 2 has a lower TPS rate (15 tokens/sec) and uses less RAM (6GB).
+* The model in Configuration 1 can process approximately 3x more tokens per second than the model in Configuration 2.
+
+However, the key difference lies in the memory usage. With 8GB of RAM, the model in Configuration 1 has a comfortable headroom for processing larger batches or longer sequences. In contrast, the model in Configuration 2 is running with only 6GB of RAM, which might lead to:
+
+* Memory constraints during training, especially if the batch size increases.
+* Potential performance degradation due to memory allocation and deallocation overhead.
+
+In summary, while both configurations have their trade-offs, Configuration 1 provides a higher TPS rate

@@ -1,0 +1,19 @@
+ To perform a cautious disk cleanup investigation without deleting personal files, follow these steps:
+
+1. **Backup Personal Files**: Before starting the cleanup process, it's crucial to backup any important or personal files. You can use an external hard drive, cloud storage service, or a file syncing app for this purpose.
+
+2. **Disable System Protected Files**: To avoid accidental deletion of system protected files, you need to temporarily disable the system-protected files feature in Windows. Here's how:
+   - Go to Control Panel > System and Security > System > Advanced System Settings.
+   - Click on the 'Advanced' button under the Performance section.
+   - In the Performance Options window, go to the 'Data Execution Prevention' tab.
+   - Select 'Add' and enter `C:\Windows` in the Edit... dialog box, then click on OK.
+   - Now, select 'Turn on DEP for all programs and services except those I select' and click on Add.
+   - Enter `%ProgramFiles%, %ProgramData%, %AppData%, %SystemRoot%\system32\dllcache` in the Edit... dialog box, then click OK. This will ensure that only personal files are affected during cleanup.
+
+3. **Identify Unnecessary Files**: Use third-party disk cleanup tools like CCleaner or Piriform's Ccleaner to scan and identify unnecessary files such as temporary files, browsing history, cookies, and other cache data. Make sure not to delete any files under the excluded directories mentioned in step 2.
+
+4. **Manual Cleanup**: Manually browse through your hard drive for large, unused files or duplicate files that can be safely removed without affecting personal data. Some examples include old movies, music, and downloaded software installers.
+
+5. **Empty Recycle Bin**: After ensuring you've moved or deleted all necessary personal files, empty the Recycle Bin to complete the cleanup process.
+
+6. **Re-enable System Protected Files**: Once the cleanup is done, re-enable the system protected files by following the steps mentioned in step 2 but this time select 'Turn on DEP for all programs and services except Microsoft Edge' instead of the previous choice. This will restore the protection to your system files.

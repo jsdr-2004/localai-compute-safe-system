@@ -1,0 +1,34 @@
+In modern computing, both CPU cores and threads are used to improve the performance of a computer, but they serve distinct purposes.
+
+**CPU Cores:**
+
+A CPU core is a single processing unit within a central processing unit (CPU) that executes instructions. It's the heart of the processor, responsible for executing most instructions. Each CPU core is designed to perform multiple tasks simultaneously, making it an essential component in modern computing.
+
+Think of each CPU core as a separate office or workstation. Just like how you have multiple offices in your home, a computer has multiple CPUs, and each one can execute multiple threads at the same time. This allows for more efficient use of resources and improved multitasking capabilities.
+
+**Threads:**
+
+A thread is a sequence of instructions that are executed by a single CPU core. Threads are lightweight, independent units of execution that share the same memory space as the corresponding CPU core. When you submit a thread to the operating system, it's essentially given permission to run in parallel with other threads on the same CPU core.
+
+Think of threads like tasks or jobs that need to be performed by a single worker (CPU core). Just as how your household staff might work on multiple tasks simultaneously, multiple threads can perform different tasks concurrently. When all these threads are executed together, they can achieve better performance and efficiency compared to executing them sequentially.
+
+**Key differences:**
+
+* **Number of cores:** A CPU has many more cores than threads (typically 4-32 or even more). Each core is a separate unit that can execute instructions independently.
+* **Thread-level parallelism:** Threads run on the same CPU core, sharing memory space. In contrast, multiple CPUs have multiple cores, and each one executes its own set of threads concurrently.
+* **Resource usage:** While both CPU cores and threads use system resources (like memory and I/O devices), threads are executed by a single CPU core, whereas multiple CPUs share their resources.
+
+**When to choose CPU cores over threads:**
+
+You might want to prioritize using CPU cores if:
+
+1. Your application requires strict synchronization or communication between tasks.
+2. You need high IPC (Instruction Per Clock) performance for specific workloads.
+3. Your system has limited RAM and I/O devices, where every core can be utilized.
+
+**When to choose threads over CPU cores:**
+
+You might want to prioritize using threads if:
+
+1. You're working on a task that's independent of the other tasks running on the same CPU core.
+2. You need efficient resource usage for applications with limited resources (like streaming

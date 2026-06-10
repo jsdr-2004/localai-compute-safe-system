@@ -1,0 +1,51 @@
+To inspect a systemd service without modifying it, you can use the `systemctl` command with various options that provide detailed information about the service. Here are some examples:
+
+1. **List all services**:
+```bash
+sudo systemctl list-units --type=service
+```
+This will display a list of all active services, including their names, descriptions, and status.
+
+2. **Get service details**:
+```bash
+sudo systemctl show <service_name> --property=*
+```
+Replace `<service_name>` with the name of the service you want to inspect. This will display detailed information about the service, including its configuration file, dependencies, and exit status.
+
+3. **Check service status**:
+```bash
+sudo systemctl status <service_name>
+```
+This will show the current status of the service, including any errors or warnings.
+
+4. **Get service logs**:
+```bash
+sudo journalctl -u <service_name>
+```
+Replace `<service_name>` with the name of the service you want to inspect. This will display the system log for the service, which can help diagnose issues.
+
+5. **Check service dependencies**:
+```bash
+sudo systemctl dependency <service_name> --full
+```
+This will display a list of services that depend on the specified service.
+
+6. **Get service configuration file**:
+```bash
+sudo systemctl config-dump <service_name>
+```
+This will display the configuration file for the specified service in YAML format.
+
+7. **Check service version**:
+```bash
+sudo systemctl version <service_name>
+```
+This will display information about the current version of the service, including any changes or updates.
+
+8. **Get service exit status**:
+```bash
+sudo systemctl status --exit-code=<service_name> --property=*
+```
+Replace `<service_name>` with the name of the service you want to inspect. This will show the exit status of the service, which can help diagnose issues.
+
+These are just a few examples of how you can inspect a systemd service without modifying it. By using these commands, you can gain valuable insights into the behavior and configuration of your services.

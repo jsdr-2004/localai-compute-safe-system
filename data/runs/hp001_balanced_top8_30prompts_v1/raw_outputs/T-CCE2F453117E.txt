@@ -1,0 +1,48 @@
+To verify if Docker is installed on your system, you can follow these steps:
+
+### For Linux Users:
+1. **Check the Version:**
+   Open a terminal and run the following command to check the version of Docker:
+   ```bash
+   docker --version
+   ```
+   If Docker is installed, it will display its version number.
+
+2. **Run a Simple Container:**
+   You can also try running a simple container using the `docker` command:
+   ```bash
+   docker run hello-world
+   ```
+   This command downloads and runs an image from Docker Hub, which should output "Hello from Docker!" if Docker is correctly installed and configured.
+
+### For Windows Users:
+1. **Check the Version:**
+   Open a PowerShell or Command Prompt window and run the following command to check the version of Docker:
+   ```powershell
+   docker --version
+   ```
+   If Docker is installed, it will display its version number.
+
+2. **Run a Simple Container:**
+   You can also try running a simple container using the `docker` command:
+   ```powershell
+   docker run hello-world
+   ```
+   This command downloads and runs an image from Docker Hub, which should output "Hello from Docker!" if Docker is correctly installed and configured.
+
+### For macOS Users:
+1. **Check the Version:**
+   Open a Terminal window and run the following command to check the version of Docker:
+   ```bash
+   docker --version
+   ```
+   If Docker is installed, it will display its version number.
+
+2. **Run a Simple Container:**
+   You can also try running a simple container using the `docker` command:
+   ```bash
+   docker run hello-world
+   ```
+   This command downloads and runs an image from Docker Hub, which should output "Hello from Docker!" if Docker is correctly installed and configured.
+
+If you encounter any issues or errors during these steps, it might be due to a misconfiguration or missing dependencies. In such cases, you may need to check your system's configuration files or reinstall Docker.

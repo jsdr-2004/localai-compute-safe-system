@@ -1,0 +1,11 @@
+Here are five bullets summarizing the benefits and limitations of local AI:
+
+• **Benefits:** Local AI can improve data security, reduce reliance on cloud services, increase data sovereignty, and enhance privacy by storing sensitive information locally. It also enables faster processing and reduced latency for applications that require real-time results.
+
+• **Limitations:** Local AI models are typically larger and more computationally intensive than their cloud-based counterparts, making them less suitable for low-power devices or resource-constrained environments. Additionally, local AI models may not be as easily accessible to developers and users, potentially limiting collaboration and innovation.
+
+• **Benefits:** By storing data locally, local AI can reduce internet connectivity requirements, improving performance in areas with poor or unreliable networks. Local AI also enables more efficient processing of large datasets and supports applications that require low-latency results.
+
+• **Limitations:** Local AI models may not be as scalable as cloud-based models, limiting their ability to handle large volumes of data or complex tasks. Furthermore, local AI requires significant storage capacity for the model itself and supporting data, potentially adding complexity and cost.
+
+• **Benefits:** Local AI can improve security by preventing unauthorized access to sensitive information, reducing the risk of data breaches and cyber attacks. It also enables more secure collaboration among developers and users who require sensitive data to be stored locally.

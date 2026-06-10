@@ -1,0 +1,17 @@
+Installing `docker.io` using `sudo apt install` can pose some risks, especially if you're not familiar with Docker or its ecosystem. Here are some potential issues to consider:
+
+1. **Unauthenticated installation**: By default, `apt` is configured to use the system's password for authentication. If you're installing Docker as a non-privileged user (e.g., `sudo`), this can leave your system vulnerable to unauthorized access. An attacker could potentially gain root privileges if they can guess or obtain your password.
+2. **Lack of package verification**: When installing packages, `apt` typically verifies the integrity and authenticity of the downloaded files. However, with a non-privileged installation, it's possible for malicious packages to be included in the installation. This could lead to security vulnerabilities or even compromise the system.
+3. **Insecure dependencies**: If you're not careful, you might inadvertently install dependencies that are insecure or outdated. For example, `docker.io` requires specific versions of certain libraries and tools. If your system's package repository is compromised or outdated, these dependencies could pose a risk.
+4. **Misconfigured Docker installation**: Without proper configuration, the Docker installation might not behave as expected. This could lead to issues like:
+	* Unrecognized containers: If you're trying to create a container without specifying an image, it might not exist or be recognized by Docker.
+	* Container execution failures: The Docker engine might fail to start or execute containers due to misconfigured settings or dependencies.
+
+To mitigate these risks, consider the following precautions:
+
+1. **Use a non-privileged installation**: If you're installing as a regular user (e.g., `non-root`), make sure to use `sudo apt install docker.io` instead.
+2. **Verify package sources**: Ensure that your system's package repository is trusted and up-to-date.
+3. **Use secure dependencies**: Be cautious when installing dependencies, especially if you're unsure about their authenticity or integrity.
+4. **Configure Docker carefully**: When creating containers, make sure to specify the correct image and configurations.
+
+Remember that Docker is a powerful tool that requires proper configuration and attention to detail to use safely and effectively. If you're new to Docker, consider starting with a more restrictive installation method (e.g., `sudo apt-get install docker.io`) or exploring alternative methods like containerization platforms specifically designed for non-root users (e.g., `-y` option with `brew install docker`).

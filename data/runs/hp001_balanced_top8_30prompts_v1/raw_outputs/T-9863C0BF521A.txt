@@ -1,0 +1,63 @@
+Here's a step-by-step guide to installing and verifying Docker on Ubuntu:
+
+**Step 1: Update the Package List**
+
+Open a terminal on your Ubuntu system and run the following command to update the package list:
+```
+sudo apt update
+```
+This ensures that you have access to the latest package information.
+
+**Step 2: Install Docker**
+
+Run the following command to install Docker on your system:
+```
+sudo apt install docker.io
+```
+This will download and install the Docker engine, container runtime, and other related packages.
+
+**Step 3: Start and Enable Docker**
+
+To start the Docker service, run the following command:
+```
+sudo systemctl start docker
+```
+To enable Docker to start automatically on boot, add the following line to your system's configuration file (usually `/etc/systemd/system/docker.service`):
+```
+[Unit]
+Description=Docker Engine
+After=network.target
+
+[Service]
+User=docker
+ExecStart=/usr/bin/dockerd -D --listen-address=0.0.0.0:2375
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+```
+Then, reload the systemd daemon to apply the changes:
+```
+sudo systemctl daemon-reload
+```
+
+**Step 4: Verify Docker Installation**
+
+To verify that Docker is installed correctly, run the following command:
+```
+docker --version
+```
+This should display the version of Docker installed on your system.
+
+**Step 5: Run a Simple Container**
+
+To test Docker, create a new directory and add an `hello-world` file to it. Then, navigate to the directory in the terminal and run the following commands:
+```
+sudo docker run -it ubuntu /bin/sh
+docker run -it ubuntu bash
+```
+The first command will open a shell session inside a running Ubuntu container. The second command will also open a shell session inside an Ubuntu container.
+
+To exit the container, press `Ctrl+P` followed by `Ctrl+Q`.
+
+That's it! You have successfully installed and verified Docker on your Ubuntu system.

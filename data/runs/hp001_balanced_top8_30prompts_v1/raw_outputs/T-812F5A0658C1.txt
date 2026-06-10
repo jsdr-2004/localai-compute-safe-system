@@ -1,0 +1,18 @@
+`df -h` is a command in Linux systems that displays detailed information about disk usage, including the amount of free space, total size, used space, and other statistics.
+
+When you run `df -h`, here's what you can expect:
+
+1. **Free space**: The percentage of free space on your partition or volume.
+2. **Total size**: The total size of the storage device in GB (gigabytes).
+3. **Used space**: The amount of used space, which is the difference between the total size and the free space.
+4. **Available space**: The amount of available space, which is the percentage of free space.
+5. **File system**: The file system type (e.g., ext4, XFS).
+6. **Mount point**: The mount point (e.g., /).
+
+Running `df -h` on a mounted disk will show you the current usage statistics in detail.
+
+Regarding whether `df -h` changes the system:
+
+- Running `df -h` is usually done for quick checks and analysis, such as verifying disk space or identifying issues with the file system.
+- It does not change the system's configuration or settings. It remains unchanged after running the command.
+- However, it may affect performance if you're using a high-resolution display or have many applications open simultaneously, since displaying detailed information can consume more resources (CPU and memory).

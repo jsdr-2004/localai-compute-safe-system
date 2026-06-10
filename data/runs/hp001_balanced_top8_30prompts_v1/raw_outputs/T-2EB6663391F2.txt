@@ -1,0 +1,71 @@
+To check system uptime, you can use various commands depending on your operating system. Here are a few examples:
+
+**For Linux systems:**
+
+1. **`uptime` command**: This command displays the system's uptime in hours, minutes, and seconds.
+
+Example:
+```
+$ uptime
+ 21:34:12 up 2 days, 14:30,  0 of 25 users, load average: 0.00, 0.00, 0.00
+```
+
+In this example:
+
+* `21:34:12` is the current time.
+* `up 2 days, 14:30` indicates that the system has been running for 2 days and 14 hours and 30 minutes.
+* `0 of 25 users` shows that there are currently no active users on the system.
+* `load average: 0.00, 0.00, 0.00` indicates that the system is not experiencing any load.
+
+**For Windows systems:**
+
+1. **`systeminfo` command**: This command displays detailed information about the system, including uptime.
+
+Example:
+```
+C:\>systeminfo
+System Information
+
+Computer Name: YOUR_COMPUTER_NAME
+
+OS Version: Windows 10 Home (10.0.19043.2)
+
+OS Manufacturer: Microsoft Corporation
+OS Service Pack: Current
+
+System Boot Time: 2023-02-20T14:30:00.000Z
+
+System Uptime: 2 days, 14 hours, 30 minutes
+```
+
+In this example:
+
+* `System Uptime` displays the system's uptime in days, hours, and minutes.
+
+**For macOS systems (using Terminal):**
+
+1. **`uptime` command**: This command is similar to the Linux version.
+
+Example:
+```
+$ uptime
+ 21:34:12 up 2 days, 14:30,  0 users, load average: 0.00, 0.00, 0.00
+```
+
+In this example:
+
+* The output is similar to the Linux version.
+
+**For macOS systems (using `sysctl` command):**
+
+1. **`sysctl -n uptime`**: This command displays the system's uptime in seconds.
+
+Example:
+```
+$ sysctl -n uptime
+1664407200
+```
+
+In this example:
+
+* The output is the number of seconds since January 1, 1970, at 00:00:00 UTC. To

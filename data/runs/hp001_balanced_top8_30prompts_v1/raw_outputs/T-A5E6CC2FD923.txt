@@ -1,0 +1,27 @@
+To compare the two configurations, we'll need to make some assumptions about the system's performance and the specific use case.
+
+Assumptions:
+
+* Both systems are running on a similar hardware platform (e.g., same CPU, motherboard, etc.)
+* The workloads are similar in terms of computational intensity and memory usage
+* The tokenization process is the bottleneck in both cases
+
+Let's assume that the system with 8GB RAM can handle 30 tokens/sec without any issues. This means that the system has a certain amount of available memory to allocate for each token.
+
+Now, let's consider the system with 6GB RAM, which is running at half the rate (15 tokens/sec). We'll assume that this reduced rate is due to insufficient memory to handle the increased workload.
+
+To make a fair comparison, we need to estimate how much memory would be required to achieve the same performance as the 8GB RAM system. Let's assume that each token requires approximately 100MB of memory (a rough estimate).
+
+For the 30 tokens/sec system with 8GB RAM:
+
+* Total memory usage: 30 tokens \* 100MB/token = 3000MB or 3GB
+* Available memory: 8GB - 3GB = 5GB
+
+Now, let's calculate how much memory would be required to achieve the same performance on the 15 tokens/sec system with 6GB RAM:
+
+* Total memory usage: 15 tokens \* 100MB/token = 1500MB or 1.5GB
+* Available memory: 6GB - 1.5GB = 4.5GB
+
+As we can see, the system with 6GB RAM would require approximately 2.25GB of available memory to achieve the same performance as the 8GB RAM system.
+
+In this scenario, the 6GB RAM system is insufficient to handle the increased workload, resulting in a significant reduction in throughput (from 30 tokens/sec to 15 tokens/sec). This highlights the importance of sufficient memory resources when dealing with high-performance computing tasks.

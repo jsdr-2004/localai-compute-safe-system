@@ -1,0 +1,45 @@
+You can use the following commands to verify if Docker is installed on your system:
+
+**For Linux systems:**
+
+1. Check if Docker is installed:
+```bash
+docker --version
+```
+If Docker is installed, you should see a version number.
+
+2. Run a simple Docker command:
+```bash
+docker run -it ubuntu /bin/bash
+```
+This will start an Ubuntu container and open a bash shell inside it. If everything is set up correctly, you should be able to navigate through the file system and exit the container normally.
+
+**For Windows systems:**
+
+1. Check if Docker Desktop is installed:
+```bash
+docker --version
+```
+If Docker Desktop is installed, you should see a version number.
+
+2. Open the Command Prompt or PowerShell and run:
+```bash
+docker ps -a
+```
+This will list all running containers on your system. If everything is set up correctly, you should see at least one container listed.
+
+**For macOS systems:**
+
+1. Check if Docker Desktop is installed:
+```bash
+docker --version
+```
+If Docker Desktop is installed, you should see a version number.
+
+2. Open the Terminal and run:
+```bash
+docker ps -a
+```
+This will list all running containers on your system. If everything is set up correctly, you should see at least one container listed.
+
+If you encounter any issues or errors during these commands, it may indicate that Docker is not installed or configured properly on your system.

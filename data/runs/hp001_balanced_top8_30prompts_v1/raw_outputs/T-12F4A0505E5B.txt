@@ -1,0 +1,21 @@
+ Model quantization is a technique used to reduce the computational complexity, size, and power consumption of deep learning models by converting them from high-precision floating-point numbers to low-precision integer or fixed-point representations. This process is essential for deploying machine learning models on edge devices like smartphones, IoT devices, and embedded systems, which have limited computational resources.
+
+There are three primary types of quantization techniques:
+
+1. Post-training quantization (PTQ): Quantizing a pre-trained model without modifying its architecture or training process. PTQ usually results in lower accuracy compared to other quantization methods but requires less computation during the quantization process.
+
+2. Quantization aware training (QAT): Training a model with a loss function that includes quantization noise, making the learned weights more suitable for quantization and preserving higher accuracy compared to PTQ. QAT is more time-consuming than PTQ but often yields better results in terms of accuracy and efficiency.
+
+3. Hybrid quantization: A combination of PTQ and QAT that leverages both techniques to achieve a balance between accuracy, computation speed, and model size.
+
+Tradeoffs associated with model quantization include:
+
+1. Accuracy: Lower precision quantization can lead to a decrease in model accuracy due to the loss of information during the quantization process. However, modern quantization methods aim to minimize this tradeoff by optimizing the quantization parameters for each layer and application.
+
+2. Computational complexity: Quantization typically involves additional computations to perform operations like calibration and optimization, which may increase the overall computation time compared to a full-precision model. However, the reduced model size and lower computational requirements during inference can lead to faster execution times on edge devices.
+
+3. Model size: Quantization reduces the model's bit-width, resulting in a smaller model size that is more suitable for deployment on resource-constrained devices. However, smaller models may have a higher quantization error and reduced accuracy compared to full-precision models.
+
+4. Power consumption: Lower precision models consume less power during both training and inference, making them ideal for battery-powered edge devices. This reduction in power consumption leads to longer device runtime and lower heat generation.
+
+5. Hardware compatibility: Quantized models are more compatible with hardware accelerators like TensorFlow Lite and Qualcomm'

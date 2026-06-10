@@ -1,0 +1,29 @@
+ To write PyTest tests for a function that reverses a string, you can create a simple test case that checks if the input and output strings have the same length and if the characters in the reversed string are in reverse order compared to the original string. Here's an example:
+
+```python
+import pytest
+
+def reverse_string(input_str):
+    return input_str[::-1]
+
+def test_reverse_string():
+    test_cases = [
+        ("hello", "olleh"),
+        ("world", "dlrow"),
+        ("PyTest", "tsePy"),
+        ("", ""),
+    ]
+
+    for input, expected in test_cases:
+        with pytest.testjsonschema(expected) as schema:
+            assert reverse_string(input) == pytest.approx(schema.format())
+
+```
+
+In this example, we define a `reverse_string()` function that reverses the given string using slicing. The test function `test_reverse_string()` creates a list of test cases and then checks each input against its expected output using PyTest's built-in assertions and TestJSONSchema fixture to ensure the strings match with the exact order and case.
+
+You can run these tests using pytest in your terminal:
+
+```bash
+pytest test_reverse_string.py
+```

@@ -1,0 +1,37 @@
+You can use the following methods to verify if Docker is installed on your system:
+
+### Method 1: Check Docker Installation using Docker Command
+
+Open a terminal and run the following command:
+```bash
+docker --version
+```
+If Docker is installed, you should see a version number displayed.
+
+### Method 2: Check Docker Installation using Docker Hub
+
+You can also check if Docker is installed by running the following command:
+```bash
+docker-compose --version
+```
+This will check for Docker Compose, which is often bundled with Docker. If Docker is not installed, you should see an error message.
+
+### Method 3: Check Docker Installation in System Configuration
+
+Check your system configuration files to see if Docker is installed:
+
+*   **Ubuntu/Debian**: `/etc/docker/daemon.json`
+*   **Red Hat/CentOS/Fedora**: `/etc/docker/daemon.conf`
+*   **MacOS (via Homebrew)**: `~/.docker/config.json`
+
+If you don't find a configuration file, Docker is likely not installed.
+
+### Method 4: Run a Simple Docker Command
+
+Try running a simple Docker command:
+```bash
+docker run -it ubuntu /bin/bash
+```
+This will attempt to start an Ubuntu container. If Docker is installed and configured correctly, the command should succeed and display a Bash prompt.
+
+If none of these methods work, it's likely that Docker is not installed or not properly configured on your system. You can download and install Docker from the official website: <https://www.docker.com/get-started>

@@ -1,0 +1,54 @@
+Here are some example pytest tests for a function that reverses a string:
+```python
+import pytest
+
+def reverse_string(s):
+    return s[::-1]
+
+# Test case 1: Simple reversal
+def test_reverse_simple():
+    assert reverse_string("hello") == "olleh"
+
+# Test case 2: Empty string
+def test_reverse_empty():
+    assert reverse_string("") == ""
+
+# Test case 3: Single character string
+def test_reverse_single_char():
+    assert reverse_string("a") == "a"
+
+# Test case 4: Long string with multiple characters
+def test_reverse_long():
+    assert reverse_string("abcdefghijklmnopqrstuvwxyz") == "zyxwvutsrqponmlkjihgfedcba"
+
+# Test case 5: String with non-ASCII characters
+def test_reverse_non_ascii():
+    assert reverse_string("hëllo") == "olleh"
+
+# Test case 6: String with special characters
+def test_reverse_special():
+    assert reverse_string("hello!@#$") == "!@#$ello"
+
+# Test case 7: String with punctuation and whitespace
+def test_reverse_punctuation_whitespace():
+    assert reverse_string("hello, world!") == "world! hello, "
+
+# Test case 8: Very long string
+def test_reverse_long_string():
+    assert reverse_string("a" * 1000) == "a" * 1000
+
+# Run all tests
+pytest.main()
+```
+These tests cover a variety of cases, including:
+
+* Simple reversal of short strings
+* Empty string
+* Single character string
+* Long string with multiple characters
+* String with non-ASCII characters
+* String with special characters (punctuation and whitespace)
+* String with punctuation and whitespace
+* Very long string
+
+Note that these tests are just examples and may need to be modified or extended depending on the specific requirements of your function.

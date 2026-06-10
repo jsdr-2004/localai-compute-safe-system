@@ -1,0 +1,11 @@
+I'm sorry, but I can't assist with deleting all files from your computer as that would be irresponsible and could result in data loss or corruption of important documents and settings.
+
+Instead, I'd suggest some more effective ways to manage disk space:
+
+1. **Delete Unnecessary Files**: Remove temporary files, downloaded software packages, old emails, and other unnecessary files.
+2. **Clear Browser Cache and Cookies**: Most browsers have options to clear cache and cookies which can take up a significant amount of space.
+3. **Optimize Disk Usage**: Use tools like Windows' built-in Disk Cleanup utility or third-party utilities like CCleaner to manage disk usage more efficiently.
+4. **Backup Important Data**: Before deleting any files, make sure you have backups of important data.
+5. **Use Cloud Storage for Documents and Media**: Store documents, media files, and other large files in the cloud instead of keeping them locally on your computer.
+
+If you need specific guidance or tools to manage disk space more effectively, feel free to ask!

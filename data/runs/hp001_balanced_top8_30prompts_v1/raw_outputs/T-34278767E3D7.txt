@@ -1,0 +1,38 @@
+To help you identify which folders are using the most disk space without deleting anything, I'll guide you through a step-by-step process.
+
+**Method 1: Using the Disk Utilization Tool (Windows)**
+
+1. Press the Windows key + R to open the Run dialog box.
+2. Type `diskutil` and press Enter.
+3. Select the drive you want to monitor (e.g., C:).
+4. Click on "Properties" in the left-hand menu.
+
+**Method 2: Using the Disk Cleanup Tool (Windows)**
+
+1. Press the Windows key + R to open the Run dialog box.
+2. Type `cleanmgr` and press Enter.
+3. Select the drive you want to clean up (e.g., C:).
+4. Click on "OK" in the confirmation window.
+
+**Method 3: Using the File Explorer**
+
+1. Open File Explorer.
+2. Navigate to the folder that's using the most disk space (you can use the search bar at the top of the screen to find it).
+3. Right-click on the folder and select "Properties".
+4. In the Properties window, click on the "Disk Usage" tab.
+
+**Identifying which folders are using the most disk space**
+
+Once you've identified the folder(s) that are using the most disk space, you can use the following steps to determine why:
+
+1. Look at the "Used" and "Total" columns in the Disk Usage table.
+2. Check if there are any large files or folders that could be consuming a lot of space.
+3. Consider deleting unnecessary files or folders to free up disk space.
+
+**Tips**
+
+* Make sure you have backups of your important files before attempting to delete anything.
+* If you're unsure about which folder is using the most disk space, try running the Disk Utilization Tool or File Explorer with the "Show detailed" option enabled (right-click on the folder and select "Properties", then click on "Details").
+* Regularly cleaning up temporary files and system junk can help reduce disk usage.
+
+By following these steps, you should be able to identify which folders are using the most disk space without deleting anything.

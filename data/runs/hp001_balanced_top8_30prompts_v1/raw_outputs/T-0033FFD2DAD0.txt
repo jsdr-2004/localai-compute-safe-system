@@ -1,0 +1,64 @@
+When using `docker ps`, you might encounter a "permission denied" error if the Docker daemon is not running or if your user account does not have sufficient permissions to interact with it. Here are some steps to diagnose and resolve this issue:
+
+### 1. Check if Docker Daemon is Running
+Ensure that the Docker daemon is running on your system.
+
+- On Linux, you can check its status using:
+  ```bash
+  sudo systemctl status docker
+  ```
+  If it's not running, start it with:
+  ```bash
+  sudo systemctl start docker
+  ```
+
+- On macOS and Windows (using Docker for Mac or Docker Desktop), the daemon is usually already running.
+
+### 2. Check User Permissions
+Ensure that your user account has permission to interact with Docker commands. You might need to run Docker commands as a superuser (root) or use `sudo`.
+
+```bash
+docker ps
+```
+If you get a "permission denied" error, try:
+```bash
+sudo docker ps
+```
+
+### 3. Verify Docker Service Configuration
+Check if the Docker service configuration is correct and that it's set to start on boot.
+
+- On Linux, check your Docker service file (usually located in `/etc/systemd/system/docker.service`):
+  ```bash
+  sudo systemctl cat docker
+  ```
+  Ensure that the `Environment` section includes `DOCKER_OPTS="-H tcp://0.0.0.0:2375"` and that it's set to start on boot:
+  ```bash
+  sudo systemctl enable docker
+  ```
+
+### 4. Check SELinux or AppArmor Policies (if applicable)
+If you're using SELinux or AppArmor, ensure they are not blocking Docker.
+
+- For SELinux, check the context of your Docker socket and files:
+  ```bash
+  ls -lZ /var/run/docker.sock
+  ```
+  You might need to change the context with `chcon` command if necessary.
+
+- For AppArmor, you can check its status and configuration:
+  ```bash
+  sudo apparmor_status
+  ```
+
+### 5. Check Docker Configuration Files
+Ensure that your Docker configuration files are correctly set up. This includes environment variables and any custom configurations in `/etc/docker/daemon.json`.
+
+```bash
+cat /etc/docker/daemon.json
+```
+
+### 6. Verify Docker Image Permissions
+If you're trying to run a container from an image, ensure the image is accessible by your user account.
+
+- You might need to

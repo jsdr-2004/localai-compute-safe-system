@@ -1,0 +1,60 @@
+To check system uptime, you can use various commands depending on your operating system. Here are some examples:
+
+**For Linux systems:**
+
+1. **`uptime` command**: This is a built-in command that displays the system's uptime in minutes and seconds.
+```
+$ uptime
+ 10:45:12 up 2 days, 14:30,  0% CPU (stats: 0.00 user, 0.01 sys, 0.00 idle)
+```
+In this example:
+
+* `10:45:12` is the current time.
+* `up 2 days, 14:30` indicates that the system has been running for 2 days and 14 hours and 30 minutes.
+* `0% CPU` shows the percentage of CPU usage.
+
+**For Windows systems:**
+
+1. **`systeminfo` command**: This command displays detailed information about your system, including uptime.
+```
+C:\>systeminfo
+System Information
+
+Computer Name: YOUR_COMPUTER_NAME
+
+OS Version: Windows 10 Home (10.0.19043.2)
+
+System Boot Time: 2023-02-20 14:30:00
+
+System Uptime: 2 days, 14 hours, 30 minutes
+```
+In this example:
+
+* `System Uptime` displays the system's uptime in days, hours, and minutes.
+
+**For macOS systems (using Terminal):**
+
+1. **`uptime` command**: This is a built-in command that displays the system's uptime.
+```
+$ uptime
+ 10:45:12 up 2 days, 14:30,  0% CPU (stats: 0.00 user, 0.01 sys, 0.00 idle)
+```
+This output is similar to the Linux example.
+
+**For macOS systems (using `sysctl` command):**
+
+1. **`sysctl -n uptime`**: This command displays the system's uptime in seconds.
+```
+$ sysctl -n uptime
+4294967295
+```
+In this example:
+
+* The value `4294967295` represents the number of seconds since the last reboot.
+
+Interpreting the results:
+
+* Uptime is calculated from the time the system was last booted or restarted.
+* System uptime can be affected by various factors, such as:
+	+ Reboots: Each reboot resets the uptime counter.
+	+ Sleep modes: If your system enters sleep mode, the uptime counter continues

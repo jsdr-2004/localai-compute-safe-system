@@ -1,0 +1,23 @@
+Model quantization is an optimization technique used in deep learning models to reduce their computational complexity and memory usage, particularly for applications that require low-power devices or constrained bandwidth communication channels. The primary goal of quantization is to convert a floating-point (FP) representation of the model weights into a lower-precision format such as integer values, typically 8-bit (quantized to 1 bit), 4-bit, or even 2-bit.
+
+### How Model Quantization Works
+
+The process of model quantization involves several steps:
+
+1. **Model Pruning**: Before quantization, it's common to perform pruning on the model weights. This step removes redundant or less significant connections and parameters from the network, which can be done using various techniques such as L1/L2 regularization.
+
+2. **Weight Quantization**: The next step is weight quantization, where floating-point values are converted into integer representations. For example, a 32-bit floating point number might be represented by an 8-bit signed or unsigned integer after quantization. This conversion reduces the precision of the weights but also significantly decreases memory usage and computational complexity.
+
+3. **Activation Quantization**: After weight quantization, activation values (output from each layer) are also converted to a lower-precision format. The exact method used for this step depends on the specific application and hardware constraints.
+
+### Tradeoffs in Model Quantization
+
+While model quantization offers significant benefits such as reduced memory usage, faster inference times, and decreased power consumption, it comes with several trade-offs:
+
+1. **Model Accuracy**: One of the most critical trade-offs is a potential decrease in model accuracy. The process of converting weights from floating-point to integer representations can lead to some loss of information, especially when using lower-precision formats like 4-bit or 2-bit. This reduction in precision can cause errors in the final output predictions.
+
+2. **Training Complexity**: Quantization-aware training is often required for effective quantization. This involves modifying the training process so that it can handle integer weights and activations during backpropagation, which can be more complex and computationally expensive compared to traditional floating-point training.
+
+3. **Quantization Error**: The error introduced by quantizing weights and activations must be carefully managed. Techniques such as quantization-aware training help mitigate this issue but may not eliminate all errors completely.
+
+4. **Hardware Compatibility**: Different hardware architectures have varying levels of support for different precision formats. For instance, some devices might only natively support 8-bit or 16-bit integer operations,

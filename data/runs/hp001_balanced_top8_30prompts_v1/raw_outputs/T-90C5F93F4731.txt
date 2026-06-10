@@ -1,0 +1,15 @@
+ Here are some read-only Linux commands that you can use to inspect the memory and CPU load without affecting the system:
+
+1. **Memory Usage (RAM)**
+   - `free`: Displays the total amount of free and used physical and swap memory in the system.
+   - `top -bn1`: Shows a dynamic real-time view of the running processes, but limit it to only one batch update for a quick snapshot.
+   - `df -h`: Reports on the amount of disk space usage on Linux filesystems.
+
+2. **CPU Usage**
+   - `uptime`: Shows how long the system has been running, how loaded it is, and what time it is currently.
+   - `top`: Displays a dynamic real-time view of the running processes, showing CPU utilization by each process.
+   - `htop`: An interactive process viewer for Unix systems that is more user-friendly than top.
+   - `iostat`: Shows statistics about I/O waiting and handling devices on Linux. This can also give a good indication of CPU load due to disk I/O.
+   - `mpstat`: Monitors processor statistics (CPU usage, interrupts, etc.).
+
+These commands will provide you with valuable insights into the memory and CPU load without making any changes to your system.

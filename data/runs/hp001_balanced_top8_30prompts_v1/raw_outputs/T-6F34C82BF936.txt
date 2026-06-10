@@ -1,0 +1,54 @@
+To check the system uptime, I'll guide you through a few methods. Please note that these methods may vary depending on your operating system and setup.
+
+**Method 1: Using the Command Line (Linux/Mac)**
+
+You can use the `uptime` command to get an approximate idea of the system's uptime. Here's how:
+
+1. Open a terminal or command prompt.
+2. Type `uptime` and press Enter.
+3. The output will display something like this:
+```
+  kernel: Linux version v5.15-19-generic (x86_64) Thu Sep 16 14:28:00 UTC 2021
+   Maru: 4.0.0-2-Ubuntu SMP Tue Oct 25 12:24:59 UTC 2022
+   build time: October 7, 2022
+   gcc: 9.3.0
+   run-time: 1.13.0
+   init system: systemd
+   kernel release version: 5.15
+```
+This output shows the system's uptime in hours since boot.
+
+**Method 2: Using the `systemctl` Command (Linux)**
+
+If you're using a Linux distribution that uses systemd, you can use the `systemctl` command to check the system uptime:
+
+1. Open a terminal or command prompt.
+2. Type `systemctl status chrony` and press Enter.
+3. The output will display something like this:
+```
+  chronyd.service: active (running)
+```
+This indicates that the chronyd service is running, which is responsible for synchronizing the system clock with an external time source.
+
+**Method 3: Using a Monitoring Tool**
+
+You can also use a monitoring tool like Prometheus or Grafana to check the system uptime. These tools provide detailed metrics and statistics about your system's performance.
+
+For example, you can create a Prometheus rule that checks the system uptime by running the following command:
+```bash
+curl -XGET 'http://localhost:9090/metrics?all=true'
+```
+This will return a JSON response with various metrics, including system uptime. You can then use Grafana to visualize these metrics and get an idea of your system's uptime.
+
+**Interpreting the Results**
+
+When checking the system uptime using one of these methods, you'll typically see information about the system's:
+
+* Kernel version
+* CPU usage
+* Memory usage
+* Disk usage
+* Network activity
+* System clock synchronization
+
+The actual uptime

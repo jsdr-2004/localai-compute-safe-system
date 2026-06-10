@@ -1,0 +1,42 @@
+Certainly! Below is a Python function named `safe_parse_integers` that takes a list of strings and returns a new list containing the parsed integers. The function will handle any non-integer values gracefully by ignoring them.
+
+```python
+def safe_parse_integers(string_list):
+    """
+    Parses integer values from a list of string inputs.
+    
+    Args:
+        string_list (list): A list of strings to be parsed into integers.
+        
+    Returns:
+        list: A list containing the parsed integer values. Non-integer values are ignored.
+    """
+    # Initialize an empty list to store the results
+    result = []
+    
+    for item in string_list:
+        try:
+            # Attempt to convert the string to an integer
+            num = int(item)
+            # Append the integer value to the result list
+            result.append(num)
+        except ValueError:
+            # If conversion fails, ignore the value and continue with the next one
+            pass
+    
+    return result
+
+# Example usage:
+string_list = ["123", "456", "789", "not_an_int"]
+parsed_integers = safe_parse_integers(string_list)
+print(parsed_integers)  # Output: [123, 456, 789]
+```
+
+In this function:
+
+- We initialize an empty list `result` to store the parsed integers.
+- For each item in the input list `string_list`, we attempt to convert it to an integer using the built-in `int()` function. 
+- If the conversion is successful (i.e., no `ValueError` exception is raised), the value is appended to the `result` list.
+- If a `ValueError` is raised during the conversion, indicating that the string cannot be converted to an integer, we simply ignore it and move on to the next item.
+
+This function ensures that only valid integers are included in the final result. Non-integer values will not appear in the output list.

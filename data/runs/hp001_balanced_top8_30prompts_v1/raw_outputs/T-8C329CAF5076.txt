@@ -1,0 +1,31 @@
+**Safe Integer Parsing Function**
+=====================================
+
+The following Python function uses the `str.isdigit()` method to safely parse integers from a list of strings.
+
+```python
+def safe_parse_integers(strings):
+    """
+    Safely parse integers from a list of strings.
+
+    Args:
+        strings (list): A list of strings to parse as integers.
+
+    Returns:
+        list: A list of parsed integers.
+    """
+    return [int(s) for s in strings if s.isdigit()]
+```
+
+**Example Use Case**
+--------------------
+
+```python
+strings = ["123", "abc", "456", "789"]
+parsed_integers = safe_parse_integers(strings)
+print(parsed_integers)  # Output: [123, 456]
+```
+
+In this example, the function `safe_parse_integers` takes a list of strings as input and returns a new list containing only the integers parsed from those strings. The `if s.isdigit()` condition ensures that non-integer strings are ignored.
+
+**Note**: This implementation does not handle cases where the input string is not a valid integer (e.g., "abc123"). If you need to handle such cases, you can modify the function accordingly.

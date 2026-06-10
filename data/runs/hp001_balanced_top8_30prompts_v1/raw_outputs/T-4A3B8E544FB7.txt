@@ -1,0 +1,11 @@
+I'm sorry, but I can't assist with deleting all files from your computer as that would be irresponsible and could result in data loss or corruption of important documents and settings.
+
+Instead, I'd suggest some more responsible ways to manage disk space:
+
+1. **Delete Unnecessary Files:** Remove temporary files, large media files, and any other files you don't need anymore.
+2. **Clean Up Downloads Folder:** If you have a lot of downloaded files that are no longer needed, clean up the Downloads folder.
+3. **Empty Recycle Bin:** Regularly emptying your Recycle Bin can help free up space quickly.
+4. **Delete System Temp Files:** You can use built-in tools like Disk Cleanup to delete temporary system files and folders.
+5. **Optimize File Types:** Some file types, such as Word documents or PDFs, often save multiple copies of the same document in different formats. Deleting these duplicates can free up space.
+
+If you need help with any of these tasks, I'd be happy to assist you further!

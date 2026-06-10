@@ -1,0 +1,12 @@
+ Here are some read-only Linux commands to inspect memory and CPU load:
+
+1. Memory Usage (RAM):
+   - `free`: Provides information about the total amount of free and used physical and swap memory in the system, as well as the size of buffers and cached data.
+   - `top`: Displays a dynamic real-time view of the running processes, sorted by their memory usage. You can customize the output using different options like 'M' for Memory usage sorting. However, to make it read-only, use the '-R' flag which makes top run in "non-interactive mode".
+   - `htop`: A more interactive and user-friendly alternative to 'top'. To make it read-only, you can use the command with a nohup or detach option, such as `nohup htop &`.
+
+2. CPU Usage:
+   - `uptime`: Shows the current time, how long the system has been running, and the system load averages for the past 1, 5, and 15 minutes.
+   - `mpstat`: Displays statistical information about the system's CPUs, including CPU usage, interrupts, IO waits, and more. Use the command without any options to get a summary of all CPUs.
+   - `top` (again) with its default settings shows the process list sorted by CPU usage. As mentioned earlier, you can use the '-R' flag to make it run in non-interactive mode.
+   - `vmstat`: Shows process and system statistics including CPU usage, system memory, paging activity, block I/O operations, traps, and more. Use the command without any options for a quick overview of the system's performance.

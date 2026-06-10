@@ -1,0 +1,19 @@
+ To check the system uptime on a Linux-based system, you can use the `uptime` command in the terminal. This command displays various system statistics, including the system uptime.
+
+When you run `uptime`, it might display output like this:
+
+```
+12:45:36 up 7 days,  9:23,  1 user,  load average: 0.08, 0.10, 0.11
+```
+
+Here's a breakdown of the output:
+
+1. The current time (in this case, 12:45:36).
+2. System uptime - "7 days,  9:23" means that the system has been running for 7 days and 9 hours, 23 minutes as of the current time.
+3. Number of users currently logged in (in this case, 1 user).
+4. Load average - This is an estimate of the system's workload, based on the number of jobs waiting to run in the system's queue. It shows the average number of jobs in the run queue over the past 1 minute, 5 minutes, and 15 minutes. In this example:
+   - The load average for the past 1 minute is 0.08.
+   - The load average for the past 5 minutes is 0.10.
+   - The load average for the past 15 minutes is 0.11.
+
+A lower load average means that the system is less busy, while a higher load average indicates more jobs waiting to run in the system's queue, which could potentially slow down performance.

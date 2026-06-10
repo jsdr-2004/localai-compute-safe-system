@@ -1,0 +1,37 @@
+ To inspect the memory and CPU load in a read-only mode on a Linux system, you can use several built-in commands. Here are some of them:
+
+1. **Uptime**: This command displays how long the system has been running, the number of users currently logged in, and the system load averages for the past 1, 5, and 15 minutes.
+
+   ```
+   uptime
+   ```
+
+2. **Top (with limited write access)**: Although `top` requires write access to modify the screen, you can still use it in a read-only mode by running it with the `-r 0` or `--no-interval` option. This will prevent it from repeatedly updating the output.
+
+   ```
+   top -b -n1
+   ```
+
+3. **Free**: To check the amount of free and used memory in the system, you can use the `free` command.
+
+   ```
+   free -h
+   ```
+
+4. **vmstat**: This command provides a quick look at processes, memory, paging, block I/O, traps, and cpu statistics.
+
+   ```
+   vmstat 1
+   ```
+
+5. **iostat**: To monitor device I/O statistics, use the `iostat` command.
+
+   ```
+   iostat -xh 1
+   ```
+
+6. **mpstat**: This command shows per-CPU statistics for processors and processor-dependent hardware events.
+
+   ```
+   mpstat -P ALL -P ALL
+   ```

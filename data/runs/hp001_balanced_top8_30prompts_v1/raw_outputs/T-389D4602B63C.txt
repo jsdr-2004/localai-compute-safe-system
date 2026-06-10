@@ -1,0 +1,37 @@
+CPUs (Central Processing Units) have two fundamental concepts that are often confused with each other: CPU cores and threads.
+
+**CPU Cores**
+
+A CPU core is a processing unit within a CPU that executes instructions. Each core can execute one instruction at a time, and it's like having multiple "brain cells" working together to process information. Modern CPUs typically have 2-32 cores or more, depending on the type of processor.
+
+Think of a CPU core like a individual worker who can do a specific job (like executing an instruction). The number of cores you have determines how many jobs your CPU can handle simultaneously.
+
+**Threads**
+
+A thread is a lightweight process that shares system resources with other threads. Threads are essentially "mini-programs" within a larger program, and they're designed to execute concurrently with each other. A single core can run multiple threads at the same time, which allows for better utilization of CPU resources.
+
+Think of a thread like a tiny worker who can do a specific job (like executing an instruction) while another thread is doing something else. The number of threads you have depends on the program's design and how well it's optimized for multithreading.
+
+**Key differences**
+
+Here are the main differences between CPU cores and threads:
+
+1. **Number**: A single core can run multiple threads, but a CPU typically has only one or more physical cores.
+2. **Concurrency**: Multiple threads can execute concurrently on a single core, while multiple cores can execute multiple threads simultaneously.
+3. **Resource usage**: Threads share system resources with other threads, whereas each core has its own dedicated resources (like cache memory and execution units).
+4. **Overhead**: Creating and managing threads has some overhead due to context switching and synchronization, which can impact performance.
+
+**How they relate**
+
+To understand the relationship between CPU cores and threads:
+
+1. A single-core system can run multiple threads on that one core.
+2. A multi-core system can run multiple threads on each core simultaneously (up to the number of physical cores).
+3. Modern operating systems use hyper-threading or simultaneous multithreading, which allows a single core to simulate multiple threads by switching between different thread states.
+
+In summary:
+
+* CPU cores are like individual workers that execute instructions.
+* Threads are like tiny workers within a program that share resources and execute concurrently.
+
+Understanding the difference between these two concepts can help you make informed decisions about how to optimize your programs for performance, especially when working with multithreaded applications.

@@ -1,0 +1,26 @@
+ To write PyTest tests for a function that reverses a string, you can create a new Python file (let's call it `test_reverse_string.py`) and define the reverse_string function as well as its test cases. Here's an example of how you could structure this file:
+
+```python
+def reverse_string(input_string):
+    return input_string[::-1]
+
+def test_reverse_string():
+    assert reverse_string("hello") == "olleh"
+    assert reverse_string("world") == "dlrow"
+    assert reverse_string("Python") == "notyP"
+    assert reverse_string("") == ""
+    assert reverse_string(None) is None
+
+if __name__ == "__main__":
+    pytest.main([__file__])
+```
+
+In this example, I've created a simple reverse_string function using Python's slice notation (`[::-1]`). The test function `test_reverse_string()` contains several test cases to verify that the reversed string is correct. Each test case uses PyTest's built-in assert function to compare the expected and actual results of the reverse_string function.
+
+To run these tests, you can use the following command in your terminal or command prompt:
+
+```bash
+python -m pytest test_reverse_string.py
+```
+
+This will execute the test cases and display whether they passed or failed.

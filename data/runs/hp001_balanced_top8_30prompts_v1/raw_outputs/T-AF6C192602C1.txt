@@ -1,0 +1,20 @@
+def parse_integers(string_list):
+    """
+    This function takes a list of strings, attempts to convert each string into an integer,
+    and returns a list of the converted integers.
+
+    Args:
+        string_list (list): A list of strings to be parsed into integers.
+
+    Returns:
+        list: A list of integers where non-integer values are replaced with None.
+    """
+    result = []
+    for s in string_list:
+        try:
+            # Attempt to convert the string into an integer
+            result.append(int(s))
+        except ValueError:
+            # If the conversion fails, append None to the result list
+            result.append(None)
+    return result

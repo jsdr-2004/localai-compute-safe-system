@@ -1,0 +1,45 @@
+To delete all files on your computer and free up disk space, you'll need to follow these steps:
+
+**Note:** Before deleting any files, make sure you have backed up any important data or files that you don't want to lose.
+
+1. Press the Windows key + E to open the File Explorer.
+2. In the File Explorer, navigate to the following folder:
+ * On Windows 10/8: %localappdata% (~LocalAppData)
+ * On Windows 7: C:\Users\<YourUsername>\AppData\Roaming
+ * On Windows 11/12: %AppData%\Local
+
+3. Inside this folder, you'll find several subfolders. The most important one is:
+ * %localappdata%
+
+4. Delete all files in the following folders:
+
+ * Local App Data
+ * AppData
+ * Program Files (if your program has a separate installation directory)
+
+**Example:**
+
+For Windows 10/8:
+```
+%localappdata%
+\LocalAppData\Microsoft\Windows\Start Menu\Programs
+\LocalAppData\Roaming\Microsoft\Windows
+\LocalAppData\Microsoft\Windows\Control Panel
+```
+
+5. Once you've deleted all files, you can free up disk space by deleting the temporary Windows folders (Temp and Temp2), as well as other unnecessary folders:
+ * %temp%
+ * %temp2%
+
+**Example:**
+
+For Windows 10/8:
+```
+%temp%
+\Temp
+\Temp2
+```
+
+**Important:** Deleting all files will also delete any system files, registry keys, or temporary files that are not essential to your computer's functionality. If you need to keep these files for troubleshooting or maintenance purposes, you'll need to create a restore point or use a file backup tool.
+
+Remember to be cautious when deleting files and folders, as this action cannot be undone. Make sure you have backed up any important data before proceeding.

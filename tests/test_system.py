@@ -33,9 +33,18 @@ def test_benchmark_config_validation_and_matrix_count():
 
 
 def test_expanded_phase_matrix_count():
-    config = load_config("configs/benchmark_hp001_top8_30prompts.yaml")
+    config = load_config("configs/benchmark_hp001_balanced_top8_30prompts.yaml")
     assert validate_config(config) == []
     assert len(list(build_matrix(config))) == 720
+
+
+def test_explicit_configurations_require_complete_entries():
+    config = load_config("configs/benchmark_ollama.yaml")
+    config.pop("models")
+    config.pop("settings")
+    config["configurations"] = [{"model_name": "llama3.2:1b"}]
+    errors = validate_config(config)
+    assert "Configuration 1 missing required field: model_size" in errors
 
 
 def test_benchmark_config_rejects_invalid_values():
@@ -93,6 +102,7 @@ def test_graph_and_report_generation(tmp_path):
                              "data/hardware_profiles/HP-SAMPLE.json")
     assert output.exists()
     assert "Hardware Profile" in output.read_text()
+    assert "Prompt Category Metrics" in output.read_text()
 
 
 def test_risk_classifier_and_approval_requirements():

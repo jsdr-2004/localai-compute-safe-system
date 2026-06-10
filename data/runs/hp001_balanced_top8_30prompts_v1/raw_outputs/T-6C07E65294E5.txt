@@ -1,0 +1,76 @@
+# Off-By-One Loop Bug in Python
+=====================================
+
+An off-by-one loop bug occurs when the loop counter is not initialized correctly, leading to incorrect results or infinite loops.
+
+### Example: Counting Loops
+
+Consider the following code snippet that attempts to count the number of iterations of a loop:
+
+```python
+def count_loops(n):
+    for i in range(5):  # Off-by-one bug!
+        print(f"Iteration {i}: n = {n}")
+
+count_loops(10)
+```
+
+This code will output:
+
+```
+Iteration 0: n = 10
+Iteration 1: n = 10
+Iteration 2: n = 10
+Iteration 3: n = 10
+Iteration 4: n = 10
+Iteration 5: n = 10
+```
+
+As expected, it prints the number of iterations correctly. However, this code has a subtle off-by-one bug.
+
+### Fixing the Off-By-One Bug
+
+To fix this issue, we need to ensure that the loop counter starts from the correct index. In this case, we want `i` to start from 0, not 1.
+
+```python
+def count_loops(n):
+    for i in range(n):  # Fix: Start from 0
+        print(f"Iteration {i}: n = {n}")
+
+count_loops(10)
+```
+
+Now, the output will be:
+
+```
+Iteration 0: n = 10
+Iteration 1: n = 10
+Iteration 2: n = 10
+Iteration 3: n = 10
+Iteration 4: n = 10
+Iteration 5: n = 10
+```
+
+However, this code still has a logical issue. If we want to print `n` on each iteration, it will keep printing the same value (10) until the loop completes.
+
+### Improved Version
+
+To fix both issues, let's create an improved version of the function:
+
+```python
+def count_loops(n):
+    for i in range(n):
+        print(f"Iteration {i}: Value = {n * i}")
+
+count_loops(10)
+```
+
+Now, the output will be:
+
+```
+Iteration 0: Value = 0
+Iteration 1: Value = 10
+Iteration 2: Value = 20
+Iteration 3: Value = 30
+Iteration 4: Value = 40
+Iteration 5: Value = 50

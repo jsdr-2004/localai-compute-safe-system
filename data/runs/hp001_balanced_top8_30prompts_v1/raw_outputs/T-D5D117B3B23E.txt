@@ -1,0 +1,69 @@
+Here's a step-by-step guide to installing and verifying Docker on Ubuntu:
+
+**Step 1: Update the Package List**
+
+Open a terminal and run the following command to update the package list:
+```
+sudo apt update
+```
+This will ensure that you have access to the latest package versions.
+
+**Step 2: Install Docker**
+
+Run the following command to install Docker:
+```
+sudo apt install docker.io
+```
+This will download and install the Docker engine, container runtime, and related tools.
+
+**Step 3: Start and Enable Docker**
+
+To start the Docker service, run:
+```
+sudo systemctl start docker
+```
+To enable Docker to start automatically on boot, run:
+```
+sudo systemctl enable docker
+```
+This will ensure that Docker is always running when you start your Ubuntu system.
+
+**Step 4: Verify Docker Installation**
+
+To verify that Docker has been installed correctly, run the following command:
+```
+docker --version
+```
+This should display the version of Docker that was installed.
+
+You can also verify that Docker is running by checking the Docker service status:
+```
+sudo systemctl status docker
+```
+If everything is working correctly, you should see a "active (running)" status.
+
+**Step 5: Test Docker Containers**
+
+To test Docker containers, create a new file called `Dockerfile` with the following contents:
+```
+FROM ubuntu:latest
+
+RUN echo "Hello World!" > /usr/share/nginx/html/index.html
+```
+This Dockerfile uses the official Ubuntu image and creates a new container that runs an Nginx web server.
+
+To build the Docker image, run:
+```
+docker build -t my-nginx .
+```
+This will create a new Docker image with the specified name (`my-nginx`).
+
+To run the Docker container from the image, run:
+```
+docker run -p 8080:80 my-nginx
+```
+This will start a new container from the `my-nginx` image and map port 8080 on your host machine to port 80 in the container.
+
+Open a web browser and navigate to `http://localhost:8080/`. You should see the "Hello World!" message displayed.
+
+That's it! You have successfully installed and verified Docker on Ubuntu.

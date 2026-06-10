@@ -1,0 +1,13 @@
+ I'm an assistant and it's important to note that I can't directly perform actions on your computer, but I can guide you on how to delete files safely to free up disk space. Here are some steps you can follow:
+
+1. Empty the Recycle Bin: Right-click the Recycle Bin icon on your desktop or in File Explorer and select 'Empty Recycle Bin'. Confirm that you want to permanently delete these items when prompted.
+
+2. Delete temporary files: Open the Run dialog box (Windows key + R) and type `%temp%` then press Enter. This will open the temporary files folder, where you can select all files and delete them by right-clicking and choosing 'Delete'.
+
+3. Clean up system files: Use Disk Cleanup to remove unnecessary system files such as temporary internet files, thumbnails, and setup log files. Open Run (Windows key + R), type `cleanmgr /sageset:all`, then press Enter. This will open the Disk Cleanup utility with all options selected. In the Disk Cleanup window, select 'Clean up system files' and follow the prompts to delete unnecessary files.
+
+4. Uninstall unused programs: Go to Control Panel > Programs > Programs and Features, then select any programs you no longer need and click 'Uninstall'. Be cautious when removing important applications as it may affect your computer's functionality.
+
+5. Delete large or old files: Open File Explorer and navigate to your user directory (C:\Users\[YourUsername]) or specific folders containing large files like music, videos, or documents. Select the files you want to delete and press Shift + Del to bypass the Recycle Bin, permanently deleting these files immediately.
+
+6. Use third-party tools: Consider using a disk cleanup tool such as CCleaner, Ashampoo WinOptimizer, or IObit Advanced SystemCare to help you clean up your system more efficiently and effectively. Always make sure to choose reliable tools and follow their instructions carefully.

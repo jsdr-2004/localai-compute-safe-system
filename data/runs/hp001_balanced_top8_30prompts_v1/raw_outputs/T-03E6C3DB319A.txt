@@ -1,0 +1,22 @@
+The "permission denied" error when running `docker ps` can be caused by several reasons. Here are some common causes:
+
+1. **Insufficient Docker privileges**: If you're not running the Docker command with sufficient privileges, you may encounter a "permission denied" error. Make sure you're running the command as the user who owns the Docker daemon or as root.
+2. **Incorrect Docker configuration**: The Docker configuration file (`/etc/docker/daemon.json` on Linux) might be misconfigured, causing the permission issues. Check the configuration file to ensure it's set up correctly.
+3. **Docker socket permissions**: The Docker socket (usually located at `/var/run/docker.sock`) has specific permissions that can cause issues if they're not set correctly. You can check the socket permissions using the `getfacl` command: `getfacl -R /var/run/docker.sock`. If you see a message indicating that the group is not owned by the user running Docker, you'll need to adjust the permissions.
+4. **Docker daemon not started**: The Docker daemon might not be running or not listening on the default socket. Try starting the Docker daemon using `docker daemon --listen-address=unix:///var/run/docker.sock &` (note the ampersand at the end).
+5. **Container runtime issues**: If you're using a container runtime like runc, cri-o, or other alternative runtimes, it might be causing permission issues. Try switching to the default CRI-O runtime by setting `runtime=crio` in your Docker configuration file.
+6. **Group membership**: If you belong to a group that doesn't have the necessary permissions, you may encounter a "permission denied" error. Check your group membership and adjust the permissions accordingly.
+
+To resolve the issue:
+
+1. Run `docker run -it --rm ubuntu /bin/sh` (assuming you're using Ubuntu) to see if Docker is working correctly.
+2. Check the Docker logs for any errors: `docker logs -f`.
+3. Verify that the Docker socket exists and has the correct permissions: `ls /var/run/docker.sock` (on Linux).
+4. Try running the command with elevated privileges using `sudo docker ps`.
+
+If none of these solutions work, you may want to try:
+
+1. Checking the Docker documentation for specific instructions on your operating system.
+2. Reaching out to a Docker community forum or Stack Overflow for further assistance.
+
+Hope this helps!

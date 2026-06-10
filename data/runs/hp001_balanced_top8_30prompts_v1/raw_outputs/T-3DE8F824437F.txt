@@ -1,0 +1,22 @@
+ To parse integers safely (i.e., handle cases where the string may not be an integer) in Python, we can use the `try-except` block along with the built-in `int()` function. Here's a simple example of a function that parses integers from a list of strings:
+
+```python
+def safe_parse_integers(lst):
+    parsed_ints = []
+    for item in lst:
+        try:
+            parsed_ints.append(int(item))
+        except ValueError:
+            print(f"{item} is not a valid integer.")
+    return parsed_ints
+```
+
+You can use the above function as follows:
+
+```python
+numbers = ['123', '456', 'invalid', '789']
+parsed_numbers = safe_parse_integers(numbers)
+print(parsed_numbers)  # Output: [123, 456, ValueError: invalid literal for int() with base 10: invalid]
+```
+
+In this example, the function will parse the first two numbers as integers and return a list containing those values. It will also print an error message for the non-integer input in the list.

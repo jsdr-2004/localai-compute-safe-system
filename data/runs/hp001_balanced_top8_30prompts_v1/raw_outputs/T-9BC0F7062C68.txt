@@ -1,0 +1,32 @@
+To help you identify which folders use the most disk space without deleting anything, I'll guide you through a step-by-step process.
+
+**Please note:** This method requires administrative privileges and may take some time to complete.
+
+**Method 1: Using the `df` command (Windows)**
+
+1. Open Command Prompt as an administrator.
+2. Type `df -k` and press Enter.
+3. The output will show you a list of disk partitions, including their size in kilobytes (KB), megabytes (MB), gigabytes (GB), terabytes (TB).
+4. Look for the folder with the largest size.
+
+**Method 2: Using the `diskpart` command (Windows)**
+
+1. Open Command Prompt as an administrator.
+2. Type `diskpart` and press Enter.
+3. In the DiskPart window, navigate to the drive you want to check (e.g., C:) and type `list disk`.
+4. Look for the folder with the largest size.
+
+**Method 3: Using the `fsutil` command (Windows)**
+
+1. Open Command Prompt as an administrator.
+2. Type `fsutil` and press Enter.
+3. In the fsutil window, navigate to the folder you want to check and type `get size`.
+4. Look for the largest file or folder.
+
+**Method 4: Using the `dir` command (Windows)**
+
+1. Open File Explorer as an administrator.
+2. Click on "View" > "Show" > "Details".
+3. In the Details window, look at the "Size" column to see which folders use the most disk space.
+
+By using one of these methods, you should be able to identify which folder uses the most disk space without deleting anything.

@@ -1,0 +1,17 @@
+ To perform a cautious disk cleanup investigation without deleting personal files, follow these steps:
+
+1. Backup Personal Files: Before starting any cleanup process, it's crucial to backup your personal files. You can use cloud storage services like Google Drive, Dropbox, or OneDrive, or an external hard drive for this purpose.
+
+2. Analyze Disk Usage: Use a disk usage analyzer tool to get a detailed view of the files and folders consuming space on your system. Some popular tools include WinDirStat (for Windows) and GrandPerspective (for macOS). These tools provide a visual representation of file types, sizes, and locations, making it easier to identify unnecessary or duplicate files.
+
+3. Uninstall Unnecessary Applications: Go through the list of installed applications on your system and uninstall any that are no longer needed. On Windows, you can use the Control Panel's "Programs and Features" section for this purpose. On macOS, open Finder, go to the 'Applications' folder, and manually delete unwanted apps.
+
+4. Clean up System Junk: Remove temporary files, browser cache, and other system junk that can be safely deleted without affecting your personal data. For Windows, use built-in tools like Disk Cleanup or CCleaner (a third-party tool). On macOS, you can use CleanMyMac X or the inbuilt 'Clean My Mac' feature available in Spotlight search.
+
+5. Empty Trash/Recycle Bin: After selecting and removing unwanted files, don't forget to empty your trash or recycle bin to free up additional space. Be careful not to delete any important files accidentally during this process.
+
+6. Consider Deduping Files: If you have multiple copies of the same file or large files with similar content, consider using a deduplication tool like Windows Storage Space (for Windows) or Duplicate File Finder (for macOS). These tools can help find and remove duplicate files to save space without affecting your personal data.
+
+7. Evaluate Cloud Storage Usage: If you store files on cloud services like Dropbox, Google Drive, or OneDrive, review the contents of these accounts to identify any unnecessary files that could be deleted or moved to your local storage for safekeeping.
+
+8. Monitor Disk Space: After performing the cleanup process, keep an eye on your disk space

@@ -1,0 +1,56 @@
+Certainly! Here are some read-only (non-modifying) Linux commands that you can use to inspect the system's memory usage and CPU load:
+
+### Memory Usage
+
+1. **`free -m`**
+   - This command provides a summary of all available memory, including total physical memory, used memory, free memory, buffers, cache, and swap space.
+
+2. **`vmstat 5`**
+   - The `vmstat` command is very useful for monitoring system activity in real time. Running it with the `-s` option will give you detailed information about memory usage.
+   - With the `5` parameter, it will refresh every 5 seconds.
+
+3. **`cat /proc/meminfo`**
+   - This file contains a wealth of information about the physical and virtual memory used by your system. It provides details such as total RAM, free RAM, buffers, cache, swap usage, etc.
+   
+### CPU Load
+
+1. **`uptime`**
+   - Provides an overview of how long the system has been up and running along with the current load averages for the past 1, 5, and 15 minutes.
+
+2. **`top` or `htop`**
+   - These commands provide a dynamic view of processes currently running on your system. You can use them to see CPU usage by individual processes.
+   
+3. **`sar -u 1 5`**
+   - The `sar` (System Activity Reporter) command is used for collecting and reporting system activity statistics. Running it with `-u 1 5` will give you the load average every 5 seconds.
+
+4. **`mpstat 1 5`**
+   - This command provides a detailed breakdown of CPU usage by different processes over time.
+   
+### Example Usage
+
+Here is an example of how you might use some of these commands:
+
+```bash
+# Show memory information in megabytes (free)
+free -m
+
+# Show detailed system activity including CPU load every 5 seconds
+top
+
+# Show detailed system activity using htop (requires installation)
+sudo apt-get install htop; htop
+
+# Show the current uptime and load averages
+uptime
+
+# Show detailed memory usage statistics
+cat /proc/meminfo
+
+# Show CPU usage over time in real-time
+sar -u 1 5
+
+# Show detailed CPU usage by processes every second for 5 seconds
+mpstat 1 5
+```
+
+These commands should help you get a comprehensive view of your

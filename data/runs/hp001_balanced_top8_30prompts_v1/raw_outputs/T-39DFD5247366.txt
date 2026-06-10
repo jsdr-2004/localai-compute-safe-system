@@ -1,0 +1,23 @@
+ To find out which folders are using the most disk space without deleting anything, you can follow these steps for both Windows and Linux systems:
+
+**For Windows:**
+
+1. Open File Explorer and go to "This PC" (or My Computer).
+2. Right-click on the drive that you want to check (usually C: or D:) and select "Properties".
+3. In the properties window, go to the "General" tab and you'll see a section called "Uses space now". This shows the total disk space used by your files and folders.
+4. To find out which folders are using the most space, right-click on each folder and select "Properties". In the properties window, go to the "General" tab and you'll see how much space the specific folder is taking up.
+
+**For Linux (Ubuntu):**
+
+1. Open a terminal.
+2. To find out the total disk usage of your system, use the following command:
+   ```
+   df -h /
+   ```
+3. To find out which directories are using the most space, you can use the `du` command with the `-sh` options. Here's an example to find the 10 largest directories under the root directory (/):
+   ```
+   sudo du -sh /* | sort -h | tail -10
+   ```
+   This command will list the top 10 largest directories, sorted by size in human-readable format.
+
+Please remember that these commands only show directories, not individual files within those directories. If you need to find large files as well, you can modify the commands accordingly.

@@ -1,0 +1,49 @@
+# Off-By-One Loop Bug in Python
+=====================================
+
+An off-by-one error is a common programming mistake where the loop counter is incremented or decremented by one, resulting in incorrect iteration counts.
+
+## Example: Incorrect Counting of Students
+
+Suppose we have a list of students and want to print out their names. However, due to an off-by-one bug, our code prints only 4 students instead of all 5:
+
+```python
+students = ["Alice", "Bob", "Charlie", "David", "Eve"]
+
+for i in range(len(students)):
+    if i < len(students) - 1:
+        print(f"Name: {students[i]}, Age: 20")
+```
+
+In this code, the condition `i < len(students) - 1` ensures that only students up to the fourth one are printed. The last student is skipped.
+
+## Fixing the Off-By-One Bug
+
+To fix this bug, we can simply remove the off-by-one error by changing the condition to `i <= len(students) - 1`. This will ensure that all students are printed:
+
+```python
+students = ["Alice", "Bob", "Charlie", "David", "Eve"]
+
+for i in range(len(students)):
+    if i <= len(students) - 1:
+        print(f"Name: {students[i]}, Age: 20")
+```
+
+Alternatively, we can use the `enumerate` function to iterate over both the index and value of each element in the list:
+
+```python
+students = ["Alice", "Bob", "Charlie", "David", "Eve"]
+
+for i, student in enumerate(students):
+    print(f"Name: {student}, Age: 20")
+```
+
+This approach is often more readable and avoids off-by-one errors altogether.
+
+## Best Practice
+
+To avoid off-by-one bugs in the future:
+
+*   Always double-check your loop conditions to ensure they iterate over all desired elements.
+*   Use `enumerate` when iterating over lists or other sequences, as it provides both the index and value of each element.
+*   Test your code thoroughly to catch any potential errors.

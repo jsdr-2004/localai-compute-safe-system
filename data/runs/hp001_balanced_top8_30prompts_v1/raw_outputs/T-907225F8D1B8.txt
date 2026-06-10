@@ -1,0 +1,37 @@
+ To inspect a Systemd service without changing it, you can use the `systemctl` command along with various options to view different aspects of the service. Here's an overview of some common commands for inspecting a Systemd service:
+
+1. List all services:
+   ```
+   systemctl list-unit-files --type=service
+   ```
+
+2. View the status of a specific service (enabled, disabled, or running):
+   ```
+   systemctl isolate targetname.target && systemctl list-units --type=service --state=active
+   ```
+   Replace `targetname` with the name of the target you are interested in, for example, `multi-user.target`, `graphical.target`. This command shows all active services under a specific target.
+
+3. Check the status of a service:
+   ```
+   systemctl status servicename
+   ```
+
+4. Display detailed information about a service:
+   ```
+   systemctl show servicename
+   ```
+
+5. View the contents of a service file:
+   ```
+   cat /etc/systemd/system/servicename.service
+   ```
+   or
+   ```
+   less /usr/lib/systemd/system/servicename.service
+   ```
+   The first command shows you the service file if it's installed in `/etc/systemd/system`, while the second command checks system services installed in `/usr/lib/systemd/system`.
+
+6. View service dependencies:
+   ```
+   systemctl depencency servicename
+   ```

@@ -1,0 +1,9 @@
+To inspect disk usage on a Linux system, you can use the following read-only commands:
+
+1. `df -h`: Displays disk usage information in a human-readable format.
+2. `du -h`: Displays disk usage information in a compact format.
+3. `lsblk`: Lists all block devices (disks) connected to the system.
+4. `fdisk -l`: Lists all partitions on the disks.
+5. `cat /proc/mounts`: Displays information about mounted file systems.
+
+These commands provide a good overview of disk usage, including the total size, used space, and available space for each partition or file system.

@@ -1,0 +1,41 @@
+Certainly! Understanding the concepts of CPU cores and threads is crucial for grasping how modern processors operate.
+
+### CPU Cores
+
+A **CPU core** refers to the fundamental unit within a central processing unit (CPU) that performs arithmetic and logic operations. Each core can execute one instruction at a time, but multiple cores allow a single CPU to perform more than one task simultaneously by executing different instructions concurrently.
+
+- **Single-Core vs Multi-Core**: 
+  - A single-core processor has only one core.
+  - A multi-core processor contains two or more cores within the same package. This allows for parallel processing of tasks, which can significantly improve performance when handling multiple threads at once.
+
+### CPU Threads
+
+A **thread** is a basic unit of execution in an operating system's scheduler. It represents a sequence of instructions that are executed by a CPU. In the context of CPUs, each core typically contains one or more threads (often referred to as hyper-threads).
+
+- **Single-threaded vs Multi-threaded**: 
+  - A single-threaded process can only use one thread at a time.
+  - A multi-threaded process uses multiple threads simultaneously.
+
+### Relationship Between Cores and Threads
+
+In modern processors, the number of cores is often associated with the number of threads. Here are some common scenarios:
+
+- **One-to-One Mapping**: 
+  - In this scenario, each core corresponds to one thread. This is typical for single-threaded applications or when hyper-threading (also known as multi-threading) is not enabled.
+  
+- **Two Threads Per Core**:
+  - Hyper-threading technology allows a single physical core to appear as two logical cores. Each of these "logical" cores can run its own thread, effectively doubling the number of threads per core.
+
+### Example
+
+Consider a CPU with four cores and hyper-threading enabled:
+
+- If hyper-threading is not enabled (one-to-one mapping), you have 4 cores but only 4 threads.
+- If hyper-threading is enabled, each core appears as two logical cores. Therefore, the total number of threads would be \(4 \text{ cores} \times 2 = 8\) threads.
+
+### Summary
+
+- **CPU Cores**: The fundamental units that perform operations in parallel.
+- **CPU Threads**: Logical execution units within a CPU core. In modern processors, each core often contains multiple threads (hyper-threading).
+
+Understanding these concepts helps in choosing the right hardware for specific workloads and optimizing performance.

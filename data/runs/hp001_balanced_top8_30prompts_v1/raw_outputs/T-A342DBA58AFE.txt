@@ -1,0 +1,18 @@
+ To plan a cautious disk cleanup investigation without deleting personal files, follow these steps:
+
+1. Backup important data: Before starting any cleaning process, make sure to backup all your essential files and data using an external drive or cloud storage service like Google Drive, Dropbox, or OneDrive. This step ensures that you don't lose any important data during the disk cleanup process.
+
+2. Analyze disk usage: Use a disk analyzer tool (such as WinDirStat for Windows, OmniDiskSweeper for macOS) to analyze your hard drive and identify large files and folders taking up space. These tools can help you visualize disk usage, making it easier to locate unnecessary files and temporary data.
+
+3. Temporary files cleanup: Delete temporary files securely using CCleaner or similar tools. These programs can safely remove junk files, cache data, browsing history, cookies, and other temporary files without affecting your personal data.
+
+4. Uninstall unnecessary programs: Go through the list of installed programs on your computer and uninstall any software that you no longer need or use. This step frees up disk space and potentially improves system performance. Be cautious while uninstalling, as some programs may have hidden components that can leave traces on your hard drive.
+
+5. Disable system Restore Points: Disabling System Restore points (in Windows) can help free up significant amounts of storage space. However, be aware that disabling this feature will prevent you from creating new restore points in the future, which may impact system recovery options in case of software or operating system issues.
+
+6. Remove duplicate files: Search for and remove duplicate files using dedicated tools like Duplicate Cleaner (Windows) or Gemini 2 (macOS). These tools can scan your hard drive for duplicate images, videos, documents, and other file types, allowing you to safely delete unnecessary copies without affecting the originals.
+
+7. Empty the Recycle Bin: After ensuring that you've backed up all important data, emptying the Recycle Bin (in Windows) or the Trash (on macOS) will permanently delete files that have been deleted but are still stored in these temporary folders.
+
+8. Clean up email accounts: Check your email accounts for large attachments, old emails, and unnecessary newsletters or notifications, then archive, delete, or unsubscribe as necessary to save space.
+

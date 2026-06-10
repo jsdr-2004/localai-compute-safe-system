@@ -1,0 +1,24 @@
+When choosing between a 3 billion parameter (3B) and a 13 billion parameter (13B) language model for a CPU-only laptop with only 16GB of RAM, it's important to consider both the computational requirements and the available resources.
+
+### 3 Billion Parameter Model:
+- **Pros:**
+  - Smaller size means less memory usage.
+  - Faster training times as there are fewer parameters to train.
+  - Potentially faster inference speeds due to reduced complexity.
+  
+- **Cons:**
+  - Less complex model, which may not capture the nuances of language as well as a larger model might.
+
+### 13 Billion Parameter Model:
+- **Pros:**
+  - More complex and potentially more nuanced understanding of language.
+  - Better at capturing context and long-range dependencies in text.
+  
+- **Cons:**
+  - Larger size means higher memory usage, which is a significant issue on a CPU-only laptop with only 16GB of RAM. This model might not fit into the available memory even when using techniques like gradient checkpointing or pruning.
+
+### Decision:
+Given that you have a CPU-only laptop with only 16GB of RAM, it would be impractical to run a 13B parameter model due to its high memory requirements. The 3B parameter model is more feasible and will likely fit comfortably within the available memory, allowing for both training and inference.
+
+### Recommendation:
+**Choose the 3 Billion Parameter Model:** This model should be well-suited for your CPU-only laptop with only 16GB of RAM. It strikes a balance between having enough complexity to capture meaningful patterns in language while not requiring excessive amounts of memory.

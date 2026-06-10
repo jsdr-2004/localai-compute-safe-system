@@ -1,0 +1,46 @@
+To check the system uptime, I'll guide you through a few methods. Please note that these methods may not work for all systems, especially if they're running on cloud services or have specific monitoring tools.
+
+**Method 1: Using the System's Built-in Monitoring Tools (if available)**
+
+Most modern operating systems come with built-in monitoring tools that can help you check system uptime. Here are a few examples:
+
+* Windows: You can use the Task Manager (Ctrl + Shift + Esc) to check the system's status and uptime.
+* macOS: You can use the Activity Monitor (Command + Option + U) to check the system's performance and uptime.
+* Linux: You can use the `uptime` command or a third-party monitoring tool like Prometheus, Grafana, or New Relic.
+
+**Method 2: Using a Third-Party Monitoring Tool**
+
+You can also use a third-party monitoring tool to check system uptime. Some popular options include:
+
+* Datadog
+* New Relic
+* Prometheus
+* Grafana
+
+These tools typically provide detailed information about your system's performance, including uptime, latency, and resource utilization.
+
+**Method 3: Using Online Uptime Tools**
+
+There are also online uptime tools that can help you check system uptime. Some popular options include:
+
+* Uptime.io
+* Pingdom
+* WebPageTest
+
+These tools typically provide a simple interface to check your website's or application's uptime over time.
+
+Now, let's assume we're using the Task Manager (Windows) method to check system uptime.
+
+**Checking System Uptime with Task Manager**
+
+To check system uptime using Task Manager:
+
+1. Press Ctrl + Shift + Esc to open the Task Manager.
+2. In the Performance tab, click on "System" in the left-hand menu.
+3. Under "Load Average", you should see two numbers: the first number represents the average time your CPU has been idle since the last boot (in milliseconds), and the second number represents the average time your memory has been idle since the last boot (in milliseconds).
+4. A system that's up and running will typically have both load averages below 1ms.
+5. If you're concerned about your system's uptime, you can also check for any errors or warnings in the "Performance" tab.
+
+Keep in mind that these methods may not provide a comprehensive picture of your system's health, but they can give you an idea of whether your system is running smoothly and efficiently.
+
+What type of system are you using? I'd be happy

@@ -1,0 +1,3 @@
+Here's an explanation of RAM for a beginner:
+
+RAM, or Random Access Memory, is a type of computer storage that temporarily holds data and applications while your computer is running. Think of it like a workspace where you can quickly access and work on files, programs, and tasks without having to constantly retrieve them from the hard drive. The more RAM your computer has, the more files and programs you can have open at the same time without slowing down. When your computer runs out of RAM, it starts using slower storage like the hard drive, which can slow things down significantly.

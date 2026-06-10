@@ -1,0 +1,28 @@
+To check the system uptime, I'll guide you through a simple process using various tools. Please note that this will require administrative access to your server or computer.
+
+**Method 1: Using the System Monitor (Windows)**
+
+1. Press the Windows key + R to open the Run dialog box.
+2. Type "systemmonitor" and press Enter.
+3. In the System Monitor window, click on the "Uptime" tab.
+4. The uptime is displayed as a percentage of time since the system started.
+
+**Method 2: Using the Task Manager (Windows)**
+
+1. Press Ctrl + Shift + Esc to open the Task Manager.
+2. Click on the "Performance" tab.
+3. Look for the "System" section, which displays information about the system's uptime.
+
+**Method 3: Using the Command Line (Linux/Mac)**
+
+1. Open a terminal or command prompt.
+2. Type `uptime` and press Enter to display the current uptime.
+
+The result will show you the time since your system started, usually in seconds or minutes. A higher value indicates that your system has been up for longer.
+
+For example:
+
+* If your system is up for 10 hours, it would have been running continuously since 12:00 AM (midnight) of the previous day.
+* If your system is up for 1 hour, it would have been running continuously since 11:59 PM (midnight) of the previous day.
+
+Keep in mind that this method may not provide exact timing, as the uptime can be affected by various factors such as disk I/O, network connectivity, and system load.

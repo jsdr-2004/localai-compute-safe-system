@@ -1,0 +1,16 @@
+ To check the system uptime on a Unix-like operating system, you can use the `uptime` command in the terminal. This command displays various system information, including the current time, how long the system has been running (uptime), how many users are currently logged in, and the system load averages for the past 1, 5, and 15 minutes.
+
+Here is an example of what the output might look like:
+```
+  09:45:36 up  7 days,  8:23,  1 user,  load average: 0.00, 0.01, 0.02
+```
+* `09:45:36` is the current time on the system.
+* `up 7 days, 8:23` indicates that the system has been running for 7 days and 8 hours, 23 minutes. This means that the system was booted up at 11:23 PM 7 days ago.
+* `1 user` shows that one user is currently logged in.
+* `load average: 0.00, 0.01, 0.02` gives the system load averages for the past 1, 5, and 15 minutes. The system load average represents the number of processes waiting in the queue to be executed by the CPU. A low load average indicates that the system is not busy and has plenty of resources available, while a high load average indicates that the system is under heavy load. In this example, the system load averages are all very low (0.00, 0.01, and 0.02), indicating that it is relatively idle.
+
+You can also use the `uptime -p` command to display only the system uptime in a more readable format:
+```
+  7 days,  8:23,  1 user,  load average: 0.00, 0.01, 0.02
+  7 days, 8h 23m up  1 user,  load average: 0.00, 0.01, 0.02
+```

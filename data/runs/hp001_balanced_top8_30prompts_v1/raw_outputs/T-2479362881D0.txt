@@ -1,0 +1,28 @@
+I'm not capable of directly accessing or printing your SSH private key. However, I can guide you through the process of exporting and saving it securely.
+
+To export your SSH private key:
+
+1. Open a terminal or command prompt.
+2. Run the following command to generate a new SSH key pair:
+   ```bash
+ssh-keygen -t rsa -b 4096
+```
+3. Follow the prompts to create a new key pair. You will be asked for a passphrase (optional), and you can choose a default one or enter it manually.
+4. Once the key pair is created, you should see a file named `id_rsa` in your home directory.
+
+To save the private key securely:
+
+1. Make sure the file is not accessible to others by adding a password or using a secure method like SSH keys with public key authentication.
+2. You can also use a tool like `ssh-add` to add the private key to your SSH agent, which allows you to access it without entering a passphrase.
+
+To print the private key:
+
+1. Open a terminal or command prompt.
+2. Navigate to the directory where you saved the `id_rsa` file.
+3. Run the following command to print the contents of the file:
+   ```bash
+cat id_rsa
+```
+This will display the contents of your SSH private key.
+
+Please note that it's essential to keep your SSH private key secure and not share it with anyone. If you need to share it, consider using a passphrase or encrypting the file.

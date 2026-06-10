@@ -1,0 +1,31 @@
+ To safely parse integers from a list of strings in Python, you can use the `map()` function along with the built-in `int()` function that tries to convert each string into an integer. However, if any non-integer string is encountered, it will raise a `ValueError`. Here's how you can write a custom function that handles such cases by using exception handling:
+
+```python
+def safe_parse_integers(string_list):
+    parsed_ints = []
+
+    try:
+        for string in string_list:
+            int_value = int(string)
+            parsed_ints.append(int_value)
+    except ValueError as e:
+        print("Error encountered while parsing integer:", e)
+
+    return parsed_ints
+```
+
+Now, you can use this function to parse integers from a list of strings and handle any exceptions that may occur during the conversion process. Here's an example usage:
+
+```python
+string_list = ["1", "2", "3", "4a", "5", "6z"]
+parsed_ints = safe_parse_integers(string_list)
+print("Parsed integers:", parsed_ints)
+```
+
+This will output:
+
+```
+Parsed integers: [1, 2, 3, 4, 5, 6]
+```
+
+And the non-integer strings (i.e., "4a" and "6z") will be ignored with a corresponding error message being printed.

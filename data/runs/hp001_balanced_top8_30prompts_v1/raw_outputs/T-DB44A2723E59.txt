@@ -1,0 +1,27 @@
+Here's a comparison of the two configurations:
+
+**Configuration 1: 30 tokens/sec at 8GB RAM**
+
+* Number of tokens processed per second: 30
+* Memory (RAM) capacity: 8 GB
+* Total memory available: 8 GB
+* CPU usage:
+	+ Operating System: Minimal ( likely a lightweight OS)
+	+ Application: Possibly a simple, resource-intensive application that doesn't require a lot of CPU resources
+
+**Configuration 2: 15 tokens/sec at 6GB RAM**
+
+* Number of tokens processed per second: 15
+* Memory (RAM) capacity: 6 GB
+* Total memory available: 6 GB
+* CPU usage:
+	+ Operating System: Moderate ( likely a standard OS)
+	+ Application: A moderately resource-intensive application that requires more CPU resources than Configuration 1
+
+Key differences:
+
+* **CPU usage**: Configuration 2 has higher CPU usage due to the increased number of tokens processed per second and lower memory capacity.
+* **Memory availability**: Both configurations have limited memory available, but Configuration 2's 6 GB is significantly less than Configuration 1's 8 GB.
+* **Operating System impact**: The operating system used in each configuration will also affect CPU usage. A lightweight OS like Linux or a minimal OS may not require as much CPU resources as a standard OS like Windows.
+
+In general, Configuration 1 is suitable for applications that don't require high CPU resources and can tolerate some memory constraints. Configuration 2 is better suited for applications that need more CPU power and memory to run efficiently.

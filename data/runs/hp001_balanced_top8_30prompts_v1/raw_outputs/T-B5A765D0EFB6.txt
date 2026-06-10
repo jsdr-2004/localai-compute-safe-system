@@ -1,0 +1,53 @@
+Here are some example pytest tests for a function that reverses a string:
+
+```python
+import pytest
+from my_module import reverse_string
+
+def test_reverse_empty_string():
+    # Test with an empty string
+    assert reverse_string("") == ""
+
+def test_reverse_single_character():
+    # Test with a single character
+    assert reverse_string("a") == "a"
+
+def test_reverse_multiple_characters():
+    # Test with multiple characters
+    assert reverse_string("hello") == "olleh"
+
+def test_reverse_long_string():
+    # Test with a long string
+    assert reverse_string("abcdefghijklmnopqrstuvwxyz") == "zyxwvutsrqponmlkjihgfedcba"
+
+def test_reverse_case_insensitive():
+    # Test case-insensitive reversal (e.g. "Hello" becomes "olleH")
+    assert reverse_string("hello") == "olleh"
+
+def test_reverse_empty_string_with_punctuation():
+    # Test with an empty string containing punctuation
+    assert reverse_string("a!b") == "!ab"
+
+def test_reverse_long_string_with_punctuation():
+    # Test with a long string containing punctuation
+    assert reverse_string("abcdefghijklmnopqrstuvwxyz!@#$%^&*()_+-={}:<>?,./;[]\\|~`") == "zyxwvutsrqponmlkjihgfedcba!@#$%^&*()_+-={}:<>?,./;[]\\|~`"
+
+def test_reverse_empty_string_with_whitespace():
+    # Test with an empty string containing whitespace
+    assert reverse_string("   a  ") == "a  "
+
+def test_reverse_long_string_with_whitespace():
+    # Test with a long string containing whitespace
+    assert reverse_string("abcdefghijklmnopqrstuvwxyz   ") == "zyxwvutsrqponmlkjihgfedcba   "
+```
+
+These tests cover various scenarios, including:
+
+* Empty strings
+* Single characters
+* Multiple characters
+* Long strings
+* Case-insensitive reversal
+* Strings with punctuation and whitespace
+
+Note that these tests assume the `reverse_string` function is defined in a module named `my_module`. You may need to adjust the import statement if your function is defined elsewhere.

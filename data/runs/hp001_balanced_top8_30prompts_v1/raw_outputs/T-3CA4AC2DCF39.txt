@@ -1,0 +1,43 @@
+You can verify if Docker is installed on your system by following these steps:
+
+**Method 1: Using the Command Line**
+
+Open a terminal or command prompt and type the following commands:
+```bash
+docker --version
+docker run -it --rm hello-world
+```
+If Docker is installed, you should see output similar to this:
+```
+Docker version 20.10.7, build 0d108ace
+Hello World!
+```
+The first command (`docker --version`) checks if the Docker executable is present on your system.
+
+The second command (`docker run -it --rm hello-world`) attempts to start a new container from the official `hello-world` image. If Docker is installed correctly, you should see the "Hello World!" message printed in the terminal.
+
+**Method 2: Using the System Menu**
+
+On some Linux distributions (e.g., Ubuntu, Debian), you can also check if Docker is installed by searching for it in your system menu:
+
+1. Open the Dash or System menu.
+2. Search for "Docker" or "docker".
+3. If Docker is installed, you should see an entry related to the Docker installation.
+
+**Method 3: Checking the Docker Installation Status**
+
+You can also use a script like this to check if Docker is installed on your system:
+```bash
+#!/bin/bash
+
+if [ -x "$(command -v docker)" ]; then
+  echo "Docker is installed and running."
+else
+  echo "Docker is not installed or not running."
+fi
+```
+Save this script as a file (e.g., `docker_status.sh`) and run it using the following command:
+```bash
+./docker_status.sh
+```
+This will output "Docker is installed and running." if Docker is present, or "Docker is not installed or not running." otherwise.

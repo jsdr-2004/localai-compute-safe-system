@@ -1,0 +1,33 @@
+To verify if Docker is installed on your system, you can follow these steps for different operating systems:
+
+### For Windows:
+1. Open the Command Prompt or PowerShell.
+2. Type `docker --version` and press Enter.
+
+If Docker is installed correctly, it should return information about the version of Docker that's installed.
+
+### For macOS (using Homebrew):
+1. Open Terminal.
+2. Type `docker --version` and press Enter.
+
+This command will show you the version of Docker installed on your system.
+
+### For Linux:
+1. Open a terminal.
+2. Type `docker --version` and press Enter.
+
+If Docker is correctly installed, it should display the version information.
+
+### Additional Steps for Windows and macOS Users (if not working):
+- Ensure that Docker Desktop is running if you are using Docker Desktop on Windows or macOS.
+- Check your PATH environment variable to ensure Docker commands can be found. You might need to add Docker's bin directory to your system's PATH.
+
+If Docker is installed but the `docker --version` command doesn't work, it could mean that Docker isn't properly configured in your system environment variables. In this case, you may need to restart your terminal or computer and try again.
+
+### For Linux Users (if not working):
+- Ensure Docker is running as a service if you are using Docker Compose.
+- Check the status of Docker with `sudo systemctl status docker` or `sudo service docker status`.
+
+If Docker isn't running, start it by running `sudo systemctl start docker` or `sudo service docker start`, and then try to verify again.
+
+By following these steps, you should be able to determine whether Docker is installed on your system.

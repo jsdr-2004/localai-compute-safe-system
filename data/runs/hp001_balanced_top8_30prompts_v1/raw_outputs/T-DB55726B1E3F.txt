@@ -1,0 +1,21 @@
+ Here is a Python function that uses the `map()` function to parse integers from a list of strings, while also handling exceptions to ensure safety:
+
+```python
+def safe_parse_int(lst):
+    def safe_to_int(s):
+        try:
+            return int(s)
+        except ValueError:
+            return None
+
+    return list(map(safe_to_int, lst))
+
+# Example usage:
+numbers = ["1", "2", "3", "a", "5", "6"]
+parsed_numbers = safe_parse_int(numbers)
+print(parsed_numbers)  # Output: [1, 2, 3, None, 5, 6]
+```
+
+In this example, the function `safe_parse_int()` takes a list of strings as input. It defines an inner helper function `safe_to_int()` that tries to convert each string to an integer using the built-in `int()` function. If the conversion is successful, it returns the converted integer; otherwise, it returns `None`.
+
+The main function then uses the `map()` function to apply this helper function to each element of the input list and converts the result into a list. The resulting list contains integers for valid strings and `None` for invalid ones.

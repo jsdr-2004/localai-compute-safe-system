@@ -1,0 +1,28 @@
+ To find out which folders are using the most disk space on your system without deleting anything, you can use command-line tools or graphical interfaces depending on your operating system. Here's how to do it in different OS:
+
+1. Linux (Ubuntu)
+You can use the `du` command with the `--max-depth=1` and `--sort=-total` options to list the folders sorted by their size from largest to smallest.
+
+```sh
+sudo du -sh * | sort -h
+```
+
+Or, if you want to find out the disk usage of all subfolders recursively:
+
+```sh
+sudo du -sh /path/to/directory/* | sort -h
+```
+
+2. Windows (PowerShell)
+You can use the `Get-ChildItem` cmdlet with the `-Recurse`, `-Directory` and `-File` switches to get a directory tree along with their sizes. After that, you can pipe it to `Sort-Object Length` to sort by size.
+
+```powershell
+gci -r -directory -file | Sort-Object Length -Descending
+```
+
+3. macOS (Terminal)
+You can use the `find` command with the `-type d`, `-ls` and `-printf` options to list folders along with their sizes, then pipe it to `sort -nrk 1` to sort by size in descending order.
+
+```sh
+find /path/to/directory -type d -ls | grep "^d" | awk '{ print $5+" "+$9 }' | sort -nrk 1
+```

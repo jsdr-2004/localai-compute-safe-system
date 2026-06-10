@@ -1,0 +1,37 @@
+To check system uptime, I'll provide you with a simple command to test it using various tools.
+
+**Method 1: Using the System Uptime Command (Linux/Unix)**
+
+You can use the `uptime` command on Unix-like systems to get an estimate of your system's uptime. The output will show the time elapsed since boot and some additional information.
+
+```bash
+uptime
+```
+
+This command displays several values, including:
+
+* `systemdom` or `system_uptime`: total time in seconds since boot (in this case)
+* `boottime`: boot time in seconds since system startup
+* `uptime -w`: same as above but with a warning about the difference between uptime and system uptime
+
+**Method 2: Using the System Uptime Tool (Windows)**
+
+If you're using Windows, you can use the built-in `WScriptShell` module to get an idea of your system's uptime.
+
+```bash
+wmic computerSystem get uptime
+```
+
+This command displays information about your system's boot time and available disk space.
+
+**Method 3: Using a Third-Party Tool (Online)**
+
+You can also use online tools like Uptime Checker or System Monitor to check your system's uptime. These tools often provide more detailed information, including the estimated uptime in days/weeks/months.
+
+For example, using Uptime Checker:
+
+```
+https://uptimechecker.com/
+```
+
+Just enter your hostname or IP address, and you'll get an estimate of your system's uptime based on data from the past 24 hours.

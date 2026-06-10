@@ -1,0 +1,23 @@
+ To find out which folders are using the most disk space on your system without deleting anything, you can follow these steps:
+
+1. Open File Explorer by pressing Windows key + E.
+
+2. Navigate to This PC or My Computer (depending on your Windows version).
+
+3. Right-click on the drive that you want to analyze and select Properties.
+
+4. On the General tab, under Disk usage, you will see a pie chart showing the space distribution among different types of files such as documents, videos, music, etc. However, this does not provide a detailed breakdown by folder.
+
+5. To get a more detailed report, switch to the "Disk Cleanup" tab and click on "Clean up system files." Disk Cleanup will scan your drive for unnecessary files like temporary internet files, system error memory dump files, etc., but it's not designed to show you disk space usage by folders.
+
+6. To see a list of folders and their sizes, you can use third-party tools like WinDirStat or TreeSize. Both are free, open-source programs that provide detailed visualization of your hard drive's directory structure and disk usage statistics. Here's how to install and use each one:
+
+   a) WinDirStat:
+      - Download the latest version from https://windirstat.info/en/download.html.
+      - Run the installer, and follow the on-screen instructions to complete the installation.
+      - After installation, run WinDirStat, select the drive you want to analyze, and wait for it to scan and generate the visualization of your hard drive usage. You will see a treemap showing folders' sizes with the largest ones at the bottom. Hover over each folder to view its size and path.
+
+   b) TreeSize:
+      - Download the latest version from https://www.jam-software.com/treesize_free.html.
+      - Run the installer, and follow the on-screen instructions to complete the installation.
+      - After installation, run TreeSize, select the drive you want to analyze, and wait for it to scan and generate the visualization of your hard drive usage. You will see a tree view with folder sizes next to each folder. Clicking on a folder will display its subfolders' sizes.

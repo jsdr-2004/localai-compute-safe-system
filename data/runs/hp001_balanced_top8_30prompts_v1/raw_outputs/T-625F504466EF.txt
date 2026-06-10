@@ -1,0 +1,35 @@
+ To verify if Docker is installed on your system, you can use the following methods:
+
+1. **Command Line (Linux/macOS):**
+   Open a terminal and type the following command:
+
+   ```
+   docker --version
+   ```
+
+   If Docker is installed correctly, it will display the Docker version details like so:
+
+   ```
+   Docker version 19.03.1, build 6861ce4, git commit 69fc7b3
+   ```
+
+2. **Windows Command Prompt:**
+   Open Command Prompt and type:
+
+   ```
+   docker --version
+   ```
+   or
+   ```
+   docker-machine version
+   ```
+   If Docker is installed, it will display the Docker version similar to the following output:
+
+   ```
+   Version 18.09.1, build 6254189
+   ```
+
+3. **Graphical User Interface (GUI):**
+   If you have a graphical interface for Docker installed (like Docker Desktop for Windows/Mac), you can check the version by going to the Preferences or About section in the application settings.
+
+If Docker is not installed, you may need to install it using the official Docker documentation for your specific platform: https://docs.docker.com/get-docker/

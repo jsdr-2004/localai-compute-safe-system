@@ -1,0 +1,44 @@
+To check system uptime, you can use various commands depending on your operating system. Here are some examples:
+
+**For Linux systems:**
+
+1. **`uptime` command:** This command displays the system's uptime in hours, minutes, and seconds.
+
+Example:
+```
+$ uptime
+ 22:34:12 up 3 days, 12:30,  0 of 25 users, load average: 0.00, 0.00, 0.00
+```
+
+In this example:
+
+* `22:34:12` is the current time.
+* `up 3 days, 12:30` indicates that the system has been running for 3 days and 12 hours.
+* `0 of 25 users` shows that there are currently no active users on the system.
+* `load average: 0.00, 0.00, 0.00` displays the system's load average, which is zero in this case.
+
+2. **`sysctl` command:** This command allows you to view kernel statistics, including uptime.
+
+Example:
+```
+$ sysctl -a | grep uptime
+net.ipv4.tcp_max_tw_buckets=200000
+net.ipv4.tcp_max_syn_backlog=1024
+net.ipv4.tcp_max_tw_reuse=1000
+net.ipv4.tcp_max_tw_reuse_port=1000
+net.ipv4.tcp_max_tw_reuse_sport=1000
+net.ipv4.tcp_max_tw_reuse_local=1000
+net.ipv4.tcp_max_tw_reuse_local_port=1000
+net.ipv4.tcp_max_syn_backlog_per_cpu=1024
+net.ipv4.tcp_max_tw_buckets_per_cpu=200000
+net.ipv4.tcp_max_tw_reuse_per_cpu=1000
+net.ipv4.tcp_max_tw_reuse_port_per_cpu=1000
+net.ipv4.tcp_max_tw_reuse_sport_per_cpu=1000
+net.ipv4.tcp_max_tw_reuse_local_per_cpu=1000
+net.ipv4.tcp_max_tw_reuse_local_port_per_cpu=1000
+net.ipv4.tcp_max_syn_backlog_per_cpu=1024
+net.ipv4.tcp_max_tw_buckets_per_cpu=200000
+net.ipv4.tcp_max_tw_reuse_per_cpu=1000
+net.ipv4.tcp_max_tw_reuse_port_per_cpu=1000
+net.ipv4.tcp_max_tw_reuse_sport_per_cpu=1000
+net.ipv4.tcp_max_tw_reuse_local_per_cpu=1000

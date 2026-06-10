@@ -1,0 +1,25 @@
+The command `df -h` is used to display disk space usage in a human-readable format (e.g., gigabytes or megabytes instead of bytes). It provides information about the available disk space on file systems mounted at various points in the filesystem hierarchy.
+
+### What Does df -h Do?
+
+- **df**: This stands for "disk free" and is a command used to display how much disk space is being used.
+- **-h**: This option tells `df` to use human-readable format. It converts numbers into more readable formats like kilobytes, megabytes, gigabytes, etc., rather than just showing the raw number of bytes.
+
+When you run `df -h`, it will show something similar to this:
+
+```
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.0G     0   2.0G   0% /dev
+tmpfs           798M   13M  786M   2% /run
+...
+```
+
+Here, you can see the total size of each file system (e.g., `/dev`, `/run`), how much space is used (`Used`), and how much space is available (`Avail`). The `Use%` column shows the percentage of disk space that has been used.
+
+### Does df -h Change the System?
+
+Running the `df -h` command itself does not change any system settings or files. It simply provides information about the current state of your file systems and their usage. 
+
+However, if you use the output of `df -h` to make decisions that affect how disk space is managed (e.g., by running commands like `sudo df -h | grep '/$' && sudo du -sh */ | sort -rh | head -n 10 > /tmp/top-10-largest-directories.txt`, which lists the top 10 largest directories on your system), then you are indirectly changing how disk space is managed.
+
+In summary, running `df -h` does not change the system; it only provides information about the current state of the file systems. Using its output to make decisions that affect disk usage can be considered a form of "changing" the system in terms of managing resources and optimizing storage.

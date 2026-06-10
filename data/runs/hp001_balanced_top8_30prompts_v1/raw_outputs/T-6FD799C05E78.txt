@@ -1,0 +1,34 @@
+In modern computers, both CPU cores and threads are used to achieve high performance and efficiency. While they seem similar at first glance, there are key differences between them.
+
+**CPU Cores**
+
+A CPU core is a single processing unit that executes instructions from a program. It's the basic building block of a processor, and each core is responsible for executing one instruction at a time. Think of it like a single worker in a factory, where each worker can perform one task at a time.
+
+**Threads**
+
+A thread is a sequence of instructions that are executed concurrently by multiple CPU cores. It's essentially a group of instructions that are executed simultaneously, thanks to the multi-core architecture of modern CPUs. Threads share the same memory space and resources, allowing them to run independently of each other.
+
+The key differences between CPU cores and threads are:
+
+* **Concurrency**: Threading allows for concurrent execution of tasks, while only one core can execute an instruction at a time.
+* **Parallelism**: Threads enable parallel processing, where multiple tasks can be executed simultaneously, leading to improved performance in computationally intensive tasks.
+* **Shared Memory**: All threads share the same memory space, which is not the case with CPU cores.
+
+**Example**
+
+Consider a web browser that loads multiple tabs concurrently. Each tab is a separate thread, and each core of the CPU handles one thread at a time. This approach can lead to significant performance improvements, especially for tasks that are computationally intensive but don't require synchronization between threads.
+
+On the other hand, if you were to load all tabs into memory at once (i.e., use shared memory), it would be much more expensive in terms of memory bandwidth and cache usage. In this case, using multiple CPU cores can still provide significant performance improvements by executing tasks concurrently.
+
+**When to Use Each**
+
+* **CPU Cores**: Use when you need individual processing units for each instruction, such as:
+	+ Scientific simulations
+	+ Cryptocurrency mining
+	+ Video rendering (e.g., games)
+* **Threads**: Use when you need to execute multiple tasks concurrently, such as:
+	+ Web browsing
+	+ Office applications (e.g., word processing)
+	+ Data analysis
+
+In summary, CPU cores are individual processing units that execute instructions one at a time, while threads allow for concurrent execution of tasks and enable parallelism. Understanding the differences between these two concepts will help you optimize your software for performance on modern computing hardware.

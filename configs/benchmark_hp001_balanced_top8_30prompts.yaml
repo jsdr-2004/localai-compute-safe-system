@@ -1,0 +1,25 @@
+run_id: hp001_balanced_top8_30prompts_v1
+hardware_profile_id: HP-001
+hardware_profile_path: data/hardware_profiles/HP-001.json
+runtime: ollama
+prompts_file: ../data/prompts/expanded_30_prompt_suite.json
+configurations:
+  - {model_name: "llama3.2:1b", model_size: "1B", quantization: default, context_length: 2048, temperature: 0.7, top_p: 0.95, threads: 4}
+  - {model_name: "llama3.2:1b", model_size: "1B", quantization: default, context_length: 1024, temperature: 0.2, top_p: 0.8, threads: 4}
+  - {model_name: "llama3.2:3b", model_size: "3B", quantization: default, context_length: 2048, temperature: 0.2, top_p: 0.8, threads: 4}
+  - {model_name: "llama3.2:3b", model_size: "3B", quantization: default, context_length: 2048, temperature: 0.7, top_p: 0.8, threads: 4}
+  - {model_name: "qwen2.5:3b", model_size: "3B", quantization: default, context_length: 2048, temperature: 0.2, top_p: 0.8, threads: 4}
+  - {model_name: "qwen2.5:3b", model_size: "3B", quantization: default, context_length: 2048, temperature: 0.2, top_p: 0.95, threads: 4}
+  - {model_name: "mistral:7b", model_size: "7B", quantization: default, context_length: 2048, temperature: 0.7, top_p: 0.95, threads: 4}
+  - {model_name: "mistral:7b", model_size: "7B", quantization: default, context_length: 1024, temperature: 0.7, top_p: 0.95, threads: 4}
+repeat_each_test: 3
+warmup_runs: 1
+cooldown_seconds_between_tests: 1
+max_output_tokens: 512
+per_test_timeout_seconds: 300
+save_raw_outputs: true
+save_environment_metadata: true
+resume: true
+output_csv: data/results/hp001_balanced_top8_30prompts_v1.csv
+output_jsonl: data/results/hp001_balanced_top8_30prompts_v1.jsonl
+raw_output_dir: data/raw_outputs/hp001_balanced_top8_30prompts_v1

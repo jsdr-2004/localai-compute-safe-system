@@ -1,0 +1,7 @@
+ 1. Random Access Memory (RAM) is a type of computer memory that temporarily stores data and instructions that the processor needs to access quickly during active usage.
+
+2. Unlike other storage devices such as hard drives, RAM can be read from and written to in any order, making it "random-access."
+
+3. When your computer is turned on, it loads essential programs and data into RAM for faster processing, improving the overall system performance.
+
+4. Once you turn off the computer or switch applications, the contents of RAM are usually lost, emphasizing its temporary nature compared to long-term storage solutions like hard drives.

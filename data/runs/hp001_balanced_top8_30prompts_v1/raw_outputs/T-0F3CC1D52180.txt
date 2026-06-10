@@ -1,0 +1,51 @@
+Off-by-one loops are a common mistake in programming where the code assumes that a certain value is at a specific index, but it's actually one position before or after that index.
+
+Here's an example of an off-by-one loop:
+
+```python
+def sum_of_squares(n):
+    total = 0
+    for i in range(n):
+        if i == n - 1:
+            # Off-by-one error: assuming the last element is at index n-1
+            total += (n ** 2)
+        else:
+            # Corrected code: using n instead of n-1
+            total += i ** 2
+
+    return total
+```
+
+In this example, the off-by-one loop will incorrectly calculate the sum of squares for a given number `n`. The correct calculation should be:
+
+```python
+def sum_of_squares(n):
+    total = 0
+    for i in range(n):
+        if i == n - 1:
+            # Corrected code: using n instead of n-1
+            total += (n ** 2)
+        else:
+            # Off-by-one error: assuming the last element is at index n-1
+            total += i ** 2
+
+    return total
+```
+
+To fix this bug, we simply need to replace `n - 1` with `n`. Here's the corrected code:
+
+```python
+def sum_of_squares(n):
+    total = 0
+    for i in range(n):
+        if i == n - 1:
+            # Corrected code: using n instead of n-1
+            total += (n ** 2)
+        else:
+            # Off-by-one error: assuming the last element is at index n-1
+            total += i ** 2
+
+    return total
+```
+
+With this correction, the function will correctly calculate the sum of squares for any given number `n`.

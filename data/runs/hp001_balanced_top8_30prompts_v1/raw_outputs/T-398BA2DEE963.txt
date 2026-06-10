@@ -1,0 +1,19 @@
+ Here is a checklist for debugging a Python process that is using too much memory:
+
+1. **Profiling**: Use Python's built-in profiling tools like `cProfile` or third-party libraries like `line_profiler` to identify the functions or lines of code that are consuming the most resources.
+
+2. **Memory Leaks**: Check for potential memory leaks in your code. This could be due to global variables, cyclic garbage collection, or unintended reference cycles. Use a memory profiler like `objgraph` or `memory_profiler` to help identify these issues.
+
+3. **Data Structures**: Analyze the data structures you are using. For large datasets, consider using more efficient data structures like pandas DataFrames instead of lists when possible. Also, be aware that dictionaries in Python have a higher memory footprint compared to arrays or lists.
+
+4. **Recursion**: If your code involves heavy recursion, it can consume a lot of memory. Consider using iterative solutions where possible.
+
+5. **Caching**: Be mindful of caching strategies. While caching can improve performance, it can also lead to increased memory usage if not managed properly. Use weak references or LRU (Least Recently Used) cache strategies when appropriate.
+
+6. **External Libraries**: Check the memory consumption of external libraries you are using. Some libraries, especially those for data analysis like NumPy, pandas, scikit-learn, and matplotlib, can consume a lot of memory. If possible, use the most efficient version of the library or consider using tools designed for larger datasets like Dask or PySpark.
+
+7. **System Resources**: Ensure that your system has enough available resources (RAM, CPU) to handle the Python process. If not, you may need to allocate more RAM to your Python process, limit other resource-intensive applications running on the same machine, or consider using a more powerful machine.
+
+8. **Operating System Tuning**: Adjust OS parameters like the swap space, ulimit settings, and Python's internal caching thresholds (e.g., `sys.getwindowsversion()` for Windows or `sysconfig.get_config_var('PYTHONHASHSEED')` for all platforms) to better manage memory usage.
+
+9. **Code Optim

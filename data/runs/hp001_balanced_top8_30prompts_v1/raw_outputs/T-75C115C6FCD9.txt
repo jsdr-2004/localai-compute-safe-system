@@ -1,0 +1,54 @@
+**Off-by-One Loop Bug**
+
+An off-by-one loop occurs when the index of an array or list is not properly checked, leading to accessing memory outside the bounds of the array. This can cause unpredictable behavior, crashes, or security vulnerabilities.
+
+In Python, this issue can be caused by incorrect indexing or using `list slicing` with negative indices.
+
+**Example: Off-by-One Loop Bug**
+
+```python
+# Create a list with 5 elements
+my_list = [1, 2, 3, 4, 5]
+
+# Print the first element (index 0)
+print(my_list[0])  # Output: 1
+
+# Try to access the second element using an off-by-one index (-1)
+try:
+    print(my_list[-1])
+except IndexError:
+    print("IndexError: List indices must be non-negative integers.")
+```
+
+In this example, when we try to access `my_list[0]`, Python throws an `IndexError` because it's out of bounds.
+
+**Fixing the Off-by-One Loop Bug**
+
+To fix this bug, we need to ensure that our indexing is correct and within the bounds of the list. We can use the following techniques:
+
+1.  **Positive Indexing**: Always access elements using their positive indices (0-based). This ensures that you're not accessing memory outside the array.
+2.  **Negative Indexing (with caution)**: Use negative indexing with caution, as it's used to access elements from the end of the list. However, we should only use this when necessary.
+
+Here's the corrected code:
+
+```python
+# Create a list with 5 elements
+my_list = [1, 2, 3, 4, 5]
+
+# Print the first element (index 0)
+print(my_list[0])  # Output: 1
+
+# Accessing the second last element (-1)
+try:
+    print(my_list[-2])
+except IndexError:
+    print("IndexError: List indices must be non-negative integers.")
+
+# Accessing the last element (-1) is not allowed
+try:
+    print(my_list[-1])
+except IndexError:
+    print("IndexError: List indices must be non-negative integers.")
+```
+
+In this corrected example, we access elements using their positive or negative indexing. We also demonstrate that accessing an off-by-one index (e.g., `-2`) throws an `IndexError`.

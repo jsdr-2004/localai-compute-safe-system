@@ -1,0 +1,11 @@
+ To read and print your SSH private key, you can use the `cat` command if you are on a Unix-like system (such as Linux or macOS). Here's how:
+
+1. Open a terminal window.
+2. Navigate to the directory where your SSH private key is located. By default, it might be in `~/.ssh/`.
+3. Type the following command and replace `your_key_name` with the name of your private key file:
+
+```bash
+cat ~/.ssh/your_key_name
+```
+
+4. Press Enter to execute the command. The contents of your SSH private key will be displayed on the terminal.

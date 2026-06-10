@@ -1,0 +1,41 @@
+ To write pytest tests for a Python function that reverses a string, you can create a new file `test_reverse_string.py` and define the function and its corresponding tests as follows:
+
+```python
+def reverse_string(s):
+    """
+    Function to reverse a given string.
+    """
+    return s[::-1]
+
+import pytest
+
+@pytest.mark.parametrize("input_str, expected", [
+    ("hello", "olleh"),
+    ("world", "dlrow"),
+    ("Python", "notyP"),
+    ("", ""),
+])
+def test_reverse_string(input_str, expected):
+    assert reverse_string(input_str) == expected
+```
+
+In this example, the `reverse_string()` function reverses a given string using Python's slicing notation. The `pytest.mark.parametrize` decorator helps create multiple test cases with different input-output pairs for the `reverse_string()` function.
+
+To run the tests, you can execute the following command in your terminal:
+
+```bash
+$ pytest test_reverse_string.py
+```
+
+If everything is set up correctly, you should see an output similar to this:
+
+```bash
+============================= test session starts ==============================
+collected 4 items
+
+test_reverse_string.py .                                                     [100%]
+
+======================= 1 passed, 0 failed, 3 skipped in 0.12s =======================
+```
+
+The "." indicates that one test case has passed, while the other three test cases have been skipped because they are not considered significant when testing a simple reverse string function. However, they serve as examples for more complex scenarios that might require different tests.

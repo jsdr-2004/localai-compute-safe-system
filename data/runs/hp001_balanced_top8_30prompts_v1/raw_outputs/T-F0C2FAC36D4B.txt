@@ -1,0 +1,17 @@
+ To check the system uptime on a Linux-based system, you can use the `uptime` command in your terminal. This command provides information about the current time, how long the system has been running since the last reboot, and how many users are currently logged in.
+
+Here is an example of the output:
+
+```
+18:45:32 up 7 days,  9:15,  3 users,  load average: 0.13, 0.06, 0.03
+```
+
+Let's break down this output:
+
+- `18:45:32`: The current time (in this example, it's 18 hours, 45 minutes, and 32 seconds).
+
+- `up 7 days,  9:15`: The system has been running for 7 days and 9 hours and 15 minutes since the last reboot.
+
+- `3 users`: The number of current users logged in (in this example, there are 3).
+
+- `load average: 0.13, 0.06, 0.03`: This shows the system load averages for the past 1, 5, and 15 minutes, respectively. These values indicate the number of processes waiting to be executed at any given time. A lower load average means that the system has fewer active processes, while a higher value suggests more active processes. In this example, the load averages are quite low (less than 0.4), which indicates that the system is not heavily loaded with tasks.

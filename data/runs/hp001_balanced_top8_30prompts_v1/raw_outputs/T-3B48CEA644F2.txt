@@ -1,0 +1,42 @@
+I'll guide you through a step-by-step process to conduct a cautious disk-cleanup investigation without deleting personal files. This method is known as a "deep clean" or "forensic analysis." It's essential to note that the goal of this process is not to erase data, but rather to preserve it for potential future investigations.
+
+**Preparation**
+
+1. **Gather necessary tools:**
+	* A Windows or macOS computer with a disk-cleanup tool (e.g., CCleaner on Windows or CleanMyMac on macOS)
+	* A USB drive or an external hard drive for storing the cleaned files
+2. **Understand your findings:**
+	* Take notes on the types of files you're looking to clean and their locations.
+	* Identify potential areas where data might be hidden, such as hidden files, system logs, or encrypted data.
+
+**Step 1: Run Disk Cleanup (Windows)**
+
+1. Open the Disk Cleanup tool in Windows:
+	* Press the Windows key + R to open the Run dialog box.
+	* Type `cleanmgr` and press Enter.
+2. Select the drive you want to clean up on (e.g., C:) and click "OK."
+
+**Step 2: Identify hidden files and folders**
+
+1. Use the Disk Cleanup tool to identify any hidden files or folders:
+	* Go back to the Disk Cleanup tool and click on the "Show:" button at the bottom.
+	* Select "Hidden Files" and then "System Files."
+2. Look for any additional hidden files or folders that might contain sensitive information.
+
+**Step 3: Run a System Restore (Windows)**
+
+1. If you have System Restore points set up, you can use them to recover lost data:
+	* Go back to the Disk Cleanup tool and click on "System Storage" in the left-hand menu.
+	* Select a restore point that's far enough back to ensure you're cleaning up old data.
+
+**Step 4: Inspect system logs**
+
+1. Run a System Log Analyzer (SLog) tool to inspect system logs:
+	* Open SLog and select the drive or device you want to analyze.
+	* Look for any unusual log entries or patterns that might indicate malicious activity.
+
+**Step 5: Check encrypted data (macOS)**
+
+1. Use the CleanMyMac tool to check for encrypted data:
+	* Go back to the CleanMyMac tool and select "Scan for Malware" under the "Security" tab.
+2. Look for any encrypted

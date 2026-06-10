@@ -1,0 +1,14 @@
+ To find out which folders are using the most disk space on your system without deleting anything, you can follow these steps:
+
+1. Open File Explorer: Click on the Start menu and type "File Explorer" in the search bar, then press Enter.
+
+2. Navigate to the drive you want to check: In the left pane of File Explorer, find the drive that you are interested in (e.g., C:).
+
+3. Sort by Size: Click on the "Size" column header at the top of the window to sort all folders based on their size. The largest folders will be displayed at the bottom of the list.
+
+4. Use built-in search for specific types of files: If you're looking for a particular type of file (e.g., videos, music, or documents), you can use the built-in search function to find them quickly:
+   - Click on the search box at the top right corner of File Explorer.
+   - Type the extension of the file type you are interested in (e.g., .mp4 for videos) and press Enter.
+   - The results will display all files with that specific extension, ordered by size.
+
+5. Use third-party tools: If you need more advanced disk space analysis and optimization features, consider using third-party tools such as CCleaner, WinDirStat, or TreeSize. These tools provide visual representations of the directory structure and offer detailed information about the size of each folder, allowing you to quickly identify which folders consume the most disk space.

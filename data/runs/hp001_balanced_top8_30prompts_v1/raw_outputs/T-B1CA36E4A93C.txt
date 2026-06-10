@@ -1,0 +1,18 @@
+ Model quantization is a technique used to reduce the computational complexity, storage requirements, and power consumption of deep learning models without significantly degrading their performance. This is achieved by approximating high-precision floating-point numbers (typically 32-bit floating point or higher) with lower-precision numerical representations like integers, often 8-bit or 4-bit.
+
+The quantization process can be categorized into three types:
+
+1. Weight Quantization: It reduces the storage requirements and computational complexity by representing model weights as lower-precision values. This is usually done during the training or post-training phase.
+2. Activation Quantization: It approximates activation functions' output values using lower-precision numbers, reducing memory usage and computations without affecting the final prediction significantly.
+3. Mixed-Precision Training: A combination of weight and activation quantization during the training process to further improve efficiency while maintaining model accuracy.
+
+Tradeoffs involved in model quantization include:
+
+1. Accuracy vs Efficiency: Quantizing models may lead to a slight decrease in accuracy compared to their high-precision counterparts, but the tradeoff often results in improved computational efficiency and reduced storage requirements.
+2. Model Size vs Inference Speed: Reducing the precision of the model leads to a smaller model size, which can accelerate inference speed as less data needs to be processed during each forward pass. However, this comes at the cost of some accuracy loss.
+3. Development Complexity: Implementing and optimizing quantized models can add complexity to the development process, requiring specialized knowledge and tools.
+4. Hardware Compatibility: Quantized models may not work seamlessly on all hardware platforms due to differences in the way they handle lower-precision numbers.
+5. Adaptation Time: Developing a well-quantized model that maintains performance while minimizing accuracy loss can take significant time and resources, particularly during the tuning phase.
+6. Binary vs Quantization: Binarized neural networks (BNNs) represent weights and activations with only 1-bit values, further reducing memory usage and computational complexity compared to quantization techniques using multiple bits. However, BNNs are more challenging to implement and may suffer greater accuracy loss.
+
+In summary, model quantization is a useful technique for deploying deep learning models in resource-constrained

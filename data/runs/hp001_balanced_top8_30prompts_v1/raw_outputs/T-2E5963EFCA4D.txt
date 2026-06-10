@@ -1,0 +1,38 @@
+Here's a step-by-step debugging checklist to help identify and resolve the issue of a Python process using too much memory:
+
+**I. Check the code**
+
+1. **Review the code**: Go through your code and look for any unnecessary or inefficient operations that could be causing excessive memory usage.
+2. **Check function calls**: Verify that each function call is necessary and has a clear purpose. Remove any unnecessary function calls or arguments.
+3. **Use print statements**: Add print statements to track the amount of memory allocated by each module, function, or variable.
+
+**II. Check system resources**
+
+1. **Check CPU usage**: Use tools like `top` or `htop` to monitor CPU usage and identify processes that are consuming excessive resources.
+2. **Check disk usage**: Monitor disk usage using tools like `df` or `du`. Identify any processes that are consuming large amounts of disk space.
+3. **Check network traffic**: If your application is making network requests, check the amount of data being transferred and identify any unnecessary connections.
+
+**III. Check Python interpreter**
+
+1. **Verify Python version**: Ensure you're running a compatible version of Python (e.g., 3.x vs. 2.x).
+2. **Check memory settings**: Verify that your Python interpreter has sufficient memory allocated for the process.
+3. **Disable extensions**: If using third-party libraries or modules, disable them to see if they're causing excessive memory usage.
+
+**IV. Check system configuration**
+
+1. **Check system architecture**: Ensure you're running on a 64-bit system (if necessary).
+2. **Check virtualization**: Verify that your system is not running under a virtual machine (VM) and that the VM's resources are being allocated correctly.
+3. **Check file system settings**: Ensure the file system is configured to use sufficient disk space for the process.
+
+**V. Check application configuration**
+
+1. **Verify logging levels**: Ensure you're not setting too high logging levels, which can consume excessive memory.
+2. **Check database connections**: If using a database, verify that connections are being established and closed correctly.
+3. **Check file I/O operations**: Verify that file I/O operations are being performed efficiently.
+
+**VI. Run with debug flags**
+
+1. **Enable debug mode**: Set `DEBUG` environment variable to enable debug mode in your Python interpreter.
+2. **Use the `-v` flag**: Add the `-v` flag when running your application to see detailed output and identify memory-intensive processes.
+
+Example of how to run

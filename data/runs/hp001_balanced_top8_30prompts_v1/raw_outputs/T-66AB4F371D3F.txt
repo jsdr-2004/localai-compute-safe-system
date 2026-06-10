@@ -1,0 +1,66 @@
+Certainly! Below is an example of how you can write Pytest tests to test a function that reverses a string in Python.
+
+First, let's define the function we want to test:
+
+```python
+def reverse_string(s):
+    """
+    Reverses the input string.
+    
+    :param s: The string to be reversed
+    :type s: str
+    :return: The reversed string
+    :rtype: str
+    """
+    return s[::-1]
+```
+
+Now, let's write some Pytest tests for this function. We'll create a file named `test_reverse_string.py` in the same directory as our `reverse_string.py`.
+
+Here is an example of how you can structure your test file:
+
+```python
+# test_reverse_string.py
+
+import pytest
+from reverse_string import reverse_string  # Adjust the import path according to where this function resides
+
+def test_reverse_string():
+    assert reverse_string("hello") == "olleh"
+    
+def test_reverse_string_with_spaces():
+    assert reverse_string("world hello") == "olleh dlrow"
+    
+def test_empty_string():
+    assert reverse_string("") == ""
+    
+def test_single_char():
+    assert reverse_string("a") == "a"
+```
+
+In this example, we have four tests:
+1. `test_reverse_string`: Tests a simple string.
+2. `test_reverse_string_with_spaces`: Tests a string with spaces.
+3. `test_empty_string`: Tests an empty string.
+4. `test_single_char`: Tests a single character string.
+
+To run these tests using Pytest, you can use the following command in your terminal:
+
+```bash
+pytest test_reverse_string.py
+```
+
+This will execute all the tests defined in `test_reverse_string.py` and report any failures or errors.
+
+If everything is set up correctly, Pytest should output something like this:
+
+```
+============================= test session starts ==============================
+collected 4 items
+
+test_reverse_string.py ......
+
+============================ 4 passed in 0.01s ============================
+```
+
+This indicates that all the tests have been executed successfully.

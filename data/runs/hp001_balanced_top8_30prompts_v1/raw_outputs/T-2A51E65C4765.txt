@@ -1,0 +1,27 @@
+Certainly! Here are some essential read-only (non-modifying) Linux commands that you can use to inspect disk usage:
+
+1. **`df -h`**
+   - This command provides an overview of the amount of space used and available on your system's mounted file systems, with output formatted in a human-readable way.
+
+2. **`du -sh /path/to/directory`**
+   - The `-s` flag tells `du` to only show the total size for each directory, and the `-h` flag makes it display sizes in a human-readable format (e.g., KB, MB, GB). Replace `/path/to/directory` with the path you want to inspect.
+
+3. **`ncdu /path/to/directory`**
+   - `ncdu` is an interactive file system usage analysis tool that provides more detailed information about disk space usage than `du`. It allows you to navigate through directories and see how much space each directory or file occupies.
+
+4. **`lsblk`**
+   - This command lists all the block devices, including partitions and filesystems mounted on your system. You can use it to get an overview of your storage configuration.
+
+5. **`parted /dev/sdX --list`** (for `sdX` being a specific disk)
+   - If you want detailed information about individual disks or partitions, this command lists all the available devices and their sizes.
+
+6. **`lsattr /path/to/directory`**
+   - This command shows the attributes of files and directories in an extended attribute format. It can be useful for understanding file system properties without modifying them.
+
+7. **`find /path/to/directory -type f -exec ls -ld {} \; | sort -r`**
+   - This is a simple way to list directories sorted by size, descending. Replace `/path/to/directory` with the directory you want to inspect.
+
+8. **`du --max-depth=1 /path/to/directory/`**
+   - The `-m` flag in `du` can be used to show sizes in megabytes instead of kilobytes. This command will give a quick overview of the largest files and directories within the specified directory.
+
+These commands should help you get started with inspecting disk usage on your Linux system without making any changes or modifications.

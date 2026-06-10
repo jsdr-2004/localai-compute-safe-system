@@ -1,0 +1,21 @@
+ Model Quantization is a technique used to reduce the computational complexity, storage size, and power consumption of deep learning models while maintaining their accuracy. This process involves converting the floating-point parameters (usually 32-bit or 16-bit floating-point numbers) of a trained model into lower precision fixed-point or integer representations.
+
+The quantization can be performed at different stages:
+
+1. **Quantization Aware Training (QAT):** This is the process of training a model with an awareness of the eventual quantization, aiming to improve accuracy after quantization.
+
+2. **Post-Training Quantization (PTQ):** This method quantizes a pre-trained model without considering the quantization during training, which can lead to some loss in accuracy but is faster and less computationally expensive than QAT.
+
+3. **Quantization at Inference Time:** This involves applying quantization only during the inference phase (when making predictions), not during training or deployment.
+
+The tradeoffs associated with model quantization are as follows:
+
+1. **Accuracy vs Efficiency:** Quantizing a model reduces its precision, which may lead to a decrease in accuracy, especially if not performed carefully. The level of quantization and the method used can significantly impact the accuracy-efficiency tradeoff.
+
+2. **Computational Complexity:** Quantization can reduce computational complexity because lower-precision arithmetic operations are faster than their higher-precision counterparts. However, the process of quantizing itself may require additional computations and time during either training or deployment.
+
+3. **Storage Requirements:** Lower precision parameters and weights require less storage space, making models more portable and easier to deploy on devices with limited memory.
+
+4. **Power Consumption:** The lower computational complexity of quantized models can result in reduced power consumption, making them suitable for edge devices or mobile applications where battery life is crucial.
+
+5. **Hardware Compatibility:** Some quantization techniques are tailored to specific hardware architectures, ensuring optimal performance and energy efficiency on those platforms. However, this may limit the model's portability across different hardware types.

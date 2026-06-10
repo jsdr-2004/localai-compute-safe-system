@@ -1,0 +1,45 @@
+**Safe Integer Parsing Function**
+=====================================
+
+The following Python function, `safe_int_parse`, takes a list of strings as input and attempts to parse each string into an integer. It returns a list of parsed integers.
+
+```python
+def safe_int_parse(strings):
+    """
+    Safely parses a list of strings into integers.
+
+    Args:
+        strings (list): List of strings to be parsed.
+
+    Returns:
+        list: List of parsed integers.
+    """
+
+    # Initialize an empty list to store the parsed integers
+    parsed_ints = []
+
+    # Iterate over each string in the input list
+    for s in strings:
+        try:
+            # Attempt to parse the string into an integer
+            int(s)
+            # If successful, append the integer to the result list
+            parsed_ints.append(int(s))
+        except ValueError:
+            # If a ValueError is raised (i.e., the string cannot be converted to an integer), skip it
+            pass
+
+    return parsed_ints
+
+# Example usage:
+strings = ["123", "abc", "456", "789.0"]
+parsed_ints = safe_int_parse(strings)
+print(parsed_ints)  # Output: [123, 456]
+```
+
+**Explanation**
+---------------
+
+This function uses a `try`-`except` block to attempt to parse each string into an integer. If the conversion is successful, the integer is appended to the result list. If a ValueError is raised (i.e., the string cannot be converted to an integer), the corresponding iteration is skipped.
+
+**Note**: This implementation assumes that the input strings only contain ASCII characters. If you need to support non-ASCII characters, additional error handling may be necessary.

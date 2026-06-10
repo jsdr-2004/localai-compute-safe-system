@@ -1,0 +1,53 @@
+To determine which folders on your system are using the most disk space without deleting any files or data, you can follow these steps:
+
+### Using Disk Usage Analyzers:
+1. **`du` Command:**
+   - The `du` (disk usage) command is a built-in tool in Unix-like systems that allows you to find out how much disk space each file and directory occupies.
+   - To see the total size of all files under a specific directory, use:
+     ```bash
+     du -sh /path/to/directory/*
+     ```
+   - To get an overview of which directories are using the most space, you can sort the output by size:
+     ```bash
+     du -sh /* | sort -rh
+     ```
+
+2. **`ncdu` (NCurses Disk Usage):**
+   - `ncdu` is a disk usage analyzer that provides a more interactive and user-friendly interface.
+   - Install it if you don't have it already:
+     ```bash
+     sudo apt-get install ncdu  # For Debian/Ubuntu systems
+     ```
+   - Use it to analyze the directory:
+     ```bash
+     ncdu /path/to/directory/
+     ```
+
+3. **`tree` Command:**
+   - The `tree` command can be used to visualize directories and their contents, which might help you identify large folders.
+   - Install it if you don't have it already:
+     ```bash
+     sudo apt-get install tree  # For Debian/Ubuntu systems
+     ```
+   - Use it to list the directory structure with sizes:
+     ```bash
+     tree /path/to/directory/
+     ```
+
+### Using File Managers:
+1. **File Explorer (Windows):**
+   - Open File Explorer and navigate to your directories.
+   - Right-click on a folder, select "Properties," then go to the "Details" tab to see file sizes.
+
+2. **Finder (macOS):**
+   - Use Finder to browse through directories.
+   - Click on a directory to open it in a new window, then use the "Get Info" button (`i`) to view detailed information about files and folders.
+
+### Using Third-Party Tools:
+1. **Total Commander:**
+   - Total Commander is a file manager that can help you analyze disk usage through its built-in features.
+   
+2. **WinDirStat (Windows):**
+   - WinDirStat provides an interactive visualization of disk space usage, making it easier to identify large folders.
+
+3. **Disk Inventory

@@ -1,0 +1,3 @@
+To check the system uptime, I'll need to know which systems you're checking (e.g., server, router, computer). Could you please provide that information?
+
+Once I have it, I can guide you through a general process for checking system uptime using tools like `ping` or `dig`.

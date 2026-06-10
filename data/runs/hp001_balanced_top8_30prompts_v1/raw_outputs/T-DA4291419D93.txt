@@ -1,0 +1,21 @@
+ An off-by-one error (also known as a boundary condition error) is a common programming mistake where an algorithm incorrectly iterates over the bounds of an array or a collection, often leading to out-of-bounds errors or inaccurate results.
+
+Here's an example of a Python list with an off-by-one loop bug:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+for index in range(len(numbers)):
+    print(numbers[index])  # prints all elements except the last one
+```
+
+In this example, when iterating through the list using `range(len(numbers))`, it will generate indices from 0 to 4 (exclusive of 5), which results in printing all elements except the last one. To fix this off-by-one loop bug, we can modify the loop condition to include the last index by iterating up to `range(len(numbers) - 1)`:
+
+```python
+numbers = [1, 2, 3, 4, 5]
+
+for index in range(len(numbers) - 1):
+    print(numbers[index])  # prints all elements including the last one
+```
+
+Now the loop will iterate correctly over all indices from 0 to 4 (inclusive of 5), and it will print all elements, including the last one in the list.

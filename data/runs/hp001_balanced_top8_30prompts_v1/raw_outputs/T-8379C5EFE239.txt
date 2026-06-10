@@ -1,0 +1,41 @@
+ To plan a reproducible local Language Model (LLM) benchmark experiment, follow these steps:
+
+1. **Environment Setup:**
+   - Install necessary dependencies such as Python (3.x), PyTorch, and Transformers by using the following command:
+
+     ```bash
+     pip install torch transformers
+     ```
+
+2. **Data Preparation:**
+   - For benchmarking, you can use pre-prepared datasets like SQuAD (Stanford Question Answering Dataset), GLUE (General Language Understanding Evaluation), or T5 dataset. Download them from their respective official websites and prepare them for usage.
+
+3. **Choose a Model:**
+   - Select an LLM model to benchmark, such as BERT, RoBERTa, DistilBERT, or T5. You can clone the pre-trained models' repositories:
+
+     ```bash
+     git clone https://github.com/huggingface/transformers.git
+     ```
+
+4. **Prepare a Script:**
+   - Create a new script file (e.g., `benchmark_llm.py`) to run the experiment. Import the necessary libraries and load your chosen model, tokenizer, and dataset.
+
+     ```python
+     from transformers import AutoModelForMaskedLM, AutoTokenizer
+     import torch
+     import datasets
+
+     model = AutoModelForMaskedLM.from_pretrained("bert-base-uncased")
+     tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+     dataset = datasets.load_dataset("squad", name="v1", split="train")
+     ```
+
+5. **Define Experiment Function:**
+   - Create a function to perform the actual benchmarking:
+
+     ```python
+     def masked_lm_benchmark(model, tokenizer, dataset):
+         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+         model.to(device)
+
+         masked_tokens = [ [list(t)[-1] for t in zip(*tokenizer(sentence, truncation=True, padding="max_length", max_length=512))[1]] for sentence in dataset

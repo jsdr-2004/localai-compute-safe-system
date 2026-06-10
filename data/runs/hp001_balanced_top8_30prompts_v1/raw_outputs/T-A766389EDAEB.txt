@@ -1,0 +1,75 @@
+**Permission Denied Error in Docker `ps` Command**
+
+The "permission denied" error when running the `docker ps` command can be caused by several factors. Here are some common reasons and solutions:
+
+### 1. Insufficient Privileges
+
+*   **Solution:** Run the command with elevated privileges using `sudo`.
+    ```bash
+sudo docker ps
+```
+    Alternatively, you can use `docker run` to create a new container without running it in detached mode.
+    ```bash
+docker run -it --rm <image> bash
+```
+
+### 2. Docker Configuration
+
+*   **Solution:** Check the Docker configuration file (`/etc/docker/daemon.json`) for any permissions-related settings.
+
+    ```json
+{
+  "exec-opts": [
+    "native.cgroupdriver=systemd"
+  ],
+  "userns": "always",
+  "log-driver": "json-file"
+}
+```
+
+    If `userns` is set to `"always"`, it may cause permission issues. Try setting it to `"never"`.
+
+### 3. Docker Group Membership
+
+*   **Solution:** Check if you are a member of the `docker` group.
+    ```bash
+groups | grep docker
+```
+    If you're not a member, join the group using `usermod -aG docker <your_username>`.
+    ```bash
+usermod -aG docker your_username
+```
+
+### 4. Docker Volume Permissions
+
+*   **Solution:** Check the permissions of the Docker volumes.
+    ```bash
+docker volume inspect <volume_name>
+```
+    If the permissions are set to `rw-r--r--`, change them to `rw-rw-r--` using `chown`.
+    ```bash
+chown -R $(id -u):$(id -g) /var/lib/docker/volumes/<volume_name>
+```
+
+### 5. Docker Compose
+
+*   **Solution:** If you're using Docker Compose, check the permissions of the `docker-compose.yml` file.
+    ```yml
+version: '3'
+services:
+  web:
+    ...
+    volumes:
+      - ./data:/app/data
+```
+    Make sure the owner of the volume is set to the correct user.
+
+### Example Use Case
+
+To troubleshoot permission issues, you can use the following command:
+
+```bash
+docker ps --format='{{.ID}} {{.State}} {{.Created}}' | grep -v "Exit"
+```
+
+This will

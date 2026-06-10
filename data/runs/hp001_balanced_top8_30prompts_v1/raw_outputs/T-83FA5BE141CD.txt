@@ -1,0 +1,35 @@
+To inspect a systemd service without modifying the original file, you can use tools like `journalctl` or `syslog-ng`. Here are some steps and commands to get you started:
+
+### Using `journalctl`
+
+1. Start the service:
+```bash
+systemctl start <service_name>
+```
+2. Check the journal logs:
+```bash
+journalctl --tail=10 --follow=<service_name>  # Adjust the interval as needed
+```
+This command will show a preview of recent events for your service and follow it in real-time.
+
+### Using `syslog-ng`
+
+1. Start the service:
+```bash
+systemctl start <service_name>
+```
+2. List all log sources, including those related to your service:
+```bash
+syslog-ng --list-sources  # Find a list of all available loggers (services)
+```
+3. Check the latest logs for your service:
+```bash
+syslog-ng -s <source> -f /var/log/syslog  # Access the latest logs from the specified source
+```
+
+### Example Use Cases
+
+- **Debugging**: Using `journalctl` to see how services behave in a specific scenario or troubleshoot issues.
+- **Monitoring**: With `syslog-ng`, you can monitor your service's activity and adjust configurations as needed.
+
+Remember, these commands will display logs for the specified service. If you need more detailed information (e.g., timestamps, log levels), consider adjusting the journalctl command to use additional options or filtering criteria.

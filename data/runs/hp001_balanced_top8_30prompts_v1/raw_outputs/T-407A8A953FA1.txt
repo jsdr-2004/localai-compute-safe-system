@@ -1,0 +1,45 @@
+To inspect a systemd service without changing it, you can use the following approaches:
+
+**1. Using `sudo systemctl status <service_name>`**
+
+This command will display information about the specified service, including its current state (running or stopped), start and exit times, and any error messages.
+
+For example:
+```bash
+sudo systemctl status my_service
+```
+Replace `<service_name>` with the actual name of your systemd service.
+
+**2. Using `sudo systemctl list-units --type=service`**
+
+This command will display a list of all services, including their current state, start and exit times, and any error messages.
+
+For example:
+```bash
+sudo systemctl list-units --type=service
+```
+You can also filter the output by service name using the `--name` option:
+```bash
+sudo systemctl list-units --type=service --name my_service
+```
+
+**3. Using `sudo journalctl -u <service_name>`**
+
+This command will display information about the specified service, including its current state (running or stopped), start and exit times, and any error messages.
+
+For example:
+```bash
+sudo journalctl -u my_service
+```
+Replace `<service_name>` with the actual name of your systemd service.
+
+**4. Using `man systemctl`**
+
+This command will display detailed information about systemd services, including their configuration files and commands to start or stop the service.
+
+For example:
+```bash
+man systemctl
+```
+
+These are some common ways to inspect a systemd service without changing it.

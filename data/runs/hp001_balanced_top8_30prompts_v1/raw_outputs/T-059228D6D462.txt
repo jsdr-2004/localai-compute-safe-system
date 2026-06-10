@@ -1,0 +1,23 @@
+To read and print your SSH private key, you can use the `ssh-keygen` command in Linux or macOS, or the `pageant` command in Windows.
+
+**Linux/MacOS:**
+
+1. Open a terminal.
+2. Navigate to the directory where your private key is located (usually `~/.ssh/`).
+3. Run the following command:
+```bash
+cat id_rsa
+```
+Replace `id_rsa` with the name of your private key file if it's different.
+
+**Windows:**
+
+1. Open a Command Prompt or PowerShell.
+2. Navigate to the directory where your private key is located (usually `C:\Users\YourUsername\.ssh\`).
+3. Run the following command:
+```bash
+pageant id_rsa
+```
+Replace `id_rsa` with the name of your private key file if it's different.
+
+Note: The `pageant` command will display a prompt asking you to enter the password for your private key. Enter the password, and then press Enter.

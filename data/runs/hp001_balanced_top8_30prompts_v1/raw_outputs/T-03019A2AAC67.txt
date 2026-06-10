@@ -1,0 +1,71 @@
+Here's a comprehensive debugging checklist for a process that's using up too much memory in Python:
+
+**I. Check the Code**
+
+1. **Error messages**: Verify if there are any error messages or warnings that indicate which part of the code is causing the issue.
+2. **Functionality**: Ensure that your functions or methods are working as expected and not causing unnecessary computations.
+
+**II. Memory Management**
+
+1. **`gc` module**: Use the `gc` module to get a memory profile:
+    ```python
+import gc
+
+# Get current memory usage
+mem_before = gc.get_objects().len
+```
+2. **Object count**: Check the number of objects created by your code:
+    ```python
+class TestClass:
+    pass
+
+for obj in dir(TestClass):
+    if not obj.startswith('__'):
+        print(f"Found object: {obj}")
+
+print(f"Object count before: {len(gc.get_objects())}")
+```
+3. **Reference counting**: Use the `__dict__` attribute to check reference counts:
+    ```python
+class TestClass:
+    def __init__(self):
+        self.x = 1
+
+obj = TestClass()
+print(f"Dictionary size before assignment: {len(obj.__dict__)}")
+# After reassigning obj, dictionary size will increase by 1
+obj.y = None
+```
+**III. Memory Usage**
+
+1. **`sys.getsizeof()`**: Use `sys.getsizeof()` to get the memory size of a particular object:
+    ```python
+import sys
+
+class TestClass:
+    pass
+
+obj = TestClass()
+print(f"Size of {obj} in bytes: {sys.getsizeof(obj)}")
+```
+2. **`gc.collect()`**: Use `gc.collect()` to manually force garbage collection:
+    ```python
+import gc
+
+# Get current memory usage
+mem_before = gc.get_objects().len
+# Force garbage collection
+gc.collect()
+print(f"Memory before and after garbage collection: {mem_before} vs {gc.get_objects().len()}")
+```
+**IV. Python Interpreter Settings**
+
+1. **`PIL` or other third-party libraries**: Check if any third-party libraries or modules are consuming excessive memory (e.g., PIL, NumPy, pandas).
+2. **`sys.setrecursionlimit()`**: Adjust the recursion limit to prevent stack overflows:
+    ```python
+import sys
+
+# Increase recursion limit for debugging purposes
+sys.setrecursionlimit(1000)
+```
+3. **

@@ -1,0 +1,58 @@
+ To write Pytest tests for a function that reverses a string, you can create a separate Python file named `test_reverse_string.py` and implement the tests as follows:
+
+First, let's define the function to reverse a string in another file (e.g., `reverse_string.py`) for testing purposes:
+
+```python
+# reverse_string.py
+def reverse_string(input_str):
+    return input_str[::-1]
+```
+
+Now, let's create the Pytest tests in `test_reverse_string.py`.
+
+```python
+import pytest
+from reverse_string import reverse_string
+
+def test_empty_string():
+    assert reverse_string("") == ""
+
+def test_single_character_string():
+    for char in "abcdefghijklmnopqrstuvwxyz":
+        assert reverse_string(char) == char
+
+def test_palindrome():
+    palindromes = ["madam", "level", "racecar"]
+    for palindrome in palindromes:
+        assert reverse_string(palindrome) == palindrome
+
+def test_normal_strings():
+    strings = [
+        "hello world",
+        "Python rocks!",
+        "This is a test string",
+        "A man a plan a canal Panama",
+    ]
+    for string in strings:
+        reversed_string = reverse_string(string)
+        assert reversed_string == string[::-1]
+```
+
+Now, run the tests using Pytest:
+
+```bash
+$ pytest test_reverse_string.py
+```
+
+If everything is set up correctly and your `reverse_string()` function works fine, you should see something similar to this output:
+
+```
+============================= test session starts ==============================
+collected 5 items
+
+test_reverse_string.py .                                                         [100%]
+
+======================= 5 passed in 0.26s =======================
+```
+
+This output indicates that all the tests have passed successfully, and your `reverse_string()` function is working as expected.

@@ -1,0 +1,38 @@
+CPU Cores and Threads are two related but distinct concepts in computing.
+
+**CPU Cores**
+
+A CPU core is a processing unit within a central processing unit (CPU) that can execute instructions independently. Each core has its own execution pipeline, which allows it to perform calculations and execute instructions without waiting for other cores to finish their tasks. Think of each core as a separate brain that can work on different problems simultaneously.
+
+The number of CPU cores in a processor determines how many tasks can be executed concurrently. More cores generally mean better multitasking performance, as each core can handle multiple threads independently.
+
+**Threads**
+
+A thread is a lightweight process that runs within a single CPU core. Threads share the same memory space and resources as other threads running on the same core. When you create a new thread, the operating system schedules it to run on an available CPU core. If no cores are available, the thread will wait until one becomes free.
+
+Think of threads like workers in a factory. Each worker (thread) can perform a specific task, but they all share the same factory (CPU core). When one worker finishes its task, another worker can take over, allowing multiple tasks to be executed concurrently without requiring multiple CPU cores.
+
+**Key differences**
+
+Here are the main differences between CPU cores and threads:
+
+1. **Concurrency**: Multiple CPU cores enable true concurrency, where each core can execute a separate thread simultaneously. Threads, on the other hand, run within a single CPU core.
+2. **Resource usage**: Creating a new thread is relatively lightweight compared to creating a new process (a separate operating system entity). This means threads consume fewer resources and are more efficient in terms of memory and processing power.
+3. **Scheduling**: The operating system schedules threads to run on available CPU cores, whereas each core has its own scheduling algorithm that determines which threads to execute.
+
+**Practical implications**
+
+To illustrate the difference between CPU cores and threads, consider a scenario:
+
+* You have a multi-core processor with 4 CPU cores.
+* You open multiple resource-intensive applications (e.g., video editing software, 3D modeling tools).
+* Each application runs as separate threads within its own CPU core.
+
+In this case:
+
+* The number of CPU cores (4) determines the maximum number of tasks that can be executed concurrently. If you have more than 4 tasks, they will wait for one of the available cores to become free.
+* However, each thread can still run independently on its assigned CPU core, allowing multiple tasks to be executed simultaneously.
+
+In summary:
+
+*

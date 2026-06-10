@@ -1,0 +1,5 @@
+ 1. Facilitator of Access: A privilege broker acts as an intermediary to grant access to resources, opportunities, or information that are otherwise restricted. This can include roles such as admission officers, human resource professionals, or security personnel.
+
+2. Gatekeeper: They maintain and enforce the rules and policies governing these privileges, ensuring fairness and order within the system. This may involve evaluating applications, conducting interviews, or making decisions based on established criteria.
+
+3. Mediator: In some cases, privilege brokers serve as a mediator between individuals or groups seeking access and those who control the resources. They aim to foster understanding and cooperation, facilitating positive interactions that can lead to mutual benefits.

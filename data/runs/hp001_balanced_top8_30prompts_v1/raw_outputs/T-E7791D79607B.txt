@@ -1,0 +1,65 @@
+Certainly! Below is a step-by-step guide for installing and verifying Docker on an Ubuntu system. This process ensures that you have the necessary environment set up correctly.
+
+### Step 1: Update Your System
+
+Before installing any new software, it's important to ensure your system packages are updated to their latest versions. Open a terminal and run:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+This command updates the package lists and upgrades all installed packages.
+
+### Step 2: Install Required Packages
+
+Docker requires some additional packages that need to be installed for it to work properly. Run the following commands to install these dependencies:
+
+```bash
+sudo apt install apt-transport-https ca-certificates curl gnupg lsb-release -y
+```
+
+These commands install the necessary tools and libraries required by Docker.
+
+### Step 3: Add Docker’s Official GPG Key
+
+Docker uses a GPG key for signing its packages. You need to add this key to your system:
+
+```bash
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+```
+
+This command downloads the Docker public key and stores it in a file that can be used by apt.
+
+### Step 4: Add Docker Repository
+
+Now, add the official Docker repository to your system. You need to specify the correct Ubuntu version based on your current release:
+
+```bash
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+This command adds the Docker repository to your system’s sources list.
+
+### Step 5: Install Docker
+
+Finally, update your package lists and install Docker:
+
+```bash
+sudo apt update && sudo apt install docker-ce -y
+```
+
+The `docker-ce` package installs the latest version of Docker Community Edition. After installation, you can verify that Docker is installed correctly by running:
+
+```bash
+sudo systemctl status docker
+```
+
+You should see a message indicating that Docker is active (running). To start Docker at boot, run:
+
+```bash
+sudo systemctl enable docker
+```
+
+### Step 6: Verify Installation
+
+To ensure Docker is working as expected, you can pull and run a simple container. First, make sure Docker is running by checking its status

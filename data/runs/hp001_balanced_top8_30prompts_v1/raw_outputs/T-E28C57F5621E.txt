@@ -1,0 +1,21 @@
+ To check if Docker is installed on your system, you can use the following commands in a terminal or command prompt, depending on your operating system:
+
+1. For Linux-based systems (e.g., Ubuntu, Debian):
+
+```bash
+docker --version
+```
+
+2. For macOS with Docker Desktop installed:
+
+```bash
+docker version
+```
+
+3. For Windows:
+
+```powershell
+docker --version
+```
+
+If Docker is successfully installed, the system will output the current Docker version along with additional details. If not, you may need to install Docker on your machine. You can find installation instructions for different operating systems on the official Docker website: https://docs.docker.com/engine/install/

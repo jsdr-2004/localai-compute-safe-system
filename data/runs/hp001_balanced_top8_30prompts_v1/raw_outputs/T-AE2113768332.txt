@@ -1,0 +1,51 @@
+When dealing with a Python process that is using excessive amounts of memory, it's important to systematically identify the root cause and address it effectively. Here’s a step-by-step debugging checklist you can follow:
+
+### 1. **Check Memory Usage**
+   - Use `ps` or `top` (on Unix-based systems) or Task Manager (on Windows) to see if the process is consuming more memory than expected.
+   - Use Python's built-in `memory_profiler` library to identify memory leaks and inefficient use of resources.
+
+### 2. **Identify Memory Leaks**
+   - Install a memory profiling tool like `memory_profiler`.
+     ```bash
+     pip install memory-profiler
+     ```
+   - Apply the decorator to functions or modules that you suspect might be leaking memory.
+     ```python
+     from memory_profiler import profile
+
+     @profile
+     def my_function():
+         # Your code here
+     ```
+
+### 3. **Review Code for Memory Leaks**
+   - Look for circular references (e.g., using `weakref` to break cycles).
+   - Check if you are storing large objects unnecessarily.
+   - Review the use of data structures like lists, dictionaries, and sets that can consume a lot of memory.
+
+### 4. **Optimize Data Structures and Algorithms**
+   - Use more efficient data structures where appropriate (e.g., `collections.Counter` instead of list comprehensions).
+   - Optimize algorithms to reduce memory usage.
+   - Consider using generators or iterables when dealing with large datasets.
+
+### 5. **Check for External Memory Usage**
+   - Ensure that external libraries and dependencies are up-to-date and optimized.
+   - Check if any third-party modules might be leaking memory.
+
+### 6. **Use Profiling Tools**
+   - Use tools like `cProfile` to profile your code and identify hotspots.
+     ```python
+     import cProfile
+     def my_function():
+         # Your code here
+
+     cProfile.run('my_function()')
+     ```
+   - Check for memory-intensive operations that might be causing the issue.
+
+### 7. **Check for Memory Leaks in Libraries**
+   - If you are using third-party libraries, ensure they are not leaking memory.
+   - Look into their documentation and community forums to see if others have encountered similar issues.
+
+### 8. **Monitor System Resources**
+   - Use tools like `htop` (on Unix-based systems) or the Task Manager’s resource usage tabs to monitor system resources in

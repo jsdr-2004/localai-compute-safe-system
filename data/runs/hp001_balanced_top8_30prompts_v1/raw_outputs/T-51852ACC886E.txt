@@ -1,0 +1,5 @@
+ 1. A Privilege Broker acts as an intermediary between users and various system resources, managing access permissions and ensuring secure and controlled usage.
+
+2. They are responsible for granting or denying access to system resources based on predefined policies and user privileges, maintaining the security and integrity of the system.
+
+3. The role of a Privilege Broker often involves monitoring and auditing user activities, identifying potential security threats, and enforcing compliance with the organization's security policies.

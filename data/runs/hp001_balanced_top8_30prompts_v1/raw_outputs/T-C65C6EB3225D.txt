@@ -1,0 +1,31 @@
+To read and print your SSH private key, you can use the following commands in your terminal:
+
+1. For Linux/Mac:
+   ```bash
+ssh -i /path/to/your/private/key.pem
+```
+
+2. For Windows:
+   1. Open Command Prompt or PowerShell.
+   2. Navigate to the directory where your private key is located using `cd` command.
+   3. Use the following command to print the contents of your private key:
+
+    ```bash
+type %USERPROFILE%\ .ssh\id_rsa
+```
+
+   Replace `%USERPROFILE%` with the path to your user profile folder.
+
+Note: The commands provided are for basic usage only and do not cover all possible scenarios or security considerations. Always keep your private keys secure and do not share them unless necessary.
+
+If you want to read the contents of a specific private key file, you can use the following command:
+
+```bash
+cat /path/to/your/private/key.pem
+```
+
+Or
+
+```bash
+type %USERPROFILE%\ .ssh\id_rsa
+```

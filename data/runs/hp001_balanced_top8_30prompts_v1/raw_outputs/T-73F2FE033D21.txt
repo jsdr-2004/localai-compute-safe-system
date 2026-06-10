@@ -1,0 +1,44 @@
+ Title: A Safe Five-Step Plan for Installing and Verifying Docker on Ubuntu
+
+1. **Update the system**: Before installing any new software, it's essential to ensure that your system is up-to-date. Run the following commands in your terminal:
+
+```bash
+sudo apt-get update
+sudo apt-get upgrade
+```
+
+2. **Add Docker repository**: To get the latest packages and versions of Docker, add the official GPG key and the Docker APT repository to your system.
+
+```bash
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+```
+
+3. **Install Docker**: Once the repository is added, you can now install Docker on your Ubuntu system using this command:
+
+```bash
+sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io
+```
+
+4. **Verify installation**: To confirm that the installation was successful, run the following command to check the Docker version:
+
+```bash
+docker --version
+```
+
+5. **Run a test container**: As a final step, let's ensure that Docker is functioning correctly by running a simple test container. If you have no specific image in mind, you can use the official `hello-world` image:
+
+```bash
+docker run hello-world
+```
+
+After executing this command, you should see output similar to:
+
+```bash
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
+```
+
+Now you've successfully installed and verified Docker on Ubuntu! Keep exploring the world of containerization with Docker.

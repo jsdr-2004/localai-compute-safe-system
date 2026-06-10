@@ -1,0 +1,25 @@
+`df -h` is a command used in Unix-like operating systems to display disk usage information in a human-readable format (e.g., kilobytes, megabytes). This command provides an overview of the amount of free and used space on each partition or file system mounted within the system.
+
+### What `df -h` Does:
+
+1. **Display Disk Usage**: It shows how much space is being used by different partitions.
+2. **Human-Readable Format**: The output is formatted in a way that makes it easier to read, typically showing sizes in kilobytes (K), megabytes (M), or gigabytes (G).
+3. **Mounted File Systems**: It lists only those file systems that are currently mounted and accessible within the system.
+4. **Total and Used Space**: For each partition, it shows the total amount of space available and how much is already used.
+
+### Does `df -h` Change the System?
+
+The `df -h` command itself does not change or modify any settings on your system; it simply provides information about disk usage. It doesn't affect file systems, mount points, or other configurations. 
+
+However, if you use commands that are part of the output of `df -h`, such as:
+
+- **`df -ah`:** This command lists all mounted file systems with a human-readable format.
+- **`df -i`:** This shows inode usage for each partition.
+- **`df -c`:** This displays disk space information in a compact form.
+
+Using these commands can lead to changes on your system, such as:
+
+1. **Mounting or Unmounting File Systems**: If you use `mount` or `umount`, which are part of the output of `df -h`.
+2. **Changing Disk Usage Information**: For example, if you run a command that modifies disk usage (like deleting files), and then check with `df -h`.
+
+In summary, while `df -h` itself does not change anything on your system, using commands derived from its output can indeed modify the state of your file systems.

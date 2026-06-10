@@ -1,0 +1,39 @@
+Here are some read-only Linux commands to inspect disk usage:
+
+1. **df**: Displays information about the disk space used by each file system on the system.
+
+   ```bash
+   df -h
+   ```
+
+   This command shows the total, used, available, and percentage of used disk space for each file system.
+
+2. **du**: Displays the size of files and directories.
+
+   ```bash
+   du -sh /
+   ```
+
+   This command shows the total size of all files in the root directory (`/`).
+
+3. **lsblk** or **fdisk -l**: Displays information about disk partitions on the system.
+
+   ```bash
+   lsblk -o NAME,FSTYPE,SIZE,MOUNTPOINT,TYPE,LABEL
+   ```
+
+   This command shows detailed information about each disk partition, including its name, file system type, size, mount point, device type, and label.
+
+4. **df --output=avail**: Displays the available disk space for all mounted file systems.
+
+   ```bash
+   df --output=avail
+   ```
+
+5. **du -h /* | sort -r**: Displays the total size of all files in descending order.
+
+   ```bash
+   du -h /* | sort -r
+   ```
+
+These commands provide a good overview of disk usage and can be used to identify which directories or files are taking up the most space on your system.

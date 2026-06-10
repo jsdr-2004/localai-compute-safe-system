@@ -1,0 +1,17 @@
+ To find out which folders are using the most disk space without deleting anything, you can follow these steps on Windows:
+
+1. Open File Explorer.
+2. Click on "This PC" or "My Computer."
+3. Right-click on the drive that you want to analyze (usually C:), and select "Properties."
+4. In the Properties window, go to the "General" tab. Under "Capacity," you'll see the total disk space available for your drive. Below it, there is a pie chart showing the distribution of the used space among different file types like Documents, Music, Videos, etc.
+5. To get more detailed information about each folder and its size, click on the "Disk" option in the left pane of File Explorer. You'll see all your drives listed there. Right-click on the drive you want to analyze, and select "Properties."
+6. In the Properties window, go to the "Details" tab. Here, you'll find a list of folders sorted by size from largest to smallest. The folder that takes up the most space is at the top of the list.
+7. If you need more detailed information about individual files within the large folders, you can right-click on the folder and choose "Sort By" > "Size (Largest First)" to see which files are taking up the most space.
+
+On macOS:
+
+1. Open Finder.
+2. Click on your Macintosh HD or any other drive that you want to analyze in the left sidebar.
+3. In the menu bar at the top of the screen, click "Go" > "Computer." This will show you a list of all the folders and files on your selected drive.
+4. To sort by size, click on "Size" column heading once to sort in ascending order (smallest to largest) or twice to sort in descending order (largest to smallest). The folder that takes up the most space will be at the bottom of the list in the descending order view.
+5. If you want to see more detailed information about individual files within large folders, you can right-click on a folder and choose "Get Info" to see its size and contents. Alternatively, you can use third-party apps like GrandPerspect or DaisyDisk for a graphical representation of disk usage.

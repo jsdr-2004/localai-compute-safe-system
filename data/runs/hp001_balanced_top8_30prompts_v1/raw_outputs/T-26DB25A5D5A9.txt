@@ -1,0 +1,49 @@
+# Off-By-One Loop Bug in Python
+=====================================
+
+An off-by-one error is a common mistake that occurs when the loop counter is not initialized correctly, resulting in incorrect results or infinite loops.
+
+### Example: Incorrect Loop Counter Initialization
+
+```python
+def sum_numbers(numbers):
+    total = 0
+    for i in range(len(numbers)):
+        total += numbers[i]
+    return total
+
+numbers = [1, 2, 3, 4, 5]
+print(sum_numbers(numbers))  # Output: 15 (should be 14)
+```
+
+In this example, the loop counter `i` is initialized to 0 using `range(len(numbers))`. However, since the list indices in Python start at 0, the last element of the list is accessed when `i` equals the length of the list. This results in an off-by-one error.
+
+### Corrected Code
+
+To fix this bug, we need to initialize the loop counter correctly. We can do this by using a for-each loop or slicing the list directly:
+
+```python
+def sum_numbers(numbers):
+    total = 0
+    # Using a for-each loop
+    for num in numbers:
+        total += num
+
+    return total
+
+numbers = [1, 2, 3, 4, 5]
+print(sum_numbers(numbers))  # Output: 15 (correct)
+
+# Alternatively, using slicing
+def sum_numbers_slice(numbers):
+    return sum(numbers)
+
+numbers = [1, 2, 3, 4, 5]
+print(sum_numbers_slice(numbers))  # Output: 15 (correct)
+```
+
+In the corrected code, we use a for-each loop to iterate over each element in the list, ensuring that we don't access an out-of-bounds index. Alternatively, we can use slicing to directly sum up all elements in the list.
+
+### Best Practice
+
+To avoid off-by-one errors, always initialize your loop counter correctly and ensure that it does not exceed the bounds of the data structure being iterated over.

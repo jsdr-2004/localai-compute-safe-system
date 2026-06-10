@@ -1,0 +1,59 @@
+To check system uptime, you can use various methods depending on your operating system. Here are a few examples:
+
+**Method 1: Using the `uptime` command (Linux/macOS)**
+
+Open a terminal and type:
+
+```
+uptime
+```
+
+This will display information about the system's uptime, including the number of hours, minutes, and seconds since the last reboot.
+
+Example output:
+```
+ 24m 22s
+```
+In this example, the system has been running for 24 minutes and 22 seconds since its last reboot.
+
+**Method 2: Using the `systeminfo` command (Windows)**
+
+Open a Command Prompt or PowerShell and type:
+
+```
+systeminfo
+```
+
+This will display information about the system's uptime, including the number of days, hours, minutes, and seconds since the last boot.
+
+Example output:
+```
+System Up Time: 2 days 12 hours 34 minutes
+```
+In this example, the system has been running for 2 days, 12 hours, 34 minutes since its last reboot.
+
+**Method 3: Using the `date` command (All operating systems)**
+
+Open a terminal or command prompt and type:
+
+```
+date
+```
+
+This will display the current date and time. To get the uptime information, you can use the following command:
+
+```bash
+date -u +%s
+```
+
+This will display the number of seconds since January 1, 1970, 00:00:00 UTC (the Unix epoch). You can then subtract this value from the current date and time to get the uptime information.
+
+Example output:
+```
+Fri Jan 20 14:30:12 UTC 2023
+1642912512
+```
+
+In this example, the system has been running for approximately 18 hours, 51 minutes, and 12 seconds since January 20, 2023, 14:30:00 UTC.
+
+I hope this helps you check your system's uptime!

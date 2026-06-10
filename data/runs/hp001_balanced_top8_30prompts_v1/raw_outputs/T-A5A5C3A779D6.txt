@@ -1,0 +1,41 @@
+To help you verify if Docker is installed, I'll guide you through a few steps. Please follow along:
+
+**Method 1: Check if Docker is listed in your system's PATH**
+
+1. Open a terminal or command prompt.
+2. Type the following command: `where docker` (on Linux/Mac) or `which docker` (on Windows)
+3. Press Enter.
+
+If Docker is installed, it should be listed at the top of the output. If you don't see Docker in the list, check the following steps:
+
+**Method 2: Run `docker --version`**
+
+1. Type the following command in your terminal or command prompt: `docker --version`
+2. Press Enter.
+
+If Docker is installed, you should see a version number. For example:
+```
+Docker 20.10.17
+```
+
+**Method 3: Check for Docker install files**
+
+1. Open a file manager or file explorer (e.g., File Explorer on Windows).
+2. Look for a folder called `C:\Users\<YourUsername>\AppData\Roaming\npm\docker` (on Windows) or `/var/lib/docker` (on Linux/Mac)
+3. If Docker is installed, you should find a `Docker.json` file inside that folder.
+
+**Method 4: Run `ls /usr/local/bin/docker*`**
+
+1. Open a terminal or command prompt.
+2. Type the following command: `ls /usr/local/bin/docker*`
+3. Press Enter.
+
+If Docker is installed, you should see files like `docker`, `docker-compose`, and others.
+
+Now, let's summarize:
+
+- If Docker is not listed in your system's PATH or if it doesn't exist in the install files, it may indicate that Docker is not installed.
+- If you're on Linux/Mac, check for a `Docker.json` file inside `/usr/local/bin/docker/`.
+- If you're on Windows, check for a folder called `C:\Users\<YourUsername>\AppData\Roaming\npm\docker`.
+
+If you've checked all the methods and still can't verify if Docker is installed, please provide more details about your environment, such as operating system and version, and I'll do my best to assist you further.

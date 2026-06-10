@@ -1,0 +1,61 @@
+Certainly! Below is a step-by-step guide for installing and verifying Docker on an Ubuntu system. This process ensures that you have the latest version of Docker installed, which enhances security and stability.
+
+### Step 1: Update Your System
+
+Before starting any installation process, it's essential to ensure your system packages are up-to-date. Open a terminal and run:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+This command updates the package list and upgrades all installed packages to their latest versions.
+
+### Step 2: Install Required Packages
+
+To install Docker, you need to add the GPG key for the official Docker repository and then install the necessary packages. Run the following commands:
+
+```bash
+sudo apt-get install -y ca-certificates curl gnupg
+mkdir -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
+
+This command downloads the GPG key for Docker and stores it in a secure location.
+
+### Step 3: Configure APT
+
+Now, you need to add the Docker repository to your system's package list. Run:
+
+```bash
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+This command creates a new configuration file that points to the Docker repository.
+
+### Step 4: Install Docker
+
+With the Docker repository configured, you can now install Docker. Run:
+
+```bash
+sudo apt-get update && sudo apt-get install -y docker-ce docker-ce-cli containerd.io
+```
+
+These commands will download and install the latest version of Docker Engine, including the necessary tools.
+
+### Step 5: Verify Installation
+
+To ensure that Docker is installed correctly, you can run a simple test command to check if Docker is running. Open a terminal and execute:
+
+```bash
+sudo docker --version
+```
+
+This should display the version information for Docker, confirming that it has been successfully installed.
+
+Additionally, you can verify that Docker containers are working by creating a simple container using the `hello-world` image provided by Docker:
+
+```bash
+sudo docker run hello-world
+```
+
+If everything is set up correctly, this command will download and run the `hello-world` image without any issues, indicating that

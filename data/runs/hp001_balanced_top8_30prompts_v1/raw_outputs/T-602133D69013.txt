@@ -1,0 +1,53 @@
+To inspect a systemd service without modifying it, you can use the following methods:
+
+### Using `journalctl`
+
+You can check the journal logs of a running service using `journalctl`. This command will show you the last few lines of the log file.
+
+```bash
+journalctl --tail=10 --follow /path/to/service.log
+```
+
+Replace `/path/to/service.log` with the path to your service's log file. The `--tail` option shows only the most recent 10 lines, and the `--follow` option keeps the logs open as they are written.
+
+### Using `systemctl status`
+
+You can check the status of a running service using `systemctl`. This command will display information about the service, including its current state and any errors it may be experiencing.
+
+```bash
+systemctl status <service_name>
+```
+
+Replace `<service_name>` with the name of the service you want to inspect. The output should include information such as:
+
+* Status (e.g., "active" or "failed")
+* Executing command
+* Error messages
+* Current resources used
+
+### Using `systemd-analyze`
+
+`systemd-analyze` is a tool that provides detailed information about systemd services, including their execution status and resource usage.
+
+```bash
+systemd-analyze --status <service_name>
+```
+
+Replace `<service_name>` with the name of the service you want to inspect. The output should include information such as:
+
+* Status (e.g., "running" or "failed")
+* Executing command
+* Error messages
+* Current resources used
+
+### Using `loginscript` and `systemlog`
+
+If you need more detailed information about a specific log message, you can use the `loginscript` command to display the contents of the log file.
+
+```bash
+loginscript -f /path/to/service.log --format='%s' | sed '1d;$d'
+```
+
+This command will display the first line (which is typically the most recent event) and then remove it. The `--format` option specifies that you want to see the log file contents in a tabular format, with each entry on its own line.
+
+Note: These commands may only work if your system is configured to write logs to the `/var/log/syslog` or `/var/log/journal/` directories. If your service writes logs to a different location, you'll need to adjust the command accordingly.

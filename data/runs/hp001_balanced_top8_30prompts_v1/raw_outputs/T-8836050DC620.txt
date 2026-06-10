@@ -1,0 +1,60 @@
+Inspecting a systemd service without making any changes involves using the `systemctl` command and examining its output. Here's how you can do that:
+
+1. **List All Services:**
+   You can list all services managed by systemd with the following command:
+   ```sh
+   systemctl list-units --type=service
+   ```
+   This will show a list of all service units, including their status (active or inactive), load state, and other details.
+
+2. **Inspect a Specific Service:**
+   To inspect the configuration and current status of a specific service, you can use:
+   ```sh
+   systemctl status <SERVICE_NAME>
+   ```
+   Replace `<SERVICE_NAME>` with the name of the service you want to inspect (e.g., `httpd`, `nginx`, etc.).
+
+3. **Show Service Configuration:**
+   You can view the configuration file for a specific service using:
+   ```sh
+   systemctl show -p <PROPERTY> <SERVICE_NAME>
+   ```
+   For example, if you want to see all properties of the `httpd` service:
+   ```sh
+   systemctl show -p ALL httpd
+   ```
+
+4. **Inspect Unit File:**
+   To inspect the unit file (configuration) for a specific service, use:
+   ```sh
+   systemctl show --property=UnitFile <SERVICE_NAME>
+   ```
+   For example, to see the unit file of `httpd`:
+   ```sh
+   systemctl show --property=UnitFile httpd
+   ```
+
+5. **Inspect Unit File Without Property:**
+   If you want to inspect the entire unit file without any specific properties, use:
+   ```sh
+   systemctl cat <SERVICE_NAME>
+   ```
+   For example, to see the `httpd` service's unit file:
+   ```sh
+   systemctl cat httpd
+   ```
+
+6. **Inspect Unit File Without Running:**
+   If you want to inspect a unit file without loading it into systemd (which is useful for examining its contents), use:
+   ```sh
+   systemctl --show-unit-file <SERVICE_NAME>
+   ```
+   For example, to see the `httpd` service's unit file without running it:
+   ```sh
+   systemctl --show-unit-file httpd
+   ```
+
+7. **Inspect Unit File Without Loading:**
+   To inspect a unit file without loading it into systemd (which is useful for examining its contents), use:
+   ```sh
+   systemctl --no-reload cat <SERVICE_NAME

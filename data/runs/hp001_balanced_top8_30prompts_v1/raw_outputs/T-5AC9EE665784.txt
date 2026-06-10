@@ -1,0 +1,45 @@
+Here is a step-by-step debugging checklist to help identify and resolve the issue of a Python process using too much memory:
+
+**Step 1: Monitor Memory Usage**
+
+1. Run your application with `memory_profiler` (install with pip: `pip install memory_profiler`) to monitor memory usage in real-time.
+2. If you're already running your application, use the `psutil` module to get an idea of CPU and memory usage.
+
+**Step 2: Analyze Memory Leaks**
+
+1. Inspect the call stack using `sys.excepthook` or `pdb` to identify which functions are causing excessive memory allocation.
+2. Use `memory_profiler` to visualize memory usage over time (e.g., hour by hour).
+3. Identify any suspicious memory allocations that don't seem to be releasing resources.
+
+**Step 3: Profile Function Calls**
+
+1. Create a simple benchmarking script using `timeit` or `cProfile` to measure the execution time of individual functions.
+2. Inspect the results to see which functions are taking up most of the memory.
+3. Use `pdb` to step through the code and examine the values of variables.
+
+**Step 4: Identify Resource-Intensive Code**
+
+1. Review your application's codebase for potential bottlenecks, such as:
+	* Loops (e.g., data processing or networking)
+	* I/O operations
+	* Complex calculations
+2. Use `line_profiler` to analyze the execution time of these functions.
+
+**Step 5: Optimize Memory-Intensive Code**
+
+1. **Restructure your code**: Simplify complex logic and reduce memory allocation.
+2. **Use caching**: Implement caching mechanisms (e.g., dictionaries, Redis) to store frequently accessed data.
+3. **Avoid unnecessary computations**: Optimize calculations by using more efficient algorithms or data structures.
+
+**Step 6: Check for Memory Management Issues**
+
+1. **Verify resource deallocation**: Make sure that resources are properly released when they're no longer needed (e.g., file handles, socket connections).
+2. **Check memory allocation patterns**: Look for patterns indicating excessive memory allocation (e.g., repeated allocations of large objects).
+
+**Step 7: Review System Resources**
+
+1. Check system resource usage (CPU, memory, disk space) to ensure that your process is not consuming excessive resources.
+2. Verify that other processes are running and not interfering with your application.
+
+Example Use Case:
+Suppose you're building a web scraper that

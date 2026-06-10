@@ -1,0 +1,60 @@
+When dealing with a Python process that is using excessive amounts of memory, it's important to systematically identify the root cause and take appropriate steps to resolve the issue. Here’s a step-by-step debugging checklist:
+
+### 1. **Check Memory Usage**
+   - Use `psutil` or `memory_profiler` libraries to monitor memory usage.
+     ```python
+     import psutil
+
+     def check_memory_usage():
+         process = psutil.Process()
+         print(f"Memory used by the process: {process.memory_info().rss / 1024**2} MB")
+
+     check_memory_usage()
+     ```
+
+### 2. **Identify Memory Leaks**
+   - Use memory profiling tools like `memory_profiler` to identify objects that are not being garbage collected.
+     ```python
+     from memory_profiler import profile
+
+     @profile
+     def your_function():
+         # Your function code here
+         pass
+
+     your_function()
+     ```
+
+### 3. **Review Code for Memory Leaks**
+   - Look for loops or recursive functions that create unnecessary objects.
+   - Check if you are using large data structures like lists, dictionaries, and sets unnecessarily.
+
+### 4. **Optimize Data Structures**
+   - Use more memory-efficient data structures where appropriate (e.g., use `numpy` arrays instead of Python lists).
+   - Avoid creating deep nested data structures when shallow ones suffice.
+   - Consider using generators or iterables to avoid loading large datasets into memory all at once.
+
+### 5. **Check for External Memory Usage**
+   - Ensure that external libraries and dependencies are not causing the issue. Sometimes, third-party modules can be resource-intensive.
+   - Check if any of your data sources (like databases) are consuming excessive memory or running inefficient queries.
+
+### 6. **Analyze Function Calls**
+   - Use `tracemalloc` to trace memory allocations in Python functions.
+     ```python
+     import tracemalloc
+
+     def your_function():
+         # Your function code here
+         pass
+
+     tracemalloc.start()
+     your_function()
+     print(tracemalloc.get_traced_memory())
+     ```
+
+### 7. **Check for Large Objects**
+   - Ensure that large objects are not being created and kept in memory unnecessarily.
+   - Check if you are using `pickle` or other serialization methods to store data, which can be resource-intensive.
+
+### 8. **Review External Processes**
+   - If your Python process spawns child processes (e

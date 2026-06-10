@@ -1,0 +1,12 @@
+ `df -h` is a command used in Unix-like operating systems, including Linux and macOS, to display the amount of disk space used and available on the file systems. The `-h` option stands for human-readable, which means that the output shows the sizes in a format that's easier to understand (KB, MB, GB instead of bytes).
+
+It does not change the system in any way. It merely provides information about the file system usage. This command is often used by system administrators and power users to monitor disk space utilization. For example:
+
+```bash
+df -h
+Filesystem               Size  Used Avail Use% Mounted on
+/dev/sda1                20G  9.4G   9.6G  50% /
+/dev/sdb1                20G   10M   18G   1% /mnt
+```
+
+In this example, the output shows that the root file system (`/`) is using 9.4 GB out of 20 GB, leaving 9.6 GB free. The `/mnt` file system has 18 GB free out of 20 GB in total.

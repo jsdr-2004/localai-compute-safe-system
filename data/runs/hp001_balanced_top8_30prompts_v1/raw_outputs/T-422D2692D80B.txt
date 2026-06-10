@@ -1,0 +1,22 @@
+def safe_parse_integers(string_list):
+    """
+    Safely parse integers from a list of strings.
+
+    Args:
+        string_list (list): A list of strings to be parsed as integers.
+
+    Returns:
+        list: A list of integers parsed from the input strings.
+        Raises:
+            ValueError: If any of the strings cannot be converted to an integer.
+    """
+    parsed_integers = []
+    for s in string_list:
+        try:
+            # Attempt to convert the string to an integer
+            parsed_integer = int(s)
+            parsed_integers.append(parsed_integer)
+        except ValueError as e:
+            # Handle the case where a string cannot be converted to an integer
+            print(f"Error parsing '{s}': {str(e)}")
+    return parsed_integers

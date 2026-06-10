@@ -1,0 +1,45 @@
+To inspect a systemd service without changing it, you can use the `systemctl` command with various options that provide detailed information about the service. Here are some examples:
+
+1. **List all services**:
+```bash
+sudo systemctl list-units --type=service
+```
+This will display a list of all active services, including their names, descriptions, and status.
+
+2. **Get service details**:
+```bash
+sudo systemctl show --name=<service_name> <service_name>
+```
+Replace `<service_name>` with the actual name of your service (e.g., `myapp.service`). This will display detailed information about the service, including its configuration file, logs, and dependencies.
+
+3. **Check service status**:
+```bash
+sudo systemctl status --name=<service_name> <service_name>
+```
+This will show you the current status of the service, including any errors or warnings.
+
+4. **Get service logs**:
+```bash
+sudo journalctl --unit=<service_name>
+```
+Replace `<service_name>` with the actual name of your service (e.g., `myapp.service`). This will display the system log for that service.
+
+5. **Check service dependencies**:
+```bash
+sudo systemctl status <dependency_service_name> && sudo systemctl enable <dependent_service_name>
+```
+This will check if a specific dependency service is enabled and running, and then enable the dependent service.
+
+6. **Get service configuration file**:
+```bash
+sudo systemctl show --value=<service_name>.config
+```
+Replace `<service_name>` with the actual name of your service (e.g., `myapp.service`). This will display the configuration file for that service.
+
+7. **Check service version**:
+```bash
+sudo systemctl list-units --type=service | grep <service_name> | awk '{print $2}' | cut -d'=' -f2-
+```
+Replace `<service_name>` with the actual name of your service (e.g., `myapp.service`). This will display the version number of that service.
+
+These are just a few examples of how you can inspect a systemd service without changing it. By using these commands, you can gain valuable insights into the behavior and configuration of your services.

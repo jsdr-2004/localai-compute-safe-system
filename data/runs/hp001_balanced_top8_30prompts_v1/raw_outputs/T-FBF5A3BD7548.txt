@@ -1,0 +1,48 @@
+I'll guide you through a step-by-step process to plan a cautious disk-cleanup investigation without deleting personal files.
+
+**Before You Begin**
+
+1. **Understand the purpose**: Define why you want to perform a disk cleanup investigation. Is it for:
+	* Compliance with regulations (e.g., GDPR, HIPAA)?
+	* Data protection and security?
+	* System maintenance or upgrade?
+	* Troubleshooting issues?
+2. **Gather necessary tools**:
+	* A reliable antivirus software
+	* A disk imaging tool (optional)
+	* A backup of the system or files you want to investigate
+
+**Step 1: Prepare for the Investigation**
+
+1. **Create a temporary folder**: Set aside a specific directory for storing your investigation findings, such as a temporary folder on an external drive.
+2. **Disable any unnecessary services**: Shut down or disable any services that are not essential to the system's operation (e.g., Windows Search, BitLocker).
+3. **Update your antivirus software**: Ensure you have the latest virus definitions and updates.
+
+**Step 2: Identify the Scope of the Investigation**
+
+1. **Determine the disk(s) to investigate**: Decide which disks or partitions you want to examine.
+2. **Identify the types of files to scan**: Consider scanning:
+	* System files (e.g., Windows, system drivers)
+	* User data (e.g., documents, images, videos)
+	* Temporary files
+	* Logs and event logs
+
+**Step 3: Perform the Disk Cleanup Investigation**
+
+1. **Run a disk cleanup tool**: Utilize a reputable disk cleanup tool, such as:
+	* CCleaner (Windows)
+	* CleanMyMac (macOS)
+	* Recuva (Windows, macOS, Linux)
+2. **Scan for temporary files and system files**: Run the tool to scan for temporary files, system files, and other types of data.
+3. **Identify user data**: Scan through the scanned files to identify user-generated content, such as documents, images, and videos.
+
+**Step 4: Analyze and Report Findings**
+
+1. **Analyze the results**: Review the scan output to identify:
+	* Potential security risks
+	* System performance issues
+	* User data that may be sensitive or valuable
+2. **Document findings**: Keep a record of your investigation, including:
+	* The disk(s) examined
+	* The types of files scanned and their locations
+	* Any potential security risks or issues

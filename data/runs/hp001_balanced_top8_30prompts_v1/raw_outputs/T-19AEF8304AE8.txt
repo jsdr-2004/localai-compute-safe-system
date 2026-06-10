@@ -1,0 +1,46 @@
+Certainly! To determine the system uptime, we typically need to look at the boot time of your operating system or server. This information is usually stored in a file called `/proc/uptime` on Unix-based systems like Linux. On Windows, you can use Task Manager or PowerShell.
+
+### For Unix/Linux Systems:
+
+1. **Using `uptime`:**
+   - Open a terminal.
+   - Type the following command:
+     ```bash
+     uptime
+     ```
+   - This will display something like this (example):
+     ```
+     08:45:32 up 2 days, 17:39,  6 users,  load average: 0.23, 0.19, 0.11
+     ```
+   - The first part (`08:45:32`) is the current time.
+   - The second part (`up 2 days, 17:39`) indicates how long the system has been up.
+
+### For Windows Systems:
+
+1. **Using Task Manager:**
+   - Open Task Manager by pressing `Ctrl + Shift + Esc`.
+   - Go to the "Performance" tab and click on "Details".
+   - In the list of processes, find the process named `System` or `Windows`.
+   - The uptime will be displayed in the description field.
+
+2. **Using PowerShell:**
+   - Open PowerShell.
+   - Type the following command:
+     ```powershell
+     (Get-WmiObject Win32_OperatingSystem).LastBootUpTime
+     ```
+   - This will display the date and time when your Windows system was last started.
+
+### Explanation of Results:
+
+- **Unix/Linux:**
+  - The uptime is given in days, hours, minutes, and seconds. For example, "up 2 days, 17:39" means that the system has been running for two full days (48 hours), plus an additional 17 hours and 39 minutes.
+
+- **Windows:**
+  - The uptime is given in date format. For example, if it says `Last Boot Up Time: 02/15/2023`, this means the system was last started on February 15, 2023.
+
+### Example Interpretation:
+
+If you see:
+- **Unix/Linux:** "up 4 days, 17:39"
+  - This indicates that your system has been running for four full days and an additional

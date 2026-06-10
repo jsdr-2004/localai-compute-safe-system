@@ -1,0 +1,42 @@
+Here's a step-by-step guide to installing and verifying Docker on Ubuntu:
+
+**Step 1: Update the Package Index**
+
+Before installing Docker, update the package index to ensure you have the latest packages:
+```bash
+sudo apt-get update
+```
+This command checks for updates in the package index and makes sure you're using the latest versions of all packages.
+
+**Step 2: Install Docker**
+
+Install Docker on your Ubuntu system by running the following command:
+```bash
+sudo apt-get install docker.io
+```
+This command installs the Docker daemon, which is required to run Docker containers. The `docker.io` package provides the Docker client and server components.
+
+**Step 3: Verify Docker Installation**
+
+To verify that Docker has been installed correctly, you can use the following commands:
+
+* Run `docker --version` to display the version of Docker installed on your system.
+* Run `docker info` to display information about Docker, including the version, architecture, and operating system.
+
+**Step 4: Create a Docker User**
+
+Create a new user with Docker privileges by running the following command:
+```bash
+sudo adduser docker
+```
+This command adds a new user named `docker` with read-write permissions on the `/var/run/docker.sock` file.
+
+**Step 5: Run a Docker Command to Verify**
+
+To verify that Docker is working correctly, run a simple command like this:
+```bash
+docker run hello-world
+```
+This command runs a Docker container from the official `hello-world` image and displays a success message. If everything is set up correctly, you should see a message indicating that your system has been successfully authenticated with Docker.
+
+That's it! You've successfully installed and verified Docker on Ubuntu.

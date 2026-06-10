@@ -1,0 +1,41 @@
+Certainly! Understanding the concepts of CPU cores and threads is crucial for grasping how modern processors operate.
+
+### CPU Cores
+
+A CPU core refers to the fundamental unit of processing power within a central processing unit (CPU). Each core can execute instructions independently, allowing it to handle multiple tasks simultaneously. Modern CPUs typically have multiple cores, which means they contain several independent processing units that can work in parallel.
+
+For example:
+- A quad-core processor has four separate cores.
+- An octa-core processor has eight separate cores.
+
+### CPU Threads
+
+A thread is a smaller unit of execution within an operating system's context. It represents a sequence of instructions that the CPU executes, and it operates on data shared by multiple threads in a process. Each core can have one or more threads running simultaneously.
+
+For example:
+- A single-threaded application will use only one thread.
+- A multi-threaded application may utilize all available cores if they are not busy with other tasks.
+
+### Relationship Between Cores and Threads
+
+It's important to note that the number of CPU cores does not directly correspond to the number of threads. Here are a few key points:
+
+1. **One-to-One Mapping**: In some cases, each core can have its own thread (one-to-one mapping). This is common in single-threaded applications or when using operating systems like Windows where each process typically has one thread per CPU core.
+
+2. **Overlapping Threads and Cores**: In other scenarios, multiple threads may share a single core. Modern processors often support hyperthreading technology, which allows them to simulate more cores than they physically have by creating virtual threads that can run concurrently on the same physical core. This is particularly useful for multi-threaded applications.
+
+3. **Hyper-Threading (or Simultaneous Multithreading)**: Some modern CPUs use a technique called Hyper-Threading or simultaneous multithreading, where each core can execute two threads simultaneously. This effectively doubles the number of logical cores available to an operating system without increasing the physical count of CPU cores.
+
+### Example Scenario
+
+Consider a quad-core processor with hyper-threading enabled:
+
+- **Without Hyper-Threading**: Each core has one thread.
+  - If you have four processes, each process will use one core and one thread.
+  
+- **With Hyper-Threading Enabled**: Each core can simulate two threads (one-to-one mapping).
+  - With four cores, you effectively get eight logical cores available for scheduling.
+
+### Summary
+
+- **CPU Cores** are the physical units of processing power within a CPU.

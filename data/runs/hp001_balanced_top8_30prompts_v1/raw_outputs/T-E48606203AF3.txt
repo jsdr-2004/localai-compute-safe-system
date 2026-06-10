@@ -1,0 +1,66 @@
+Inspecting a systemd service without making any changes involves using the `systemctl` command-line tool, which is part of the systemd suite for managing system services in Linux systems. Here’s how you can do that:
+
+### Step 1: List All Services
+
+You can list all active and inactive services with their current status (running or stopped) by running:
+```bash
+sudo systemctl list-unit-files --type=service
+```
+This command will show a list of all service files along with their current status. You can filter this output to see only the currently active services using `grep`:
+```bash
+sudo systemctl list-unit-files --type=service | grep -i enabled
+```
+
+### Step 2: Show Current Status
+
+To view the current status of a specific service, you can use:
+```bash
+sudo systemctl status <SERVICE_NAME>
+```
+Replace `<SERVICE_NAME>` with the name of the service you want to inspect. For example, if you want to check the status of the `nginx` service, run:
+```bash
+sudo systemctl status nginx
+```
+
+### Step 3: Show Detailed Information
+
+To get detailed information about a specific service, including its configuration file and current settings, use:
+```bash
+sudo systemctl show <SERVICE_NAME>
+```
+Again, replace `<SERVICE_NAME>` with the name of the service. For instance, to see details for `nginx`, run:
+```bash
+sudo systemctl show nginx
+```
+
+### Step 4: Show Unit File Details
+
+To view the configuration file and settings for a specific unit (service), use:
+```bash
+sudo systemctl show --property=All <SERVICE_NAME>
+```
+This command will display all properties of the service, including its configuration file. For example:
+```bash
+sudo systemctl show --property=All nginx
+```
+
+### Step 5: Show Unit File
+
+If you want to see the actual unit file (configuration) for a specific service, use:
+```bash
+sudo systemctl show --full <SERVICE_NAME>
+```
+This will display all properties of the service along with its configuration. For example:
+```bash
+sudo systemctl show --full nginx
+```
+
+### Step 6: Show Unit File Contents
+
+To see the contents of the unit file itself (the actual configuration), use:
+```bash
+sudo systemctl cat <SERVICE_NAME>
+```
+Replace `<SERVICE_NAME>` with the name of the service. For example, to view the `nginx` service’s configuration file:
+```bash
+sudo systemctl cat nginx

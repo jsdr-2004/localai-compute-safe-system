@@ -1,0 +1,21 @@
+`df -h` is an operating system command used to display disk usage in a human-readable format (e.g., gigabytes or megabytes instead of bytes). This command is commonly available on Unix-like systems, including Linux and macOS.
+
+### What `df -h` Does:
+
+The `-h` option tells the `df` command to use a more readable output format. Without this option, `df` typically outputs disk usage in raw block counts (e.g., blocks or sectors), which can be difficult for users to interpret. By default, `df` will show information about all mounted file systems and their respective sizes.
+
+When you run the `df -h`, it provides a summary of how much space is used and available on each partition that your system has mounted. This includes:
+
+- The total amount of disk space available.
+- The amount of space currently in use by files (used).
+- The amount of free space available to store new data (free).
+
+### Does `df -h` Change the System?
+
+Running the `df -h` command itself does not change any system settings or configurations. It is a diagnostic tool used for monitoring disk usage and file system status.
+
+However, if you modify your system configuration in such a way that affects how much space is available (for example, by deleting files or changing permissions), then running `df -h` after the changes will show these modifications.
+
+In summary:
+- **`df -h`:** Displays disk usage information in a human-readable format. It does not change any system settings.
+- **Modifications to file systems:** Any changes made to your system (e.g., deleting files, changing permissions) would be reflected when you run `df -h`.

@@ -1,0 +1,39 @@
+You can use the following commands to verify if Docker is installed on your system:
+
+**For Linux systems:**
+
+1. Open a terminal and run the command `docker --version` (if Docker is installed, this should display the version of Docker).
+2. Run the command `docker -v` (this will also display the version of Docker).
+
+**For Windows systems:**
+
+1. Open a Command Prompt or PowerShell and run the command `docker --version` (if Docker Desktop is installed, this should display the version of Docker).
+2. Run the command `docker -v` (this will also display the version of Docker).
+
+If you don't see any output or if the commands fail, it means that Docker is not installed on your system.
+
+**For macOS systems:**
+
+1. Open a Terminal and run the command `docker --version` (if Docker Desktop is installed, this should display the version of Docker).
+2. Run the command `docker -v` (this will also display the version of Docker).
+
+If you don't see any output or if the commands fail, it means that Docker is not installed on your system.
+
+To install Docker, follow these steps:
+
+**For Linux systems:**
+
+1. Update the package list using the command `sudo apt-get update` (for Ubuntu-based systems) or `sudo yum update` (for RHEL-based systems).
+2. Install Docker using the command `sudo apt-get install docker.io` (for Ubuntu-based systems) or `sudo yum install docker` (for RHEL-based systems).
+
+**For Windows systems:**
+
+1. Download and install Docker Desktop from the official Docker website.
+2. Follow the installation instructions to complete the setup.
+
+**For macOS systems:**
+
+1. Download and install Docker Desktop from the official Docker website.
+2. Follow the installation instructions to complete the setup.
+
+After installing Docker, you can verify that it is working correctly by running a simple command like `docker run -it ubuntu /bin/bash`. This should open a new terminal window with a bash prompt inside a Ubuntu container.

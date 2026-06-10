@@ -1,0 +1,45 @@
+To determine which folders on your system are using the most disk space without deleting any files or data, you can follow these steps:
+
+### Step 1: Use `du` Command (Linux/Unix)
+If you're using a Linux or Unix-based operating system, you can use the `du` command to find out which directories take up the most space. Here's how you can do it:
+
+```bash
+sudo du -sh /path/to/directory/*
+```
+
+- `-s`: Summarize output per directory.
+- `-h`: Human-readable format (e.g., 1K, 1M, 1G).
+- `/path/to/directory/*`: Replace this with the path to your directories. If you want to check all subdirectories under a specific directory, use `du -sh */` or `du -sh /path/to/directory/`.
+
+### Step 2: Use `ncdu` (Linux/Unix)
+If you find that `du` is too verbose and slow for your needs, you can use `ncdu`, which is an interactive disk usage analyzer:
+
+```bash
+sudo ncdu /path/to/directory/
+```
+
+- `/path/to/directory/`: Replace this with the path to your directories.
+
+### Step 3: Use Windows Disk Usage Tools (Windows)
+If you're using a Windows system, you can use built-in tools like `TreeSize Free` or third-party tools like `WinDirStat`.
+
+#### Using TreeSize Free:
+1. Download and install TreeSize Free from its official website.
+2. Run the application and select your root directory to analyze.
+
+#### Using WinDirStat:
+1. Download and install WinDirStat from its official website.
+2. Launch WinDirStat, choose your root directory, and start analyzing.
+
+### Step 4: Use Third-Party Tools (MacOS)
+For macOS users, you can use third-party tools like `Disk Inventory X` or `TotalFinder`.
+
+#### Using Disk Inventory X:
+1. Download and install Disk Inventory X from its official website.
+2. Launch the application and select your root directory to analyze.
+
+### Step 5: Manual Inspection
+If you prefer a manual approach, you can navigate through directories in File Explorer (Windows) or Finder (MacOS), right-click on each folder, and choose "Properties" to see how much space it's using.
+
+### Conclusion
+By following these steps, you should be able to identify which folders are taking up the most disk space without deleting any files.

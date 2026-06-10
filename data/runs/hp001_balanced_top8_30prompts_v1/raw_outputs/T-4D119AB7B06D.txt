@@ -1,0 +1,17 @@
+`df -h` is a command in the `df` (Disk Free Space) utility, which displays detailed information about the disk space usage on your system.
+
+When you run `df -h`, here's what you can expect:
+
+- **Disk**: The first column shows the partition name or device identifier.
+- **Used%**: This column displays the percentage of disk space used by each file system. It's calculated based on the total size of the file system and the current free space.
+- **Available%**: Similar to `used%`, but this column shows the available disk space for the file system.
+- **Total**: The third column shows the total size of the file system in bytes.
+- **Used**: The fourth column displays the used disk space in bytes.
+- **Free**: The fifth column shows the free disk space in bytes.
+
+The `df -h` command is useful for:
+
+1. Checking disk usage: It helps you understand how much disk space is being used by each file system and which ones are running low on space.
+2. Identifying issues: If you notice a significant difference between `used%` and `available%`, it might indicate a problem with your file systems or disk configuration.
+
+As for whether `df -h` changes the system, the answer is no. The command only displays information about the current disk usage and does not modify any system settings or configurations. It's a simple, quick way to get an overview of your disk space usage without affecting your system's performance.

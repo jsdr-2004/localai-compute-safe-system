@@ -1,0 +1,39 @@
+You can use the following commands to verify if Docker is installed on your system:
+
+**Method 1: Using the `docker` command**
+
+Open a terminal or command prompt and type:
+```
+docker --version
+```
+If Docker is installed, you should see a version number printed.
+
+**Method 2: Checking for Docker installation using PowerShell (Windows) or Bash (Linux/macOS)**
+
+Open a terminal or command prompt and type:
+```bash
+if [ "$(uname -s)" == "Darwin" ]; then
+    docker --version || echo "Docker is not installed."
+elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+    docker --version || echo "Docker is not installed."
+else
+    echo "Docker is not supported on this platform."
+fi
+```
+This command checks the operating system and runs the `docker` command if Docker is installed.
+
+**Method 3: Checking for Docker installation using a script**
+
+You can also write a simple script to check if Docker is installed. Create a new file (e.g., `check_docker.sh`) with the following content:
+```bash
+#!/bin/bash
+
+if [ -x "$(command -v docker)" ]; then
+    echo "Docker is installed."
+else
+    echo "Docker is not installed."
+fi
+```
+Make the script executable by running `chmod +x check_docker.sh` and then run it with `./check_docker.sh`
+
+These methods should help you verify if Docker is installed on your system.

@@ -1,0 +1,32 @@
+To help you identify which folders are using the most disk space without deleting anything, follow these steps:
+
+1. **Use the built-in Disk Usage Tool**: Windows:
+	* Press the Windows key + E to open File Explorer.
+	* Click on "This PC" or "Computer".
+	* Right-click on the drive (e.g., C:) you want to analyze.
+	* Select "Properties" > "Disk Usage" from the context menu.
+	* The tool will display a list of folders, including their size and percentage usage.
+Mac:
+	* Open Finder.
+	* Go to "Go" > "About This Mac" > "Storage".
+	* Click on the "Manage" button next to the drive (e.g., Macintosh HD).
+	* The disk usage tool will display a list of folders, including their size and percentage usage.
+
+2. **Use the built-in Storage Report**: Windows:
+	* Press the Windows key + S to open Search.
+	* Type "Storage" in the search bar.
+	* Click on "Storage" from the search results.
+	* Click on the "Show me more details" link.
+	* The tool will display a list of folders, including their size and percentage usage.
+
+3. **Use a third-party disk space analysis tool**:
+	* Windows: You can use tools like Disk Cleanup, WinDirStat, or TreeSize Pro to analyze disk space usage.
+	* Mac: You can use tools like Disk Inventory X or GrandPerspective to analyze disk space usage.
+
+4. **Sort and filter the results**: Once you have identified which folders are using the most disk space, sort and filter the results to focus on specific folders or directories.
+
+**Tips**:
+
+* Be cautious when analyzing disk space usage, as large files or folders might be hiding in seemingly innocuous locations.
+* Consider deleting unnecessary files or emptying the Recycle Bin to free up disk space.
+* Regularly monitoring disk space usage can help you identify potential issues before they become major problems.

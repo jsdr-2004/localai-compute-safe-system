@@ -1,0 +1,61 @@
+Here's a step-by-step guide to installing and verifying Docker on Ubuntu:
+
+**Step 1: Update the Package Index**
+
+Before installing Docker, update the package index to ensure you have the latest packages:
+```bash
+sudo apt update
+```
+This command checks for updates in the package index and upgrades any available packages.
+
+**Step 2: Install Docker**
+
+Install Docker using the official Ubuntu repository:
+```bash
+sudo apt install docker.io -y
+```
+The `-y` option prompts you to accept the installation without being asked for confirmation. This is a good practice, as it saves time and reduces the risk of errors.
+
+**Step 3: Verify Docker Installation**
+
+Verify that Docker has been installed successfully by checking the version:
+```bash
+docker --version
+```
+This command displays the version of Docker installed on your system.
+
+You should see a version number similar to `20.10.5` or `19.03.0`. If you don't see this message, check the Docker installation logs for more information.
+
+**Step 4: Create a Non-Root User Account**
+
+Create a non-root user account specifically for running Docker:
+```bash
+sudo adduser docker
+```
+This command adds a new user called `docker` with limited privileges. You can choose any username you like, but it's recommended to use a unique and descriptive name.
+
+**Step 5: Set the Default User and Group**
+
+Set the default user and group for Docker:
+```bash
+sudo usermod -aG docker $USER
+```
+This command adds the `docker` group to the current user. You can also specify multiple users by separating them with spaces, like this:
+```bash
+sudo usermod -aG docker $USER $USER2
+```
+Replace `$USER` and `$USER2` with your desired usernames.
+
+**Verification Steps**
+
+To verify that Docker is working correctly:
+
+1. Open a terminal and run `docker --version`.
+2. Try running a Docker command, such as `docker run hello-world`. If everything is installed correctly, you should see the Docker logo and a message indicating that it's running.
+3. Check the Docker logs for any errors or warnings:
+```bash
+docker logs -f
+```
+This command displays the most recent log messages for each container.
+
+By following these steps, you've successfully installed and verified Docker on Ubuntu!

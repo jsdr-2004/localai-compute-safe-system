@@ -1,0 +1,53 @@
+Here's an example of how you can write pytest tests for a function that reverses a string:
+
+```python
+# test_string_reverser.py
+
+import pytest
+from string_reverser import reverse_string  # Import the function to be tested
+
+def test_reverse_string_empty_string():
+    """Test reversing an empty string"""
+    assert reverse_string("") == ""
+
+def test_reverse_string_single_character():
+    """Test reversing a single character string"""
+    assert reverse_string("a") == "a"
+
+def test_reverse_string_multiple_characters():
+    """Test reversing a multiple character string"""
+    assert reverse_string("hello") == "olleh"
+
+def test_reverse_string_non_alphanumeric_characters():
+    """Test reversing a string with non-alphanumeric characters"""
+    assert reverse_string("hello, world!") == "!dlrow ,olleh"
+
+def test_reverse_string_none_input():
+    """Test handling None input"""
+    with pytest.raises(TypeError):
+        reverse_string(None)
+
+def test_reverse_string_non_string_input():
+    """Test handling non-string input"""
+    with pytest.raises(TypeError):
+        reverse_string(123)
+```
+
+In this example, we're testing the `reverse_string` function from the `string_reverser` module. We're covering various cases such as:
+
+*   An empty string
+*   A single character string
+*   A multiple character string
+*   A string with non-alphanumeric characters
+*   Handling None input
+*   Handling non-string input
+
+Each test case is written in a separate function, and we use the `assert` statement to verify that the output of the `reverse_string` function matches our expected result. We also use pytest's `pytest.raises` context manager to test for specific exceptions being raised.
+
+You can run these tests using the following command:
+
+```bash
+pytest test_string_reverser.py
+```
+
+If all tests pass, you should see an output indicating that all tests were successful.

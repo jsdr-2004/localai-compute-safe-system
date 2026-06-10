@@ -1,0 +1,33 @@
+`df -h` is a command in the `df` (disk usage) utility, which displays disk usage statistics for all partitions on your system. The `-h` option stands for "human-readable."
+
+When you run `df -h`, here's what happens:
+
+1. It displays the total size of each partition and the number of free space.
+2. It shows the percentage of used disk space for each partition, compared to its total size.
+3. It indicates whether the partition is mounted (e.g., `/dev/sda1`) or not.
+
+The output format typically looks something like this:
+
+```
+  Filesystem      Size  Used  Free  Per-cent
+\_______        ____    _______  _______
+/dev/sda1            128G   66M   63.5G   53%
+/dev/sda2            32G     0B   32G     0%
+```
+
+Here's what each field means:
+
+* `Filesystem`: The name of the file system (e.g., `/dev/sda1`, `/dev/sda2`, etc.).
+* `Size`: The total size of the partition in bytes.
+* `Used`: The amount of disk space occupied by the partition, represented as a percentage of its total size.
+* `Free`: The amount of unused disk space on the partition, also represented as a percentage.
+* `Per-cent`: A numerical value showing how much of the partition's total size is actually used.
+
+Whether running `df -h` changes your system depends on various factors:
+
+* **Temporary**: Running `df -h` might have minimal or no impact if you don't modify any settings, such as changing mount points or disk layouts.
+* **System-wide updates**: When you update the system's file systems (e.g., using a package manager like apt-get), it may reorganize and resize partitions. This can cause `df -h` to display updated usage statistics.
+* **File system maintenance**: If your file system is being modified or partitioned, running `df -h` might update the displayed information.
+* **System changes**: In some cases, running `df -h` may be affected by system-level changes, such as a new disk or file system installation.
+
+Keep in mind that `df -h` is typically used for basic monitoring and troubleshooting purposes. If you need to make significant changes to your system's configuration or disk layout, it's best to consult the relevant documentation and follow

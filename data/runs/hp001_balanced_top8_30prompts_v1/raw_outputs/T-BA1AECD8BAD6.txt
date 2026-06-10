@@ -1,0 +1,19 @@
+`docker ps` is a command that lists all running Docker containers, and it can sometimes return an error code of `Permission Denied` if there's an issue with the permissions or access control list (ACL) of one of the containers.
+
+Here are some common reasons why `docker ps` might return permission denied:
+
+1. **Container owner doesn't have the necessary permissions**: If the container is created by a user who doesn't have write permissions to the directory where the container's filesystem is mounted, you'll get `Permission Denied`.
+2. **Directory traversal attacks**: If an attacker can access or manipulate the container's filesystem, they might be able to modify the ACLs of files or directories in a way that grants them permission to read or write to the container.
+3. **Mountpoint permissions**: If the mountpoint for the container's filesystem doesn't have the necessary permissions (e.g., `sudo`), you'll get `Permission Denied`.
+4. **Container configuration file permissions**: If the configuration files for the container (e.g., `docker-compose.yml`, `Dockerfile`) are set up with permissions that don't match the owner's, it might prevent the container from starting.
+5. **Network policies and security groups**: If there are network policies or security groups in place that restrict access to certain ports or IP addresses, you might not be able to start a container even if you have the necessary permissions.
+
+To diagnose this issue, try the following:
+
+1. Check the `docker ps` output for any error messages that indicate why the container is failing.
+2. Verify that the container owner has the necessary permissions to access the directory where the container's filesystem is mounted.
+3. Ensure that the mountpoint for the container's filesystem has the necessary permissions (e.g., `sudo`).
+4. Review the configuration files for the container and ensure they match the owner's permissions.
+5. Check if there are any network policies or security groups in place that might be restricting access to the container.
+
+If none of these steps resolve the issue, you may need to investigate further into the specific environment and containers involved.

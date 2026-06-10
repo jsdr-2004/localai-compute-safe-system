@@ -1,0 +1,23 @@
+Here are some read-only Linux commands to inspect memory and CPU load:
+
+**Memory Inspection**
+
+1. `top -bn1Mem":` This command displays the current process with the memory usage of each process.
+2. `htop --graph Mem":` This command displays a graph view of the memory usage of all processes.
+3. `ps aux | grep mem":` This command displays a list of processes along with their memory usage.
+
+**CPU Load**
+
+1. `top -bn1cpus":` This command displays the current process with the CPU load of each process.
+2. `htop --graph cpus":` This command displays a graph view of the CPU load of all processes.
+3. `top -b -n 5cpu":` This command displays the top 5 processes by CPU usage.
+
+**System-wide Memory and CPU Load**
+
+1. `sysdig -wmem 1024m 20s -wcpu 10m 60s`: This command collects memory and CPU usage data for a specified period (in this case, 1 minute) using the sysdig tool.
+2. `htop --graph mem:20m cpu:30m top":` This command displays a graph view of system-wide memory and CPU load.
+
+**Detailed Memory and CPU Load**
+
+1. `top -bn1mem detail":` This command displays detailed memory usage information for each process.
+2. `top -bn1cpu detail":` This command displays detailed CPU usage information for each process.

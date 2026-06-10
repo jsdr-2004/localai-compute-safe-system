@@ -1,0 +1,45 @@
+To help you identify which folders are using the most disk space without deleting anything, I'll guide you through a step-by-step process.
+
+**Prerequisites:**
+
+1. Your computer should be connected to the internet.
+2. You need administrative access to your system (e.g., Windows or macOS).
+3. Make sure you have a solid understanding of how file systems work and basic disk management concepts.
+
+**Step 1: Open File Explorer (Windows) or Finder (macOS)**
+
+1. Press the `Windows` key + `E` on your keyboard (Windows) or Command + `F` (or `⌘` + `F` on a Mac) to open File Explorer in Windows or Finder in macOS.
+2. Alternatively, you can also use the `Finder` application if you're using macOS.
+
+**Step 2: Navigate through the Folder Structure**
+
+1. In File Explorer, navigate to the root of your computer's file system (usually `C:`).
+2. Click on the "View" tab and select "Show" as "Hidden items."
+3. This will display all files and folders, including hidden ones.
+
+**Step 3: Identify Large Files and Folders**
+
+1. Look for large files (e.g., images, videos, or documents) that take up a significant amount of disk space.
+2. Check the size of each file and folder by right-clicking on them and selecting "Properties."
+3. In the Properties window, click on the "Size" or "Disk Usage" tab to see how much space they occupy.
+
+**Step 4: Analyze Folder Sizes**
+
+1. Create a list of large folders (e.g., those with sizes greater than 10 GB) that you suspect might be using up excessive disk space.
+2. Open these folders and check their contents to ensure they're not unnecessary or corrupted.
+3. If the folder contains unnecessary files or subfolders, delete them to free up disk space.
+
+**Step 5: Monitor Disk Usage (Optional)**
+
+1. To get a more detailed view of your disk usage without deleting anything, you can use third-party tools like:
+	* Windows:
+		+ Disk Cleanup (built-in)
+		+ CCleaner
+	* macOS:
+		+ Activity Monitor
+		+ Resource Monitor
+
+**Step 6: Set Up Regular Disk Cleanups**
+
+1. Schedule regular disk cleanups by setting reminders or using your operating system's built-in tools to remove unnecessary files and folders.
+2.

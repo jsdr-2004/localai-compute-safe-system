@@ -1,0 +1,7 @@
+Here are three bullets summarizing the role of a privilege broker:
+
+• **Enabling privileged access**: A privilege broker acts as an intermediary between users and systems, granting them access to resources and services that would otherwise be restricted due to security policies or regulatory requirements.
+
+• **Managing access controls**: Privilege brokers manage access control lists (ACLs), ensuring that only authorized users can access specific resources, and enforcing the principle of least privilege to minimize exposure to sensitive data.
+
+• **Providing secure authentication and authorization**: By authenticating and authorizing users before granting access to resources, privilege brokers help prevent unauthorized access, reduce the risk of data breaches, and ensure compliance with regulatory requirements.

@@ -1,0 +1,5 @@
+ A CPU core is a physical processing unit within a central processing unit (CPU) that reads and executes program instructions. Each core can process multiple instructions simultaneously, allowing for faster performance in multi-threaded applications.
+
+On the other hand, a thread is a single sequence of programmed instructions that can be managed independently by a scheduler. A single CPU core can handle multiple threads concurrently, but they share the same resources (such as cache and registers) within the core. This means that while a single-core processor with multiple threads can perform tasks more efficiently than a single-threaded processor, it may not achieve the same level of performance as a multi-core processor running the same number of threads due to resource contention.
+
+In summary, CPU cores are physical processing units, and each core can handle multiple threads simultaneously. Threads are sequences of programmed instructions that can be managed independently by a scheduler. A single thread runs on a single core, while multiple threads can run on multiple cores for improved performance in multi-threaded applications.

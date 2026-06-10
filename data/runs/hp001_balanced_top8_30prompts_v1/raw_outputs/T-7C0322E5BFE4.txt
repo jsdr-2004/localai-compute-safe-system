@@ -1,0 +1,29 @@
+Here's a step-by-step plan for a cautious disk cleanup investigation that doesn't involve deleting personal files:
+
+**Pre-Investigation Steps**
+
+1. **Backup personal data**: Before starting the investigation, ensure that all personal files are safely backed up to an external drive or cloud storage service.
+2. **Identify the scope of the investigation**: Determine which areas of the computer need to be investigated and what type of data is likely to be found.
+
+**Phase 1: Initial Assessment (No Data Deletion)**
+
+1. **Create a temporary working directory**: Set up a separate, temporary directory to store any files or data that may be found during the investigation.
+2. **Run a disk usage analysis tool**: Use a tool like Disk Cleanup or CCleaner to analyze disk usage and identify potential areas of concern (e.g., large files, duplicate files, or suspicious folders).
+3. **Inspect system logs**: Review system logs (e.g., Windows Event Viewer) to see if there are any errors or warnings related to disk usage or file corruption.
+4. **Check for malware**: Run a full scan with an anti-malware tool to ensure the computer is free from malware that may be affecting disk performance.
+
+**Phase 2: Detailed Analysis**
+
+1. **Use a forensic analysis tool**: Utilize a forensic analysis tool like EnCase, FTK Imager, or Autopsy to examine the disk structure and identify potential issues (e.g., hidden files, encrypted data, or suspicious folder contents).
+2. **Analyze file properties**: Use tools like File Explorer or a command-line interface to analyze file properties, such as creation dates, modification dates, and file sizes.
+3. **Inspect registry entries**: Use a tool like Regedit or a forensic analysis tool to inspect registry entries related to disk usage or file operations.
+4. **Check for system file corruption**: Run a check on system files (e.g., Windows System File Checker) to identify any corrupted or missing files.
+
+**Phase 3: Data Recovery and Verification**
+
+1. **Use data recovery software**: If necessary, use specialized data recovery software (e.g., EaseUS Data Recovery Wizard) to recover deleted or lost files.
+2. **Verify recovered files**: Use a tool like Verify-It! or CheckDisk to verify the integrity of recovered files and ensure they are not corrupted.
+
+**Post-Investigation Steps**
+
+1. **Document findings**: Create a detailed report of all findings, including any data recovered, system file corruption, or other issues identified.

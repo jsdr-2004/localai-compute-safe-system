@@ -1,0 +1,45 @@
+To help you verify whether Docker is installed, I'll guide you through a step-by-step process. Please follow along:
+
+**Method 1: Check if Docker is installed on your system**
+
+1. Open a terminal or command prompt.
+2. Type the following command and press Enter:
+```
+docker --version
+```
+This will display information about the Docker version.
+
+**Method 2: Verify Docker is installed using the package manager (if applicable)**
+
+If you're using a Linux-based distribution, such as Ubuntu or Debian, you can check if Docker is installed by running:
+
+1. Open a terminal.
+2. Type the following command and press Enter:
+```
+sudo apt-get list docker
+```
+This will display information about available Docker packages.
+
+**Method 3: Check for Docker installation using the `docker` command**
+
+If you're on Windows, you can try checking if Docker is installed by running:
+
+1. Open a Command Prompt or PowerShell.
+2. Type the following command and press Enter:
+```
+docker --version
+```
+This will display information about the Docker version.
+
+**Method 4: Check for Docker installation using the `which` command**
+
+If you're on macOS, you can check if Docker is installed by running:
+
+1. Open a Terminal.
+2. Type the following command and press Enter:
+```
+which docker
+```
+This will display the path to the Docker executable.
+
+Once you've checked these methods, you should be able to verify whether Docker is installed on your system.

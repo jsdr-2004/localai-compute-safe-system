@@ -1,0 +1,33 @@
+To delete all files on your computer and free up disk space, I'll guide you through the process using Windows. Please note that this will permanently delete all files and data on your computer.
+
+**Method 1: Using File Explorer**
+
+1. Open File Explorer by pressing the Windows key + E.
+2. Navigate to the following folder:
+   - C:\Users\[YourUsername]\AppData\Local\Temp
+   - This is a temporary folder that stores system files, logs, and other data.
+3. Delete all files in this folder. You can do this by right-clicking on each file and selecting "Delete" or by pressing the Delete key.
+
+**Method 2: Using Command Prompt**
+
+1. Press the Windows key + R to open the Run dialog box.
+2. Type `cmd` and press Enter to open the Command Prompt.
+3. Navigate to the following folder:
+   - C:\Users\[YourUsername]\AppData\Local\Temp
+4. Delete all files in this folder using the command `rmdir /s /q [folder_name]`.
+5. Replace `[folder_name]` with the actual name of the folder you want to delete.
+
+**Method 3: Using Disk Cleanup**
+
+1. Press the Windows key + R to open the Run dialog box.
+2. Type `disk cleanup` and press Enter to launch the Disk Cleanup tool.
+3. Follow the prompts to select the files and folders you want to clean up.
+4. Click "OK" to start the process.
+
+**Important Notes:**
+
+* Before deleting any files, make sure you have backed up important data or that you're sure you want to delete them permanently.
+* Deleting all files on your computer will free up disk space, but it may also remove system files and data that are essential for your computer's functionality.
+* If you're using a cloud storage service like Google Drive or Dropbox, you'll need to download any files you've uploaded to your computer before deleting them.
+
+Remember to be cautious when deleting files, as this will permanently delete all data on your computer.

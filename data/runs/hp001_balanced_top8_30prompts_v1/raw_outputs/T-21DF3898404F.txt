@@ -1,0 +1,49 @@
+When you encounter an issue where `docker ps` returns a "permission denied" error, it typically indicates that Docker is unable to access the container due to insufficient permissions or incorrect configuration. Here are some common reasons and troubleshooting steps:
+
+### 1. **User Permissions**
+   - **Docker Daemon Running as Root:** If your Docker daemon is running with root privileges (which is not recommended for security reasons), you might encounter permission issues when trying to interact with containers.
+   - **Non-Root User Issues:** If the user account under which `docker ps` is being run does not have sufficient permissions, it may result in a "permission denied" error.
+
+#### Troubleshooting:
+   - **Check Docker Daemon Configuration:**
+     ```bash
+     sudo systemctl status docker
+     ```
+     Ensure that your Docker daemon is configured to start as non-root and has the correct user permissions.
+   
+   - **Switch User Context:**
+     If you are running `docker ps` from a different user context, ensure that this user has the necessary permissions. You can switch users temporarily:
+     ```bash
+     sudo -i  # Switch to root
+     docker ps
+     exit    # Exit root session and return to original user
+     ```
+
+### 2. **Docker Configuration Files**
+   - **Configuration File Permissions:** Ensure that Docker configuration files have the correct permissions.
+   - **SELinux/AppArmor Policies:** If SELinux or AppArmor is enabled, it might be blocking access due to policy configurations.
+
+#### Troubleshooting:
+   - **Check Docker Configuration:**
+     ```bash
+     sudo ls -l /etc/docker/
+     ```
+     Ensure that files are readable and writable by the user running `docker ps`.
+
+### 3. **Container Security Context**
+   - **Security Context Issues:** If a container is configured with restrictive security settings (e.g., `--security-opt seccomp=unconfined`), it might not allow certain operations, including listing containers.
+
+#### Troubleshooting:
+   - **Check Container Security Settings:**
+     ```bash
+     docker inspect <container_id>
+     ```
+     Look for the `SecurityOpt` field to see if any security settings are applied that could be causing issues.
+
+### 4. **Network and Port Issues**
+   - **Port Forwarding:** If you're trying to access a container via port forwarding, ensure that the ports are correctly forwarded and accessible.
+   
+#### Troubleshooting:
+   - **Check Network Configuration:**
+     ```bash
+    

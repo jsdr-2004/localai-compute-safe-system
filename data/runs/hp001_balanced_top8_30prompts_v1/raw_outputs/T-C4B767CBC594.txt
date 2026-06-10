@@ -1,0 +1,50 @@
+To determine which folders on your system are using the most disk space without deleting any files or data, you can follow these steps:
+
+### Using Disk Usage Analyzers:
+1. **`du` Command (Unix/Linux):**
+   - The `du` command is a powerful tool for measuring file and directory sizes.
+   - You can use it to get an overview of the disk usage in your system by running commands like:
+     ```sh
+     du -a --exclude='path/to/exclude' | sort -n -r
+     ```
+     Replace `'path/to/exclude'` with any directories or files you want to exclude from the analysis.
+
+2. **`ncdu` (Unix/Linux):**
+   - `ncdu` is a disk usage analyzer that provides an interactive and user-friendly interface.
+   - Install it if you don't have it:
+     ```sh
+     sudo apt-get install ncdu  # For Debian-based systems
+     sudo yum install ncdu        # For Red Hat/CentOS based systems
+     ```
+   - Use the following command to analyze disk usage:
+     ```sh
+     ncdu /path/to/analyze
+     ```
+
+3. **`TreeSize Free` (Windows):**
+   - This is a free tool that provides an easy-to-use interface for analyzing and managing disk space.
+   - Download it from their official website: <https://www.ccleaner.com/treesize>
+   - Use the graphical user interface to see which folders are using the most space.
+
+### Using Command Line Tools:
+1. **`du` with `-h` Option (Unix/Linux):**
+   - This option provides human-readable output.
+     ```sh
+     du -ah /path/to/analyze | sort -n -r
+     ```
+
+2. **`find` Command (Unix/Linux):**
+   - You can use the `find` command to find files and directories based on their size:
+     ```sh
+     find /path/to/analyze -type d -exec du -h {} \; | sort -hr
+     ```
+   - Replace `/path/to/analyze` with your directory of interest.
+
+### Using Third-Party Tools (Windows):
+1. **`WinDirStat`:**
+   - This is a powerful tool for visualizing disk usage.
+   - Download and install it from: <https://windirstat.info/>
+   - It provides detailed information about which files and folders are taking up the most space.
+
+### Analyzing Results:
+- After

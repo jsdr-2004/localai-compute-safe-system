@@ -1,0 +1,49 @@
+Here are some read-only Linux commands to inspect disk usage:
+
+1. **df**: Displays information about the disk space used by each file system on the system.
+   ```bash
+   df -h
+   ```
+   The `-h` option displays the output in a human-readable format, showing units (e.g., KB, MB, GB).
+
+2. **du**: Estimates the size of each file or directory based on its contents.
+   ```bash
+   du -sh /
+   ```
+   This command shows the total size of all files and directories under `/`, along with their sizes in a human-readable format.
+
+3. **lsblk**: Displays information about disk partitions, including size, type, and usage.
+   ```bash
+   lsblk -o SIZE,FSTYPE,MOUNTPOINT,USE
+   ```
+   The `-o` option allows you to specify the columns displayed. This command shows the size (in bytes), file system type, mount point, and I/O count for each partition.
+
+4. **df -i**: Displays information about the inode usage of each file system.
+   ```bash
+   df -i
+   ```
+   The `i` option displays the output in a human-readable format, showing units (e.g., KB, MB, GB).
+
+5. **fduv** or **fdupes**: Displays duplicate files and their sizes.
+   ```bash
+   fduv .
+   ```
+   This command shows all duplicate files found on the current directory.
+
+6. **ls -lh**: Displays information about each file in a human-readable format.
+   ```bash
+   ls -lh
+   ```
+   The `h` option displays the output in a human-readable format, showing units (e.g., KB, MB, GB).
+
+7. **du -d 1 --max-depth=1 /**: Displays the total size of all files and directories under `/`, along with their sizes in a human-readable format.
+   ```bash
+   du -d 1 --max-depth=1 /
+   ```
+   This command shows the total size of all files and directories under `/`, excluding any subdirectories.
+
+8. **df --output=avail,used,pct --sort=-used**: Displays information about disk space usage, sorted by used space.
+   ```bash
+   df --output=avail,used,pct --sort=-used
+   ```
+   This command shows the available disk space, used disk space, and percentage of used disk space for each file system, sorted in descending order of

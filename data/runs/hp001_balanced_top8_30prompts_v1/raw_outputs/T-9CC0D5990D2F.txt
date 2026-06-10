@@ -1,0 +1,66 @@
+Here's a step-by-step debugging checklist to help identify and fix the issue of a Python process using too much memory:
+
+**Step 1: Review the code**
+
+* Check the code for any unnecessary imports, variables, or functions that are not being used.
+* Look for any complex calculations or data structures that could be causing excessive memory usage.
+
+**Step 2: Use the `memory_profiler` module**
+
+* Install the `memory_profiler` module using pip: `pip install memory_profiler`
+* Create a new file with a `.py` extension and add the following code:
+```python
+import memory_profiler
+
+def my_function():
+    # Your function code here
+    pass
+
+with memory_profiler.memory_usage() as prof:
+    my_function()
+```
+* Run the script and analyze the output to identify which functions or modules are using the most memory.
+
+**Step 3: Check for memory leaks**
+
+* Use the `psutil` module to check if there are any processes running in the background that could be consuming excessive memory.
+```python
+import psutil
+
+def get_memory_usage():
+    process = psutil.Process()
+    return process.memory_info().rss / (1024 * 1024)  # Convert bytes to MB
+
+for proc in psutil.process_iter(['pid', 'memory_percent']):
+    print(f"Process {proc.info['pid']}: {get_memory_usage():.2f} MB")
+```
+* Run the script and check for any processes that are consuming excessive memory.
+
+**Step 4: Identify memory-intensive data structures**
+
+* Use the `pandas` library to analyze your data structures and identify any memory-intensive ones.
+```python
+import pandas as pd
+
+# Create a sample DataFrame with large data
+data = {'A': [1, 2, 3], 'B': [4, 5, 6]}
+df = pd.DataFrame(data)
+
+print(df.memory_usage(index=True))
+```
+* Run the script and analyze the output to identify any memory-intensive data structures.
+
+**Step 5: Optimize database queries**
+
+* If you're using a database, optimize your queries to reduce the amount of data being retrieved.
+```python
+import sqlite3
+
+# Create a sample SQLite database with large tables
+conn = sqlite3.connect(':memory:')
+cursor = conn.cursor()
+
+# Create a large table with many rows
+cursor.execute('CREATE TABLE test (id INTEGER PRIMARY KEY, value TEXT)')
+for i in range(1000000):
+    cursor.execute('INSERT

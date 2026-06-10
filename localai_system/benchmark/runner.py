@@ -33,6 +33,26 @@ FIELDS = [
 
 def build_matrix(config: dict[str, Any]) -> Iterator[dict[str, Any]]:
     prompts = load_json(config["_prompts_path"])
+    if config.get("configurations"):
+        for configuration, prompt, repeat in itertools.product(
+            config["configurations"], prompts, range(1, int(config["repeat_each_test"]) + 1),
+        ):
+            model = {
+                "name": configuration["model_name"],
+                "size": configuration["model_size"],
+                "quantization": configuration["quantization"],
+            }
+            context = configuration["context_length"]
+            temperature = configuration["temperature"]
+            top_p = configuration["top_p"]
+            thread_count = configuration.get("threads")
+            identity = json.dumps([model["name"], context, temperature, top_p, thread_count, prompt["prompt_id"], repeat])
+            yield {
+                "test_id": "T-" + hashlib.sha256(identity.encode()).hexdigest()[:12].upper(),
+                "model": model, "context_length": context, "temperature": temperature, "top_p": top_p,
+                "threads": thread_count, "prompt": prompt, "repeat_id": repeat,
+            }
+        return
     settings = config["settings"]
     threads = settings.get("threads", [None])
     for model, context, temperature, top_p, thread_count, prompt, repeat in itertools.product(

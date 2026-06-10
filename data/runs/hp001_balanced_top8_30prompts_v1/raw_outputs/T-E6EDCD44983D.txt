@@ -1,0 +1,17 @@
+ To plan a cautious disk cleanup investigation without deleting personal files, follow these steps:
+
+1. Backup important data: Before starting any disk cleanup process, it is essential to backup all your important files and folders to an external hard drive or cloud storage service like Google Drive, Dropbox, or OneDrive. This ensures that you don't accidentally lose any valuable data during the cleaning process.
+
+2. Check system for unwanted programs: Use a reliable third-party software such as CCleaner, Revo Uninstaller, or Ashampoo UnInstaller to scan your computer for any unnecessary or unwanted programs taking up disk space. These tools can safely remove unused applications and temporary files without affecting personal data.
+
+3. Clean up system junk: Run the built-in Disk Cleanup tool on Windows (Start > All Programs > Accessories > System Tools > Disk Cleanup) to remove temporary files, system caches, and other unnecessary files that accumulate over time. Make sure to select "Clean up system files" before clicking "OK," and choose the drive you want to clean.
+
+4. Empty Recycle Bin: After cleaning up system junk, check your Recycle Bin for any deleted files you might want to recover. If there's no need for recovery, empty the Recycle Bin by right-clicking on it and selecting "Empty Recycle Bin."
+
+5. Use an advanced disk cleanup tool: If you still have limited disk space, consider using a more advanced disk cleanup tool like Piriform's Ccleaner or BleachBit. These tools offer additional features such as cleaning up registry entries, Internet cache, and other system-related junk that can help free up significant amounts of disk space without affecting personal files.
+
+6. Remove duplicate files: Use a program like Duplicate Files Finder to scan your hard drive for duplicate files and eliminate them. This will help recover some disk space without deleting any important data.
+
+7. Analyze disk usage: To identify which folders and files are taking up the most space, use the built-in Windows tool "Properties" (right-click on a drive > Properties > Disk Cleanup > Clean up system files > Click the Drive tab > Click on the More Optimization options button). This will provide you with detailed information about your disk usage.
+
+8. Manually remove large files: Based on the analysis from step 7

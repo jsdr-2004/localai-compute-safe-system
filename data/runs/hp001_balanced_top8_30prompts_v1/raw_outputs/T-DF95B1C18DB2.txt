@@ -1,0 +1,21 @@
+ Here's a debugging checklist for a Python process that is using too much memory:
+
+1. **Profiling**: Use Python profiling tools such as `cProfile`, `line_profiler`, or `memory_profiler` to identify the code sections or functions consuming the most resources.
+
+2. **Memory leak detection**: Use a memory profiler tool like `objgraph` or `memory-profiler` to detect any memory leaks in your code. These tools can help you find objects that are not getting garbage collected and are holding onto memory unnecessarily.
+
+3. **List, dict, and set comprehensions**: Avoid unnecessary list, dictionary, and set comprehensions as they can consume a lot of memory. Instead, consider using generators or working with data iteratively.
+
+4. **Deep copies**: Be careful with deep copying large objects using the `copy` module. It can consume a lot of memory. Use shallow copies when possible or efficient alternatives like `deepcopy` from the `copy` module for smaller data structures.
+
+5. **Lazy loading**: Implement lazy loading to only load data as it is needed, rather than loading everything upfront. This can help reduce memory usage significantly.
+
+6. **Data serialization**: If working with large datasets, consider using efficient data serialization libraries like `Pickle`, `json`, or `msgpack` to save and load your data. These libraries can help reduce the amount of memory required by storing data more compactly.
+
+7. **Optimize database queries**: If you're interacting with a database, optimize your SQL queries to fetch only the necessary data. Avoid fetching entire tables if you only need a small subset of the data.
+
+8. **Chunked processing**: Break down large tasks into smaller chunks and process them in batches instead of handling everything at once. This can help manage memory usage effectively.
+
+9. **Optimize algorithms**: Ensure that you're using efficient algorithms for common operations like sorting, searching, and traversing data structures. Some algorithms consume more memory than others, so it's essential to choose the most memory-efficient one when applicable.
+
+10. **Monitor resource usage**: Use operating system tools like `top`, `htop`, or `psutil` to monitor your process's CPU, memory, and I/O usage in real time. This

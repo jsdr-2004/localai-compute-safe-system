@@ -1,0 +1,26 @@
+To inspect memory and CPU load on a Linux system, you can use the following command-line tools:
+
+### Memory Inspection
+You can use `free` or `meminfo` command for this purpose.
+
+*   To display detailed information about available memory, run:
+    ```bash
+    free -v
+```
+*   To show the usage of each memory segment (like RAM and swap), run:
+    ```bash
+    free -m
+    ```
+### CPU Load Inspection
+
+For inspecting CPU load, you can use:
+
+```bash
+top
+```
+This command displays a real-time view of system activity. The CPU section is usually at the bottom of the output.
+
+To get more detailed information about each process and its CPU usage:
+```bash
+htop
+```

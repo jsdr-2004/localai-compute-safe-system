@@ -1,0 +1,53 @@
+Certainly! Here are some essential read-only (non-modifying) Linux commands that you can use to inspect disk usage:
+
+1. **`du` (Disk Usage):**
+   - This command is used to display the amount of space each file or directory occupies.
+     ```sh
+     du -h
+     ```
+     The `-h` option makes output more human-readable, showing sizes in a format like `K`, `M`, etc.
+
+2. **`du --max-depth=1`:**
+   - This command lists only the top-level directories and their disk usage without going into subdirectories.
+     ```sh
+     du --max-depth=1 -h | sort -hr
+     ```
+
+3. **`df` (Disk Free):**
+   - This command reports the amount of free space available on file system mount points.
+     ```sh
+     df -h
+     ```
+     The `-h` option makes output more human-readable.
+
+4. **`du --summarize`:**
+   - This command provides a summary of disk usage for all files and directories under each directory, which can be very useful to see the total space used by subdirectories.
+     ```sh
+     du --summarize -h | sort -hr
+     ```
+
+5. **`ncdu` (NCurses Disk Usage):**
+   - This is a disk usage analyzer that provides an interactive interface for navigating through directories and viewing their sizes in a more user-friendly way.
+     ```sh
+     ncdu /path/to/directory
+     ```
+     Replace `/path/to/directory` with the directory you want to inspect.
+
+6. **`ncurses du`:**
+   - Another tool similar to `ncdu`, this one also provides an interactive interface for navigating through directories and viewing their sizes.
+     ```sh
+     ncdu /path/to/directory
+     ```
+
+7. **`find` with `-type d` and `-exec du {} \;`:**
+   - This command can be used to find all directories and then list the disk usage of each directory.
+     ```sh
+     find . -type d -exec du -h {} + | sort -hr
+     ```
+
+8. **`lsof`:**
+   - This tool lists open files, which is useful for understanding what processes are using a lot of space on your system.
+     ```sh
+     lsof +c 0 -w -p $(pgrep -x <process_name>)
+     ```
+     Replace

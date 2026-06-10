@@ -1,0 +1,41 @@
+ To inspect a systemd service without changing it, you can use various commands that come with systemd toolset. Here are some common methods:
+
+1. Listing the services:
+
+List all available systemd units (services, targets, sockets, etc.) using the `systemctl list-units` command. You can filter the output by specifying a unit type (service in this case) and a keyword:
+
+```bash
+systemctl list-unit-files --type=service | grep enabled
+```
+
+This command lists all enabled systemd services.
+
+2. Reading service files:
+
+You can view the content of the service file directly by using the `cat`, `less`, or `head` commands with the following syntax:
+
+```bash
+cat /etc/systemd/system/{service-name}.service
+```
+
+Replace {service-name} with the name of your desired systemd service.
+
+3. Inspecting service properties:
+
+To inspect properties of a running service, use the `systemctl show` command:
+
+```bash
+systemctl show {service-name}
+```
+
+Replace {service-name} with the name of your desired systemd service. This command displays detailed information about the specified service, including its properties and settings.
+
+4. Checking service status:
+
+You can check whether a service is running or not using the `systemctl --quiet is-active` command:
+
+```bash
+systemctl --quiet is-active {service-name}
+```
+
+Replace {service-name} with the name of your desired systemd service. If the service is active, it will return "active" or "enabled". Otherwise, it will return "inactive" or "disabled".

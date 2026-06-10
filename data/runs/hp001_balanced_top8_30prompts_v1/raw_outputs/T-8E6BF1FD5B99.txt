@@ -1,0 +1,27 @@
+ To check the system uptime on a Linux-based operating system, you can use the `uptime` command in the terminal. Here's how:
+
+1. Open your terminal. You can do this by searching for "terminal" in the application menu or by using a shortcut like Ctrl+Alt+T.
+2. Once the terminal is open, simply type `uptime` and press Enter.
+
+The output will display something similar to:
+
+```
+10:30:56 up 7 days,  4:45,  3 users,  load average: 0.29, 0.35, 0.41
+```
+
+Let's break down the output:
+
+- `10:30:56`: The current time when the command was executed.
+- `up 7 days`: The system has been running for 7 full days without any reboots.
+- `4:45`: The uptime in hours and minutes, which is an additional 4 days, 45 minutes at the current moment.
+- `3 users`: Number of current logged-in users.
+- `load average:`: This shows the system load averages over the past 1, 5, and 15 minutes. In this example, the load averages are 0.29, 0.35, and 0.41 respectively, indicating a low load on the system.
+
+If you want more detailed information about the system uptime, you can use the `uptime -a` command which provides additional details like the kernel release, hostname, and boot-time. For example:
+
+```
+uptime -a
+10:34:25 up 7 days,  5:06,  1 user,  load average: 0.29, 0.35, 0.41
+
+Linux localhost 5.15.0-51-generic #58~20.04.1-Ubuntu SMP Fri Sep 30 17:23:23 UTC 2022 x86_64 x86_64 x86_64 GNU/Linux
+```

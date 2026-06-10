@@ -1,0 +1,28 @@
+`df -h` is a command used in Unix-like operating systems (including Linux and macOS) to display disk usage information about file systems mounted on the local filesystem. The `-h` option stands for "human-readable" and is used to format the output so that sizes are displayed in a more readable way, such as kilobytes (KB), megabytes (MB), gigabytes (GB), etc., rather than just bytes.
+
+### What `df -h` Does
+
+The `df` command provides information about file system space usage. When you run `df`, it displays the total amount of disk space available on each mounted file system, as well as how much space is currently used and free. The `-h` option enhances this by presenting these sizes in a more human-readable format.
+
+Here's an example output:
+
+```
+Filesystem      Size  Used Avail Use% Mounted on
+udev            7.8G     0  7.8G   0% /dev
+tmpfs           1.6G   29M  1.5G   2% /run
+...
+```
+
+In this example, the `Size`, `Used`, and `Avail` columns are displayed in a human-readable format (e.g., KB, MB, GB).
+
+### Does `df -h` Change the System?
+
+Running the `df -h` command itself does not change or modify any system settings. It is purely an informational tool that provides details about disk usage on your system. The `-h` option simply changes how these details are presented to make them easier for humans to read and understand.
+
+If you were referring to a situation where running `df -h` might cause some kind of change, it could be in the context of monitoring or logging purposes. For example, if you use tools like `cron`, `logrotate`, or other scripts that run `df -h` periodically and log the output, then yes, those actions would indeed modify your system by running commands.
+
+However, even in these cases, the core functionality of `df -h` remains unchanged—it simply provides disk usage information. The changes are typically related to how this information is used or stored rather than any direct modification to file systems themselves.
+
+In summary:
+- Running `df -h` does not change your system.
+- It merely displays disk space usage in a human-readable format, which can be useful for monitoring and managing storage resources on your system.

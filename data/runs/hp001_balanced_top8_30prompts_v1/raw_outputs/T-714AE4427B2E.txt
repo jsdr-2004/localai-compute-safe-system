@@ -1,0 +1,21 @@
+Here are some read-only Linux commands to inspect memory and CPU load:
+
+**Memory Inspection**
+
+1. `free -m` : Displays the amount of free and used memory in megabytes.
+2. `cat /proc/meminfo` : Displays detailed information about system memory, including total, available, and used memory.
+3. `vmstat -n 1` : Displays real-time statistics on CPU activity, memory usage, and disk I/O.
+
+**CPU Load Inspection**
+
+1. `top -b -n 1` : Displays the current process list and CPU usage for each process.
+2. `mpstat -1` : Displays real-time statistics on CPU usage, including idle time, user time, system time, and interrupt time.
+3. `cat /proc/stat` : Displays detailed information about CPU usage, including total CPU time, user CPU time, system CPU time, and idle time.
+
+**Other Useful Commands**
+
+1. `htop` : A graphical interface for viewing process lists and CPU usage in real-time.
+2. `sysdig` : A command-line tool for analyzing system calls and CPU activity.
+3. `perf stat` : A command-line tool for measuring CPU performance and memory usage.
+
+Note: These commands are read-only, meaning they do not modify the system or write to any files.

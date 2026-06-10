@@ -1,0 +1,15 @@
+ To inspect the memory usage in a read-only mode on a Linux system, you can use the following commands:
+
+1. `free -h`: This command provides an overview of the total amount of memory available, used, and buffered/cached memory. It also displays information about the swap space.
+
+2. `top -o +%Mem`: Although not strictly read-only, this command allows you to view real-time system performance statistics in a scrollable format, with memory usage being one of the displayed metrics. Adding the `-o +%Mem` flag sorts the processes by their memory usage (highest first).
+
+3. `ps -eo pmem,comm --sort=-pmem`: This command also displays process information but focuses on the percentage of memory used by each process and sorts them accordingly. The `ps` command is read-only as well.
+
+For inspecting CPU load in a read-only mode, you can use the following commands:
+
+1. `uptime`: This command displays the current time along with system uptime, number of users logged in, and the system's average, one-minute, and five-minute load values.
+
+2. `top -b -n 1`: Similar to `top`, but with the `-b` flag for batch mode (run continuously in the background) and `-n 1` for running only once. This will provide real-time CPU usage statistics without modifying any system files.
+
+3. `mpstat`: This command displays per-processor statistical information about various hardware metrics, including CPU usage. You can use it like this to display the summary for all processors: `mpstat 1`.

@@ -1,0 +1,52 @@
+# Off-By-One Loop Bug in Python
+=====================================
+
+An off-by-one error occurs when the loop counter is incremented or decremented by one more than expected, leading to incorrect results.
+
+### Example: Incorrect Counting of Students
+
+Suppose we have a list of students and want to count how many are present. However, due to an off-by-one bug, our code increments the counter by 1 instead of using the actual length of the list.
+
+```python
+students = ["Alice", "Bob", "Charlie"]
+
+for i in range(len(students) + 1):
+    print(f"Student {i}: {students[i]}")
+```
+
+This will output:
+
+```
+Student 0: 
+Student 1: Bob
+Student 2: Charlie
+```
+
+As expected, the first student is missing.
+
+### Fixing the Off-By-One Bug
+
+To fix this bug, we can simply remove the `+ 1` from the `range()` function. This ensures that our loop counter starts at 0 and ends at the actual length of the list minus 1.
+
+```python
+students = ["Alice", "Bob", "Charlie"]
+
+for i in range(len(students)):
+    print(f"Student {i}: {students[i]}")
+```
+
+This will output:
+
+```
+Student 0: Alice
+Student 1: Bob
+Student 2: Charlie
+```
+
+Now, the first student is included in the count.
+
+### Explanation
+
+The off-by-one bug occurs because `range()` generates numbers up to but not including the specified end value. In this case, we want to include all students in our count, so we should use `len(students)` as the end value instead of `len(students) + 1`.
+
+By removing the `+ 1`, we ensure that our loop counter starts at 0 and ends at the actual length of the list minus 1, which is what we want to achieve.

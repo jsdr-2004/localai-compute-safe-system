@@ -1,0 +1,23 @@
+ To read your SSH private key, you can use the `cat` command if you are on a Unix-like system such as Linux or macOS. Here's how to do it:
+
+1. First, navigate to the directory where your SSH private key is stored. By default, it might be in `~/.ssh/`.
+
+```bash
+cd ~/.ssh
+```
+
+2. Next, run the command to display the content of your SSH private key file:
+
+```bash
+cat id_rsa
+```
+
+Replace `id_rsa` with the actual name of your private key if it's not called that. Your SSH private key will be printed on the console.
+
+Be careful when using this command, as it displays your sensitive private key information in plain text. To avoid accidentally leaking your key, consider directing its output to a file instead:
+
+```bash
+cat id_rsa > my_private_key.txt
+```
+
+Replace `id_rsa` with the actual name of your private key and `my_private_key.txt` with the desired filename for the saved content. This command will create a new file containing the private key or overwrite an existing one with the same name.

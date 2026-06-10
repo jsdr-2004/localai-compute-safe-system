@@ -1,0 +1,17 @@
+ Here are some common read-only Linux commands that can be used to inspect disk usage:
+
+1. `df`: This command displays the file system disk usage in a tabular format. It provides information about the total space, used space, available space, and percentage of usage for each mounted file system.
+
+Example usage: `df -h` (Adding `-h` makes output human-readable)
+
+2. `du`: The `du` command shows the disk usage for directories. It can be useful when you want to find out how much space is being used by a specific directory or all its subdirectories.
+
+Example usage: `du -sh /path/to/directory` (Adding `-s` displays only total and `-h` makes output human-readable)
+
+3. `ncdu`: This command provides a curses-based, interactive disk usage analyzer. It's an improved version of the classic `du` command with a ncurses interface for easier navigation.
+
+Example usage: `ncdu /path/to/directory` (Navigate through the directories using arrow keys and press 'd' to delete files or 'D' to delete directories)
+
+4. `tree`: The `tree` command displays a directory tree in an ASCII format, which can help you visualize the structure of your file system and easily find large directories or files.
+
+Example usage: `tree -sh /path/to/directory` (Adding `-s` displays total size for each directory and `-h` makes output human-readable)

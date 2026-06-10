@@ -1,0 +1,12 @@
+import pytest
+
+def reverse_string(s):
+    return s[::-1]
+
+@pytest.mark.parametrize("input, expected", [
+    ("hello", "olleh"),
+    ("world", "dlrow"),
+    ("abc", "cba")
+])
+def test_reverse_string(input, expected):
+    assert reverse_string(input) == expected

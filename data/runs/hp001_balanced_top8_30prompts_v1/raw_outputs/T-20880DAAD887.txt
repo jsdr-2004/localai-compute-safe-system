@@ -1,0 +1,22 @@
+To inspect memory and CPU load on a Linux system, you can use the following read-only commands:
+
+**Memory Inspection**
+
+1. `free -m`: This command displays a list of all running processes, including their memory usage.
+2. `top -bn1`: This command displays a real-time graph of CPU usage over the past minute.
+3. `htop`: This is a more interactive tool that allows you to view detailed information about running processes and system resources.
+
+**CPU Load Inspection**
+
+1. `top -bn1`: This command displays a real-time graph of CPU usage over the past minute, similar to `htop`.
+2. `iostat -d -n 1 /dev/sda1`: This command displays disk usage statistics for a specific device (in this case, `/dev/sda1`).
+3. `vmstat -n 5`: This command displays detailed system resource usage, including CPU, memory, and I/O statistics.
+
+**Example Use Cases**
+
+* To get an overview of the system's memory usage: `free -m`
+* To see the current CPU load: `top -bn1`
+* To view disk usage statistics for a specific device: `iostat -d -n 1 /dev/sda1`
+* To get detailed system resource usage, including CPU, memory, and I/O statistics: `vmstat -n 5`
+
+Note that these commands are read-only, meaning they do not modify the system's state. They provide a snapshot of the current state at a specific point in time.

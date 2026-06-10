@@ -1,0 +1,3 @@
+Here's an explanation of RAM that a beginner can understand:
+
+RAM, or Random Access Memory, is a type of computer storage that temporarily holds data and applications while your computer is running. It's like a desk where you can quickly access the information you need to work on a project, play a game, or watch a video. Unlike hard drives, which are longer-term storage devices that hold everything about your computer, RAM is specific to each application and is automatically cleared when the program ends. Think of it like a workspace where you can quickly jot down notes, check email, or brainstorm ideas – this is basically what RAM does for your computer!

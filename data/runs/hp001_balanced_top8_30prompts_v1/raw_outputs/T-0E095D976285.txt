@@ -1,0 +1,29 @@
+ An off-by-one error, also known as a boundary bug, is a common programming mistake where the programmer fails to properly account for the number of elements in an array or collection when accessing or iterating over them. This can lead to index out of range errors or unexpected behavior.
+
+Here's a simple example of an off-by-one error in Python:
+
+```python
+def print_array(arr):
+    for i in range(len(arr)):
+        print(arr[i])
+
+# Example array
+arr = [1, 2, 3]
+print_array(arr)
+```
+
+In this case, the function `print_array` will not print the last element of the array because it stops at the index equal to the length of the array (since `range()` is exclusive on the right). To fix this off-by-one error, we can modify the loop condition to include the last index:
+
+```python
+def print_array(arr):
+    for i in range(len(arr)):
+        print(arr[i])
+    # Print the last element explicitly
+    print(arr[-1])
+
+# Example array
+arr = [1, 2, 3]
+print_array(arr)
+```
+
+Now, the function `print_array` will correctly print all elements in the array, including the last one.

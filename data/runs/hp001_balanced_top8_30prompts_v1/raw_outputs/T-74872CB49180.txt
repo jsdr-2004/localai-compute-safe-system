@@ -1,0 +1,53 @@
+When dealing with a Python process that is using excessive amounts of memory, it's important to systematically approach the problem and gather information to identify the root cause. Here’s a step-by-step debugging checklist you can follow:
+
+### 1. **Check Memory Usage**
+   - Use tools like `psutil` or `memory_profiler` to monitor the process in real-time.
+     ```python
+     import psutil
+
+     # Example: Check memory usage of the current Python process
+     print(psutil.Process().memory_info())
+     ```
+
+### 2. **Identify Memory Leaks**
+   - Use a tool like `objgraph` or `memory_profiler` to identify objects that are not being garbage collected.
+     ```python
+     from memory_profiler import profile
+
+     @profile
+     def your_function():
+         # Your function code here
+     ```
+
+### 3. **Review Code for Memory Leaks**
+   - Look for loops, recursive functions, or infinite loops that might be holding onto objects unnecessarily.
+   - Check if you are using large data structures like lists, dictionaries, or numpy arrays without proper management.
+
+### 4. **Check External Libraries and Dependencies**
+   - Ensure all external libraries are up-to-date and not causing memory leaks.
+   - Use tools like `pip freeze` to list installed packages and check for any outdated dependencies.
+
+### 5. **Optimize Data Structures**
+   - Replace inefficient data structures with more efficient ones (e.g., use generators instead of lists).
+   - Avoid unnecessary copying of large objects or arrays.
+
+### 6. **Use Efficient Algorithms and Data Structures**
+   - Review the algorithms you are using for their memory efficiency.
+   - Consider whether there might be a better algorithm that uses less memory.
+
+### 7. **Check for Circular References**
+   - Ensure that no circular references (e.g., `a = b; b = a`) are causing objects to not be garbage collected.
+
+### 8. **Profile the Code**
+   - Use profiling tools like `cProfile` or `line_profiler` to identify which parts of your code are consuming the most memory.
+     ```python
+     import cProfile
+
+     def your_function():
+         # Your function code here
+
+     cProfile.run('your_function()')
+     ```
+
+### 9. **Check for Memory Leaks in External Libraries**
+   - If you're using third-party libraries, ensure they are not leaking memory and that they are compatible with the version of Python you are using

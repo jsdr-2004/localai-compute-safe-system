@@ -19,21 +19,40 @@ def load_config(path: str | Path) -> dict[str, Any]:
 
 def validate_config(config: dict[str, Any]) -> list[str]:
     errors = []
-    for key in ("hardware_profile_id", "runtime", "models", "settings", "repeat_each_test", "output_csv"):
+    for key in ("hardware_profile_id", "runtime", "repeat_each_test", "output_csv"):
         if key not in config:
             errors.append(f"Missing required field: {key}")
     if config.get("runtime") != "ollama":
         errors.append("Only the ollama runtime is supported in this prototype")
-    if not isinstance(config.get("models"), list) or not config.get("models"):
-        errors.append("models must be a non-empty list")
-    for model in config.get("models", []):
-        for key in ("name", "size", "quantization"):
-            if key not in model:
-                errors.append(f"Model missing required field: {key}")
-    settings = config.get("settings", {})
-    for key in ("context_lengths", "temperatures", "top_p"):
-        if not isinstance(settings.get(key), list) or not settings.get(key):
-            errors.append(f"settings.{key} must be a non-empty list")
+    configurations = config.get("configurations")
+    if configurations is not None:
+        if not isinstance(configurations, list) or not configurations:
+            errors.append("configurations must be a non-empty list")
+        for index, configuration in enumerate(configurations or [], start=1):
+            for key in ("model_name", "model_size", "quantization", "context_length", "temperature", "top_p"):
+                if key not in configuration:
+                    errors.append(f"Configuration {index} missing required field: {key}")
+            if "context_length" in configuration and int(configuration["context_length"]) < 1:
+                errors.append(f"Configuration {index} context_length must be positive")
+            for key in ("temperature", "top_p"):
+                if key in configuration:
+                    try:
+                        value = float(configuration[key])
+                        if value < 0 or (key == "top_p" and value > 1):
+                            errors.append(f"Configuration {index} {key} is invalid")
+                    except (TypeError, ValueError):
+                        errors.append(f"Configuration {index} {key} must be numeric")
+    else:
+        if not isinstance(config.get("models"), list) or not config.get("models"):
+            errors.append("models must be a non-empty list when configurations is not provided")
+        for model in config.get("models", []):
+            for key in ("name", "size", "quantization"):
+                if key not in model:
+                    errors.append(f"Model missing required field: {key}")
+        settings = config.get("settings", {})
+        for key in ("context_lengths", "temperatures", "top_p"):
+            if not isinstance(settings.get(key), list) or not settings.get(key):
+                errors.append(f"settings.{key} must be a non-empty list")
     if int(config.get("repeat_each_test", 0) or 0) < 1:
         errors.append("repeat_each_test must be at least 1")
     for key in ("warmup_runs", "cooldown_seconds_between_tests", "max_output_tokens", "per_test_timeout_seconds"):

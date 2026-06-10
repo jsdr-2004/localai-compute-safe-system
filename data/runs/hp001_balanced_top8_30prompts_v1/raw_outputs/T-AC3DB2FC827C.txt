@@ -1,0 +1,11 @@
+Here are five bullets summarizing the benefits and limitations of local AI:
+
+• **Increased efficiency**: Local AI can reduce travel time for data collection and analysis, as it often relies on existing infrastructure rather than requiring new equipment or transportation. This can lead to increased productivity and reduced costs.
+
+• **Improved decision-making**: By leveraging data from multiple sources, local AI can provide more accurate and comprehensive insights, enabling better decision-making in various fields such as finance, healthcare, and logistics.
+
+• **Enhanced security**: Local AI is often deployed in secure environments, reducing the risk of cyber threats and data breaches. Its localized nature also allows for easier monitoring and maintenance, minimizing the impact of potential security incidents.
+
+• **Reduced reliance on cloud services**: By processing local AI tasks, organizations can reduce their dependence on cloud-based services, which may be unavailable due to outages, maintenance, or other issues. This provides greater resilience and flexibility in uncertain environments.
+
+• **Limited scalability**: Local AI is typically designed to operate within a specific geographic area, limiting its scalability and making it less suitable for applications that require high-volume processing or global reach. However, this limitation can be mitigated by using distributed architectures and cloud-based services when necessary.

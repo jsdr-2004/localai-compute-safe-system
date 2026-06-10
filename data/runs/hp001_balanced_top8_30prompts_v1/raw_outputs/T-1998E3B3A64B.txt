@@ -1,0 +1,36 @@
+I can guide you through a step-by-step process for conducting a cautious disk-cleanup investigation on a computer system without deleting any personal files.
+
+**Preparation**
+
+1. **Backup**: Ensure that all important data is backed up to an external hard drive, cloud storage, or both.
+2. **Choose a method**: Select one of the following methods:
+	* **Command Prompt (Windows)**: Use the built-in Disk Cleanup tool to remove temporary files and system junk.
+	* **Disk Cleanup Tool (macOS)**: Use the built-in Disk Utility app to remove temporary files and other unnecessary data.
+3. **Understand the process**: Familiarize yourself with the disk-cleanup tools and their limitations.
+
+**Method 1: Using Command Prompt (Windows)**
+
+1. **Open Command Prompt**: Press the Windows key + R, type `cmd`, and press Enter.
+2. **Run Disk Cleanup**: Type `disk cleanup` and press Enter to start the process.
+3. **Select options**: Choose the types of files you want to remove:
+	* **Temporary files**: Remove system files, temporary files, and other unnecessary data.
+	* **System files**: Remove Windows-specific system files that are no longer needed.
+4. **Confirm removals**: Review the selected files and confirm that you want to remove them.
+
+**Method 2: Using Disk Utility (macOS)**
+
+1. **Open Disk Utility**: Click the Apple menu, select "Disk Utility," and then click on the "Utilities" tab.
+2. **Select disk**: Choose the disk you want to clean up from the list of available disks.
+3. **Run Disk Cleanup**: Select the "Optimize Storage" option and follow the prompts to remove temporary files and other unnecessary data.
+4. **Confirm removals**: Review the selected files and confirm that you want to remove them.
+
+**Post-Cleanup Steps**
+
+1. **Verify disk space**: Check the remaining free disk space on your computer to ensure that the cleanup process has not removed any important files.
+2. **Review logs**: If you used a command prompt or Disk Utility, review the output to ensure that all necessary files were removed.
+3. **Securely dispose of media**: Dispose of any backup media, such as external hard drives, securely.
+
+**Additional Tips**
+
+* Be cautious when using disk-cleanup tools, as they may remove important system files or data.
+* If you're unsure about a particular file or folder, it's best to err on the side of caution and avoid

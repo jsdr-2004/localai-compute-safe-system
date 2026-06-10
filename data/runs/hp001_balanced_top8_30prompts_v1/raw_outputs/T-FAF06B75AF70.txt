@@ -1,0 +1,33 @@
+Here's a step-by-step plan for a cautious disk cleanup investigation that doesn't involve deleting personal files:
+
+**Pre-Investigation Steps**
+
+1. **Backup personal data**: Before starting the investigation, create a backup of all personal files to an external drive or cloud storage.
+2. **Identify critical systems**: Note down the location and function of critical system files, such as operating system files, drivers, and essential applications.
+3. **Gather information**: Collect any relevant documentation, logs, or reports that may help during the investigation.
+
+**Investigation Steps**
+
+1. **Analyze disk usage**: Use a disk usage analysis tool (e.g., Windows Disk Cleanup, CCleaner) to identify which files are taking up the most space on the disk.
+2. **Identify large files and folders**: Look for large files and folders that may be consuming excessive space. Note down their locations and sizes.
+3. **Check for duplicate files**: Use a duplicate file finder tool (e.g., Duplicate Cleaner) to identify any duplicate files or folders.
+4. **Inspect system logs**: Review system logs (e.g., Event Viewer, Windows Error Log) to see if there are any errors or issues related to disk space or file corruption.
+5. **Check for malware and viruses**: Run a full scan with an anti-malware program to ensure the system is free from malware and viruses that may be consuming disk space.
+
+**Non-Invasive Data Analysis**
+
+1. **Use data recovery software**: Use data recovery software (e.g., Recuva, EaseUS Data Recovery Wizard) to recover deleted files or analyze file system errors.
+2. **Analyze file metadata**: Use a file metadata analysis tool (e.g., ExifTool, File Metadata Analyzer) to examine file properties, such as creation dates, sizes, and permissions.
+
+**Documentation and Reporting**
+
+1. **Document findings**: Create a detailed report of the investigation's findings, including disk usage analysis, large files and folders, duplicate files, system logs, malware and viruses, data recovery, and file metadata analysis.
+2. **Recommendations**: Provide recommendations for addressing any issues identified during the investigation.
+
+**Post-Investigation Steps**
+
+1. **Verify results**: Double-check the investigation's findings to ensure accuracy.
+2. **Implement fixes**: Implement any fixes or recommendations suggested during the investigation.
+3. **Monitor disk health**: Regularly monitor disk health and performance to prevent future issues.
+
+By following this cautious disk cleanup investigation plan, you can gather valuable insights into your

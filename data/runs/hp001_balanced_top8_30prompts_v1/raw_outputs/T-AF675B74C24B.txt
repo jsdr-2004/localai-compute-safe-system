@@ -1,0 +1,39 @@
+You can use the `systemctl` command to inspect a systemd service without modifying it.
+
+Here are some examples:
+
+1. Check if the service is enabled or disabled:
+```
+$ systemctl status <service_name>
+```
+
+2. Get the current status of the service (running, stopped, etc.) and any error messages:
+```
+$ systemctl status <service_name> --no-pager
+```
+
+3. Get a list of all units that are related to the service (e.g., socket units, timer units):
+```
+$ systemd --version | grep -i "<service_name>"
+```
+
+4. Check if the service is currently running:
+```
+$ systemctl is-active <service_name>
+```
+
+5. Start or restart the service:
+```
+$ systemctl start <service_name>
+```
+
+6. Stop or reload the service:
+```
+$ systemctl stop <service_name>
+$ systemctl reload <servicename>
+```
+
+7. Check the status of a specific process associated with the service:
+```
+$ systemctl --no-pager status <service_name> | grep "process"
+```

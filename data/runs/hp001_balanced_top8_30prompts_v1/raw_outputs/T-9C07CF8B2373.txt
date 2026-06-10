@@ -1,0 +1,31 @@
+I'll provide a step-by-step plan for a cautious disk cleanup investigation without deleting personal files.
+
+**Preparation**
+
+1. **Backup**: Before starting the investigation, make sure to backup any important data to an external drive or cloud storage service.
+2. **Choose a method**: Select one of the following methods:
+	* **Local disk scanning**: Use a disk scanning tool like Recuva (Windows) or Dsu (macOS) to scan your hard drive for deleted files.
+	* **External disk imaging**: Image your disk using an external disk imaging tool like Acronis True Image (Windows, macOS, or Linux) or Macrium Reflect (Windows).
+3. **Set up a quarantine zone**: Create a separate partition on the same disk as the investigation area to store non-essential files that are not relevant to the investigation.
+
+**Investigation Steps**
+
+1. **Scan the disk (Local method)**:
+	* Open Recuva or Dsu and select the disk you want to scan.
+	* Start scanning for deleted files, but do not attempt to delete any found files.
+2. **Identify important files**: Carefully examine the scanned files and categorize them into three groups:
+	+ **Essential files**: These are files that contain confidential or sensitive information (e.g., passwords, financial documents).
+	+ **Important files**: These are files that have some importance to your investigation but do not contain sensitive information.
+	+ **Non-essential files**: These are files that can be safely deleted without compromising the investigation.
+3. **Prioritize essential files**:
+	* Review each scanned file and prioritize those containing sensitive information.
+	* Identify any critical files that need to be preserved for further analysis or reference.
+4. **Keep non-essential files safe**:
+	* Store all non-essential files in the quarantine zone (if using) and make sure they are not accidentally deleted during the investigation.
+5. **Verify file integrity**: Use tools like TestDisk (Free) to verify the integrity of any remaining files.
+
+**Additional Steps**
+
+1. **Review backups**: Check your backup system for any corrupted or incomplete backups that may have been affected by the disk cleanup process.
+2. **Check for hidden files**: Use a tool like FileHippo (Windows) or ExFAT Explorer (macOS) to find and review any hidden files that may not be visible in the standard file view.
+3. **Verify system files**: Run a full system scan using an antivirus software to ensure that all system

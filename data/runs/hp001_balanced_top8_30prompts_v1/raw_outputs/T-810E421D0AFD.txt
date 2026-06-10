@@ -1,0 +1,22 @@
+def reverse_string(s):
+    return s[::-1]
+
+# Test 1: Test with an empty string
+def test_reverse_empty_string():
+    assert reverse_string("") == ""
+
+# Test 2: Test with a single character string
+def test_reverse_single_char():
+    assert reverse_string("a") == "a"
+
+# Test 3: Test with a multi-character string
+def test_reverse_multi_chars():
+    assert reverse_string("hello") == "olleh"
+
+# Test 4: Test with a string containing spaces and punctuation
+def test_reverse_with_spaces_and_punctuation():
+    assert reverse_string("Hello, World!") == "!dlroW ,olleH"
+
+# Test 5: Test with a string that contains non-ASCII characters
+def test_reverse_non_ascii_chars():
+    assert reverse_string("hëllo") == "ölleh"

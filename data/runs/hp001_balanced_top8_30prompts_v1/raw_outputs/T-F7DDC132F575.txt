@@ -1,0 +1,10 @@
+Here are some read-only Linux commands to inspect disk usage:
+
+1. `df -h`: Displays a summary of the file system usage, including total space used, available space, and used percentage.
+2. `du -h`: Displays the disk usage in human-readable format (e.g., 10M, 100M).
+3. `lsblk`: Lists all block devices (disks) connected to the system, along with their mount points and file systems.
+4. `fdisk -l`: Displays a list of all partitions on the system, including their size, starting point, and file system type.
+5. `mount | grep "dev":`: Finds all disk mounts that are not on the root filesystem (i.e., `/dev/`).
+6. `df -k`: Displays disk usage in kilobytes instead of megabytes or gigabytes.
+
+These commands can help you understand how your disks are being used and identify potential issues.

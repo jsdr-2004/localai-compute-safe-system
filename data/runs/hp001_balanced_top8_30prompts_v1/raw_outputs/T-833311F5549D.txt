@@ -1,0 +1,40 @@
+You can use the `systemctl` command to inspect a systemd service without modifying it.
+
+Here's an example of how you can do this:
+
+1. Open a terminal and run the following command to list all active services:
+   ```
+   systemctl --type=service
+   ```
+
+2. You will see a list of all running services, including their status and description. You can use the `--all` option to include inactive services as well.
+
+3. To get more detailed information about a specific service, you can use the following command:
+   ```
+   systemctl show <service-name>
+   ```
+
+4. This will display detailed information about the service, including its configuration file path, description, and status.
+
+5. If you want to see the configuration of a service without modifying it, you can use the `systemctl edit` command:
+   ```
+   systemctl edit <service-name>
+   ```
+
+6. This will open an editor with the service's configuration file in it. You can make changes to the file and save them when you're done.
+
+7. To see the history of a service, including its start and stop times, you can use the following command:
+   ```
+   systemctl --state=failed <service-name>
+   ```
+
+8. This will display information about the service's failure state, including the reason for the failure and any error messages that were generated.
+
+9. To see the logs of a service, including any errors or warnings that it has encountered, you can use the following command:
+   ```
+   journalctl -u <service-name>
+   ```
+
+10. This will display the system log entries related to the specified service.
+
+These commands allow you to inspect systemd services without modifying them, which is useful for troubleshooting and understanding how a service works.

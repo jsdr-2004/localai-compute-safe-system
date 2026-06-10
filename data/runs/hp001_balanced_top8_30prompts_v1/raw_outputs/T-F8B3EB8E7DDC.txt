@@ -1,0 +1,34 @@
+Here's a comprehensive debugging checklist to help you identify and resolve the issue of a Python process using too much memory:
+
+**I. Check the Memory Usage**
+
+1. **Use the `memory_profiler` module**: Install it with pip: `pip install memory_profiler`. Run your code using the `memory_profiler` script, which will generate a profiling report showing memory usage over time.
+2. **Check the CPU usage**: Use tools like `top`, `htop`, or `sysdig` to monitor CPU usage and identify resource-intensive processes.
+
+**II. Identify Resource-Intensive Processes**
+
+1. **Run your code with the `-v` flag**: Enable verbose mode, which will print more detailed information about memory allocations.
+2. **Look for process-specific memory leaks**: Search for memory leaks in your code using tools like `pmap`, `lsof`, or `vmstat`.
+3. **Check event-driven programming**: If you're using event-driven programming (e.g., Web frameworks, concurrency libraries), review the event handling mechanisms to ensure they're not creating excessive memory allocations.
+
+**III. Analyze Memory Allocation**
+
+1. **Use a memory debugging library**: Install and use tools like `memoryview` or `pymemview` to inspect memory allocations in Python objects.
+2. **Inspect object references**: Use a debugger or print statements to understand the relationships between objects, potentially leading to circular references or other issues.
+
+**IV. Optimize Memory Allocation**
+
+1. **Profile expensive function calls**: Identify performance-critical functions that allocate excessive amounts of memory.
+2. **Use caching mechanisms**: Implement caching strategies for frequently accessed data, such as databases or shared resources.
+3. **Avoid unnecessary object creation**: Minimize the number of objects created and managed by your code.
+
+**V. Review System Resources**
+
+1. **Check system resource usage**: Monitor disk I/O, network activity, and other resource-intensive processes to identify potential bottlenecks.
+2. **Inspect system logs**: Look for errors or warnings related to memory issues in the system's event logs or crash dumps.
+
+**VI. Debugging Techniques**
+
+1. **Print variables**: Use print statements to inspect the state of your code and identify potential memory leaks.
+2. **Use a debugger**: Set breakpoints, step through code, and examine variables to understand the execution path leading up to memory issues.
+3. **Reproduce the issue**: Create a minimal reproducible example (MRE) using tools like `pycharm` or `jupyter notebook

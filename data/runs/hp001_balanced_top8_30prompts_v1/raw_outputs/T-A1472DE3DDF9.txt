@@ -1,0 +1,12 @@
+Here are some read-only Linux commands to inspect disk usage:
+
+1. `df -h`: Displays a detailed summary of the disk usage, including percentage and available space.
+2. `du -h`: Similar to `df`, but displays only the total size of each partition or file system.
+3. `stat -f %a%I%U%G`: Displays metadata about each file, including its status (e.g., mounted, read-only, executable).
+4. `ps aux | grep "Disk usage"`: Lists process IDs and their associated disk usage information (not readable).
+5. `df -k`: Displays a more concise summary of the disk usage, with kilobytes instead of megabytes.
+6. `mount | grep filesystem": Disk usage"`: Lists disk usage for each mounted file system.
+7. `lsof -o %u%F`: Lists open files, including their user and file type.
+8. `df -p`: Displays a detailed summary of the disk usage for each partition.
+
+Note that some commands may not be readable due to security restrictions or permissions.

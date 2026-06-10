@@ -1,0 +1,19 @@
+ To find out which folders are taking up the most disk space without deleting anything, you can follow these steps on a Windows system:
+
+1. Open File Explorer by clicking the folder icon on your taskbar or by pressing `Win + E`.
+
+2. Navigate to the drive where you want to check disk usage (usually C:).
+
+3. Click on the "View" tab in the top menu, then select "Details" from the dropdown list. This will change the file listing to show additional columns, including "Size".
+
+4. To sort by folder size, click on "Size" column header. The largest folders will be displayed first.
+
+If you prefer using the Command Prompt for this task, you can also use `dir /x` command to view the directories sorted by size:
+
+1. Open Command Prompt by typing `cmd` in the search bar and pressing Enter.
+
+2. Type `cd C:\` (or the drive letter of your choice) and press Enter to navigate to the desired drive.
+
+3. Enter `dir /x /o-size` and press Enter. This command will list all directories sorted by size in a descending order, with the largest folders at the top.
+
+For a more graphical representation of disk usage, you can use third-party tools like WinDirStat or SpaceMonger which provide visualization of disk usage for each folder and file.

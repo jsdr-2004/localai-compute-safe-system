@@ -1,0 +1,27 @@
+`df -h` is a command used in Unix-like operating systems (such as Linux and macOS) to display disk usage information about file systems mounted on the filesystem root (`/`). The `-h` option stands for "human-readable" and is used to make the output more readable by displaying sizes in kilobytes, megabytes, gigabytes, etc., rather than just bytes.
+
+### What Does `df -h` Do?
+
+The `df` command (short for "disk free") provides information about file system disk space usage. When you run `df`, it shows how much of each mounted filesystem is used and available in kilobytes, megabytes, or gigabytes. The `-h` option makes the output more user-friendly by displaying sizes in a human-readable format (e.g., KB, MB, GB).
+
+Here's an example of what `df -h` might look like:
+
+```
+Filesystem      Size  Used Avail Use% Mounted on
+udev            7.8G     0  7.8G   0% /dev
+tmpfs           1.6G   24M  1.6G   2% /run
+...
+```
+
+In this example, you can see the total size of each filesystem (`Size`), how much space is currently used (`Used`), and how much space is available (`Avail`). The `Use%` column shows the percentage of disk space that is being used.
+
+### Does Running `df -h` Change the System?
+
+Running the `df -h` command itself does not change any system settings or files. It simply provides information about the current state of your file systems and their usage. This command is primarily for monitoring purposes, such as checking how much disk space you have left on a particular filesystem.
+
+However, if you use the output from `df -h` to make decisions that affect the system (for example, by deciding which files to delete or move), then running `df -h` could indirectly change the state of your system. For instance:
+
+- If you decide based on the output and delete a large file, it will free up disk space.
+- If you decide based on the output and move data from one filesystem to another, it can affect how that filesystem is used.
+
+In summary, running `df -h` does not change the system; it only provides information about the current state of your file systems.

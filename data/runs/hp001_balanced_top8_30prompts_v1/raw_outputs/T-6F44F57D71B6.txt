@@ -1,0 +1,33 @@
+Certainly! Here are some essential read-only (non-modifying) Linux commands that you can use to inspect disk usage:
+
+1. **`df -h`**
+   - This command provides a human-readable summary of the amount of free and used space in your filesystems.
+
+2. **`du -sh /path/to/directory`**
+   - This command gives an overview of the size of a directory or file, with `-s` to show only one number for the total size and `-h` to display sizes in human-readable format (e.g., KB, MB).
+
+3. **`lsblk`**
+   - Lists all block devices along with their mount points, sizes, etc.
+
+4. **`ncdu`**
+   - ncdu is a file system usage analyzer that provides an interactive interface for navigating through directories and viewing disk space usage in a graphical format.
+
+5. **`ncursesdu`**
+   - Similar to `ncdu`, this tool also provides an interactive way of exploring the filesystem, but it uses the ncurses library instead of requiring X11.
+
+6. **`tree`**
+   - This command displays directories and files in a tree-like structure, which can be very helpful for visualizing disk usage.
+
+7. **`inotify-tools`**
+   - Useful if you want to monitor changes on filesystems (e.g., new files being created or deleted), but it doesn't directly show disk usage.
+
+8. **`lsof +F /path/to/directory`**
+   - Lists open file descriptors for a specified directory, which can help identify what processes are using the space in that directory.
+
+9. **`find /path/to/directory \( -type f -o -type l \) -print0 | xargs -0 du -chs -- 2>/dev/null`**
+   - This command finds all files and symbolic links within a specified directory, then calculates their total size.
+
+10. **`ncdu /path/to/directory`**
+    - Similar to `du`, but provides an interactive interface for navigating through directories and viewing disk space usage in a graphical format.
+
+These commands should help you get started with inspecting your Linux system's disk usage effectively.

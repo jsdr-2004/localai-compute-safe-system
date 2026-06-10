@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import csv
+import os
 from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
@@ -93,6 +94,7 @@ def generate_graphs(results: str | Path, output_dir: str | Path) -> list[Path]:
 
 def markdown_report(results: str | Path, output: str | Path, hardware: str | Path | None = None,
                     recommendations: str | Path | None = None, graphs_dir: str | Path = "reports/graphs") -> Path:
+    target = ensure_parent(output)
     rows = read_rows(results)
     success = [row for row in rows if row.get("status") == "success"]
     profile = load_json(hardware) if hardware else {}
@@ -117,6 +119,17 @@ def markdown_report(results: str | Path, output: str | Path, hardware: str | Pat
         avg = lambda metric: mean(values) if (values := [number(row.get(metric)) for row in good if number(row.get(metric)) is not None]) else 0
         lines.append(f"| {model} | {len(group)} | {100 * len(good) / max(1, len(group)):.1f}% | {avg('tokens_per_sec_estimate'):.2f} | "
                      f"{avg('first_token_latency_sec'):.3f} | {avg('total_response_time_sec'):.2f} | {avg('peak_ram_gb'):.2f} |")
+    categories = sorted({row.get("prompt_category", "unknown") for row in rows})
+    lines.extend(["", "## Prompt Category Metrics", "",
+                  "| Category | Runs | Success Rate | Avg Tokens/sec | Avg First-token Latency | Avg Total Time | Avg Peak RAM |",
+                  "|---|---:|---:|---:|---:|---:|---:|"])
+    for category in categories:
+        group = [row for row in rows if row.get("prompt_category") == category]
+        good = [row for row in group if row.get("status") == "success"]
+        avg = lambda metric: mean(values) if (values := [number(row.get(metric)) for row in good if number(row.get(metric)) is not None]) else 0
+        lines.append(f"| {category} | {len(group)} | {100 * len(good) / max(1, len(group)):.1f}% | "
+                     f"{avg('tokens_per_sec_estimate'):.2f} | {avg('first_token_latency_sec'):.3f} | "
+                     f"{avg('total_response_time_sec'):.2f} | {avg('peak_ram_gb'):.2f} |")
     failures = [row for row in rows if row.get("status") != "success"]
     lines.extend(["", "## Failure Table", ""])
     lines.append("No failures recorded." if not failures else "| Test ID | Model | Error |\n|---|---|---|\n" +
@@ -129,13 +142,14 @@ def markdown_report(results: str | Path, output: str | Path, hardware: str | Pat
             lines.append(f"| {row['final_rank']} | {row['model_name']} | {row['context_length']} | {row['temperature']} | {row['top_p']} | {row['final_score']} |")
     lines.extend(["", "## Graphs", ""])
     for path in sorted(Path(graphs_dir).glob("*.png")):
-        lines.append(f"- [{path.name}]({path.as_posix()})")
+        relative_path = os.path.relpath(path, start=target.parent)
+        lines.append(f"- [{path.name}]({Path(relative_path).as_posix()})")
     lines.extend(["", "## Limitations", "", "- Quality scores may be blank; recommendation scores are partial when so marked.",
-                  "- Results are specific to one hardware profile and the Ollama backend.", "- The initial sweep uses five prompts.",
+                  "- Results are specific to one hardware profile and the Ollama backend.",
+                  f"- This dataset contains {len({row.get('prompt_id', '') for row in rows})} distinct prompts.",
                   "", "## Reproducibility Checklist", "", "- [x] Hardware profile preserved", "- [x] Config and prompt files preserved",
                   "- [x] CSV, JSONL, failures, and raw outputs preserved", "- [x] Runtime/model versions recorded where available",
                   "- [ ] Human quality scoring complete", ""])
-    target = ensure_parent(output)
     target.write_text("\n".join(lines), encoding="utf-8")
     return target
 

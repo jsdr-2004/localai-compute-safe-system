@@ -1,0 +1,9 @@
+balanced_rank,model_name,model_size,context_length,temperature,top_p,average_tokens_per_sec,average_first_token_latency_sec,average_total_response_time_sec,average_peak_ram_gb,success_rate,final_or_partial_score,partial_score_used,feasibility_status,reason_for_selection
+1,llama3.2:1b,1B,2048,0.7,0.95,54.057,0.1738,5.9204,8.1685,1.0,0.8314,True,smooth,Top-two partial-score configuration within model family; 100% successful in HP-001 fixed-hardware sweep
+2,llama3.2:1b,1B,1024,0.2,0.8,53.032,0.211,6.3996,8.1296,1.0,0.8251,True,smooth,Top-two partial-score configuration within model family; 100% successful in HP-001 fixed-hardware sweep
+3,llama3.2:3b,3B,2048,0.2,0.8,32.9581,0.3022,8.4813,8.1057,1.0,0.687,True,smooth,Top-two partial-score configuration within model family; 100% successful in HP-001 fixed-hardware sweep
+4,llama3.2:3b,3B,2048,0.7,0.8,31.4298,0.2052,8.8204,8.3232,1.0,0.6723,True,smooth,Top-two partial-score configuration within model family; 100% successful in HP-001 fixed-hardware sweep
+5,qwen2.5:3b,3B,2048,0.2,0.8,30.7126,0.2436,11.231,8.2079,1.0,0.6695,True,smooth,Top-two partial-score configuration within model family; 100% successful in HP-001 fixed-hardware sweep
+6,qwen2.5:3b,3B,2048,0.2,0.95,30.4348,0.1881,10.5945,8.3884,1.0,0.6641,True,smooth,Top-two partial-score configuration within model family; 100% successful in HP-001 fixed-hardware sweep
+7,mistral:7b,7B,2048,0.7,0.95,15.9022,0.1775,16.9625,9.6165,1.0,0.5402,True,smooth,Top-two partial-score configuration within model family; 100% successful in HP-001 fixed-hardware sweep
+8,mistral:7b,7B,1024,0.7,0.95,15.103,0.1653,15.993,9.4292,1.0,0.5383,True,smooth,Top-two partial-score configuration within model family; 100% successful in HP-001 fixed-hardware sweep

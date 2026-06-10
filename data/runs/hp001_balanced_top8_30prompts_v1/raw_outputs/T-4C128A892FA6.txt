@@ -1,0 +1,49 @@
+Certainly! Here are some read-only (non-modifying) Linux commands that you can use to inspect disk usage:
+
+1. **`du`** - To get the disk usage of directories and files.
+   ```bash
+   du --max-depth=1 /path/to/directory
+   ```
+
+2. **`df`** - To show the amount of space used by each mounted file system.
+   ```bash
+   df -h /path/to/directory
+   ```
+
+3. **`ncdu`** - A disk usage analyzer that provides a nice, interactive interface to navigate through directories and files.
+   ```bash
+   ncdu /path/to/directory
+   ```
+   Note: `ncdu` is not installed by default in most Linux distributions, so you may need to install it using your package manager. For example, on Ubuntu/Debian:
+   ```bash
+   sudo apt-get install ncdu
+   ```
+
+4. **`lsblk`** - To list all block devices and their mount points.
+   ```bash
+   lsblk
+   ```
+
+5. **`parted`** - To inspect disk partitions.
+   ```bash
+   parted /dev/sdX unit M print
+   ```
+   Replace `/dev/sdX` with your actual device (e.g., `sda`, `sdx`, etc.).
+
+6. **`fdisk -l`** - To list all available disks and their partitions.
+   ```bash
+   sudo fdisk -l
+   ```
+
+7. **`du --summarize`** - To get a summary of disk usage for directories.
+   ```bash
+   du --max-depth=1 /path/to/directory | sort -hr | awk '{print $2}'
+   ```
+
+8. **`ncursesutils/cdparanoia`** (for reading CD/DVDs) - If you need to inspect a CD or DVD, this tool can be useful.
+   ```bash
+   cdparanoia -l /dev/srX
+   ```
+   Replace `/dev/srX` with your actual device.
+
+These commands should help you get an overview of disk usage and partition information in Linux.

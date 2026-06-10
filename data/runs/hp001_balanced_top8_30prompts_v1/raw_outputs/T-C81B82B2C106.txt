@@ -1,0 +1,34 @@
+Here's a step-by-step guide to plan a cautious disk cleanup investigation without deleting personal files:
+
+**Pre-Investigation Steps**
+
+1. **Backup important data**: Before starting the investigation, ensure that all critical and personal files are backed up to an external drive or cloud storage.
+2. **Gather information**: Collect any relevant documents, emails, or notes related to the suspected disk issues.
+3. **Identify potential causes**: Research possible reasons for the disk issues, such as malware, software conflicts, or hardware problems.
+
+**Investigation Steps**
+
+1. **Run a disk check**: Use built-in tools like Check Disk (chkdsk) on Windows or Disk Utility's First Aid on macOS to identify any disk errors.
+2. **Scan for malware**: Run a full scan with an anti-malware software to detect and remove any malicious programs that may be causing the issues.
+3. **Check system logs**: Review system logs to see if there are any error messages or warnings related to the disk issues.
+4. **Inspect system files**: Use tools like System File Checker (SFC) on Windows or Console2 on macOS to inspect system files and identify any corrupted or missing files.
+5. **Monitor disk usage**: Use tools like Disk Usage Analyzer or Process Explorer to monitor disk usage and identify any suspicious processes.
+
+**Cautious Cleanup Steps**
+
+1. **Create a restore point**: Create a restore point before making any changes to the disk.
+2. **Use safe mode**: Boot into Safe Mode to isolate any software conflicts that may be causing the issues.
+3. **Disable unnecessary services**: Disable any unnecessary services or startup programs to prevent interference with the investigation.
+4. **Use a temporary folder**: Use a temporary folder to store any files or data that need to be deleted or modified during the investigation.
+
+**Post-Investigation Steps**
+
+1. **Review findings**: Review the results of the investigation and identify the root cause of the disk issues.
+2. **Apply fixes**: Apply any necessary fixes, such as updating software or reinstalling drivers.
+3. **Restore original settings**: Restore the system to its original settings before making any changes during the investigation.
+
+**Additional Tips**
+
+1. **Use a virtual machine**: Consider using a virtual machine to isolate the investigation and prevent any potential damage to the primary system.
+2. **Document everything**: Keep detailed records of all steps taken during the investigation, including screenshots and error messages.
+3. **Seek professional help**: If the issue persists or is complex, consider seeking help from a
