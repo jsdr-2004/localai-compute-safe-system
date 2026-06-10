@@ -1,0 +1,15 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+build/
+dist/
+*.egg-info/
+data/audit/
+data/backups/
+data/results/*
+!data/results/sample_benchmark_results.csv
+data/raw_outputs/
+reports/graphs/*.png

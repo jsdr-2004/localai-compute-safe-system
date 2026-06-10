@@ -1,0 +1,21 @@
+hardware_profile_id: HP-001
+runtime: ollama
+prompts_file: prompts.json
+ollama_url: http://localhost:11434/api/generate
+timeout_seconds: 300
+models:
+  - name: llama3.2:1b
+    size: 1B
+    quantization: default
+  - name: llama3.2:3b
+    size: 3B
+    quantization: default
+settings:
+  context_lengths: [1024, 2048]
+  temperatures: [0.2, 0.7]
+  top_p: [0.8, 0.95]
+  threads: [4]
+repeat_each_test: 3
+output_csv: data/results/benchmark_results.csv
+output_jsonl: data/results/benchmark_results.jsonl
+raw_output_dir: data/raw_outputs

@@ -1,0 +1,22 @@
+{
+  "project": "LocalAI Compute-Aware Safe System",
+  "created_for": "Research and development starter package",
+  "main_outputs": [
+    "PRD",
+    "SRS",
+    "Architecture",
+    "Research Methodology",
+    "IEEE Paper Plan",
+    "Experiment Plan",
+    "Benchmark Data Schema",
+    "Safety Policy",
+    "Threat Model",
+    "Privilege Broker Design",
+    "Roadmap",
+    "Sprint Plan",
+    "Contributor Guide",
+    "Starter benchmark code",
+    "Starter broker pseudocode"
+  ],
+  "recommended_first_step": "Run fixed-hardware benchmark using src/localai_benchmark_suite"
+}

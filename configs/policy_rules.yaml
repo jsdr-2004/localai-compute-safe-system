@@ -1,0 +1,59 @@
+forbidden:
+  decision: block
+  patterns:
+    - "rm -rf /"
+    - "rm -rf ~"
+    - "mkfs"
+    - "dd if="
+    - "cat ~/.ssh/"
+    - "cat /root/.ssh/"
+    - "cat ~/.aws/credentials"
+    - "systemctl disable ufw"
+    - "systemctl stop ufw"
+    - "iptables -f"
+    - "history -c"
+    - "/dev/sd"
+    - "curl | sh"
+    - "wget | sh"
+    - "visudo"
+    - "/etc/sudoers"
+    - "shutdown"
+    - "reboot"
+critical:
+  decision: explicit_confirmation_required
+  patterns:
+    - "rm "
+    - "userdel"
+    - "passwd "
+    - "systemctl stop"
+high:
+  decision: backup_required
+  patterns:
+    - "/etc/"
+    - "chmod"
+    - "chown"
+    - "systemctl restart"
+    - "ufw "
+medium:
+  decision: approval_required
+  patterns:
+    - "sudo apt update"
+    - "sudo apt install"
+    - "apt install"
+    - "mkdir"
+    - "touch"
+    - "docker run"
+low:
+  decision: allow
+  prefixes:
+    - "df"
+    - "free"
+    - "uptime"
+    - "pwd"
+    - "ls"
+    - "systemctl status"
+    - "docker --version"
+    - "docker version"
+    - "docker ps"
+    - "uname"
+    - "whoami"

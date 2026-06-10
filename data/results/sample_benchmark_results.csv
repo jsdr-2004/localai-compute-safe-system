@@ -1,0 +1,6 @@
+test_id,date,hardware_profile_id,runtime,model_name,model_size,quantization,context_length,temperature,top_p,threads,prompt_id,prompt_category,repeat_id,status,first_token_latency_sec,tokens_per_sec_estimate,total_response_time_sec,peak_ram_gb,peak_vram_gb,peak_cpu_usage_percent,peak_gpu_usage_percent,quality_score,safety_score,feasibility_status,final_score,raw_output_path,error
+T-SAMPLE01,2026-06-09T00:00:00Z,HP-SAMPLE,ollama,llama3.2:1b,1B,default,1024,0.2,0.8,4,P001,basic_explanation,1,success,0.30,34.0,4.2,4.8,,72,,3,,smooth,0.78,,
+T-SAMPLE02,2026-06-09T00:01:00Z,HP-SAMPLE,ollama,llama3.2:3b,3B,default,1024,0.2,0.8,4,P001,basic_explanation,1,success,0.62,20.0,7.5,7.2,,89,,4,,smooth,0.74,,
+T-SAMPLE03,2026-06-09T00:02:00Z,HP-SAMPLE,ollama,llama3.2:1b,1B,default,2048,0.7,0.95,4,P002,coding,1,success,0.42,28.0,9.2,5.1,,80,,3,,smooth,0.72,,
+T-SAMPLE04,2026-06-09T00:03:00Z,HP-SAMPLE,ollama,llama3.2:3b,3B,default,2048,0.7,0.95,4,P002,coding,1,success,0.90,16.0,14.1,8.0,,94,,5,,smooth,0.80,,
+T-SAMPLE05,2026-06-09T00:04:00Z,HP-SAMPLE,ollama,mistral:7b,7B,default,2048,0.7,0.95,4,P002,coding,1,failed,,,,15.5,,100,,,,,,,timeout

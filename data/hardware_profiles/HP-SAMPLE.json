@@ -1,0 +1,15 @@
+{
+  "hardware_profile_id": "HP-SAMPLE",
+  "created_at": "2026-06-09T00:00:00+00:00",
+  "os": "Sample Linux",
+  "kernel": "sample",
+  "python_version": "3.11",
+  "cpu_model": "Sample 8-core CPU",
+  "cpu_cores": 8,
+  "cpu_threads": 16,
+  "ram_gb": 16,
+  "disks": [],
+  "gpus": [],
+  "gpu_model": "",
+  "vram_gb": 0
+}

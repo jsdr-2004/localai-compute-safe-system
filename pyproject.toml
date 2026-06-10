@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "localai-compute-safe-system"
+version = "0.1.0"
+description = "Compute-aware local AI benchmark and safety-gated Linux assistant research prototype"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "matplotlib>=3.7",
+  "psutil>=5.9",
+  "PyYAML>=6.0",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4"]
+
+[project.scripts]
+localai-system = "localai_system.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["localai_system*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

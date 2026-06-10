@@ -1,0 +1,29 @@
+low_risk_allow:
+  - "df -h"
+  - "free -h"
+  - "uptime"
+  - "pwd"
+  - "ls"
+  - "systemctl status"
+
+medium_risk_approval:
+  - "sudo apt update"
+  - "sudo apt install"
+  - "mkdir"
+  - "touch"
+
+high_risk_backup_required:
+  - "/etc/"
+  - "chmod"
+  - "chown"
+  - "systemctl restart"
+
+forbidden_block:
+  - "rm -rf /"
+  - "mkfs"
+  - "dd if="
+  - "cat ~/.ssh/id_rsa"
+  - "cat ~/.aws/credentials"
+  - "systemctl disable ufw"
+  - "iptables -F"
+  - "history -c"
