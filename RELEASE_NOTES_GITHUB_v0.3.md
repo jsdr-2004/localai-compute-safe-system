@@ -23,6 +23,10 @@ This release contains the completed HP-001 MacBook Air M4 16GB benchmark artifac
 ## Limitations
 
 - Human quality scoring is pending; current recommendation scores are partial.
-- HP-002 and HP-003 cross-hardware validation is pending.
+- HP-002, newly added HP-004, and HP-003 cross-hardware validation is pending.
 - Ollama is the only evaluated inference backend so far.
 - Results currently represent the MacBook Air M4 16GB hardware class only.
+
+## Updated Four-Hardware Plan
+
+HP-004 adds a realistic Windows NVIDIA laptop-GPU environment: MSI Crosshair 16 HX AI, Intel Core Ultra 7 255HX, 32GB RAM, and RTX 5060 Laptop GPU with 8GB VRAM. The remaining recommended order is HP-002, HP-004, then HP-003. Total planned measurements are 3,360: 1,200 completed and 2,160 pending.

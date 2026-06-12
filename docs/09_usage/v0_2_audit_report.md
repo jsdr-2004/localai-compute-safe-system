@@ -18,7 +18,7 @@
 
 ## Missing Requirements
 
-- Multi-hardware HP-002/HP-003 results.
+- Multi-hardware HP-002/HP-004/HP-003 results.
 - Additional runtime backends such as llama.cpp.
 - Full safety benchmark metrics and formal false-positive/false-negative study.
 - Cryptographic audit-log integrity.

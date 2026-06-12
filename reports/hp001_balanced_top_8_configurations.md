@@ -16,5 +16,5 @@ The original top-eight recommendation consisted entirely of `llama3.2:1b` config
 ## Selection Rule
 
 - Select two configurations per model family using partial/final score first, then success, throughput, latency, RAM, and feasibility.
-- Preserve the selected configurations unchanged across HP-001, HP-002, and HP-003 for cross-hardware validity.
+- Preserve the selected configurations unchanged across HP-001, HP-002, HP-004, and HP-003 for cross-hardware validity.
 - Do not interpret partial-score rank as a quality rank until human quality scoring is complete.

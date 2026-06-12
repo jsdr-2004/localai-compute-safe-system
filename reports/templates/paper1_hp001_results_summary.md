@@ -10,3 +10,5 @@ HP-001 completed all 480 corrected benchmark cases successfully. The invalid ear
 | mistral:7b | 120 | 13.02 | 0.257s | 21.51s | 9.64GB |
 
 The 1B model leads the current partial-score ranking because it provides the highest throughput and strong memory efficiency. This is not a final quality-aware conclusion; human output review is pending.
+
+HP-001 remains the completed Apple Silicon baseline in the four-hardware plan. Cross-hardware claims wait for HP-002 low-memory CPU hardware, HP-004 modern Windows RTX 5060 laptop-GPU hardware with 8GB VRAM, and HP-003 RTX 3090-class workstation hardware.

@@ -38,6 +38,14 @@ def test_expanded_phase_matrix_count():
     assert len(list(build_matrix(config))) == 720
 
 
+def test_hp004_expanded_phase_matrix_count():
+    config = load_config("configs/benchmark_hp004_balanced_top8_30prompts.yaml")
+    assert validate_config(config) == []
+    assert config["hardware_profile_id"] == "HP-004"
+    assert config["run_id"] == "hp004_balanced_top8_30prompts_v1"
+    assert len(list(build_matrix(config))) == 720
+
+
 def test_explicit_configurations_require_complete_entries():
     config = load_config("configs/benchmark_ollama.yaml")
     config.pop("models")

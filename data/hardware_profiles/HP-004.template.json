@@ -1,0 +1,15 @@
+{
+  "template_status": "Pre-benchmark template; replace with profiler-generated HP-004.json on the HP-004 machine.",
+  "hardware_profile_id": "HP-004",
+  "machine_name": "MSI Crosshair 16 HX AI",
+  "hardware_class": "Modern Windows GPU laptop",
+  "category": "Modern Windows GPU laptop / dedicated NVIDIA laptop GPU system",
+  "cpu": "Intel Core Ultra 7 255HX",
+  "ram_gb": 32,
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "vram_gb": 8,
+  "secondary_gpu": "Intel integrated graphics",
+  "storage_gb": 954,
+  "operating_system": "Windows 11 Home 25H2",
+  "research_role": "Evaluate local AI performance on a current-generation Windows laptop GPU system with limited 8GB VRAM."
+}

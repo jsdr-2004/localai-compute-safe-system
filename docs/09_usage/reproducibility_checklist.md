@@ -18,3 +18,6 @@
 - [ ] Human quality-scoring status documented.
 - [ ] Experimental limitations documented.
 - [ ] Power, thermal, and background-process conditions noted.
+- [ ] Windows GPU driver, CUDA/runtime details, and dedicated VRAM recorded for HP-004.
+- [ ] Real profiler-generated hardware JSON replaces any pre-run hardware template.
+- [ ] Cross-hardware run order and fixed balanced configuration set documented.

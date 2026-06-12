@@ -8,4 +8,5 @@
 - Apple unified memory makes direct system RAM versus VRAM separation difficult.
 - Estimated token throughput relies on runtime-provided counts and timing.
 - Thermal and power-state effects were not fully controlled automatically.
-- HP-002 and HP-003 validation is pending.
+- HP-002, HP-004, and HP-003 validation is pending.
+- HP-004 laptop-GPU performance may be sensitive to Windows power mode, NVIDIA driver/runtime versions, thermal limits, and its 8GB VRAM ceiling.

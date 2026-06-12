@@ -34,8 +34,13 @@ Focus: Multi-hardware validation and paper submission prep.
 
 Deliverables:
 
-- Additional hardware benchmark data
+- HP-002 low-memory CPU benchmark data
+- HP-004 Windows RTX 5060 laptop-GPU benchmark data
+- HP-003 RTX 3090-class workstation benchmark data
 - Recommendation tables
+- Apple Silicon versus Windows GPU laptop comparison
+- Laptop GPU versus workstation GPU comparison
+- VRAM-sensitive decision rules
 - Paper 1 submission draft
 - Paper 2 draft
 - GitHub public release v0.1
@@ -88,3 +93,11 @@ Deliverables:
 - Project website
 - Demo video
 - Contributor recognition package
+
+## Four-Hardware Validation Order
+
+1. HP-002 Ryzen 5 5500U, 8GB RAM
+2. HP-004 MSI Crosshair 16 HX AI, RTX 5060 Laptop GPU with 8GB VRAM
+3. HP-003 RTX 3090-class GPU workstation
+
+The complete plan contains 3,360 tests: 1,200 completed and 2,160 pending.

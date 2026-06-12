@@ -10,7 +10,7 @@ Version v0.3 contains two completed HP-001 MacBook Air M4 16GB experiments:
 - Balanced top-eight 30-prompt run: 720 successes, 0 failures.
 - Total HP-001 measurements: 1,200 successes, 0 failures.
 
-The balanced phase preserves two configurations from each of four model families for research-valid comparison while human quality scoring remains pending. HP-002 and HP-003 cross-hardware validation are the next phases.
+The balanced phase preserves two configurations from each of four model families for research-valid comparison while human quality scoring remains pending. The four-hardware plan spans HP-001 Apple Silicon, HP-002 low-memory CPU hardware, HP-004 Windows laptop-GPU hardware, and HP-003 workstation-GPU hardware. The total plan contains 3,360 tests: 1,200 completed and 2,160 pending.
 
 ## Setup
 
@@ -56,6 +56,8 @@ The completed v0.3 balanced phase can be inspected without rerunning it:
 python -m localai_system report graphs --results data/runs/hp001_balanced_top8_30prompts_v1/benchmark_results.csv --output-dir reports/graphs/hp001_balanced_top8_30prompts
 python -m localai_system recommend --results data/runs/hp001_balanced_top8_30prompts_v1/benchmark_results.csv --hardware data/hardware_profiles/HP-001.json --output reports/hp001_balanced_top8_30prompt_recommendations.md
 ```
+
+The recommended remaining benchmark order is HP-002, HP-004, then HP-003. HP-004 is an MSI Crosshair 16 HX AI with Intel Core Ultra 7 255HX, 32GB RAM, and an NVIDIA RTX 5060 Laptop GPU with 8GB VRAM. Its committed hardware file is a template until the profiler is run on that machine.
 
 ## Safe Broker And Assistant
 

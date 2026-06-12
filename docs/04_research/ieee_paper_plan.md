@@ -8,7 +8,7 @@ Compute-Aware Configuration Tuning for Local Large Language Models on Consumer H
 
 ### Contribution
 
-A framework for evaluating local LLM configurations on fixed consumer hardware using quality, speed, memory efficiency, and feasibility metrics.
+A framework for evaluating local LLM configurations using quality, speed, memory efficiency, and feasibility metrics across four consumer/workstation hardware classes.
 
 ### Required Deliverables
 
@@ -20,6 +20,7 @@ A framework for evaluating local LLM configurations on fixed consumer hardware u
 - Graphs
 - Ranking formula
 - Paper draft
+- Four-hardware comparison covering HP-001, HP-002, HP-004, and HP-003
 
 ### Target Sections
 
@@ -51,6 +52,8 @@ Decision maps that recommend model size, quantization, and context length under 
 - Tokens/sec graphs
 - Decision maps
 - Recommendation tables
+- Windows laptop-GPU and 8GB-VRAM analysis
+- Laptop GPU versus workstation GPU comparison
 
 ## Paper 3
 

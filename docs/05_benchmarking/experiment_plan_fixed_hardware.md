@@ -86,3 +86,16 @@ Local LLM performance and feasibility change significantly based on model size, 
 - RAM usage graph
 - Speed vs quality graph
 - Best configuration recommendation
+
+## Cross-Hardware Expansion
+
+After the HP-001 fixed-hardware sweep, hold the balanced top-eight configurations and 30-prompt suite constant across four hardware profiles:
+
+| Order | Profile | Hardware Class | Tests | Status |
+|---:|---|---|---:|---|
+| Completed | HP-001 | Apple Silicon consumer laptop | 480 full sweep + 720 balanced | Completed |
+| 1 | HP-002 | Low-memory CPU-constrained system | 720 | Pending |
+| 2 | HP-004 | Modern Windows RTX 5060 laptop-GPU system with 8GB VRAM | 720 | Newly added / pending |
+| 3 | HP-003 | High-performance RTX 3090-class GPU workstation | 720 | Pending |
+
+Total planned dataset: 3,360 tests, with 1,200 completed and 2,160 pending.

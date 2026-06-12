@@ -10,12 +10,22 @@ Planned hardware:
 
 - HP-001: MacBook Air M4, 16GB unified memory
 - HP-002: Ryzen 5 5500U, 8GB RAM
+- HP-004: MSI Crosshair 16 HX AI, Intel Core Ultra 7 255HX, 32GB RAM, RTX 5060 Laptop GPU with 8GB VRAM
 - HP-003: RTX 3090-class GPU PC, 32GB RAM
 
-Do not run HP-002 or HP-003 configs until their hardware profile JSON exists and the required models are installed. The balanced choices originate from HP-001 and remain fixed on HP-002/HP-003 to support cross-hardware comparison.
+The remaining order is HP-002, HP-004, then HP-003. Do not run a pending config until its real hardware profile JSON exists and the required models are installed. The balanced choices originate from HP-001 and remain fixed across HP-002, HP-004, and HP-003 to support cross-hardware comparison.
+
+The four-machine plan totals 3,360 measured tests: 1,200 completed on HP-001 and 2,160 pending.
 
 ```bash
 python -m localai_system benchmark validate --config configs/benchmark_hp001_balanced_top8_30prompts.yaml
 python -m localai_system benchmark dry-run --config configs/benchmark_hp001_balanced_top8_30prompts.yaml
 python -m localai_system benchmark run --config configs/benchmark_hp001_balanced_top8_30prompts.yaml
+```
+
+HP-004 preparation only:
+
+```bash
+python -m localai_system benchmark validate --config configs/benchmark_hp004_balanced_top8_30prompts.yaml
+python -m localai_system benchmark dry-run --config configs/benchmark_hp004_balanced_top8_30prompts.yaml
 ```

@@ -16,11 +16,11 @@ Can hardware decision maps reduce trial-and-error in local LLM deployment?
 
 ### RQ3
 
-Can a local AI assistant safely perform useful Linux administration tasks through a controlled privilege broker instead of direct root access?
+How do local LLM recommendations change across low-memory CPU-based machines, Apple Silicon laptops, Windows laptop-GPU systems, and high-performance GPU workstations?
 
 ### RQ4
 
-Can approval workflows, audit logging, rollback, and blocked-command policies reduce operational risk in AI-assisted system administration?
+Can a local AI assistant safely perform useful administration tasks through a controlled privilege broker, approval workflows, audit logging, rollback, and blocked-command policies instead of direct root access?
 
 ## Experimental Design
 
@@ -58,11 +58,12 @@ Repeat the benchmark across different machines.
 
 Hardware categories:
 
-- 8GB RAM CPU-only
-- 16GB RAM CPU-only
-- 16GB RAM with 4GB VRAM
-- 32GB RAM with 8GB VRAM
-- High-end GPU workstation
+- HP-001 mainstream Apple Silicon consumer laptop
+- HP-002 low-memory CPU-constrained system
+- HP-004 modern Windows laptop-GPU system with 8GB dedicated VRAM
+- HP-003 high-performance GPU workstation
+
+The remaining benchmark order is HP-002, HP-004, then HP-003. The fixed balanced top-eight configuration set is held constant across these machines.
 
 ### Phase 3: Safe Local AI Assistant Evaluation
 
@@ -116,3 +117,6 @@ Final Score =
 - Safety evaluation tables
 - Audit log examples
 - Demo videos
+- Apple Silicon versus Windows GPU laptop comparison
+- Laptop GPU versus workstation GPU comparison
+- VRAM-sensitive recommendation rules

@@ -66,7 +66,7 @@ Focus on model recommender, scoring formula, and decision maps.
 
 ## August Sprints
 
-Focus on paper writing, validation, and submission preparation.
+Focus on four-hardware validation and submission preparation. Run the fixed balanced top-eight protocol in the remaining order HP-002, HP-004, then HP-003; generate cross-hardware reports and VRAM-sensitive recommendation rules.
 
 ## September–December Sprints
 

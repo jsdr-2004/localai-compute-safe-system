@@ -2,7 +2,7 @@
 
 ## Study Design
 
-The study begins with a fixed-hardware configuration sweep, then validates selected configurations across additional consumer hardware classes. HP-001 is the first controlled experiment.
+The study begins with a fixed-hardware configuration sweep, then validates selected configurations across four hardware classes. HP-001 is the first controlled experiment.
 
 ## HP-001 Initial Sweep
 
@@ -20,6 +20,13 @@ The runner preserved CSV, JSONL, and raw outputs and recorded every success or f
 
 The documented score weights quality, speed, memory efficiency, and feasibility. Because HP-001 human quality scores are blank, current rankings are explicitly labeled partial scores and normalize the remaining speed, memory, and feasibility weights.
 
-## Next Stage
+## Four-Hardware Validation Stage
 
-The provisional top eight HP-001 configurations will be evaluated with a 30-prompt suite on HP-001, HP-002, and HP-003 before cross-hardware conclusions are made.
+The balanced top-eight configurations are evaluated with a 30-prompt suite in this order:
+
+1. HP-001 Apple Silicon consumer laptop: completed.
+2. HP-002 low-memory CPU-constrained system: pending.
+3. HP-004 modern Windows laptop-GPU system with RTX 5060 Laptop GPU and 8GB VRAM: newly added / pending.
+4. HP-003 high-performance RTX 3090-class GPU workstation: pending.
+
+The same configurations and prompts remain fixed so the study can compare Apple Silicon, CPU-only constraints, limited laptop VRAM, and workstation GPU capacity.

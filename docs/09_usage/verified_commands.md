@@ -7,6 +7,8 @@ Verification date: June 10, 2026. The full 480-case benchmark was **not rerun** 
 | `python -m localai_system hardware print` | Inspect hardware without writing files | passed | Detected Apple M4, 10 cores/threads, and 16GB RAM. |
 | `python -m localai_system benchmark validate --config configs/benchmark_ollama.yaml` | Validate initial HP-001 matrix | passed | Reports 480 tests. |
 | `python -m localai_system benchmark dry-run --config configs/benchmark_ollama.yaml` | Print initial HP-001 matrix | passed | Reports 480 planned tests; no model execution. |
+| `python -m localai_system benchmark validate --config configs/benchmark_hp004_balanced_top8_30prompts.yaml` | Validate planned HP-004 balanced matrix | passed | Reports 720 tests; HP-004 benchmark was not run. |
+| `python -m localai_system benchmark dry-run --config configs/benchmark_hp004_balanced_top8_30prompts.yaml` | Print planned HP-004 balanced matrix | passed | Reports 720 planned tests; no model execution. |
 | `python -m localai_system benchmark validate --config configs/benchmark_hp001_top8_30prompts.yaml` | Validate next phase | passed | Reports 720 tests. |
 | `python -m localai_system benchmark dry-run --config configs/benchmark_hp001_top8_30prompts.yaml` | Preview next phase | passed | Reports 720 planned tests; not executed. |
 | `python -m localai_system report graphs --results data/results/benchmark_results.csv --output-dir reports/graphs/hp001_macbook_air_m4` | Regenerate HP-001 graphs | passed | Generated eight matplotlib PNGs. |

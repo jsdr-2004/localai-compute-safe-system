@@ -15,8 +15,13 @@ Compute-Aware Configuration Tuning for Local Large Language Models Across Consum
 7. Preserve CSV, JSONL, raw outputs, graphs, and recommendations.
 8. Perform human quality scoring with the documented 1-5 rubric.
 9. Select top configurations using full scores when quality is available; otherwise label partial scores.
-10. Repeat the expanded 30-prompt protocol on HP-001, HP-002, and HP-003.
+10. Repeat the expanded 30-prompt protocol on HP-001, HP-002, HP-004, and HP-003.
+11. Record NVIDIA driver, runtime/CUDA details, power mode, thermal conditions, and dedicated VRAM for HP-004 and HP-003.
 
 ## HP-001 Status
 
 The first 480-test corrected run is complete and valid. It establishes the fixed-hardware baseline but is not the final multi-hardware study.
+
+## Planned Four-Hardware Order
+
+HP-001 is complete. Remaining execution order: HP-002 Ryzen 5 5500U 8GB, HP-004 MSI Crosshair 16 HX AI RTX 5060 Laptop GPU 8GB VRAM, then HP-003 RTX 3090-class workstation.
