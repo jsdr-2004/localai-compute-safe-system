@@ -27,6 +27,5 @@ Scores are normalized for the supplied hardware profile. `partial_score_used=tru
 
 ## Limitations
 
-- Human quality scores are not yet populated for HP-001; all current recommendations are partial scores.
+- Human quality scores are not yet populated for HP-004; all current recommendations are partial scores.
 - Rankings are specific to the supplied hardware profile and Ollama runtime.
-

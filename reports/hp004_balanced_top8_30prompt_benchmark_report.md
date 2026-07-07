@@ -11,8 +11,9 @@
 - Cores/threads: 20/20
 - RAM: 31.419 GB
 - GPU: NVIDIA GeForce RTX 5060 Laptop GPU
-- OS/kernel: Windows-10-10.0.26200-SP0 / 10
+- OS/kernel: Windows 11 Home, platform string `Windows-10-10.0.26200-SP0` / 10
 - Ollama: ollama version is 0.31.1
+- llama.cpp: not detected; an earlier Windows PATH lookup resolved `C:\Windows\system32\main.CPL` and was removed as a false positive.
 
 ## Experiment Summary
 
@@ -76,6 +77,7 @@ No failures recorded.
 - Quality scores may be blank; recommendation scores are partial when so marked.
 - Results are specific to one hardware profile and the Ollama backend.
 - This dataset contains 30 distinct prompts.
+- Python's platform string reports Windows 11 build 26200 using a Windows-10-style identifier; the display OS is recorded as Windows 11 Home.
 
 ## Reproducibility Checklist
 
