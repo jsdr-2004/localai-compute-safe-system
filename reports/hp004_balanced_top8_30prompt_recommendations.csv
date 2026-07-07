@@ -1,0 +1,9 @@
+model_name,model_size,context_length,temperature,top_p,average_tokens_per_sec,average_latency_sec,average_peak_ram_gb,success_rate,speed_score,memory_efficiency_score,feasibility_score,quality_score_normalized,partial_score_used,feasibility_status,final_score,reason_for_selection,speed_rank,memory_rank,final_rank
+llama3.2:1b,1B,1024,0.2,0.8,67.6885,5.3133,24.3051,1.0,1.0,0.8634,1.0,,True,smooth,0.958,"Balanced partial score from speed, memory efficiency, and feasibility",1,4,1
+llama3.2:1b,1B,2048,0.7,0.95,66.6893,5.4258,24.7717,1.0,0.9852,0.8472,1.0,,True,smooth,0.9473,"Balanced partial score from speed, memory efficiency, and feasibility",2,5,2
+qwen2.5:3b,3B,2048,0.2,0.8,49.9517,8.1693,23.631,1.0,0.738,0.8881,1.0,,True,smooth,0.8648,"Balanced partial score from speed, memory efficiency, and feasibility",3,3,3
+qwen2.5:3b,3B,2048,0.2,0.95,46.6416,8.4117,22.9189,1.0,0.6891,0.9157,1.0,,True,smooth,0.8545,"Balanced partial score from speed, memory efficiency, and feasibility",6,2,4
+llama3.2:3b,3B,2048,0.2,0.8,48.5559,7.1021,26.2852,1.0,0.7173,0.7984,1.0,,True,smooth,0.8293,"Balanced partial score from speed, memory efficiency, and feasibility",4,7,5
+mistral:7b,7B,1024,0.7,0.95,36.8312,9.5962,20.9859,1.0,0.5441,1.0,1.0,,True,smooth,0.8247,"Balanced partial score from speed, memory efficiency, and feasibility",7,1,6
+llama3.2:3b,3B,2048,0.7,0.8,46.6889,7.2206,27.6232,1.0,0.6898,0.7597,1.0,,True,smooth,0.8067,"Balanced partial score from speed, memory efficiency, and feasibility",5,8,7
+mistral:7b,7B,2048,0.7,0.95,32.9304,11.4875,25.9551,1.0,0.4865,0.8085,1.0,,True,smooth,0.7436,"Balanced partial score from speed, memory efficiency, and feasibility",8,6,8
